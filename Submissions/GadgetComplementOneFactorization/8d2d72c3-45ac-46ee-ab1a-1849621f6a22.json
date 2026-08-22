@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "GadgetComplementOneFactorization",
+  "module": "Submissions.GadgetComplementOneFactorization.GadgetFactor",
+  "decl": "Submissions.GadgetComplementOneFactorization.GadgetFactor.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8d2d72c3-45ac-46ee-ab1a-1849621f6a22."
+}
