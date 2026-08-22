@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "CopiesUnitaryGenericity",
+  "module": "Submissions.CopiesUnitaryGenericity.CopiesGenericity",
+  "decl": "Submissions.CopiesUnitaryGenericity.CopiesGenericity.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 653d2919-8a90-4b88-add7-25c03cfe7170."
+}
