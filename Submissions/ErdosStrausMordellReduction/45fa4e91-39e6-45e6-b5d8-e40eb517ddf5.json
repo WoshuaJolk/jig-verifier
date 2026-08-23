@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosStrausMordellReduction",
+  "module": "Submissions.ErdosStrausMordellReduction.MordellReduction",
+  "decl": "Submissions.ErdosStrausMordellReduction.MordellReduction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 45fa4e91-39e6-45e6-b5d8-e40eb517ddf5."
+}
