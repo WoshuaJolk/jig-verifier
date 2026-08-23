@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "TightSpanningOrthRep4C18",
+  "module": "Submissions.TightSpanningOrthRep4C18.Gauss",
+  "decl": "Submissions.TightSpanningOrthRep4C18.Gauss.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 679aeec2-3731-4c6d-87a6-cd3b26ec7b7b."
+}
