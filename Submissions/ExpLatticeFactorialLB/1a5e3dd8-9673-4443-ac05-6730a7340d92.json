@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ExpLatticeFactorialLB",
+  "module": "Submissions.ExpLatticeFactorialLB.Permutohedron",
+  "decl": "Submissions.ExpLatticeFactorialLB.Permutohedron.proof",
+  "author": "gtokman",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1a5e3dd8-9673-4443-ac05-6730a7340d92."
+}
