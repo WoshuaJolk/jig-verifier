@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "TestOrbitCoverFalse",
+  "module": "Submissions.TestOrbitCoverFalse.Gtokman",
+  "decl": "Submissions.TestOrbitCoverFalse.Gtokman.proof",
+  "author": "gtokman",
+  "expect": "green",
+  "refutes": "TestOrbitCover",
+  "note": "Submitted through the Jig API as artifact 6ad7196c-5355-405f-b097-b18f9493942a."
+}
