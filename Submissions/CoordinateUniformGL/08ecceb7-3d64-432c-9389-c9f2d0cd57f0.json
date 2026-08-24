@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "CoordinateUniformGL",
+  "module": "Submissions.CoordinateUniformGL.GL",
+  "decl": "Submissions.CoordinateUniformGL.GL.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 08ecceb7-3d64-432c-9389-c9f2d0cd57f0."
+}
