@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PositiveDefiniteGramFactorization",
+  "module": "Submissions.PositiveDefiniteGramFactorization.Sqrt",
+  "decl": "Submissions.PositiveDefiniteGramFactorization.Sqrt.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 326ebed2-52e6-4437-aa35-51b8bf8c455b."
+}
