@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "EllipticSeedK4N8Exists",
+  "module": "Submissions.EllipticSeedK4N8Exists.Exact",
+  "decl": "Submissions.EllipticSeedK4N8Exists.Exact.existenceProof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d44548f5-5c06-42ab-821d-3c3c037e6933."
+}
