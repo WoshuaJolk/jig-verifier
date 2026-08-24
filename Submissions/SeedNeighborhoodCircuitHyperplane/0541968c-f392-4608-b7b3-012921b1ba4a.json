@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "SeedNeighborhoodCircuitHyperplane",
+  "module": "Submissions.SeedNeighborhoodCircuitHyperplane.SeedHyperplane",
+  "decl": "Submissions.SeedNeighborhoodCircuitHyperplane.SeedHyperplane.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0541968c-f392-4608-b7b3-012921b1ba4a."
+}
