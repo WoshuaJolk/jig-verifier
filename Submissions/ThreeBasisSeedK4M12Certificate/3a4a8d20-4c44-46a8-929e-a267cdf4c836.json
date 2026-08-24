@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ThreeBasisSeedK4M12Certificate",
+  "module": "Submissions.ThreeBasisSeedK4M12Certificate.Exact",
+  "decl": "Submissions.ThreeBasisSeedK4M12Certificate.Exact.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3a4a8d20-4c44-46a8-929e-a267cdf4c836."
+}
