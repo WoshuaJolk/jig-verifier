@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "EllipticCuspDetK4",
+  "module": "Submissions.EllipticCuspDetK4.CuspDetK4",
+  "decl": "Submissions.EllipticCuspDetK4.CuspDetK4.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 439caa6e-aa1a-49ab-8343-58f33fc8c309."
+}
