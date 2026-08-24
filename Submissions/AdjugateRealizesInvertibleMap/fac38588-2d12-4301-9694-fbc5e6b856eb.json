@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "AdjugateRealizesInvertibleMap",
+  "module": "Submissions.AdjugateRealizesInvertibleMap.Inverse",
+  "decl": "Submissions.AdjugateRealizesInvertibleMap.Inverse.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact fac38588-2d12-4301-9694-fbc5e6b856eb."
+}
