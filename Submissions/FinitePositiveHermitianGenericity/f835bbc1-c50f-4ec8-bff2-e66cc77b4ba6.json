@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "FinitePositiveHermitianGenericity",
+  "module": "Submissions.FinitePositiveHermitianGenericity.Genericity",
+  "decl": "Submissions.FinitePositiveHermitianGenericity.Genericity.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f835bbc1-c50f-4ec8-bff2-e66cc77b4ba6."
+}
