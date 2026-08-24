@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PolynomialMinorFromRankWitness",
+  "module": "Submissions.PolynomialMinorFromRankWitness.Bridge",
+  "decl": "Submissions.PolynomialMinorFromRankWitness.Bridge.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 46f27eb3-3264-429d-a16b-50dd8b92d02e."
+}
