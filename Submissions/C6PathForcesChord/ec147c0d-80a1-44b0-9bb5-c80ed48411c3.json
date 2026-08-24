@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "C6PathForcesChord",
+  "module": "Submissions.C6PathForcesChord.C6",
+  "decl": "Submissions.C6PathForcesChord.C6.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ec147c0d-80a1-44b0-9bb5-c80ed48411c3."
+}
