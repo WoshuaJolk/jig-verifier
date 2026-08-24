@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Length2FiberNonvanishing",
+  "module": "Submissions.Length2FiberNonvanishing.Fiber",
+  "decl": "Submissions.Length2FiberNonvanishing.Fiber.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9eaf268b-21e6-482d-ae44-d49cc0bde857."
+}
