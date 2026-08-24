@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "EllipticCrossAdjMatchings",
+  "module": "Submissions.EllipticCrossAdjMatchings.CrossAdjMatchings",
+  "decl": "Submissions.EllipticCrossAdjMatchings.CrossAdjMatchings.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 929ef3d4-7bea-48db-9c03-8f7f122ad5ef."
+}
