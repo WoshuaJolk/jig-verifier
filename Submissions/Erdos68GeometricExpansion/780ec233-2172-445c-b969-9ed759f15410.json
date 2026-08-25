@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68GeometricExpansion",
+  "module": "Submissions.Erdos68GeometricExpansion.Degenerate",
+  "decl": "Submissions.Erdos68GeometricExpansion.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 780ec233-2172-445c-b969-9ed759f15410."
+}
