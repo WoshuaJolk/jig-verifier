@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos384InclusiveBoundaryCase",
+  "module": "Submissions.Erdos384InclusiveBoundaryCase.Full",
+  "decl": "Submissions.Erdos384InclusiveBoundaryCase.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f9379601-93d2-4305-95ac-30a2bc55bf62."
+}
