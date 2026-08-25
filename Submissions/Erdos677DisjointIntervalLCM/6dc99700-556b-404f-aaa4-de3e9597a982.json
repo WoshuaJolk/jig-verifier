@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677DisjointIntervalLCM",
+  "module": "Submissions.Erdos677DisjointIntervalLCM.Control",
+  "decl": "Submissions.Erdos677DisjointIntervalLCM.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6dc99700-556b-404f-aaa4-de3e9597a982."
+}
