@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68ResidueCarryRecurrence",
+  "module": "Submissions.Erdos68ResidueCarryRecurrence.ResidueCarryRecurrence",
+  "decl": "Submissions.Erdos68ResidueCarryRecurrence.ResidueCarryRecurrence.combined",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6c3803c4-777a-49f8-94b9-359d059e9ecc."
+}
