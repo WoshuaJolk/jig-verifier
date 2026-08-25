@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1152LagrangeExists",
+  "module": "Submissions.Erdos1152LagrangeExists.ExplicitInterpolation",
+  "decl": "Submissions.Erdos1152LagrangeExists.ExplicitInterpolation.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ac1698d1-1070-419e-94f8-5028facd0eaf."
+}
