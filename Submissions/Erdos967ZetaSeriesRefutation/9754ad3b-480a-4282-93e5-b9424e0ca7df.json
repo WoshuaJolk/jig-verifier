@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos967ZetaSeriesRefutation",
+  "module": "Submissions.Erdos967ZetaSeriesRefutation.Full",
+  "decl": "Submissions.Erdos967ZetaSeriesRefutation.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9754ad3b-480a-4282-93e5-b9424e0ca7df."
+}
