@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos87CompleteEmbeddingBoundary",
+  "module": "Submissions.Erdos87CompleteEmbeddingBoundary.Identity",
+  "decl": "Submissions.Erdos87CompleteEmbeddingBoundary.Identity.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 638c3151-4d6f-4a26-bc83-816f00c465a4."
+}
