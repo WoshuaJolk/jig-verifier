@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos99OptimalThreePointCase",
+  "module": "Submissions.Erdos99OptimalThreePointCase.Worker03Equilateral",
+  "decl": "Submissions.Erdos99OptimalThreePointCase.Worker03Equilateral.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 465f2269-1be9-47d3-8dc5-ea406e49590d."
+}
