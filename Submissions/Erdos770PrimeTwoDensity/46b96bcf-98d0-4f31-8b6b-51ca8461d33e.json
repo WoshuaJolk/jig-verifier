@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos770PrimeTwoDensity",
+  "module": "Submissions.Erdos770PrimeTwoDensity.Direct",
+  "decl": "Submissions.Erdos770PrimeTwoDensity.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 46b96bcf-98d0-4f31-8b6b-51ca8461d33e."
+}
