@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos412TwoReachesThree",
+  "module": "Submissions.Erdos412TwoReachesThree.Worker04Degenerate",
+  "decl": "Submissions.Erdos412TwoReachesThree.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact f1b9cd62-7121-4d21-bf96-e85c19989bfe."
+}
