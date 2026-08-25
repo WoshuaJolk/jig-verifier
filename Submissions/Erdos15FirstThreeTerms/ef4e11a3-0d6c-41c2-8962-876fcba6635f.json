@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos15FirstThreeTerms",
+  "module": "Submissions.Erdos15FirstThreeTerms.Kernel",
+  "decl": "Submissions.Erdos15FirstThreeTerms.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ef4e11a3-0d6c-41c2-8962-876fcba6635f."
+}
