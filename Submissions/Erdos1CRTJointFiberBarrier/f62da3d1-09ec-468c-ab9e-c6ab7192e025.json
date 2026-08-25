@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1CRTJointFiberBarrier",
+  "module": "Submissions.Erdos1CRTJointFiberBarrier.Erdos1CRTJointFiberBarrierProof",
+  "decl": "Submissions.Erdos1CRTJointFiberBarrier.Erdos1CRTJointFiberBarrierProof.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f62da3d1-09ec-468c-ab9e-c6ab7192e025."
+}
