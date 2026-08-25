@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos850BeneluxFamily",
+  "module": "Submissions.Erdos850BeneluxFamily.Classical",
+  "decl": "Submissions.Erdos850BeneluxFamily.Classical.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c92f8e89-f0df-4d24-8271-fc397dc0916d."
+}
