@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18GridValuationCriterion",
+  "module": "Submissions.Erdos18GridValuationCriterion.Direct",
+  "decl": "Submissions.Erdos18GridValuationCriterion.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 11546c73-3b78-41c1-8365-06f93e52c90e."
+}
