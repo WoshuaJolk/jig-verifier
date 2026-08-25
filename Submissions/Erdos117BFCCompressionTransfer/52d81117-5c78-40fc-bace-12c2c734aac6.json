@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117BFCCompressionTransfer",
+  "module": "Submissions.Erdos117BFCCompressionTransfer.Control",
+  "decl": "Submissions.Erdos117BFCCompressionTransfer.Control.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 52d81117-5c78-40fc-bace-12c2c734aac6."
+}
