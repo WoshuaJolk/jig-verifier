@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18ProductCompression",
+  "module": "Submissions.Erdos18ProductCompression.Direct",
+  "decl": "Submissions.Erdos18ProductCompression.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8ce0a60f-e9ff-49d0-94dc-2b176148d6c9."
+}
