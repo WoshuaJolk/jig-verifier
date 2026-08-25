@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos410SigmaOrbitGrowth",
+  "module": "Submissions.Erdos410SigmaOrbitGrowth.Control",
+  "decl": "Submissions.Erdos410SigmaOrbitGrowth.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f07eaefc-6a63-439b-b129-3404abac1351."
+}
