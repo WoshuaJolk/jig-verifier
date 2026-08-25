@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12QuadraticGrowth",
+  "module": "Submissions.Erdos12QuadraticGrowth.QuadraticComparison",
+  "decl": "Submissions.Erdos12QuadraticGrowth.QuadraticComparison.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e13d3d33-fe7f-458b-a8bf-1f88263e8f44."
+}
