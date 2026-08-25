@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos11VerifiedBelow1001",
+  "module": "Submissions.Erdos11VerifiedBelow1001.CaseSplit",
+  "decl": "Submissions.Erdos11VerifiedBelow1001.CaseSplit.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1af887d1-78ea-422b-91b0-f23008320c57."
+}
