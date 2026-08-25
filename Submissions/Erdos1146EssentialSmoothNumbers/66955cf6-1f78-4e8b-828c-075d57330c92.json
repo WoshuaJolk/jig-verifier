@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1146EssentialSmoothNumbers",
+  "module": "Submissions.Erdos1146EssentialSmoothNumbers.DegenerateCatalogue",
+  "decl": "Submissions.Erdos1146EssentialSmoothNumbers.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 66955cf6-1f78-4e8b-828c-075d57330c92."
+}
