@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos85ThresholdUpperStep",
+  "module": "Submissions.Erdos85ThresholdUpperStep.Worker01",
+  "decl": "Submissions.Erdos85ThresholdUpperStep.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 363702ca-84da-4b78-b088-6fef62c3ed84."
+}
