@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117BFCSourceInterface",
+  "module": "Submissions.Erdos117BFCSourceInterface.Control",
+  "decl": "Submissions.Erdos117BFCSourceInterface.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Content-free True proof must fail canonical anti-restatement.",
+  "note": "Submitted through the Jig API as artifact a30795cc-17c5-45aa-b214-55ee8fc4fdb2."
+}
