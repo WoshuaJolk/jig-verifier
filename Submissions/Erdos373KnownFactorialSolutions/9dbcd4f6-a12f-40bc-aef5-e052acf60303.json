@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos373KnownFactorialSolutions",
+  "module": "Submissions.Erdos373KnownFactorialSolutions.Worker01",
+  "decl": "Submissions.Erdos373KnownFactorialSolutions.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9dbcd4f6-a12f-40bc-aef5-e052acf60303."
+}
