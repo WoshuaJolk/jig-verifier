@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1087AmbientQuadrupleBound",
+  "module": "Submissions.Erdos1087AmbientQuadrupleBound.Control",
+  "decl": "Submissions.Erdos1087AmbientQuadrupleBound.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 79680864-354c-4e02-a3d6-b7d9eb3c3813."
+}
