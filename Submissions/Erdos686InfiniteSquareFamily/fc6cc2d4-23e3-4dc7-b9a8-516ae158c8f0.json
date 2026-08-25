@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos686InfiniteSquareFamily",
+  "module": "Submissions.Erdos686InfiniteSquareFamily.Direct",
+  "decl": "Submissions.Erdos686InfiniteSquareFamily.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact fc6cc2d4-23e3-4dc7-b9a8-516ae158c8f0."
+}
