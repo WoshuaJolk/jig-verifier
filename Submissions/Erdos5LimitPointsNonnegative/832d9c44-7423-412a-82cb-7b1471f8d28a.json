@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos5LimitPointsNonnegative",
+  "module": "Submissions.Erdos5LimitPointsNonnegative.Direct",
+  "decl": "Submissions.Erdos5LimitPointsNonnegative.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 832d9c44-7423-412a-82cb-7b1471f8d28a."
+}
