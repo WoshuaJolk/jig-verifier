@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos911DenseSizeRamseyPositiveOrder",
+  "module": "Submissions.Erdos911DenseSizeRamseyPositiveOrder.FleetAttacks",
+  "decl": "Submissions.Erdos911DenseSizeRamseyPositiveOrder.FleetAttacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 61bc5fc3-019f-470e-989a-87c1855b820c."
+}
