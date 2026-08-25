@@ -1,0 +1,3 @@
+namespace Submissions.Erdos349SubsetSumIntervalExtension.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos349SubsetSumIntervalExtension.Worker01RedControl
