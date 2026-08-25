@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117TransversalCliqueCore",
+  "module": "Submissions.Erdos117TransversalCliqueCore.ThirdWorker",
+  "decl": "Submissions.Erdos117TransversalCliqueCore.ThirdWorker.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3d0a3c96-cf80-4c9e-88f5-3f69a09645ca."
+}
