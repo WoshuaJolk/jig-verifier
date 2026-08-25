@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos9BoundaryExamples",
+  "module": "Submissions.Erdos9BoundaryExamples.Worker09Direct",
+  "decl": "Submissions.Erdos9BoundaryExamples.Worker09Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 799e3243-8232-4c9d-af88-84dd8a198806."
+}
