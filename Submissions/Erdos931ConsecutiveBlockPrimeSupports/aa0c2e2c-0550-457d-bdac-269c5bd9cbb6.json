@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos931ConsecutiveBlockPrimeSupports",
+  "module": "Submissions.Erdos931ConsecutiveBlockPrimeSupports.FleetAttacks",
+  "decl": "Submissions.Erdos931ConsecutiveBlockPrimeSupports.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact aa0c2e2c-0550-457d-bdac-269c5bd9cbb6."
+}
