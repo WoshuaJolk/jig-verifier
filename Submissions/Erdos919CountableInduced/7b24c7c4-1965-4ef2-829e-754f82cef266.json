@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos919CountableInduced",
+  "module": "Submissions.Erdos919CountableInduced.Direct",
+  "decl": "Submissions.Erdos919CountableInduced.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7b24c7c4-1965-4ef2-829e-754f82cef266."
+}
