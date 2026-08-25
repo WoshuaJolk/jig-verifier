@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos600ThresholdMonotone",
+  "module": "Submissions.Erdos600ThresholdMonotone.Degenerate",
+  "decl": "Submissions.Erdos600ThresholdMonotone.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 4c15604d-fca4-4242-a106-1a73823d1528."
+}
