@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos111EmptyGraphBoundary",
+  "module": "Submissions.Erdos111EmptyGraphBoundary.FalsePremise",
+  "decl": "Submissions.Erdos111EmptyGraphBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact df25d5a0-161b-4620-955b-83dd5fcf9701."
+}
