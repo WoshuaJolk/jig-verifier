@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "BifactorizationGlue",
+  "module": "Submissions.BifactorizationGlue.Explicit",
+  "decl": "Submissions.BifactorizationGlue.Explicit.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact fea701da-9862-496f-a2c2-2f489e5725df."
+}
