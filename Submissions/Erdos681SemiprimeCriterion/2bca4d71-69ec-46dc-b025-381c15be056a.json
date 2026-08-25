@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos681SemiprimeCriterion",
+  "module": "Submissions.Erdos681SemiprimeCriterion.Control",
+  "decl": "Submissions.Erdos681SemiprimeCriterion.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2bca4d71-69ec-46dc-b025-381c15be056a."
+}
