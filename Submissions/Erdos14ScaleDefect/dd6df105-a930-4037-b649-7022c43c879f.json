@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14ScaleDefect",
+  "module": "Submissions.Erdos14ScaleDefect.Direct",
+  "decl": "Submissions.Erdos14ScaleDefect.Direct.finalActive",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dd6df105-a930-4037-b649-7022c43c879f."
+}
