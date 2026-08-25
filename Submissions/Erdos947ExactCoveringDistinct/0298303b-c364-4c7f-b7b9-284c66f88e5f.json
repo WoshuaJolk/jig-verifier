@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos947ExactCoveringDistinct",
+  "module": "Submissions.Erdos947ExactCoveringDistinct.Control",
+  "decl": "Submissions.Erdos947ExactCoveringDistinct.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0298303b-c364-4c7f-b7b9-284c66f88e5f."
+}
