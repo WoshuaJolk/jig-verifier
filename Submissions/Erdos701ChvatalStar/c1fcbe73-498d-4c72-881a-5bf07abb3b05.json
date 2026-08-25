@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos701ChvatalStar",
+  "module": "Submissions.Erdos701ChvatalStar.Control",
+  "decl": "Submissions.Erdos701ChvatalStar.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c1fcbe73-498d-4c72-881a-5bf07abb3b05."
+}
