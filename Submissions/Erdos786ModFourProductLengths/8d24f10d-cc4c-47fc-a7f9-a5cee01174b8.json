@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos786ModFourProductLengths",
+  "module": "Submissions.Erdos786ModFourProductLengths.Direct",
+  "decl": "Submissions.Erdos786ModFourProductLengths.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8d24f10d-cc4c-47fc-a7f9-a5cee01174b8."
+}
