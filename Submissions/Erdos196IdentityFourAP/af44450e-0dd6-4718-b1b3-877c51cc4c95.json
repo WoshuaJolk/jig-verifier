@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos196IdentityFourAP",
+  "module": "Submissions.Erdos196IdentityFourAP.Worker04Degenerate",
+  "decl": "Submissions.Erdos196IdentityFourAP.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact af44450e-0dd6-4718-b1b3-877c51cc4c95."
+}
