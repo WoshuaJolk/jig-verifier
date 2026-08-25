@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos890WidthOneLiminf",
+  "module": "Submissions.Erdos890WidthOneLiminf.Control",
+  "decl": "Submissions.Erdos890WidthOneLiminf.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 567c68fc-5790-4605-9722-6950d2657eb9."
+}
