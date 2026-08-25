@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1003ConsecutiveTotients",
+  "module": "Submissions.Erdos1003ConsecutiveTotients.FleetAttacks",
+  "decl": "Submissions.Erdos1003ConsecutiveTotients.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a6959d7e-385c-404a-b9ac-9e4ad4be936e."
+}
