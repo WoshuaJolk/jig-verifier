@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos961BaseWindowBound",
+  "module": "Submissions.Erdos961BaseWindowBound.Worker01RedControl",
+  "decl": "Submissions.Erdos961BaseWindowBound.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f2c496f4-a856-4886-aa47-52fe3ce68468."
+}
