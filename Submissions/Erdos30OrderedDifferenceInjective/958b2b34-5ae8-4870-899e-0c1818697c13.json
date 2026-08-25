@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30OrderedDifferenceInjective",
+  "module": "Submissions.Erdos30OrderedDifferenceInjective.Direct",
+  "decl": "Submissions.Erdos30OrderedDifferenceInjective.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 958b2b34-5ae8-4870-899e-0c1818697c13."
+}
