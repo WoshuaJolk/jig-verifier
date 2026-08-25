@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44FiveTermSidonWitness",
+  "module": "Submissions.Erdos44FiveTermSidonWitness.Degenerate",
+  "decl": "Submissions.Erdos44FiveTermSidonWitness.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact bb2aba43-7c42-42fc-aa2f-6eefaf856b0f."
+}
