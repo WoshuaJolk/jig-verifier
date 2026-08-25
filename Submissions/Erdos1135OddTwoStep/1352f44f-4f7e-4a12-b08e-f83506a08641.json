@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1135OddTwoStep",
+  "module": "Submissions.Erdos1135OddTwoStep.Control",
+  "decl": "Submissions.Erdos1135OddTwoStep.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1352f44f-4f7e-4a12-b08e-f83506a08641."
+}
