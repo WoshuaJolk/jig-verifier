@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos911DenseSizeRamsey",
+  "module": "Submissions.Erdos911DenseSizeRamsey.Degenerate",
+  "decl": "Submissions.Erdos911DenseSizeRamsey.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6249542d-fc2e-44af-ae19-362cd7efd8c3."
+}
