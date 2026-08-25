@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1093KnownDeficiencyOne",
+  "module": "Submissions.Erdos1093KnownDeficiencyOne.Worker01",
+  "decl": "Submissions.Erdos1093KnownDeficiencyOne.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 01ee61a6-2d47-4ff1-8ed7-141e1c3c45d6."
+}
