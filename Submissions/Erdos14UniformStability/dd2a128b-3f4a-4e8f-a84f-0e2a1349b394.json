@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14UniformStability",
+  "module": "Submissions.Erdos14UniformStability.Direct",
+  "decl": "Submissions.Erdos14UniformStability.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dd2a128b-3f4a-4e8f-a84f-0e2a1349b394."
+}
