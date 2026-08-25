@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos642CanonicalEdgeSymmetric",
+  "module": "Submissions.Erdos642CanonicalEdgeSymmetric.Direct",
+  "decl": "Submissions.Erdos642CanonicalEdgeSymmetric.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7dd46bc1-f904-4dfa-b0de-f53a8aeb76a6."
+}
