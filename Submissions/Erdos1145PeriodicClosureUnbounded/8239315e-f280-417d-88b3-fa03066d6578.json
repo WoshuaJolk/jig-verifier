@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1145PeriodicClosureUnbounded",
+  "module": "Submissions.Erdos1145PeriodicClosureUnbounded.ArithmeticProgressions",
+  "decl": "Submissions.Erdos1145PeriodicClosureUnbounded.ArithmeticProgressions.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8239315e-f280-417d-88b3-fa03066d6578."
+}
