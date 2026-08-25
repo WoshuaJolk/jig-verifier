@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos853FinitePrefixHasMissingEvenGap",
+  "module": "Submissions.Erdos853FinitePrefixHasMissingEvenGap.Worker01RedControl",
+  "decl": "Submissions.Erdos853FinitePrefixHasMissingEvenGap.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8cb89dd9-69c3-46e7-8125-63b5f4787c4d."
+}
