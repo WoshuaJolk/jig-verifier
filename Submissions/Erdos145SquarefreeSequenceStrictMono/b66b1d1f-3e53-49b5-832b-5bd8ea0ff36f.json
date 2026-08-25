@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos145SquarefreeSequenceStrictMono",
+  "module": "Submissions.Erdos145SquarefreeSequenceStrictMono.Worker01RedControl",
+  "decl": "Submissions.Erdos145SquarefreeSequenceStrictMono.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b66b1d1f-3e53-49b5-832b-5bd8ea0ff36f."
+}
