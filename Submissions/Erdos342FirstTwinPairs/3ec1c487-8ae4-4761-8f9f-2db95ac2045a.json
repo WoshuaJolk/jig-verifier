@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos342FirstTwinPairs",
+  "module": "Submissions.Erdos342FirstTwinPairs.Direct",
+  "decl": "Submissions.Erdos342FirstTwinPairs.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3ec1c487-8ae4-4761-8f9f-2db95ac2045a."
+}
