@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1068InfiniteImpliesConnected",
+  "module": "Submissions.Erdos1068InfiniteImpliesConnected.Degenerate",
+  "decl": "Submissions.Erdos1068InfiniteImpliesConnected.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 475d7d48-9541-4922-a243-d82d159f23c0."
+}
