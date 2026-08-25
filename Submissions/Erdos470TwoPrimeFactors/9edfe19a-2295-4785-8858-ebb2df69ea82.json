@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos470TwoPrimeFactors",
+  "module": "Submissions.Erdos470TwoPrimeFactors.Control",
+  "decl": "Submissions.Erdos470TwoPrimeFactors.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9edfe19a-2295-4785-8858-ebb2df69ea82."
+}
