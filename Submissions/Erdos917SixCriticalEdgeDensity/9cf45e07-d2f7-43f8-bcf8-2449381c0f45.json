@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos917SixCriticalEdgeDensity",
+  "module": "Submissions.Erdos917SixCriticalEdgeDensity.Control",
+  "decl": "Submissions.Erdos917SixCriticalEdgeDensity.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9cf45e07-d2f7-43f8-bcf8-2449381c0f45."
+}
