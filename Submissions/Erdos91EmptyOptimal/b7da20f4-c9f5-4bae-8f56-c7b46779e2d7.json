@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos91EmptyOptimal",
+  "module": "Submissions.Erdos91EmptyOptimal.Degenerate",
+  "decl": "Submissions.Erdos91EmptyOptimal.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b7da20f4-c9f5-4bae-8f56-c7b46779e2d7."
+}
