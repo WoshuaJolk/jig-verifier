@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18FiniteShiftCRTBarrier",
+  "module": "Submissions.Erdos18FiniteShiftCRTBarrier.Direct",
+  "decl": "Submissions.Erdos18FiniteShiftCRTBarrier.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6a22d1f6-35ea-4855-99cd-506da306458b."
+}
