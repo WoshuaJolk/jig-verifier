@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos943PowerfulSumRepresentations",
+  "module": "Submissions.Erdos943PowerfulSumRepresentations.FleetAttacks",
+  "decl": "Submissions.Erdos943PowerfulSumRepresentations.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 343c916d-01f8-4949-8a12-da71cb33bb60."
+}
