@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "UniqueMatchingDeterminant",
+  "module": "Submissions.UniqueMatchingDeterminant.Leibniz",
+  "decl": "Submissions.UniqueMatchingDeterminant.Leibniz.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact bc2695d3-685e-41f1-9738-8a40bffde831."
+}
