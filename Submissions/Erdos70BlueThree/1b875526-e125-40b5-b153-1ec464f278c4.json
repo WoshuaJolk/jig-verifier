@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos70BlueThree",
+  "module": "Submissions.Erdos70BlueThree.BlueTriple",
+  "decl": "Submissions.Erdos70BlueThree.BlueTriple.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1b875526-e125-40b5-b153-1ec464f278c4."
+}
