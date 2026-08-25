@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos87FormalRootRefuted",
+  "module": "Submissions.Erdos87FormalRootRefuted.EvenClique",
+  "decl": "Submissions.Erdos87FormalRootRefuted.EvenClique.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "refutes": "Erdos87ChromaticRamseyLower",
+  "note": "Submitted through the Jig API as artifact a93e16c2-863b-4a31-ae5a-abf0aa58be82."
+}
