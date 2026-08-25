@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117RestrictedFormRankLoss",
+  "module": "Submissions.Erdos117RestrictedFormRankLoss.Kernel",
+  "decl": "Submissions.Erdos117RestrictedFormRankLoss.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 79a8e58b-bac4-4540-a572-202ddc1dd963."
+}
