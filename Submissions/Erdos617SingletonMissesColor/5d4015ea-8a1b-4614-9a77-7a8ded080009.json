@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos617SingletonMissesColor",
+  "module": "Submissions.Erdos617SingletonMissesColor.Direct",
+  "decl": "Submissions.Erdos617SingletonMissesColor.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5d4015ea-8a1b-4614-9a77-7a8ded080009."
+}
