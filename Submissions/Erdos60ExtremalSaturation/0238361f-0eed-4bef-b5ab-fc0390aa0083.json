@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60ExtremalSaturation",
+  "module": "Submissions.Erdos60ExtremalSaturation.AddNonedge",
+  "decl": "Submissions.Erdos60ExtremalSaturation.AddNonedge.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0238361f-0eed-4bef-b5ab-fc0390aa0083."
+}
