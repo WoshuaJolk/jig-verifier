@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos456InfinitelyManyStrict",
+  "module": "Submissions.Erdos456InfinitelyManyStrict.PowerOfTwoFamily",
+  "decl": "Submissions.Erdos456InfinitelyManyStrict.PowerOfTwoFamily.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact fe4aa03d-8190-48a4-a6f7-49b44993167d."
+}
