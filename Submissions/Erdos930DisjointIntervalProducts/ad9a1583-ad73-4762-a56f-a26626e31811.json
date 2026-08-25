@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos930DisjointIntervalProducts",
+  "module": "Submissions.Erdos930DisjointIntervalProducts.DegenerateCatalogue",
+  "decl": "Submissions.Erdos930DisjointIntervalProducts.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ad9a1583-ad73-4762-a56f-a26626e31811."
+}
