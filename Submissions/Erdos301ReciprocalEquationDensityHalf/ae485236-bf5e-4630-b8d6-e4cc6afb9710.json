@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos301ReciprocalEquationDensityHalf",
+  "module": "Submissions.Erdos301ReciprocalEquationDensityHalf.Worker01Degenerate",
+  "decl": "Submissions.Erdos301ReciprocalEquationDensityHalf.Worker01Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ae485236-bf5e-4630-b8d6-e4cc6afb9710."
+}
