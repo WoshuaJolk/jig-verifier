@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos463ArbitrarilyLargeWindows",
+  "module": "Submissions.Erdos463ArbitrarilyLargeWindows.PrimeSquares",
+  "decl": "Submissions.Erdos463ArbitrarilyLargeWindows.PrimeSquares.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f552e64c-db06-4371-a1a0-f161d2fcd02a."
+}
