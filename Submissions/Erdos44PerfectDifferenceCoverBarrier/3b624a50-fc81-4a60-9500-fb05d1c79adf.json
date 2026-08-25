@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44PerfectDifferenceCoverBarrier",
+  "module": "Submissions.Erdos44PerfectDifferenceCoverBarrier.Direct",
+  "decl": "Submissions.Erdos44PerfectDifferenceCoverBarrier.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3b624a50-fc81-4a60-9500-fb05d1c79adf."
+}
