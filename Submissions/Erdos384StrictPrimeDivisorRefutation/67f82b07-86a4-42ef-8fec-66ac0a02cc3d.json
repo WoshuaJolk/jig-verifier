@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos384StrictPrimeDivisorRefutation",
+  "module": "Submissions.Erdos384StrictPrimeDivisorRefutation.Control",
+  "decl": "Submissions.Erdos384StrictPrimeDivisorRefutation.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 67f82b07-86a4-42ef-8fec-66ac0a02cc3d."
+}
