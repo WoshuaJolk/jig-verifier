@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44DifferenceAvoidanceCrossUnique",
+  "module": "Submissions.Erdos44DifferenceAvoidanceCrossUnique.Direct",
+  "decl": "Submissions.Erdos44DifferenceAvoidanceCrossUnique.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 192df0c2-38ac-4c00-bbbe-7d730b2cc103."
+}
