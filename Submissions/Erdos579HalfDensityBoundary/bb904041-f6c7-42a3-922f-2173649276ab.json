@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos579HalfDensityBoundary",
+  "module": "Submissions.Erdos579HalfDensityBoundary.Worker03EdgeBound",
+  "decl": "Submissions.Erdos579HalfDensityBoundary.Worker03EdgeBound.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact bb904041-f6c7-42a3-922f-2173649276ab."
+}
