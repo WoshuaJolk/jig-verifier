@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos770PrimeTwoDensity",
+  "module": "Submissions.Erdos770PrimeTwoDensity.Control",
+  "decl": "Submissions.Erdos770PrimeTwoDensity.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9767c7bc-b07c-4cd7-978a-af7372ab9d28."
+}
