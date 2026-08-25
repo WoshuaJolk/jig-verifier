@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos409SigmaOrbitFour",
+  "module": "Submissions.Erdos409SigmaOrbitFour.Worker01",
+  "decl": "Submissions.Erdos409SigmaOrbitFour.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 517be85f-b696-4141-afdd-fd57d134c306."
+}
