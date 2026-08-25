@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677TailFromThree",
+  "module": "Submissions.Erdos677TailFromThree.Kernel",
+  "decl": "Submissions.Erdos677TailFromThree.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7eb2e49a-0d3b-4ff4-a3c7-cebd25b30be6."
+}
