@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos87SmallEpsilonFactorPositive",
+  "module": "Submissions.Erdos87SmallEpsilonFactorPositive.FalsePremise",
+  "decl": "Submissions.Erdos87SmallEpsilonFactorPositive.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8ba9c61b-f467-479b-8803-bf1875018cdf."
+}
