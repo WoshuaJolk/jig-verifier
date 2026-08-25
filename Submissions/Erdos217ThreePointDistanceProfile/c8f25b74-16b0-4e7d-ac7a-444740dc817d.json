@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos217ThreePointDistanceProfile",
+  "module": "Submissions.Erdos217ThreePointDistanceProfile.Worker01RedControl",
+  "decl": "Submissions.Erdos217ThreePointDistanceProfile.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c8f25b74-16b0-4e7d-ac7a-444740dc817d."
+}
