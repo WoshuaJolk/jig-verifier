@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23LowDegreeRemoval",
+  "module": "Submissions.Erdos23LowDegreeRemoval.Direct",
+  "decl": "Submissions.Erdos23LowDegreeRemoval.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f2dd1006-a4ed-48e1-b700-37bc64859552."
+}
