@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos16PrimePowerAPDensity",
+  "module": "Submissions.Erdos16PrimePowerAPDensity.Full",
+  "decl": "Submissions.Erdos16PrimePowerAPDensity.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1c305a5e-1f9c-4b1e-aea3-c4dbcdb70e59."
+}
