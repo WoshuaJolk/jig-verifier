@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1087DegenerateQuadruples",
+  "module": "Submissions.Erdos1087DegenerateQuadruples.FleetAttacks",
+  "decl": "Submissions.Erdos1087DegenerateQuadruples.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 91abfe1b-155f-4c67-910f-b3418c567c20."
+}
