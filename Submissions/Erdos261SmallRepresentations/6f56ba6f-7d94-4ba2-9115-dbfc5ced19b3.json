@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos261SmallRepresentations",
+  "module": "Submissions.Erdos261SmallRepresentations.Worker09Control",
+  "decl": "Submissions.Erdos261SmallRepresentations.Worker09Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6f56ba6f-7d94-4ba2-9115-dbfc5ced19b3."
+}
