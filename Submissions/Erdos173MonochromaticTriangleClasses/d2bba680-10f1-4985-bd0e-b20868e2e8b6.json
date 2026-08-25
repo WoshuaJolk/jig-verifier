@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos173MonochromaticTriangleClasses",
+  "module": "Submissions.Erdos173MonochromaticTriangleClasses.Control",
+  "decl": "Submissions.Erdos173MonochromaticTriangleClasses.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact d2bba680-10f1-4985-bd0e-b20868e2e8b6."
+}
