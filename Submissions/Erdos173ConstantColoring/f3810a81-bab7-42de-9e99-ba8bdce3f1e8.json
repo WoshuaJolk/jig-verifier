@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos173ConstantColoring",
+  "module": "Submissions.Erdos173ConstantColoring.Direct",
+  "decl": "Submissions.Erdos173ConstantColoring.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f3810a81-bab7-42de-9e99-ba8bdce3f1e8."
+}
