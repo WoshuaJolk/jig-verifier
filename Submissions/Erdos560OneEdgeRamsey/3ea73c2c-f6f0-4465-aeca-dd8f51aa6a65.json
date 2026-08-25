@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos560OneEdgeRamsey",
+  "module": "Submissions.Erdos560OneEdgeRamsey.Direct",
+  "decl": "Submissions.Erdos560OneEdgeRamsey.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3ea73c2c-f6f0-4465-aeca-dd8f51aa6a65."
+}
