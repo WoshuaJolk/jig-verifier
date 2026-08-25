@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1057CarmichaelDensityExponent",
+  "module": "Submissions.Erdos1057CarmichaelDensityExponent.Worker01Degenerate",
+  "decl": "Submissions.Erdos1057CarmichaelDensityExponent.Worker01Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact cf9c2088-d492-4cf5-990b-63854edb9796."
+}
