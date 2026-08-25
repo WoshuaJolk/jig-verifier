@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60AddedEdgePaths",
+  "module": "Submissions.Erdos60AddedEdgePaths.RootedEdge",
+  "decl": "Submissions.Erdos60AddedEdgePaths.RootedEdge.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b6771d1c-327c-467a-b005-726160051d61."
+}
