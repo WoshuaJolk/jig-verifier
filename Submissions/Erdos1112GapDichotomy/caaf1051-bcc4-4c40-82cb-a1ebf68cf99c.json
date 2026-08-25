@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1112GapDichotomy",
+  "module": "Submissions.Erdos1112GapDichotomy.Control",
+  "decl": "Submissions.Erdos1112GapDichotomy.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact caaf1051-bcc4-4c40-82cb-a1ebf68cf99c."
+}
