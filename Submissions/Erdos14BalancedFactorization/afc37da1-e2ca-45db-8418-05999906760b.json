@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14BalancedFactorization",
+  "module": "Submissions.Erdos14BalancedFactorization.Direct",
+  "decl": "Submissions.Erdos14BalancedFactorization.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact afc37da1-e2ca-45db-8418-05999906760b."
+}
