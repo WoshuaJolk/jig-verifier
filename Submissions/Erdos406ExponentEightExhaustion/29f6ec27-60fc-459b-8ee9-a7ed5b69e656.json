@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos406ExponentEightExhaustion",
+  "module": "Submissions.Erdos406ExponentEightExhaustion.KernelDecision",
+  "decl": "Submissions.Erdos406ExponentEightExhaustion.KernelDecision.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 29f6ec27-60fc-459b-8ee9-a7ed5b69e656."
+}
