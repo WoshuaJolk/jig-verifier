@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44CutAverage",
+  "module": "Submissions.Erdos44CutAverage.Direct",
+  "decl": "Submissions.Erdos44CutAverage.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c4dc6316-9e2d-47f5-9f1b-b079184b8a38."
+}
