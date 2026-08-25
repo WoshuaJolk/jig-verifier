@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "CuspShellKernel",
+  "module": "Submissions.CuspShellKernel.Elimination",
+  "decl": "Submissions.CuspShellKernel.Elimination.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 414e1bc5-2be5-4964-a38a-2f9cc55ed790."
+}
