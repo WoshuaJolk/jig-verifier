@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44SecondMomentMinimum",
+  "module": "Submissions.Erdos44SecondMomentMinimum.Direct",
+  "decl": "Submissions.Erdos44SecondMomentMinimum.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 188daa89-0ee6-4d77-a932-4ab444b16857."
+}
