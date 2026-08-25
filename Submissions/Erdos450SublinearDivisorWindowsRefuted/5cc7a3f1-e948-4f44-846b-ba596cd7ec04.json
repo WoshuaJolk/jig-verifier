@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos450SublinearDivisorWindowsRefuted",
+  "module": "Submissions.Erdos450SublinearDivisorWindowsRefuted.Direct",
+  "decl": "Submissions.Erdos450SublinearDivisorWindowsRefuted.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "refutes": "Erdos450SublinearDivisorWindows",
+  "note": "Submitted through the Jig API as artifact 5cc7a3f1-e948-4f44-846b-ba596cd7ec04."
+}
