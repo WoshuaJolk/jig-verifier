@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1158KtrHypergraphLowerBound",
+  "module": "Submissions.Erdos1158KtrHypergraphLowerBound.DegenerateCatalogue",
+  "decl": "Submissions.Erdos1158KtrHypergraphLowerBound.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a648f4f3-2561-4fc7-85ce-3bc425dd014e."
+}
