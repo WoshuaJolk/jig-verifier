@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12LocalBoundsInsufficient",
+  "module": "Submissions.Erdos12LocalBoundsInsufficient.EvenQuotients",
+  "decl": "Submissions.Erdos12LocalBoundsInsufficient.EvenQuotients.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f4679b21-b06e-44a1-9e49-092554f7f4e7."
+}
