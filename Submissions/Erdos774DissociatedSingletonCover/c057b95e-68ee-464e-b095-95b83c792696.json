@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos774DissociatedSingletonCover",
+  "module": "Submissions.Erdos774DissociatedSingletonCover.Direct",
+  "decl": "Submissions.Erdos774DissociatedSingletonCover.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c057b95e-68ee-464e-b095-95b83c792696."
+}
