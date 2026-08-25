@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1201LargePrimeProductDensity",
+  "module": "Submissions.Erdos1201LargePrimeProductDensity.Worker01Degenerate",
+  "decl": "Submissions.Erdos1201LargePrimeProductDensity.Worker01Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 666e4e88-51c1-4a68-a665-86c2f3e12457."
+}
