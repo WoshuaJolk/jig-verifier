@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos992DiscrepancyRefutation",
+  "module": "Submissions.Erdos992DiscrepancyRefutation.Control",
+  "decl": "Submissions.Erdos992DiscrepancyRefutation.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c0fbdbd6-366c-46d7-8a01-28737245e5ce."
+}
