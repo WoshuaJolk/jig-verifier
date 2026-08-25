@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos668OnePointMaximizer",
+  "module": "Submissions.Erdos668OnePointMaximizer.Degenerate",
+  "decl": "Submissions.Erdos668OnePointMaximizer.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 3fdbca9b-dcc5-4c9b-88da-204caf14e971."
+}
