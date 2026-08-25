@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos103DiameterLowerBound",
+  "module": "Submissions.Erdos103DiameterLowerBound.Control",
+  "decl": "Submissions.Erdos103DiameterLowerBound.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact c8bb7d4f-6e6b-416b-b488-4e7cc96a55fd."
+}
