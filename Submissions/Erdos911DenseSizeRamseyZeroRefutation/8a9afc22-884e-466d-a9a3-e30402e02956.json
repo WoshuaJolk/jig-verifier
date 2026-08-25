@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos911DenseSizeRamseyZeroRefutation",
+  "module": "Submissions.Erdos911DenseSizeRamseyZeroRefutation.Control",
+  "decl": "Submissions.Erdos911DenseSizeRamseyZeroRefutation.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8a9afc22-884e-466d-a9a3-e30402e02956."
+}
