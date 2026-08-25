@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12ManyAnchor",
+  "module": "Submissions.Erdos12ManyAnchor.Fingerprint",
+  "decl": "Submissions.Erdos12ManyAnchor.Fingerprint.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e71b83a7-2916-40d7-b309-3e1c97464d0c."
+}
