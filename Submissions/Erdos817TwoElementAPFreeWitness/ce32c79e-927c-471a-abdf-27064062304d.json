@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos817TwoElementAPFreeWitness",
+  "module": "Submissions.Erdos817TwoElementAPFreeWitness.Worker01RedControl",
+  "decl": "Submissions.Erdos817TwoElementAPFreeWitness.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ce32c79e-927c-471a-abdf-27064062304d."
+}
