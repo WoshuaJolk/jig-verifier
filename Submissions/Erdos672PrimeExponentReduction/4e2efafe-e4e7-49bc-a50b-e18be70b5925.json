@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos672PrimeExponentReduction",
+  "module": "Submissions.Erdos672PrimeExponentReduction.Degenerate",
+  "decl": "Submissions.Erdos672PrimeExponentReduction.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 4e2efafe-e4e7-49bc-a50b-e18be70b5925."
+}
