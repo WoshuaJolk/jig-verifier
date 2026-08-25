@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos982ConvexPolygonDistances",
+  "module": "Submissions.Erdos982ConvexPolygonDistances.SmokeControl",
+  "decl": "Submissions.Erdos982ConvexPolygonDistances.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1279199a-9d27-4aac-aad7-0ac7d100fc64."
+}
