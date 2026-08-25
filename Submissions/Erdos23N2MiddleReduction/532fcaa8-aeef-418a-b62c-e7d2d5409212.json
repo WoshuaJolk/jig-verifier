@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23N2MiddleReduction",
+  "module": "Submissions.Erdos23N2MiddleReduction.Worker09MiddleControl",
+  "decl": "Submissions.Erdos23N2MiddleReduction.Worker09MiddleControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 532fcaa8-aeef-418a-b62c-e7d2d5409212."
+}
