@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1146SumsetDensityMonotone",
+  "module": "Submissions.Erdos1146SumsetDensityMonotone.Direct",
+  "decl": "Submissions.Erdos1146SumsetDensityMonotone.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ee79c641-6257-4014-b9c7-9dc6c79d1f1e."
+}
