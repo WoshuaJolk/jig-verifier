@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos483OneColorBoundary",
+  "module": "Submissions.Erdos483OneColorBoundary.FalsePremise",
+  "decl": "Submissions.Erdos483OneColorBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0ceecd82-c476-43cb-97f7-9def73e03ae6."
+}
