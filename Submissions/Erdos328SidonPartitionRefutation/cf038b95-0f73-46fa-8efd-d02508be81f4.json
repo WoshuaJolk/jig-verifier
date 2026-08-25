@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos328SidonPartitionRefutation",
+  "module": "Submissions.Erdos328SidonPartitionRefutation.Full",
+  "decl": "Submissions.Erdos328SidonPartitionRefutation.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cf038b95-0f73-46fa-8efd-d02508be81f4."
+}
