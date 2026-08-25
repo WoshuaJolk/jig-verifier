@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117ExactCentralizationInteraction",
+  "module": "Submissions.Erdos117ExactCentralizationInteraction.Kernel",
+  "decl": "Submissions.Erdos117ExactCentralizationInteraction.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ae71011a-bcde-406a-a047-80018512fd16."
+}
