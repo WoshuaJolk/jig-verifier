@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos554OddCycleMulticolorRamseyRatio",
+  "module": "Submissions.Erdos554OddCycleMulticolorRamseyRatio.Attacks",
+  "decl": "Submissions.Erdos554OddCycleMulticolorRamseyRatio.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact da8dfbcd-96d9-4d2b-85ca-8f07889e6879."
+}
