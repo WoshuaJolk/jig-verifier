@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1097ThreeAPRefutation",
+  "module": "Submissions.Erdos1097ThreeAPRefutation.TernaryConstruction",
+  "decl": "Submissions.Erdos1097ThreeAPRefutation.TernaryConstruction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 65e5b793-14bc-452a-90ac-32302b367373."
+}
