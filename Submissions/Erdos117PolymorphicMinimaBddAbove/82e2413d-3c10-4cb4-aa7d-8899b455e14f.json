@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117PolymorphicMinimaBddAbove",
+  "module": "Submissions.Erdos117PolymorphicMinimaBddAbove.Kernel",
+  "decl": "Submissions.Erdos117PolymorphicMinimaBddAbove.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 82e2413d-3c10-4cb4-aa7d-8899b455e14f."
+}
