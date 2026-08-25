@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12LcmMass",
+  "module": "Submissions.Erdos12LcmMass.LcmWindow",
+  "decl": "Submissions.Erdos12LcmMass.LcmWindow.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 86fc75d2-6d9e-431c-a136-999d300eec20."
+}
