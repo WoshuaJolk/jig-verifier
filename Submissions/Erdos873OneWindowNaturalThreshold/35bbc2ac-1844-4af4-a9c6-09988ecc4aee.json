@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos873OneWindowNaturalThreshold",
+  "module": "Submissions.Erdos873OneWindowNaturalThreshold.Worker09Upper",
+  "decl": "Submissions.Erdos873OneWindowNaturalThreshold.Worker09Upper.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 35bbc2ac-1844-4af4-a9c6-09988ecc4aee."
+}
