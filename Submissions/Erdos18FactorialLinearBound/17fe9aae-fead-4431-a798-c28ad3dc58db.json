@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18FactorialLinearBound",
+  "module": "Submissions.Erdos18FactorialLinearBound.Induction",
+  "decl": "Submissions.Erdos18FactorialLinearBound.Induction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 17fe9aae-fead-4431-a798-c28ad3dc58db."
+}
