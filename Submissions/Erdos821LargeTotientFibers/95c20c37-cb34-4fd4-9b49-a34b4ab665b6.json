@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos821LargeTotientFibers",
+  "module": "Submissions.Erdos821LargeTotientFibers.Control",
+  "decl": "Submissions.Erdos821LargeTotientFibers.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 95c20c37-cb34-4fd4-9b49-a34b4ab665b6."
+}
