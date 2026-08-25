@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos859DivisorSumDensity",
+  "module": "Submissions.Erdos859DivisorSumDensity.FleetAttacks",
+  "decl": "Submissions.Erdos859DivisorSumDensity.FleetAttacks.trivialExistential",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 357bd663-9d85-4d14-b54b-90182395e8e2."
+}
