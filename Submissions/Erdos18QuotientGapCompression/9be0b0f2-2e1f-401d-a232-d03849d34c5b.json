@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18QuotientGapCompression",
+  "module": "Submissions.Erdos18QuotientGapCompression.Direct",
+  "decl": "Submissions.Erdos18QuotientGapCompression.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9be0b0f2-2e1f-401d-a232-d03849d34c5b."
+}
