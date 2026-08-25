@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117DistinctCosetProductCardinality",
+  "module": "Submissions.Erdos117DistinctCosetProductCardinality.Control",
+  "decl": "Submissions.Erdos117DistinctCosetProductCardinality.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 5bd2a92f-8985-4b9b-a948-d42b8789bce4."
+}
