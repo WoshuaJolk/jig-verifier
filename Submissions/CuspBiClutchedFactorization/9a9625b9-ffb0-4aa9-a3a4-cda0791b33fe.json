@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "CuspBiClutchedFactorization",
+  "module": "Submissions.CuspBiClutchedFactorization.Explicit",
+  "decl": "Submissions.CuspBiClutchedFactorization.Explicit.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9a9625b9-ffb0-4aa9-a3a4-cda0791b33fe."
+}
