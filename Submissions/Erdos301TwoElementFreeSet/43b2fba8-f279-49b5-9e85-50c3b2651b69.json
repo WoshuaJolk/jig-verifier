@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos301TwoElementFreeSet",
+  "module": "Submissions.Erdos301TwoElementFreeSet.Worker01",
+  "decl": "Submissions.Erdos301TwoElementFreeSet.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 43b2fba8-f279-49b5-9e85-50c3b2651b69."
+}
