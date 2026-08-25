@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14LargeEpsilon",
+  "module": "Submissions.Erdos14LargeEpsilon.Direct",
+  "decl": "Submissions.Erdos14LargeEpsilon.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 94a573db-aa44-4bee-9e43-2ccce6d6fca6."
+}
