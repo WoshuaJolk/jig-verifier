@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos538SharpReciprocalConstant",
+  "module": "Submissions.Erdos538SharpReciprocalConstant.SmokeControl",
+  "decl": "Submissions.Erdos538SharpReciprocalConstant.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 67919517-28c3-4282-af6f-89a7d007cc4b."
+}
