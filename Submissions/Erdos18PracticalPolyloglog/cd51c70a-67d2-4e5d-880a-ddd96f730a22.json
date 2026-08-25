@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18PracticalPolyloglog",
+  "module": "Submissions.Erdos18PracticalPolyloglog.DegenerateCatalogue",
+  "decl": "Submissions.Erdos18PracticalPolyloglog.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact cd51c70a-67d2-4e5d-880a-ddd96f730a22."
+}
