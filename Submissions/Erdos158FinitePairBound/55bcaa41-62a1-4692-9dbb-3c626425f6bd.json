@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos158FinitePairBound",
+  "module": "Submissions.Erdos158FinitePairBound.Direct",
+  "decl": "Submissions.Erdos158FinitePairBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 55bcaa41-62a1-4692-9dbb-3c626425f6bd."
+}
