@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos155SubadditiveBound",
+  "module": "Submissions.Erdos155SubadditiveBound.Direct",
+  "decl": "Submissions.Erdos155SubadditiveBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 70be0ec3-c981-4cc3-96b5-900e88478dae."
+}
