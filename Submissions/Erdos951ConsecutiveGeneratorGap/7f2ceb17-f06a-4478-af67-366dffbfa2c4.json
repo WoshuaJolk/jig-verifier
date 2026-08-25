@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos951ConsecutiveGeneratorGap",
+  "module": "Submissions.Erdos951ConsecutiveGeneratorGap.Worker03SingletonProducts",
+  "decl": "Submissions.Erdos951ConsecutiveGeneratorGap.Worker03SingletonProducts.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7f2ceb17-f06a-4478-af67-366dffbfa2c4."
+}
