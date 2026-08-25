@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos413InfiniteOmegaBarriers",
+  "module": "Submissions.Erdos413InfiniteOmegaBarriers.Control",
+  "decl": "Submissions.Erdos413InfiniteOmegaBarriers.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 3e47dfda-8598-4342-a457-fe9ca3090871."
+}
