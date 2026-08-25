@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos694UniqueTotientDivisibleByFour",
+  "module": "Submissions.Erdos694UniqueTotientDivisibleByFour.Structural",
+  "decl": "Submissions.Erdos694UniqueTotientDivisibleByFour.Structural.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 977ace3e-f755-457a-9a46-5d862f74b458."
+}
