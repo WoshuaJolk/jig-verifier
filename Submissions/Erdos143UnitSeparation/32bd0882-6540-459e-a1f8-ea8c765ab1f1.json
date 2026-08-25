@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos143UnitSeparation",
+  "module": "Submissions.Erdos143UnitSeparation.Degenerate",
+  "decl": "Submissions.Erdos143UnitSeparation.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 32bd0882-6540-459e-a1f8-ea8c765ab1f1."
+}
