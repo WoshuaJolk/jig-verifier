@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos313PrimeSuccessorExtension",
+  "module": "Submissions.Erdos313PrimeSuccessorExtension.Worker01",
+  "decl": "Submissions.Erdos313PrimeSuccessorExtension.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3ecf927b-cf84-4cc1-856f-f77e8b48c773."
+}
