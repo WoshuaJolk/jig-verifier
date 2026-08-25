@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos938ExplicitPowerfulAP",
+  "module": "Submissions.Erdos938ExplicitPowerfulAP.Control",
+  "decl": "Submissions.Erdos938ExplicitPowerfulAP.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2788e341-f37f-4d12-9f3a-30a9a1b32cce."
+}
