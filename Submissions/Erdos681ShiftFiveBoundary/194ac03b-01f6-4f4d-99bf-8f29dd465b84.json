@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos681ShiftFiveBoundary",
+  "module": "Submissions.Erdos681ShiftFiveBoundary.Worker09UpperDegenerate",
+  "decl": "Submissions.Erdos681ShiftFiveBoundary.Worker09UpperDegenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 194ac03b-01f6-4f4d-99bf-8f29dd465b84."
+}
