@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos595UncountableK4FreeGraph",
+  "module": "Submissions.Erdos595UncountableK4FreeGraph.FleetAttacks",
+  "decl": "Submissions.Erdos595UncountableK4FreeGraph.FleetAttacks.trivialExistential",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c61aa908-4456-47c5-b06d-c90c34e86601."
+}
