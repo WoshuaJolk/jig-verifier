@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos956SingletonBody",
+  "module": "Submissions.Erdos956SingletonBody.Direct",
+  "decl": "Submissions.Erdos956SingletonBody.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8164dd77-af2e-4a1d-b3b8-f1bf6af0bc43."
+}
