@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos517SquareExponentsFabry",
+  "module": "Submissions.Erdos517SquareExponentsFabry.Worker01RedControl",
+  "decl": "Submissions.Erdos517SquareExponentsFabry.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c5f49599-92e6-4fe4-b1ad-eceb95a6de9d."
+}
