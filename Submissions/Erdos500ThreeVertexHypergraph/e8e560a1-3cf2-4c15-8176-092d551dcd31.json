@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos500ThreeVertexHypergraph",
+  "module": "Submissions.Erdos500ThreeVertexHypergraph.Direct",
+  "decl": "Submissions.Erdos500ThreeVertexHypergraph.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e8e560a1-3cf2-4c15-8176-092d551dcd31."
+}
