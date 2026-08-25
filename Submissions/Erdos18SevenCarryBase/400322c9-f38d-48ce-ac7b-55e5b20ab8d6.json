@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18SevenCarryBase",
+  "module": "Submissions.Erdos18SevenCarryBase.Direct",
+  "decl": "Submissions.Erdos18SevenCarryBase.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 400322c9-f38d-48ce-ac7b-55e5b20ab8d6."
+}
