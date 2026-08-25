@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos681PrimeQuarticCore",
+  "module": "Submissions.Erdos681PrimeQuarticCore.Control",
+  "decl": "Submissions.Erdos681PrimeQuarticCore.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact d561405c-6616-4e9a-9b82-863a1ed1af34."
+}
