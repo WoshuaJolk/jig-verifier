@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117UniformCoversBddAbove",
+  "module": "Submissions.Erdos117UniformCoversBddAbove.Kernel",
+  "decl": "Submissions.Erdos117UniformCoversBddAbove.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e512d958-097c-44a0-b964-187958189d4f."
+}
