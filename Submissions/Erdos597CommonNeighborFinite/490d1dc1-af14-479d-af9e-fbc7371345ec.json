@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos597CommonNeighborFinite",
+  "module": "Submissions.Erdos597CommonNeighborFinite.Worker09MiddleControl",
+  "decl": "Submissions.Erdos597CommonNeighborFinite.Worker09MiddleControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 490d1dc1-af14-479d-af9e-fbc7371345ec."
+}
