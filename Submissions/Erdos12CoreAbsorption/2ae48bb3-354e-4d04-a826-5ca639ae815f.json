@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12CoreAbsorption",
+  "module": "Submissions.Erdos12CoreAbsorption.LatticeRefinement",
+  "decl": "Submissions.Erdos12CoreAbsorption.LatticeRefinement.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2ae48bb3-354e-4d04-a826-5ca639ae815f."
+}
