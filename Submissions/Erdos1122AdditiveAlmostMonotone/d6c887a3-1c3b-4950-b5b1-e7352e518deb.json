@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1122AdditiveAlmostMonotone",
+  "module": "Submissions.Erdos1122AdditiveAlmostMonotone.MustFail",
+  "decl": "Submissions.Erdos1122AdditiveAlmostMonotone.MustFail.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact d6c887a3-1c3b-4950-b5b1-e7352e518deb."
+}
