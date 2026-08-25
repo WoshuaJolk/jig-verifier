@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117UniformCoversBddAbove",
+  "module": "Submissions.Erdos117UniformCoversBddAbove.Control",
+  "decl": "Submissions.Erdos117UniformCoversBddAbove.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 6448ef3d-64d9-47d2-993b-f8b11561e957."
+}
