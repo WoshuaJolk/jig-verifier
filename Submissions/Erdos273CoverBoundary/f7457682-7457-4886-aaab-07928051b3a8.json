@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos273CoverBoundary",
+  "module": "Submissions.Erdos273CoverBoundary.Worker09Control",
+  "decl": "Submissions.Erdos273CoverBoundary.Worker09Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f7457682-7457-4886-aaab-07928051b3a8."
+}
