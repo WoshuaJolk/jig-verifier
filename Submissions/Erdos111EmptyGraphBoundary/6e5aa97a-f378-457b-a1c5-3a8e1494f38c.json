@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos111EmptyGraphBoundary",
+  "module": "Submissions.Erdos111EmptyGraphBoundary.NoDeletion",
+  "decl": "Submissions.Erdos111EmptyGraphBoundary.NoDeletion.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6e5aa97a-f378-457b-a1c5-3a8e1494f38c."
+}
