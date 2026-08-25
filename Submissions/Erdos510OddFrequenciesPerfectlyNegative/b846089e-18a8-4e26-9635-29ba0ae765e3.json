@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos510OddFrequenciesPerfectlyNegative",
+  "module": "Submissions.Erdos510OddFrequenciesPerfectlyNegative.Direct",
+  "decl": "Submissions.Erdos510OddFrequenciesPerfectlyNegative.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b846089e-18a8-4e26-9635-29ba0ae765e3."
+}
