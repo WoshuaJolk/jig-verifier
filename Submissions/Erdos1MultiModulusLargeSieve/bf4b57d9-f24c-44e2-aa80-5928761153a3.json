@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1MultiModulusLargeSieve",
+  "module": "Submissions.Erdos1MultiModulusLargeSieve.ProductDivisors",
+  "decl": "Submissions.Erdos1MultiModulusLargeSieve.ProductDivisors.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact bf4b57d9-f24c-44e2-aa80-5928761153a3."
+}
