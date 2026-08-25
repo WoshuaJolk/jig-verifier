@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117CoverNumberMinimaBridge",
+  "module": "Submissions.Erdos117CoverNumberMinimaBridge.Control",
+  "decl": "Submissions.Erdos117CoverNumberMinimaBridge.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 4fef679d-b229-4899-9c48-72117c79f8b1."
+}
