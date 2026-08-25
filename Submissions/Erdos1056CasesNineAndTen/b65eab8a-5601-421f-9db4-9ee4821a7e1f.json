@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1056CasesNineAndTen",
+  "module": "Submissions.Erdos1056CasesNineAndTen.FalsePremise",
+  "decl": "Submissions.Erdos1056CasesNineAndTen.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b65eab8a-5601-421f-9db4-9ee4821a7e1f."
+}
