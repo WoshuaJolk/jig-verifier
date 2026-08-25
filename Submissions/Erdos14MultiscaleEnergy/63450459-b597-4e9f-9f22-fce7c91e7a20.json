@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14MultiscaleEnergy",
+  "module": "Submissions.Erdos14MultiscaleEnergy.Direct",
+  "decl": "Submissions.Erdos14MultiscaleEnergy.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 63450459-b597-4e9f-9f22-fce7c91e7a20."
+}
