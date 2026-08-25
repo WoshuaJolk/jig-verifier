@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos495IntegerParameterCase",
+  "module": "Submissions.Erdos495IntegerParameterCase.Worker03VacuousControl",
+  "decl": "Submissions.Erdos495IntegerParameterCase.Worker03VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 9609d10e-362d-4bb9-9c4b-55de2a821c48."
+}
