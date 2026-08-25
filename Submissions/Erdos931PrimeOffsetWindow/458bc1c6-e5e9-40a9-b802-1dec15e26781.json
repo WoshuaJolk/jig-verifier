@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos931PrimeOffsetWindow",
+  "module": "Submissions.Erdos931PrimeOffsetWindow.Direct",
+  "decl": "Submissions.Erdos931PrimeOffsetWindow.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 458bc1c6-e5e9-40a9-b802-1dec15e26781."
+}
