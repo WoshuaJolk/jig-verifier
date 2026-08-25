@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos374SixFactorialSquareDensity",
+  "module": "Submissions.Erdos374SixFactorialSquareDensity.Attacks",
+  "decl": "Submissions.Erdos374SixFactorialSquareDensity.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 44201573-f78c-42b9-a123-5339af07ab58."
+}
