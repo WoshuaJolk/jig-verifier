@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149StrongChromaticIndex",
+  "module": "Submissions.Erdos149StrongChromaticIndex.Control",
+  "decl": "Submissions.Erdos149StrongChromaticIndex.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 617a9620-c803-4887-a5da-4cad8ea19d53."
+}
