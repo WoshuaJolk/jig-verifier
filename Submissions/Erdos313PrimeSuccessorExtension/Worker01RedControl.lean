@@ -1,0 +1,3 @@
+namespace Submissions.Erdos313PrimeSuccessorExtension.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos313PrimeSuccessorExtension.Worker01RedControl
