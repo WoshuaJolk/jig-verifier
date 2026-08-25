@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos535PairwiseGcdUpper",
+  "module": "Submissions.Erdos535PairwiseGcdUpper.Degenerate",
+  "decl": "Submissions.Erdos535PairwiseGcdUpper.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact cfdf9ddf-2020-4909-994c-5e871e2aec42."
+}
