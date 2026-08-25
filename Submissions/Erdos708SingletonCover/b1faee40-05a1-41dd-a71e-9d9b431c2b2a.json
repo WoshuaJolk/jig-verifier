@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos708SingletonCover",
+  "module": "Submissions.Erdos708SingletonCover.FalsePremise",
+  "decl": "Submissions.Erdos708SingletonCover.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b1faee40-05a1-41dd-a71e-9d9b431c2b2a."
+}
