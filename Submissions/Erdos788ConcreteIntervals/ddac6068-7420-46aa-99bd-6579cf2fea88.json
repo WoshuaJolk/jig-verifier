@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos788ConcreteIntervals",
+  "module": "Submissions.Erdos788ConcreteIntervals.Degenerate",
+  "decl": "Submissions.Erdos788ConcreteIntervals.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ddac6068-7420-46aa-99bd-6579cf2fea88."
+}
