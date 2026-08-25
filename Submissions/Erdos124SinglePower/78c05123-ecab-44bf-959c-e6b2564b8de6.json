@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos124SinglePower",
+  "module": "Submissions.Erdos124SinglePower.Worker04Degenerate",
+  "decl": "Submissions.Erdos124SinglePower.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 78c05123-ecab-44bf-959c-e6b2564b8de6."
+}
