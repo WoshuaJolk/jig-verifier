@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18PairMergeFails",
+  "module": "Submissions.Erdos18PairMergeFails.Finite",
+  "decl": "Submissions.Erdos18PairMergeFails.Finite.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8eb63014-d35f-45c6-a7f4-009aab9f7dc9."
+}
