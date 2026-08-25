@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52SidonLowerBound",
+  "module": "Submissions.Erdos52SidonLowerBound.P29",
+  "decl": "Submissions.Erdos52SidonLowerBound.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact efb9b377-6180-4256-9939-94c238722b56."
+}
