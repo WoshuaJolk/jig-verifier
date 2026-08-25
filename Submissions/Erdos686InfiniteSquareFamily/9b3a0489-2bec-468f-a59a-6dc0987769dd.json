@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos686InfiniteSquareFamily",
+  "module": "Submissions.Erdos686InfiniteSquareFamily.Control",
+  "decl": "Submissions.Erdos686InfiniteSquareFamily.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9b3a0489-2bec-468f-a59a-6dc0987769dd."
+}
