@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117BFCExactMaximumToBound",
+  "module": "Submissions.Erdos117BFCExactMaximumToBound.Kernel",
+  "decl": "Submissions.Erdos117BFCExactMaximumToBound.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d55f4094-001d-449a-bb1f-3375b8169f6e."
+}
