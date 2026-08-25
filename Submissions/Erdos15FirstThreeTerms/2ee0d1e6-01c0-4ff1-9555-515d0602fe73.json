@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos15FirstThreeTerms",
+  "module": "Submissions.Erdos15FirstThreeTerms.FalsePremise",
+  "decl": "Submissions.Erdos15FirstThreeTerms.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2ee0d1e6-01c0-4ff1-9555-515d0602fe73."
+}
