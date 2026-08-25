@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23N2MinimumDegreeRanges",
+  "module": "Submissions.Erdos23N2MinimumDegreeRanges.Direct",
+  "decl": "Submissions.Erdos23N2MinimumDegreeRanges.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b0b75c3e-5480-443d-ae5a-5c1d870d7e15."
+}
