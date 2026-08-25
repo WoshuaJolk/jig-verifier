@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos786DenseDistinctProductLengths",
+  "module": "Submissions.Erdos786DenseDistinctProductLengths.DegenerateCatalogue",
+  "decl": "Submissions.Erdos786DenseDistinctProductLengths.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 3d92bf5c-4192-4e7a-9efd-12bdbced9100."
+}
