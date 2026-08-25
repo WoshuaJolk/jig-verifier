@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos104ThreePointUnitCircle",
+  "module": "Submissions.Erdos104ThreePointUnitCircle.Direct",
+  "decl": "Submissions.Erdos104ThreePointUnitCircle.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3e008934-ef7a-4ecb-89a0-c6163a1af808."
+}
