@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos431ParityStructure",
+  "module": "Submissions.Erdos431ParityStructure.Degenerate",
+  "decl": "Submissions.Erdos431ParityStructure.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 66d69911-3be4-4f59-bf3a-559b81babdd4."
+}
