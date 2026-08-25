@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos287TwoTermCase",
+  "module": "Submissions.Erdos287TwoTermCase.Degenerate",
+  "decl": "Submissions.Erdos287TwoTermCase.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c0b7c482-7d2e-44f3-82f2-a252faf78f04."
+}
