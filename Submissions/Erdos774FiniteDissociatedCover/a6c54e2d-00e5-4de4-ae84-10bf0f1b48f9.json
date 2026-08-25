@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos774FiniteDissociatedCover",
+  "module": "Submissions.Erdos774FiniteDissociatedCover.DegenerateCatalogue",
+  "decl": "Submissions.Erdos774FiniteDissociatedCover.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a6c54e2d-00e5-4de4-ae84-10bf0f1b48f9."
+}
