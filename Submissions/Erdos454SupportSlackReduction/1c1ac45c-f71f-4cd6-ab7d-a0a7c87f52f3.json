@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos454SupportSlackReduction",
+  "module": "Submissions.Erdos454SupportSlackReduction.AllOffsets",
+  "decl": "Submissions.Erdos454SupportSlackReduction.AllOffsets.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1c1ac45c-f71f-4cd6-ab7d-a0a7c87f52f3."
+}
