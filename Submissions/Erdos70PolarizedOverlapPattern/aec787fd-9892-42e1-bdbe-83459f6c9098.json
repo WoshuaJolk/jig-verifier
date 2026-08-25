@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos70PolarizedOverlapPattern",
+  "module": "Submissions.Erdos70PolarizedOverlapPattern.OneSided",
+  "decl": "Submissions.Erdos70PolarizedOverlapPattern.OneSided.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact aec787fd-9892-42e1-bdbe-83459f6c9098."
+}
