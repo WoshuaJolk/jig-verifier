@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos74DeletionWitness",
+  "module": "Submissions.Erdos74DeletionWitness.Direct",
+  "decl": "Submissions.Erdos74DeletionWitness.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a07a68f6-3e47-4234-9cba-4c9c96934760."
+}
