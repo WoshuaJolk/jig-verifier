@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1094BinomialLeastPrimeExceptions",
+  "module": "Submissions.Erdos1094BinomialLeastPrimeExceptions.Attacks",
+  "decl": "Submissions.Erdos1094BinomialLeastPrimeExceptions.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 4a250dba-e993-4727-9404-fe3fba19bbd8."
+}
