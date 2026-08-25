@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos393FirstTwoSolutions",
+  "module": "Submissions.Erdos393FirstTwoSolutions.Worker09Middle",
+  "decl": "Submissions.Erdos393FirstTwoSolutions.Worker09Middle.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6e2da945-c0fb-4696-bbe6-d1bae1249fd7."
+}
