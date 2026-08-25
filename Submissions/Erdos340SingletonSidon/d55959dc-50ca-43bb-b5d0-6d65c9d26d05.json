@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos340SingletonSidon",
+  "module": "Submissions.Erdos340SingletonSidon.Worker04Degenerate",
+  "decl": "Submissions.Erdos340SingletonSidon.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact d55959dc-50ca-43bb-b5d0-6d65c9d26d05."
+}
