@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14VarianceGap",
+  "module": "Submissions.Erdos14VarianceGap.Direct",
+  "decl": "Submissions.Erdos14VarianceGap.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cf382095-4351-404a-990d-663c0f297c32."
+}
