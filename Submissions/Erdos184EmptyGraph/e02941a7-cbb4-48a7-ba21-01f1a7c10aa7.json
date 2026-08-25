@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos184EmptyGraph",
+  "module": "Submissions.Erdos184EmptyGraph.Worker04Degenerate",
+  "decl": "Submissions.Erdos184EmptyGraph.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e02941a7-cbb4-48a7-ba21-01f1a7c10aa7."
+}
