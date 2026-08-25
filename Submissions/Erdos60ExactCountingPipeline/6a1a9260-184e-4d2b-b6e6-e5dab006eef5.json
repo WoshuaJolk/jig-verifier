@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60ExactCountingPipeline",
+  "module": "Submissions.Erdos60ExactCountingPipeline.TwoCauchy",
+  "decl": "Submissions.Erdos60ExactCountingPipeline.TwoCauchy.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6a1a9260-184e-4d2b-b6e6-e5dab006eef5."
+}
