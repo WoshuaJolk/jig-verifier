@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "CuspAllRankMinor",
+  "module": "Submissions.CuspAllRankMinor.Explicit",
+  "decl": "Submissions.CuspAllRankMinor.Explicit.allRank",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8f827f71-ce48-457b-9cc7-0e7645f0c972."
+}
