@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "CuspTriangularMinor",
+  "module": "Submissions.CuspTriangularMinor.Explicit",
+  "decl": "Submissions.CuspTriangularMinor.Explicit.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a08ada0b-c627-4bcb-9f4c-eeb09b16106a."
+}
