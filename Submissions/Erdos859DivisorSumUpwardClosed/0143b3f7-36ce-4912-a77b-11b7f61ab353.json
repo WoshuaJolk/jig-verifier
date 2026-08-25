@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos859DivisorSumUpwardClosed",
+  "module": "Submissions.Erdos859DivisorSumUpwardClosed.Direct",
+  "decl": "Submissions.Erdos859DivisorSumUpwardClosed.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0143b3f7-36ce-4912-a77b-11b7f61ab353."
+}
