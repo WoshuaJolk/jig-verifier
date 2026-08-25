@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1131OneNodeCalibration",
+  "module": "Submissions.Erdos1131OneNodeCalibration.FalsePremise",
+  "decl": "Submissions.Erdos1131OneNodeCalibration.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2d9e2e1f-ebfc-48b9-853f-3fa9669c354a."
+}
