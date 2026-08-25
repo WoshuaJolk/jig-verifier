@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos499DoublyStochasticProduct",
+  "module": "Submissions.Erdos499DoublyStochasticProduct.Full",
+  "decl": "Submissions.Erdos499DoublyStochasticProduct.Full.erdos_499",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9decdd99-95d1-4623-8ce8-4ee75b90d041."
+}
