@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos120UnivAvoidance",
+  "module": "Submissions.Erdos120UnivAvoidance.OpenInterval",
+  "decl": "Submissions.Erdos120UnivAvoidance.OpenInterval.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dd49eb84-62cf-41ed-85f2-bf288d551b44."
+}
