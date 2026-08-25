@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52GcdNormalizationDichotomy",
+  "module": "Submissions.Erdos52GcdNormalizationDichotomy.P29",
+  "decl": "Submissions.Erdos52GcdNormalizationDichotomy.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ef57e7ad-a531-4e1f-8daa-cf764005d32d."
+}
