@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos583GallaiPathDecomposition",
+  "module": "Submissions.Erdos583GallaiPathDecomposition.FleetAttacks",
+  "decl": "Submissions.Erdos583GallaiPathDecomposition.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7f68565d-62e1-423f-91ea-f051158253d9."
+}
