@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos107TriangleBase",
+  "module": "Submissions.Erdos107TriangleBase.Degenerate",
+  "decl": "Submissions.Erdos107TriangleBase.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 3d08a8d0-719c-4f00-8653-bb64bf0b6969."
+}
