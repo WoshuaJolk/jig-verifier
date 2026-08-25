@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos723ProjectivePlanePrimePower",
+  "module": "Submissions.Erdos723ProjectivePlanePrimePower.FalseHypothesis",
+  "decl": "Submissions.Erdos723ProjectivePlanePrimePower.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8f091170-5822-453c-ae91-4afdf51ace2b."
+}
