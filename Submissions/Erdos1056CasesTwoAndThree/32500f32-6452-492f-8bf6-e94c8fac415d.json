@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1056CasesTwoAndThree",
+  "module": "Submissions.Erdos1056CasesTwoAndThree.Degenerate",
+  "decl": "Submissions.Erdos1056CasesTwoAndThree.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 32500f32-6452-492f-8bf6-e94c8fac415d."
+}
