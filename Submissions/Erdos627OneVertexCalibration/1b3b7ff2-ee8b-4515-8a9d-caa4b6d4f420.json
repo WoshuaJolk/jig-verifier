@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos627OneVertexCalibration",
+  "module": "Submissions.Erdos627OneVertexCalibration.Kernel",
+  "decl": "Submissions.Erdos627OneVertexCalibration.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1b3b7ff2-ee8b-4515-8a9d-caa4b6d4f420."
+}
