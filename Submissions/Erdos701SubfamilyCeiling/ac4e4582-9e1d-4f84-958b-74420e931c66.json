@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos701SubfamilyCeiling",
+  "module": "Submissions.Erdos701SubfamilyCeiling.Direct",
+  "decl": "Submissions.Erdos701SubfamilyCeiling.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ac4e4582-9e1d-4f84-958b-74420e931c66."
+}
