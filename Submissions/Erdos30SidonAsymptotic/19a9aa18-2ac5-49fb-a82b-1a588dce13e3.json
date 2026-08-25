@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30SidonAsymptotic",
+  "module": "Submissions.Erdos30SidonAsymptotic.DegenerateCatalogue",
+  "decl": "Submissions.Erdos30SidonAsymptotic.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 19a9aa18-2ac5-49fb-a82b-1a588dce13e3."
+}
