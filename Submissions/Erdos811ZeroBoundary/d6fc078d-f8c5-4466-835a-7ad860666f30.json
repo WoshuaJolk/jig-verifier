@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos811ZeroBoundary",
+  "module": "Submissions.Erdos811ZeroBoundary.Control",
+  "decl": "Submissions.Erdos811ZeroBoundary.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact d6fc078d-f8c5-4466-835a-7ad860666f30."
+}
