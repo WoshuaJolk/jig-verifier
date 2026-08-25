@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos25EmptyLogDensity",
+  "module": "Submissions.Erdos25EmptyLogDensity.Worker01RedControl",
+  "decl": "Submissions.Erdos25EmptyLogDensity.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact de30b597-be7d-41c7-8c11-537274fa7ddc."
+}
