@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12RecursiveAnchor",
+  "module": "Submissions.Erdos12RecursiveAnchor.QuotientReflection",
+  "decl": "Submissions.Erdos12RecursiveAnchor.QuotientReflection.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b70f52ec-352c-4676-9683-815464b221f2."
+}
