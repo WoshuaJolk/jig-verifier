@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1210SingletonBoundary",
+  "module": "Submissions.Erdos1210SingletonBoundary.Elementary",
+  "decl": "Submissions.Erdos1210SingletonBoundary.Elementary.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7332fce4-0477-423e-b6d7-484b03c71c61."
+}
