@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos3DivergentInfinite",
+  "module": "Submissions.Erdos3DivergentInfinite.Worker03Direct",
+  "decl": "Submissions.Erdos3DivergentInfinite.Worker03Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 99ce65e5-9264-41e7-94bf-58406e40dcc1."
+}
