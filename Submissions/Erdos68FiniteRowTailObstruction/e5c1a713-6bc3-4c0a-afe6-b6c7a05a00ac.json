@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68FiniteRowTailObstruction",
+  "module": "Submissions.Erdos68FiniteRowTailObstruction.FiniteRowTailObstruction",
+  "decl": "Submissions.Erdos68FiniteRowTailObstruction.FiniteRowTailObstruction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e5c1a713-6bc3-4c0a-afe6-b6c7a05a00ac."
+}
