@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos642CycleChordLinearEdges",
+  "module": "Submissions.Erdos642CycleChordLinearEdges.DegenerateCatalogue",
+  "decl": "Submissions.Erdos642CycleChordLinearEdges.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b2e0c3ad-2767-4602-9586-82b2e9362a8e."
+}
