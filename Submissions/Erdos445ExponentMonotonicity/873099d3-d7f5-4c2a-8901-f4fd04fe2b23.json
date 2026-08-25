@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos445ExponentMonotonicity",
+  "module": "Submissions.Erdos445ExponentMonotonicity.Worker01RedControl",
+  "decl": "Submissions.Erdos445ExponentMonotonicity.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 873099d3-d7f5-4c2a-8901-f4fd04fe2b23."
+}
