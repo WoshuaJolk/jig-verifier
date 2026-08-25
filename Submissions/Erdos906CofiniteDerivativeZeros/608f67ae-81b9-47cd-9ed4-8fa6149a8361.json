@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos906CofiniteDerivativeZeros",
+  "module": "Submissions.Erdos906CofiniteDerivativeZeros.FullProof",
+  "decl": "Submissions.Erdos906CofiniteDerivativeZeros.FullProof.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 608f67ae-81b9-47cd-9ed4-8fa6149a8361."
+}
