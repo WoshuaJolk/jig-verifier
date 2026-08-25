@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos133FiveCycleConventions",
+  "module": "Submissions.Erdos133FiveCycleConventions.Worker01RedControl",
+  "decl": "Submissions.Erdos133FiveCycleConventions.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c6b9f902-fbd3-4aa3-8818-18d022de366f."
+}
