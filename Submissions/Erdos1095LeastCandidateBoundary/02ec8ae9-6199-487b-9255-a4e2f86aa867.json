@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1095LeastCandidateBoundary",
+  "module": "Submissions.Erdos1095LeastCandidateBoundary.Worker03SInfMember",
+  "decl": "Submissions.Erdos1095LeastCandidateBoundary.Worker03SInfMember.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 02ec8ae9-6199-487b-9255-a4e2f86aa867."
+}
