@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1013TriangleFreeChromaticRatio",
+  "module": "Submissions.Erdos1013TriangleFreeChromaticRatio.Control",
+  "decl": "Submissions.Erdos1013TriangleFreeChromaticRatio.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b7f2a9bd-320f-4c30-ac39-861318a42448."
+}
