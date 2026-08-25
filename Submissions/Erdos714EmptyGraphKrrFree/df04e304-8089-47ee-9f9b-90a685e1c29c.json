@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos714EmptyGraphKrrFree",
+  "module": "Submissions.Erdos714EmptyGraphKrrFree.Direct",
+  "decl": "Submissions.Erdos714EmptyGraphKrrFree.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact df04e304-8089-47ee-9f9b-90a685e1c29c."
+}
