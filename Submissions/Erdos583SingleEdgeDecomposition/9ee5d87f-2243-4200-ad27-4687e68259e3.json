@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos583SingleEdgeDecomposition",
+  "module": "Submissions.Erdos583SingleEdgeDecomposition.Control",
+  "decl": "Submissions.Erdos583SingleEdgeDecomposition.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9ee5d87f-2243-4200-ad27-4687e68259e3."
+}
