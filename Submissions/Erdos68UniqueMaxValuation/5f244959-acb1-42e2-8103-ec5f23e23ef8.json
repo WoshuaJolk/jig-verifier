@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68UniqueMaxValuation",
+  "module": "Submissions.Erdos68UniqueMaxValuation.UniqueMaxValuation",
+  "decl": "Submissions.Erdos68UniqueMaxValuation.UniqueMaxValuation.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5f244959-acb1-42e2-8103-ec5f23e23ef8."
+}
