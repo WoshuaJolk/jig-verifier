@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1CountingBound",
+  "module": "Submissions.Erdos1CountingBound.Erdos1CountingBoundRedControl",
+  "decl": "Submissions.Erdos1CountingBound.Erdos1CountingBoundRedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 784678d8-3cf5-4ddd-9080-cf2b43208c8d."
+}
