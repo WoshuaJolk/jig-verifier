@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos51LeastPreimageExists",
+  "module": "Submissions.Erdos51LeastPreimageExists.Worker03SInf",
+  "decl": "Submissions.Erdos51LeastPreimageExists.Worker03SInf.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 911e76e9-0951-4856-862d-686ff55138bb."
+}
