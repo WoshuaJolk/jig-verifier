@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos450SublinearDivisorWindows",
+  "module": "Submissions.Erdos450SublinearDivisorWindows.DegenerateCatalogue",
+  "decl": "Submissions.Erdos450SublinearDivisorWindows.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ee9d3ca0-98c1-49d3-85d7-dcad5861464c."
+}
