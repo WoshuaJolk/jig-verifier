@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos928EmptyPrefixCount",
+  "module": "Submissions.Erdos928EmptyPrefixCount.Worker04Smoke",
+  "decl": "Submissions.Erdos928EmptyPrefixCount.Worker04Smoke.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 90f46b63-af7d-4083-958b-18f5f4dc76da."
+}
