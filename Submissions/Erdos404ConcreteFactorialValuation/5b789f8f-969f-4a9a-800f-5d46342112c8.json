@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos404ConcreteFactorialValuation",
+  "module": "Submissions.Erdos404ConcreteFactorialValuation.Degenerate",
+  "decl": "Submissions.Erdos404ConcreteFactorialValuation.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 5b789f8f-969f-4a9a-800f-5d46342112c8."
+}
