@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1178BrownErdosSosThreshold",
+  "module": "Submissions.Erdos1178BrownErdosSosThreshold.Attacks",
+  "decl": "Submissions.Erdos1178BrownErdosSosThreshold.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact eae6ba1d-c758-4326-91e1-c856e3995ed9."
+}
