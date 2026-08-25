@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos479ResidueFour",
+  "module": "Submissions.Erdos479ResidueFour.Degenerate",
+  "decl": "Submissions.Erdos479ResidueFour.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 19893265-aaa2-41be-8897-f8fc77762a3c."
+}
