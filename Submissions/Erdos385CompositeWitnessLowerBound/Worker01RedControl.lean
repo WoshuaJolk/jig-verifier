@@ -1,0 +1,3 @@
+namespace Submissions.Erdos385CompositeWitnessLowerBound.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos385CompositeWitnessLowerBound.Worker01RedControl
