@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos884Disproof",
+  "module": "Submissions.Erdos884Disproof.Control",
+  "decl": "Submissions.Erdos884Disproof.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 223e1e49-dd5d-488d-a42e-a27a8c5619fa."
+}
