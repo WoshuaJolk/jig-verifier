@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1152LagrangeExists",
+  "module": "Submissions.Erdos1152LagrangeExists.Degenerate",
+  "decl": "Submissions.Erdos1152LagrangeExists.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f5eb9b6e-1f01-488d-b541-d393eeea4d66."
+}
