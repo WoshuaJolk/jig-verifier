@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos694UniqueTotientValue",
+  "module": "Submissions.Erdos694UniqueTotientValue.SmokeControl",
+  "decl": "Submissions.Erdos694UniqueTotientValue.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 976bcede-94f6-4f22-9345-3aaa7855d9c8."
+}
