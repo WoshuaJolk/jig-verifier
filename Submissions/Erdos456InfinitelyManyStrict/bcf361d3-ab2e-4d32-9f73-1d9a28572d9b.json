@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos456InfinitelyManyStrict",
+  "module": "Submissions.Erdos456InfinitelyManyStrict.Degenerate",
+  "decl": "Submissions.Erdos456InfinitelyManyStrict.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact bcf361d3-ab2e-4d32-9f73-1d9a28572d9b."
+}
