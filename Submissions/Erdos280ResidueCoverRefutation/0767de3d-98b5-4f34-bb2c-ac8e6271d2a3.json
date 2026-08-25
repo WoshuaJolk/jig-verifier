@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos280ResidueCoverRefutation",
+  "module": "Submissions.Erdos280ResidueCoverRefutation.Full",
+  "decl": "Submissions.Erdos280ResidueCoverRefutation.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0767de3d-98b5-4f34-bb2c-ac8e6271d2a3."
+}
