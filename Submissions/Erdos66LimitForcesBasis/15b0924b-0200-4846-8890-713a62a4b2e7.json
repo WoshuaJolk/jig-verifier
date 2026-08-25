@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos66LimitForcesBasis",
+  "module": "Submissions.Erdos66LimitForcesBasis.Direct",
+  "decl": "Submissions.Erdos66LimitForcesBasis.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 15b0924b-0200-4846-8890-713a62a4b2e7."
+}
