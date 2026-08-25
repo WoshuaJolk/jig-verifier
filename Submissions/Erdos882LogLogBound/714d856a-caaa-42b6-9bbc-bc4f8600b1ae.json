@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos882LogLogBound",
+  "module": "Submissions.Erdos882LogLogBound.Control",
+  "decl": "Submissions.Erdos882LogLogBound.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 714d856a-caaa-42b6-9bbc-bc4f8600b1ae."
+}
