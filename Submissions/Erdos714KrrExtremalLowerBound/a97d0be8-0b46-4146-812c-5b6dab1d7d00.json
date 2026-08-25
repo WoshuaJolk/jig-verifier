@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos714KrrExtremalLowerBound",
+  "module": "Submissions.Erdos714KrrExtremalLowerBound.DegenerateCatalogue",
+  "decl": "Submissions.Erdos714KrrExtremalLowerBound.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a97d0be8-0b46-4146-812c-5b6dab1d7d00."
+}
