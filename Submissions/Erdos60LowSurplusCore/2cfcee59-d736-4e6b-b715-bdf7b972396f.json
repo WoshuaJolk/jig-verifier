@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60LowSurplusCore",
+  "module": "Submissions.Erdos60LowSurplusCore.Control",
+  "decl": "Submissions.Erdos60LowSurplusCore.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2cfcee59-d736-4e6b-b715-bdf7b972396f."
+}
