@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos218ComparisonPartition",
+  "module": "Submissions.Erdos218ComparisonPartition.Control",
+  "decl": "Submissions.Erdos218ComparisonPartition.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 774f5df4-88a8-4809-aec8-a00123594999."
+}
