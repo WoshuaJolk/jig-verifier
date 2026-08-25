@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1057TwoIsNotCarmichael",
+  "module": "Submissions.Erdos1057TwoIsNotCarmichael.Worker01",
+  "decl": "Submissions.Erdos1057TwoIsNotCarmichael.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 71a2d5ae-1516-48b6-9a29-c9e67de44a5c."
+}
