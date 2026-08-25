@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos645LargeDifferenceAP",
+  "module": "Submissions.Erdos645LargeDifferenceAP.Control",
+  "decl": "Submissions.Erdos645LargeDifferenceAP.Control.erdos_645",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 41841d1a-d5c8-4e22-9b3e-fc81b9aaeff9."
+}
