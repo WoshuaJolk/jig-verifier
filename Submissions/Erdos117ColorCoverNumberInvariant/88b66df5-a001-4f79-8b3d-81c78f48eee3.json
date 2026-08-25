@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117ColorCoverNumberInvariant",
+  "module": "Submissions.Erdos117ColorCoverNumberInvariant.Control",
+  "decl": "Submissions.Erdos117ColorCoverNumberInvariant.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 88b66df5-a001-4f79-8b3d-81c78f48eee3."
+}
