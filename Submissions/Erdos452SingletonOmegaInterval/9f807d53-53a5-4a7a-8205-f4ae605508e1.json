@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos452SingletonOmegaInterval",
+  "module": "Submissions.Erdos452SingletonOmegaInterval.Degenerate",
+  "decl": "Submissions.Erdos452SingletonOmegaInterval.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9f807d53-53a5-4a7a-8205-f4ae605508e1."
+}
