@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68InfiniteDigitCriterion",
+  "module": "Submissions.Erdos68InfiniteDigitCriterion.Control",
+  "decl": "Submissions.Erdos68InfiniteDigitCriterion.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1b3eb380-4d78-4058-8c35-5ef6b9a52e11."
+}
