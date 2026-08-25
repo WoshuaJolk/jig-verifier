@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos340SingletonSidon",
+  "module": "Submissions.Erdos340SingletonSidon.Worker04Smoke",
+  "decl": "Submissions.Erdos340SingletonSidon.Worker04Smoke.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7773e061-3adc-4965-829a-1d0bb9120d8b."
+}
