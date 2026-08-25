@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos608PentagonalEdgesDisproof",
+  "module": "Submissions.Erdos608PentagonalEdgesDisproof.Full",
+  "decl": "Submissions.Erdos608PentagonalEdgesDisproof.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check eb477da2-b66f-452d-a8e5-e5568fe88bb4. Settles nothing."
+}
