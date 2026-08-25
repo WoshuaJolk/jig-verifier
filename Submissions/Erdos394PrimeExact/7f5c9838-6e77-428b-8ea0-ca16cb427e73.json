@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos394PrimeExact",
+  "module": "Submissions.Erdos394PrimeExact.PrimePair",
+  "decl": "Submissions.Erdos394PrimeExact.PrimePair.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7f5c9838-6e77-428b-8ea0-ca16cb427e73."
+}
