@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos173ConstantColoring",
+  "module": "Submissions.Erdos173ConstantColoring.Control",
+  "decl": "Submissions.Erdos173ConstantColoring.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 93a3053e-3335-4d5e-a81d-7fa48c838f01."
+}
