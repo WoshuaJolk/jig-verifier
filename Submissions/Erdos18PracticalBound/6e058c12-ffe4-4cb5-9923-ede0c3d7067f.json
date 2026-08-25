@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18PracticalBound",
+  "module": "Submissions.Erdos18PracticalBound.MalloryTrivial",
+  "decl": "Submissions.Erdos18PracticalBound.MalloryTrivial.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6e058c12-ffe4-4cb5-9923-ede0c3d7067f."
+}
