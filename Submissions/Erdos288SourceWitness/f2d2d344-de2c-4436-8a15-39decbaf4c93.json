@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos288SourceWitness",
+  "module": "Submissions.Erdos288SourceWitness.ExactArithmetic",
+  "decl": "Submissions.Erdos288SourceWitness.ExactArithmetic.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f2d2d344-de2c-4436-8a15-39decbaf4c93."
+}
