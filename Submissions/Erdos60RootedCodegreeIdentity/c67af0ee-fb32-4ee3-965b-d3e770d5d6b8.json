@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60RootedCodegreeIdentity",
+  "module": "Submissions.Erdos60RootedCodegreeIdentity.RootedFrames",
+  "decl": "Submissions.Erdos60RootedCodegreeIdentity.RootedFrames.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c67af0ee-fb32-4ee3-965b-d3e770d5d6b8."
+}
