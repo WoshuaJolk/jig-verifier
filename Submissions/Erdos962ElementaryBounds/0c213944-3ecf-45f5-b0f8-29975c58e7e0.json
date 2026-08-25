@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos962ElementaryBounds",
+  "module": "Submissions.Erdos962ElementaryBounds.Control",
+  "decl": "Submissions.Erdos962ElementaryBounds.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0c213944-3ecf-45f5-b0f8-29975c58e7e0."
+}
