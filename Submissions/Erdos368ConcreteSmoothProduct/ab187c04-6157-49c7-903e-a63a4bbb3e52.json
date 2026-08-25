@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos368ConcreteSmoothProduct",
+  "module": "Submissions.Erdos368ConcreteSmoothProduct.Degenerate",
+  "decl": "Submissions.Erdos368ConcreteSmoothProduct.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ab187c04-6157-49c7-903e-a63a4bbb3e52."
+}
