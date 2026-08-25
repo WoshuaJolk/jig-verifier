@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44UpperIntervalShift",
+  "module": "Submissions.Erdos44UpperIntervalShift.Direct",
+  "decl": "Submissions.Erdos44UpperIntervalShift.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b882ec59-5f2f-4c3c-ab96-9bd89f2edddf."
+}
