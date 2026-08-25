@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1068InfiniteImpliesConnected",
+  "module": "Submissions.Erdos1068InfiniteImpliesConnected.ExtractWalk",
+  "decl": "Submissions.Erdos1068InfiniteImpliesConnected.ExtractWalk.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 868aac85-19c2-40ff-83df-9a05d0d8f4ae."
+}
