@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos864ExceptionalSplit",
+  "module": "Submissions.Erdos864ExceptionalSplit.Midpoint",
+  "decl": "Submissions.Erdos864ExceptionalSplit.Midpoint.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 25e31742-aedd-47c7-a667-e09a200790f9."
+}
