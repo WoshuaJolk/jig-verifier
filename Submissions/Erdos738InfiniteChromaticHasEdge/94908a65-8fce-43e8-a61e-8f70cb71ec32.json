@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos738InfiniteChromaticHasEdge",
+  "module": "Submissions.Erdos738InfiniteChromaticHasEdge.Direct",
+  "decl": "Submissions.Erdos738InfiniteChromaticHasEdge.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 94908a65-8fce-43e8-a61e-8f70cb71ec32."
+}
