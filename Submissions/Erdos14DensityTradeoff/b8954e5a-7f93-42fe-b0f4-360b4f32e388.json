@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14DensityTradeoff",
+  "module": "Submissions.Erdos14DensityTradeoff.Direct",
+  "decl": "Submissions.Erdos14DensityTradeoff.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b8954e5a-7f93-42fe-b0f4-360b4f32e388."
+}
