@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos810CanonicalEdgesLoopless",
+  "module": "Submissions.Erdos810CanonicalEdgesLoopless.Direct",
+  "decl": "Submissions.Erdos810CanonicalEdgesLoopless.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5f118b87-2759-4f93-942c-d0b3daf8853f."
+}
