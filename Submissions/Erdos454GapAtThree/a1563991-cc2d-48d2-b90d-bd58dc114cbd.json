@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos454GapAtThree",
+  "module": "Submissions.Erdos454GapAtThree.ExactComputation",
+  "decl": "Submissions.Erdos454GapAtThree.ExactComputation.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a1563991-cc2d-48d2-b90d-bd58dc114cbd."
+}
