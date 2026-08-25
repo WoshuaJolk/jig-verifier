@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos535GcdLayerEncoding",
+  "module": "Submissions.Erdos535GcdLayerEncoding.Direct",
+  "decl": "Submissions.Erdos535GcdLayerEncoding.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ec732ba9-5829-4082-945b-7ce2cb6e51fa."
+}
