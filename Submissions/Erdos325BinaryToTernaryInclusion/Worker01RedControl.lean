@@ -1,0 +1,3 @@
+namespace Submissions.Erdos325BinaryToTernaryInclusion.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos325BinaryToTernaryInclusion.Worker01RedControl
