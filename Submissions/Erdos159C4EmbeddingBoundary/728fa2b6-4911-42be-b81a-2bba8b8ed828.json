@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos159C4EmbeddingBoundary",
+  "module": "Submissions.Erdos159C4EmbeddingBoundary.FalsePremise",
+  "decl": "Submissions.Erdos159C4EmbeddingBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 728fa2b6-4911-42be-b81a-2bba8b8ed828."
+}
