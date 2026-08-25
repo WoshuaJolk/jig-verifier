@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1SubsetSumFourierParseval",
+  "module": "Submissions.Erdos1SubsetSumFourierParseval.FourierIdentity",
+  "decl": "Submissions.Erdos1SubsetSumFourierParseval.FourierIdentity.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e5980e06-44fc-42e6-bfe4-50f55652f30f."
+}
