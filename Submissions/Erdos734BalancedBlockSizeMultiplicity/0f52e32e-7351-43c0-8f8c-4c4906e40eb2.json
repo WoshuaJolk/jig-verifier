@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos734BalancedBlockSizeMultiplicity",
+  "module": "Submissions.Erdos734BalancedBlockSizeMultiplicity.Attacks",
+  "decl": "Submissions.Erdos734BalancedBlockSizeMultiplicity.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0f52e32e-7351-43c0-8f8c-4c4906e40eb2."
+}
