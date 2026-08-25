@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos836FanoWitness",
+  "module": "Submissions.Erdos836FanoWitness.Direct",
+  "decl": "Submissions.Erdos836FanoWitness.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 45d94f13-978b-40fb-8a92-a8f8b4e59c8a."
+}
