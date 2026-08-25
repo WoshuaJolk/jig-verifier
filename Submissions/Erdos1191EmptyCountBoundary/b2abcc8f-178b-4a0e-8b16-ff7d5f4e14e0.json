@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1191EmptyCountBoundary",
+  "module": "Submissions.Erdos1191EmptyCountBoundary.FalsePremise",
+  "decl": "Submissions.Erdos1191EmptyCountBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b2abcc8f-178b-4a0e-8b16-ff7d5f4e14e0."
+}
