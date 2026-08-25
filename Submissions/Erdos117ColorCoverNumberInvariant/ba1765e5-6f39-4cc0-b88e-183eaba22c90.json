@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117ColorCoverNumberInvariant",
+  "module": "Submissions.Erdos117ColorCoverNumberInvariant.Kernel",
+  "decl": "Submissions.Erdos117ColorCoverNumberInvariant.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ba1765e5-6f39-4cc0-b88e-183eaba22c90."
+}
