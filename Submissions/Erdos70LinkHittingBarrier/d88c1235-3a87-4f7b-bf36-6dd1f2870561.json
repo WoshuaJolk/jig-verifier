@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos70LinkHittingBarrier",
+  "module": "Submissions.Erdos70LinkHittingBarrier.CrossBlocks",
+  "decl": "Submissions.Erdos70LinkHittingBarrier.CrossBlocks.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d88c1235-3a87-4f7b-bf36-6dd1f2870561."
+}
