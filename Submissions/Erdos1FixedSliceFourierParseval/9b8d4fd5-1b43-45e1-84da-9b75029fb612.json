@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1FixedSliceFourierParseval",
+  "module": "Submissions.Erdos1FixedSliceFourierParseval.FixedSlice",
+  "decl": "Submissions.Erdos1FixedSliceFourierParseval.FixedSlice.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9b8d4fd5-1b43-45e1-84da-9b75029fb612."
+}
