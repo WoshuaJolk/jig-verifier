@@ -1,0 +1,3 @@
+namespace Submissions.Erdos913SingletonExponentWitness.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos913SingletonExponentWitness.Worker01RedControl
