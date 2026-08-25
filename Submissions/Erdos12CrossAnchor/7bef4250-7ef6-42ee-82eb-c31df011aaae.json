@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12CrossAnchor",
+  "module": "Submissions.Erdos12CrossAnchor.WindowCharge",
+  "decl": "Submissions.Erdos12CrossAnchor.WindowCharge.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7bef4250-7ef6-42ee-82eb-c31df011aaae."
+}
