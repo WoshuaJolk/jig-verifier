@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos279DepthOneCover",
+  "module": "Submissions.Erdos279DepthOneCover.Worker03VacuousControl",
+  "decl": "Submissions.Erdos279DepthOneCover.Worker03VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact f4ccf4e5-834b-4633-9a78-37ebb8397bb0."
+}
