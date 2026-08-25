@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos10LinearPowerBound",
+  "module": "Submissions.Erdos10LinearPowerBound.Degenerate",
+  "decl": "Submissions.Erdos10LinearPowerBound.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 541ecf56-e5b4-4086-a081-a0a3bc81dd15."
+}
