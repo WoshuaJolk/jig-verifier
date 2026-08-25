@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1074EHSDensityExists",
+  "module": "Submissions.Erdos1074EHSDensityExists.DegenerateCatalogue",
+  "decl": "Submissions.Erdos1074EHSDensityExists.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1c4a1ad4-6eef-465a-b0b0-1acc146e1a92."
+}
