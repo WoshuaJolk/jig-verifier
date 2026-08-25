@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos711EmptyFamilyBoundary",
+  "module": "Submissions.Erdos711EmptyFamilyBoundary.FalsePremise",
+  "decl": "Submissions.Erdos711EmptyFamilyBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f00f043d-bd29-408a-9f68-a9e09aa63155."
+}
