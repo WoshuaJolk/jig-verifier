@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1075BaselineDensity",
+  "module": "Submissions.Erdos1075BaselineDensity.Control",
+  "decl": "Submissions.Erdos1075BaselineDensity.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact cd37a3cd-2ef5-4ed0-a899-156b02842c38."
+}
