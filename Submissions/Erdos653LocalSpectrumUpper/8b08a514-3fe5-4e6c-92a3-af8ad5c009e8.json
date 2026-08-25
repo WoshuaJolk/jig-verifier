@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos653LocalSpectrumUpper",
+  "module": "Submissions.Erdos653LocalSpectrumUpper.Direct",
+  "decl": "Submissions.Erdos653LocalSpectrumUpper.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8b08a514-3fe5-4e6c-92a3-af8ad5c009e8."
+}
