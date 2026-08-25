@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1167OneColorBoundary",
+  "module": "Submissions.Erdos1167OneColorBoundary.Worker03VacuousControl",
+  "decl": "Submissions.Erdos1167OneColorBoundary.Worker03VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6cf220b4-6ff8-473b-a615-ab521a416e31."
+}
