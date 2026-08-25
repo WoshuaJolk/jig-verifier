@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos956SingletonBody",
+  "module": "Submissions.Erdos956SingletonBody.Degenerate",
+  "decl": "Submissions.Erdos956SingletonBody.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 49977e80-4c9e-48f8-bbc7-60bd21712c05."
+}
