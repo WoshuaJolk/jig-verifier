@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12SingletonBoundary",
+  "module": "Submissions.Erdos12SingletonBoundary.Degenerate",
+  "decl": "Submissions.Erdos12SingletonBoundary.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 3888fa35-c077-4a15-9a63-c52e08376043."
+}
