@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1176WitnessIsSurjective",
+  "module": "Submissions.Erdos1176WitnessIsSurjective.Degenerate",
+  "decl": "Submissions.Erdos1176WitnessIsSurjective.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 338d667e-ad16-4cc3-bbeb-1a15ccebe216."
+}
