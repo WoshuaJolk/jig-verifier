@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68FactorialDigitFormula",
+  "module": "Submissions.Erdos68FactorialDigitFormula.FactorialDigitFormula",
+  "decl": "Submissions.Erdos68FactorialDigitFormula.FactorialDigitFormula.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6d310969-f1a8-4c04-8f69-89602340924b."
+}
