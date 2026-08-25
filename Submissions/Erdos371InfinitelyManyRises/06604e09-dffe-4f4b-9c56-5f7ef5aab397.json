@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos371InfinitelyManyRises",
+  "module": "Submissions.Erdos371InfinitelyManyRises.Degenerate",
+  "decl": "Submissions.Erdos371InfinitelyManyRises.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 06604e09-dffe-4f4b-9c56-5f7ef5aab397."
+}
