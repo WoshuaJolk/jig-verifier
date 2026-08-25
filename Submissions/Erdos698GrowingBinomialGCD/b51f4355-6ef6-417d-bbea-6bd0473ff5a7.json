@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos698GrowingBinomialGCD",
+  "module": "Submissions.Erdos698GrowingBinomialGCD.Full",
+  "decl": "Submissions.Erdos698GrowingBinomialGCD.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b51f4355-6ef6-417d-bbea-6bd0473ff5a7."
+}
