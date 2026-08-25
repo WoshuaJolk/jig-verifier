@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos70OneBranchFusion",
+  "module": "Submissions.Erdos70OneBranchFusion.UncountableChild",
+  "decl": "Submissions.Erdos70OneBranchFusion.UncountableChild.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 91a40cc6-faa6-4cf9-bbfc-87a4b607715b."
+}
