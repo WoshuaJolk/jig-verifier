@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos431ParityStructure",
+  "module": "Submissions.Erdos431ParityStructure.Direct",
+  "decl": "Submissions.Erdos431ParityStructure.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f5652af6-e49a-40f8-87c9-be147c786af8."
+}
