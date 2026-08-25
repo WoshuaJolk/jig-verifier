@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos236RepresentationCountBound",
+  "module": "Submissions.Erdos236RepresentationCountBound.Degenerate",
+  "decl": "Submissions.Erdos236RepresentationCountBound.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ea58f583-8b1a-4b4c-aa7b-d674f249bdbd."
+}
