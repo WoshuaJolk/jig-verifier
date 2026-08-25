@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos66LogRepresentationLimit",
+  "module": "Submissions.Erdos66LogRepresentationLimit.DegenerateCatalogue",
+  "decl": "Submissions.Erdos66LogRepresentationLimit.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 5280b2fa-61f1-48de-9759-61a8abae4e86."
+}
