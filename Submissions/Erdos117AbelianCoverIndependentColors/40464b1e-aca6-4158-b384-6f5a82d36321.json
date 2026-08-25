@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117AbelianCoverIndependentColors",
+  "module": "Submissions.Erdos117AbelianCoverIndependentColors.Kernel",
+  "decl": "Submissions.Erdos117AbelianCoverIndependentColors.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 40464b1e-aca6-4158-b384-6f5a82d36321."
+}
