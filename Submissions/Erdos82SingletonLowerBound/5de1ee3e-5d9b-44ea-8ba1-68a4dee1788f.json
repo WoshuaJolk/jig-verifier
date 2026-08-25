@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos82SingletonLowerBound",
+  "module": "Submissions.Erdos82SingletonLowerBound.Degenerate",
+  "decl": "Submissions.Erdos82SingletonLowerBound.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 5de1ee3e-5d9b-44ea-8ba1-68a4dee1788f."
+}
