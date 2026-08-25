@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos208Enumeration",
+  "module": "Submissions.Erdos208Enumeration.Worker04",
+  "decl": "Submissions.Erdos208Enumeration.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2182aa60-c0cc-49df-ab51-fadd0e831f05."
+}
