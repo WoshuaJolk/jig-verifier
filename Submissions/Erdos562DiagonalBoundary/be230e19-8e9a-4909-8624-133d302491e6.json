@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos562DiagonalBoundary",
+  "module": "Submissions.Erdos562DiagonalBoundary.ExactSelf",
+  "decl": "Submissions.Erdos562DiagonalBoundary.ExactSelf.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact be230e19-8e9a-4909-8624-133d302491e6."
+}
