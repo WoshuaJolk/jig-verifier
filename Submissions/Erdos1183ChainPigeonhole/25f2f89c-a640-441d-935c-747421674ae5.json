@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1183ChainPigeonhole",
+  "module": "Submissions.Erdos1183ChainPigeonhole.Direct",
+  "decl": "Submissions.Erdos1183ChainPigeonhole.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 25f2f89c-a640-441d-935c-747421674ae5."
+}
