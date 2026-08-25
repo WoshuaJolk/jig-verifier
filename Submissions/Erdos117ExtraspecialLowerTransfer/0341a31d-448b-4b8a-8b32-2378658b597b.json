@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117ExtraspecialLowerTransfer",
+  "module": "Submissions.Erdos117ExtraspecialLowerTransfer.Kernel",
+  "decl": "Submissions.Erdos117ExtraspecialLowerTransfer.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0341a31d-448b-4b8a-8b32-2378658b597b."
+}
