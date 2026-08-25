@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos279DepthOneCover",
+  "module": "Submissions.Erdos279DepthOneCover.Worker03PrimeDivisor",
+  "decl": "Submissions.Erdos279DepthOneCover.Worker03PrimeDivisor.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 64bcc23f-9ed8-4619-871a-1b30447d2ca4."
+}
