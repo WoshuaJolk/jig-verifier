@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos551CycleCliqueRamsey",
+  "module": "Submissions.Erdos551CycleCliqueRamsey.Degenerate",
+  "decl": "Submissions.Erdos551CycleCliqueRamsey.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 31fff665-08c3-4b8a-8d55-8c3b5e81d4cd."
+}
