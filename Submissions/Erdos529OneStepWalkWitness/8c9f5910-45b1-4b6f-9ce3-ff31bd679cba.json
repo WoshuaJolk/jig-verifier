@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos529OneStepWalkWitness",
+  "module": "Submissions.Erdos529OneStepWalkWitness.Worker01",
+  "decl": "Submissions.Erdos529OneStepWalkWitness.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8c9f5910-45b1-4b6f-9ce3-ff31bd679cba."
+}
