@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos87ChromaticRamseyLowerCorrected",
+  "module": "Submissions.Erdos87ChromaticRamseyLowerCorrected.FalsePremise",
+  "decl": "Submissions.Erdos87ChromaticRamseyLowerCorrected.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact cc0ed81d-a59c-4926-bff3-308ec53eb46a."
+}
