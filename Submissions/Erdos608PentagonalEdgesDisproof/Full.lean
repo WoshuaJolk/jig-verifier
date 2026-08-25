@@ -1,7 +1,14 @@
-import Mathlib
-/-! Flattened from primateria/erdos608 commit b50849234b8de6cb5c642b5cb0479cab2e9e9908. -/
+/-
+Derived from primateria/erdos608 at commit
+b50849234b8de6cb5c642b5cb0479cab2e9e9908 under Apache-2.0.
+Modified by flattening the four-module proof closure and narrowing imports.
+-/
+import Mathlib.Combinatorics.SimpleGraph.Finite
+import Mathlib.Combinatorics.SimpleGraph.DegreeSum
+import Mathlib.Data.Set.Card
+import Mathlib.Tactic
 
-/-! Source module: Erdos608/Statement.lean -/
+namespace Submissions.Erdos608PentagonalEdgesDisproof.Full
 /-
 Erdős problem 608 — statement (Phase-2 target #1).
 
@@ -54,9 +61,12 @@ originally frozen here; stubs retired 2026-07-29 with Morris's approval —
 see runs/phase2/erdos-608/{STATEMENT.md,CONSTRUCTION.md}).
 -/
 
+/-- Non-vacuity: in `K₅` the edge `{0, 1}` lies on a pentagon. -/
+example : OnC5 (⊤ : SimpleGraph (Fin 5)) s((0 : Fin 5), 1) := by
+  unfold OnC5; decide
+
 end Erdos608
 
-/-! Source module: Erdos608/Construction.lean -/
 /-
 Erdős 608 — the witness construction, a rational specialization of the
 Füredi–Maleki template (lemma-ladder items L1,
@@ -104,11 +114,11 @@ Since distinct parts have distinct tags, the `x ≠ y` conjunct is redundant on
 the cross-part branches and encodes "adjacent iff distinct" inside D. -/
 def FM (m : ℕ) : SimpleGraph (V m) where
   Adj x y := (tag y = tag x + 1 ∨ tag x = tag y + 1 ∨ (tag x = 3 ∧ tag y = 3)) ∧ x ≠ y
-  symm := by
-    rintro x y ⟨ht, hne⟩
+  symm.symm x y := by
+    rintro ⟨ht, hne⟩
     exact ⟨by tauto, hne.symm⟩
-  loopless := by
-    rintro x ⟨-, hne⟩
+  loopless.irrefl x := by
+    rintro ⟨-, hne⟩
     exact hne rfl
 
 /-- Definitional unfolding of `(FM m).Adj`. -/
@@ -359,7 +369,6 @@ lemma onC5_bc (m : ℕ) (hm : 1 ≤ m) :
 
 end Erdos608
 
-/-! Source module: Erdos608/PentCount.lean -/
 /-
 Erdős 608 — pentagonal edges of the Füredi–Maleki graph (lemma-ladder items
 L3a and L4 of runs/phase2/erdos-608/CONSTRUCTION.md).
@@ -523,7 +532,6 @@ lemma pentEdges_ncard (m : ℕ) (hm : 1 ≤ m) :
 
 end Erdos608
 
-/-! Source module: Erdos608/Main.lean -/
 /-
 Erdős 608 — final assembly (lemma-ladder items L5 and L6 of
 runs/phase2/erdos-608/CONSTRUCTION.md).
@@ -684,9 +692,6 @@ theorem strong_disproof :
 
 end Erdos608
 
-namespace Submissions.Erdos608PentagonalEdgesDisproof.Full
-
-theorem proof : ¬ Erdos608.Conjecture :=
-  Erdos608.disproof
+theorem proof : ¬ Erdos608.Conjecture := Erdos608.disproof
 
 end Submissions.Erdos608PentagonalEdgesDisproof.Full
