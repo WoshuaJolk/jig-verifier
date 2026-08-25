@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos932FirstSmoothGapWitness",
+  "module": "Submissions.Erdos932FirstSmoothGapWitness.Degenerate",
+  "decl": "Submissions.Erdos932FirstSmoothGapWitness.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 08bd41b4-2cd2-426b-9dd9-20cb1c41b35e."
+}
