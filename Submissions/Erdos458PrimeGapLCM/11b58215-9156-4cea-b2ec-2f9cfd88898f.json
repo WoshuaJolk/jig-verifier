@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos458PrimeGapLCM",
+  "module": "Submissions.Erdos458PrimeGapLCM.FalseHypothesis",
+  "decl": "Submissions.Erdos458PrimeGapLCM.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 11b58215-9156-4cea-b2ec-2f9cfd88898f."
+}
