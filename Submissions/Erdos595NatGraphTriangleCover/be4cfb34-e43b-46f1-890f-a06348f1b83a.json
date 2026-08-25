@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos595NatGraphTriangleCover",
+  "module": "Submissions.Erdos595NatGraphTriangleCover.Stars",
+  "decl": "Submissions.Erdos595NatGraphTriangleCover.Stars.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact be4cfb34-e43b-46f1-890f-a06348f1b83a."
+}
