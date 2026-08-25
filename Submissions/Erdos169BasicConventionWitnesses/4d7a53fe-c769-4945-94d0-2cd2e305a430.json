@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos169BasicConventionWitnesses",
+  "module": "Submissions.Erdos169BasicConventionWitnesses.Worker01",
+  "decl": "Submissions.Erdos169BasicConventionWitnesses.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4d7a53fe-c769-4945-94d0-2cd2e305a430."
+}
