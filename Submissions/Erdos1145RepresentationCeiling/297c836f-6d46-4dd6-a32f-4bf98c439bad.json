@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1145RepresentationCeiling",
+  "module": "Submissions.Erdos1145RepresentationCeiling.FalseHypothesis",
+  "decl": "Submissions.Erdos1145RepresentationCeiling.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 297c836f-6d46-4dd6-a32f-4bf98c439bad."
+}
