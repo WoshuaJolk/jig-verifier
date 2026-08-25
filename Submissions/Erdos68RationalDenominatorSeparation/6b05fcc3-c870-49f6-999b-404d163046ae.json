@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68RationalDenominatorSeparation",
+  "module": "Submissions.Erdos68RationalDenominatorSeparation.RationalDenominatorSeparation",
+  "decl": "Submissions.Erdos68RationalDenominatorSeparation.RationalDenominatorSeparation.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6b05fcc3-c870-49f6-999b-404d163046ae."
+}
