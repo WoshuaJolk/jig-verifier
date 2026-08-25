@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039LemniscateInradius",
+  "module": "Submissions.Erdos1039LemniscateInradius.FleetAttacks",
+  "decl": "Submissions.Erdos1039LemniscateInradius.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9b513add-72a1-451c-9ea3-76b7fbba5559."
+}
