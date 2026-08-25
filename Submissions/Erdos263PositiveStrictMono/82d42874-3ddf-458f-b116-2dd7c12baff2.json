@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos263PositiveStrictMono",
+  "module": "Submissions.Erdos263PositiveStrictMono.Degenerate",
+  "decl": "Submissions.Erdos263PositiveStrictMono.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 82d42874-3ddf-458f-b116-2dd7c12baff2."
+}
