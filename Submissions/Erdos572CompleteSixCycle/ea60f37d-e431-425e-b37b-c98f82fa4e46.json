@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos572CompleteSixCycle",
+  "module": "Submissions.Erdos572CompleteSixCycle.Degenerate",
+  "decl": "Submissions.Erdos572CompleteSixCycle.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ea60f37d-e431-425e-b37b-c98f82fa4e46."
+}
