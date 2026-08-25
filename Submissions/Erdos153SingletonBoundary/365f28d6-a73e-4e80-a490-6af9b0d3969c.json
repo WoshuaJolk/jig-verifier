@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos153SingletonBoundary",
+  "module": "Submissions.Erdos153SingletonBoundary.Worker09VacuousControl",
+  "decl": "Submissions.Erdos153SingletonBoundary.Worker09VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 365f28d6-a73e-4e80-a490-6af9b0d3969c."
+}
