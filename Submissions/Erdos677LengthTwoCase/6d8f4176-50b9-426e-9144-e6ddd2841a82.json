@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677LengthTwoCase",
+  "module": "Submissions.Erdos677LengthTwoCase.Direct",
+  "decl": "Submissions.Erdos677LengthTwoCase.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6d8f4176-50b9-426e-9144-e6ddd2841a82."
+}
