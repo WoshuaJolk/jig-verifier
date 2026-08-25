@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1075DenseHypergraphSubgraph",
+  "module": "Submissions.Erdos1075DenseHypergraphSubgraph.FleetAttacks",
+  "decl": "Submissions.Erdos1075DenseHypergraphSubgraph.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact fde69c79-7c3c-4e23-bce1-86a2a68b2702."
+}
