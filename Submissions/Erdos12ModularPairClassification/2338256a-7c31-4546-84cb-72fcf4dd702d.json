@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12ModularPairClassification",
+  "module": "Submissions.Erdos12ModularPairClassification.NegationTransversal",
+  "decl": "Submissions.Erdos12ModularPairClassification.NegationTransversal.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2338256a-7c31-4546-84cb-72fcf4dd702d."
+}
