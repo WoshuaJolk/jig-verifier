@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos935LengthOneUpper",
+  "module": "Submissions.Erdos935LengthOneUpper.Control",
+  "decl": "Submissions.Erdos935LengthOneUpper.Control.unrelated",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c6ef371b-9284-4754-8ded-9144750207b6."
+}
