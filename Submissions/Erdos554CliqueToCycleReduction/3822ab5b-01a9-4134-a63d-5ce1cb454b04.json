@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos554CliqueToCycleReduction",
+  "module": "Submissions.Erdos554CliqueToCycleReduction.Control",
+  "decl": "Submissions.Erdos554CliqueToCycleReduction.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 3822ab5b-01a9-4134-a63d-5ce1cb454b04."
+}
