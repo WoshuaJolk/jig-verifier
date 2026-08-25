@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18PracticalHDivisorBound",
+  "module": "Submissions.Erdos18PracticalHDivisorBound.Direct",
+  "decl": "Submissions.Erdos18PracticalHDivisorBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e64a26ff-9f8d-42c6-a891-69d6c2565163."
+}
