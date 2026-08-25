@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos663MissingPrimeExists",
+  "module": "Submissions.Erdos663MissingPrimeExists.FalsePremise",
+  "decl": "Submissions.Erdos663MissingPrimeExists.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7dd72210-5e7d-4e3c-8d80-68a8d248a35c."
+}
