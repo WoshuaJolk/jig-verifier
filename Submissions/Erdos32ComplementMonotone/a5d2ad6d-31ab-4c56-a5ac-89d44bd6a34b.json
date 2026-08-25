@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos32ComplementMonotone",
+  "module": "Submissions.Erdos32ComplementMonotone.Degenerate",
+  "decl": "Submissions.Erdos32ComplementMonotone.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a5d2ad6d-31ab-4c56-a5ac-89d44bd6a34b."
+}
