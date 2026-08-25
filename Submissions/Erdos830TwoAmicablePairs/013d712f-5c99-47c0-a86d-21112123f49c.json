@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos830TwoAmicablePairs",
+  "module": "Submissions.Erdos830TwoAmicablePairs.Control",
+  "decl": "Submissions.Erdos830TwoAmicablePairs.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 013d712f-5c99-47c0-a86d-21112123f49c."
+}
