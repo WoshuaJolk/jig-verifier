@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos176OnePointDiscrepancy",
+  "module": "Submissions.Erdos176OnePointDiscrepancy.Degenerate",
+  "decl": "Submissions.Erdos176OnePointDiscrepancy.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact fded06f2-80fc-46b8-a935-08169b2231cf."
+}
