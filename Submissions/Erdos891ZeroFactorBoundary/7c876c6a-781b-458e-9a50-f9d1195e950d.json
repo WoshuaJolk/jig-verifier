@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos891ZeroFactorBoundary",
+  "module": "Submissions.Erdos891ZeroFactorBoundary.Worker03SelfWitness",
+  "decl": "Submissions.Erdos891ZeroFactorBoundary.Worker03SelfWitness.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7c876c6a-781b-458e-9a50-f9d1195e950d."
+}
