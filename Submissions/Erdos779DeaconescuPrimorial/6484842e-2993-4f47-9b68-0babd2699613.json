@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos779DeaconescuPrimorial",
+  "module": "Submissions.Erdos779DeaconescuPrimorial.FalseHypothesis",
+  "decl": "Submissions.Erdos779DeaconescuPrimorial.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6484842e-2993-4f47-9b68-0babd2699613."
+}
