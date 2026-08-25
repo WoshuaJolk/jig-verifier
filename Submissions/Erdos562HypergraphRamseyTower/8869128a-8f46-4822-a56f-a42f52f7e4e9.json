@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos562HypergraphRamseyTower",
+  "module": "Submissions.Erdos562HypergraphRamseyTower.SmokeControl",
+  "decl": "Submissions.Erdos562HypergraphRamseyTower.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8869128a-8f46-4822-a56f-a42f52f7e4e9."
+}
