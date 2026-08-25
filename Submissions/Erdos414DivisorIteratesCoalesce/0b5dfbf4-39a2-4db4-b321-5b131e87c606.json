@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos414DivisorIteratesCoalesce",
+  "module": "Submissions.Erdos414DivisorIteratesCoalesce.DegenerateCatalogue",
+  "decl": "Submissions.Erdos414DivisorIteratesCoalesce.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0b5dfbf4-39a2-4db4-b321-5b131e87c606."
+}
