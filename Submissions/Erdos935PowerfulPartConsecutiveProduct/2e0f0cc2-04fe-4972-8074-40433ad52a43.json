@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos935PowerfulPartConsecutiveProduct",
+  "module": "Submissions.Erdos935PowerfulPartConsecutiveProduct.Degenerate",
+  "decl": "Submissions.Erdos935PowerfulPartConsecutiveProduct.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2e0f0cc2-04fe-4972-8074-40433ad52a43."
+}
