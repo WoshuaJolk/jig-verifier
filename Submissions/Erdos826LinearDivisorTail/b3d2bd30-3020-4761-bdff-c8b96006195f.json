@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos826LinearDivisorTail",
+  "module": "Submissions.Erdos826LinearDivisorTail.SmokeControl",
+  "decl": "Submissions.Erdos826LinearDivisorTail.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b3d2bd30-3020-4761-bdff-c8b96006195f."
+}
