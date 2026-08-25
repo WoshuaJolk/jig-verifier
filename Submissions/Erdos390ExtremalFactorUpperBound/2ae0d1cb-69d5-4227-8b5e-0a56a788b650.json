@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos390ExtremalFactorUpperBound",
+  "module": "Submissions.Erdos390ExtremalFactorUpperBound.Direct",
+  "decl": "Submissions.Erdos390ExtremalFactorUpperBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2ae0d1cb-69d5-4227-8b5e-0a56a788b650."
+}
