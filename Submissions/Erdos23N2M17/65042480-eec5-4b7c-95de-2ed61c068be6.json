@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23N2M17",
+  "module": "Submissions.Erdos23N2M17.Direct",
+  "decl": "Submissions.Erdos23N2M17.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 65042480-eec5-4b7c-95de-2ed61c068be6."
+}
