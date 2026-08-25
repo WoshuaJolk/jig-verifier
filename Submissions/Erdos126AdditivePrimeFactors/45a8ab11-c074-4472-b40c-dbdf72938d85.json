@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos126AdditivePrimeFactors",
+  "module": "Submissions.Erdos126AdditivePrimeFactors.DegenerateCatalogue",
+  "decl": "Submissions.Erdos126AdditivePrimeFactors.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 45a8ab11-c074-4472-b40c-dbdf72938d85."
+}
