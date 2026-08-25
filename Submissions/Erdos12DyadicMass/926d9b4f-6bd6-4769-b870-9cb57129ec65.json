@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12DyadicMass",
+  "module": "Submissions.Erdos12DyadicMass.ReflectionCharge",
+  "decl": "Submissions.Erdos12DyadicMass.ReflectionCharge.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 926d9b4f-6bd6-4769-b870-9cb57129ec65."
+}
