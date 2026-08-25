@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos28ThinBasisCore",
+  "module": "Submissions.Erdos28ThinBasisCore.Composition",
+  "decl": "Submissions.Erdos28ThinBasisCore.Composition.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4dedbd4a-57ac-443d-900c-937c266b6741."
+}
