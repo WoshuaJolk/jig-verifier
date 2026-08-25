@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44CarryL2Autocorrelation",
+  "module": "Submissions.Erdos44CarryL2Autocorrelation.Direct",
+  "decl": "Submissions.Erdos44CarryL2Autocorrelation.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1374d4ee-7c87-49e3-9b0f-760e8af001b9."
+}
