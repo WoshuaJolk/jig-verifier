@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos455GapsTendToInfinity",
+  "module": "Submissions.Erdos455GapsTendToInfinity.Degenerate",
+  "decl": "Submissions.Erdos455GapsTendToInfinity.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f5ea9852-8c74-4ea6-aade-d58bdc9bfede."
+}
