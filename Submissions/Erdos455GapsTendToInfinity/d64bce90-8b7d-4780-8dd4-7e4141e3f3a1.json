@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos455GapsTendToInfinity",
+  "module": "Submissions.Erdos455GapsTendToInfinity.Direct",
+  "decl": "Submissions.Erdos455GapsTendToInfinity.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d64bce90-8b7d-4780-8dd4-7e4141e3f3a1."
+}
