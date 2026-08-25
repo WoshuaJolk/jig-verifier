@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos704ZeroDimensionalColoring",
+  "module": "Submissions.Erdos704ZeroDimensionalColoring.Degenerate",
+  "decl": "Submissions.Erdos704ZeroDimensionalColoring.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact da0ffb5a-08e0-48b4-8716-65b85fa2e19c."
+}
