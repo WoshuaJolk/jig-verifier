@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos260IrrationalBinarySum",
+  "module": "Submissions.Erdos260IrrationalBinarySum.Control",
+  "decl": "Submissions.Erdos260IrrationalBinarySum.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra Irrational s premise must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact aa374e2e-4e82-41bc-8ca4-591b193b6c71."
+}
