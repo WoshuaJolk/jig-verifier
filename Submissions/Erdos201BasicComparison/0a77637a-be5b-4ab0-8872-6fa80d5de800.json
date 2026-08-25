@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos201BasicComparison",
+  "module": "Submissions.Erdos201BasicComparison.Worker09Control",
+  "decl": "Submissions.Erdos201BasicComparison.Worker09Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0a77637a-be5b-4ab0-8872-6fa80d5de800."
+}
