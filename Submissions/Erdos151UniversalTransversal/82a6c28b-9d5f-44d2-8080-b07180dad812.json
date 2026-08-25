@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos151UniversalTransversal",
+  "module": "Submissions.Erdos151UniversalTransversal.Control",
+  "decl": "Submissions.Erdos151UniversalTransversal.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 82a6c28b-9d5f-44d2-8080-b07180dad812."
+}
