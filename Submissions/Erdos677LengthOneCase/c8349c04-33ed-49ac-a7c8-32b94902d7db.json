@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677LengthOneCase",
+  "module": "Submissions.Erdos677LengthOneCase.FalseHypothesis",
+  "decl": "Submissions.Erdos677LengthOneCase.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c8349c04-33ed-49ac-a7c8-32b94902d7db."
+}
