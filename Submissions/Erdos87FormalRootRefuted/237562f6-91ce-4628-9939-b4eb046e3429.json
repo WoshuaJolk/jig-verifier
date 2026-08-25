@@ -1,0 +1,12 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos87FormalRootRefuted",
+  "module": "Submissions.Erdos87FormalRootRefuted.FalsePremise",
+  "decl": "Submissions.Erdos87FormalRootRefuted.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "refutes": "Erdos87ChromaticRamseyLower",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 237562f6-91ce-4628-9939-b4eb046e3429."
+}
