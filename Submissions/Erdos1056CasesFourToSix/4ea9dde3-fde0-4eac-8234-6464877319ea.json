@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1056CasesFourToSix",
+  "module": "Submissions.Erdos1056CasesFourToSix.Degenerate",
+  "decl": "Submissions.Erdos1056CasesFourToSix.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 4ea9dde3-fde0-4eac-8234-6464877319ea."
+}
