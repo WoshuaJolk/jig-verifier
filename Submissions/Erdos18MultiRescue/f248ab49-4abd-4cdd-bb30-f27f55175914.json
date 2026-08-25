@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18MultiRescue",
+  "module": "Submissions.Erdos18MultiRescue.Direct",
+  "decl": "Submissions.Erdos18MultiRescue.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f248ab49-4abd-4cdd-bb30-f27f55175914."
+}
