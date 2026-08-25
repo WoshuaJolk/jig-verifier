@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12CompleteFiberCRT",
+  "module": "Submissions.Erdos12CompleteFiberCRT.ProductPacking",
+  "decl": "Submissions.Erdos12CompleteFiberCRT.ProductPacking.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c54010ca-afd9-48ea-9e16-5244b2e8af6f."
+}
