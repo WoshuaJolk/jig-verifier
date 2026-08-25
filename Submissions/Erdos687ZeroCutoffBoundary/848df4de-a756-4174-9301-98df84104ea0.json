@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos687ZeroCutoffBoundary",
+  "module": "Submissions.Erdos687ZeroCutoffBoundary.FalsePremise",
+  "decl": "Submissions.Erdos687ZeroCutoffBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 848df4de-a756-4174-9301-98df84104ea0."
+}
