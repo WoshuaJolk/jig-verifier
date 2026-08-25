@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos364TripleResiduesMod36",
+  "module": "Submissions.Erdos364TripleResiduesMod36.Worker04",
+  "decl": "Submissions.Erdos364TripleResiduesMod36.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1ee74a39-3df9-4565-b6be-86eb77ef5eca."
+}
