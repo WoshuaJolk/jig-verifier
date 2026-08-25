@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos883SixVertexTriangle",
+  "module": "Submissions.Erdos883SixVertexTriangle.Direct",
+  "decl": "Submissions.Erdos883SixVertexTriangle.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 21c213c8-d5b3-470a-973b-911a7f8f9cce."
+}
