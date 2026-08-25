@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos17InfiniteClusterPrimes",
+  "module": "Submissions.Erdos17InfiniteClusterPrimes.Control",
+  "decl": "Submissions.Erdos17InfiniteClusterPrimes.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 59c0cea8-9e7c-4788-a862-8bb14245c922."
+}
