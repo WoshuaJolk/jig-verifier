@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68PrimePositionCarryObstruction",
+  "module": "Submissions.Erdos68PrimePositionCarryObstruction.PrimePositionCarryObstruction",
+  "decl": "Submissions.Erdos68PrimePositionCarryObstruction.PrimePositionCarryObstruction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact df3c1fa3-d5ed-4983-b5c1-029cef5fb20e."
+}
