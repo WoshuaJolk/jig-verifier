@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos77DiagonalRamseyGrowthLimit",
+  "module": "Submissions.Erdos77DiagonalRamseyGrowthLimit.Control",
+  "decl": "Submissions.Erdos77DiagonalRamseyGrowthLimit.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9d2c4aed-b06d-4f80-bdfd-7266afab6b2e."
+}
