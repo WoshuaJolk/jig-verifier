@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos91EmptyOptimal",
+  "module": "Submissions.Erdos91EmptyOptimal.Direct",
+  "decl": "Submissions.Erdos91EmptyOptimal.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f4a9940d-ccf7-4320-96ed-41dbba09a028."
+}
