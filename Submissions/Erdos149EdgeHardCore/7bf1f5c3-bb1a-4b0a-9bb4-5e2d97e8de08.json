@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149EdgeHardCore",
+  "module": "Submissions.Erdos149EdgeHardCore.Composition",
+  "decl": "Submissions.Erdos149EdgeHardCore.Composition.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7bf1f5c3-bb1a-4b0a-9bb4-5e2d97e8de08."
+}
