@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos323SolvedRanges",
+  "module": "Submissions.Erdos323SolvedRanges.Degenerate",
+  "decl": "Submissions.Erdos323SolvedRanges.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a47dd1fa-516b-49fa-9c9c-95fa24d3fe34."
+}
