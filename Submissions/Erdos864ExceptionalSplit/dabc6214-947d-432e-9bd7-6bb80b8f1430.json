@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos864ExceptionalSplit",
+  "module": "Submissions.Erdos864ExceptionalSplit.FalsePremise",
+  "decl": "Submissions.Erdos864ExceptionalSplit.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact dabc6214-947d-432e-9bd7-6bb80b8f1430."
+}
