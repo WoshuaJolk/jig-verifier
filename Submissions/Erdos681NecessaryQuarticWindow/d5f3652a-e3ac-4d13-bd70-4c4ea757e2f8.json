@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos681NecessaryQuarticWindow",
+  "module": "Submissions.Erdos681NecessaryQuarticWindow.Worker09Upper",
+  "decl": "Submissions.Erdos681NecessaryQuarticWindow.Worker09Upper.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d5f3652a-e3ac-4d13-bd70-4c4ea757e2f8."
+}
