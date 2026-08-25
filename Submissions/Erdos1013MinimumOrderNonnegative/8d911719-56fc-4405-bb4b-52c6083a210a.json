@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1013MinimumOrderNonnegative",
+  "module": "Submissions.Erdos1013MinimumOrderNonnegative.Control",
+  "decl": "Submissions.Erdos1013MinimumOrderNonnegative.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8d911719-56fc-4405-bb4b-52c6083a210a."
+}
