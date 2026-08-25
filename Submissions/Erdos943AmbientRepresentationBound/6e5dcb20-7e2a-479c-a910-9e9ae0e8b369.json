@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos943AmbientRepresentationBound",
+  "module": "Submissions.Erdos943AmbientRepresentationBound.Direct",
+  "decl": "Submissions.Erdos943AmbientRepresentationBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6e5dcb20-7e2a-479c-a910-9e9ae0e8b369."
+}
