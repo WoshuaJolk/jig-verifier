@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos985ThreeHasPrimePrimitiveRoot",
+  "module": "Submissions.Erdos985ThreeHasPrimePrimitiveRoot.Worker01RedControl",
+  "decl": "Submissions.Erdos985ThreeHasPrimePrimitiveRoot.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 159cd95d-fbcd-4e82-a1cc-7e1154dab0bb."
+}
