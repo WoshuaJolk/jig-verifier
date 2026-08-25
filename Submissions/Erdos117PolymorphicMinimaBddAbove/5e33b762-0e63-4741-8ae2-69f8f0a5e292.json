@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117PolymorphicMinimaBddAbove",
+  "module": "Submissions.Erdos117PolymorphicMinimaBddAbove.Control",
+  "decl": "Submissions.Erdos117PolymorphicMinimaBddAbove.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 5e33b762-0e63-4741-8ae2-69f8f0a5e292."
+}
