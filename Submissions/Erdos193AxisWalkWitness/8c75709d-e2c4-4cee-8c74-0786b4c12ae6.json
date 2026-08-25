@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos193AxisWalkWitness",
+  "module": "Submissions.Erdos193AxisWalkWitness.Worker01RedControl",
+  "decl": "Submissions.Erdos193AxisWalkWitness.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8c75709d-e2c4-4cee-8c74-0786b4c12ae6."
+}
