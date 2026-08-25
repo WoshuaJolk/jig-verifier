@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1135Collatz",
+  "module": "Submissions.Erdos1135Collatz.FleetAttacks",
+  "decl": "Submissions.Erdos1135Collatz.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f2cc79f1-27cd-41bf-a8bb-44e826b6a196."
+}
