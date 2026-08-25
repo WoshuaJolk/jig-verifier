@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68PrimitiveNonCancellation",
+  "module": "Submissions.Erdos68PrimitiveNonCancellation.PrimitiveNonCancellation",
+  "decl": "Submissions.Erdos68PrimitiveNonCancellation.PrimitiveNonCancellation.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9ff04166-693c-441b-91c6-560249cacb4b."
+}
