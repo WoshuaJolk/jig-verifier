@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos810RainbowC4DenseGraph",
+  "module": "Submissions.Erdos810RainbowC4DenseGraph.DegenerateCatalogue",
+  "decl": "Submissions.Erdos810RainbowC4DenseGraph.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a464e6a4-039e-4a83-aab2-3211b888f1bd."
+}
