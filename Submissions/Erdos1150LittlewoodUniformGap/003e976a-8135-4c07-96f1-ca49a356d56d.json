@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1150LittlewoodUniformGap",
+  "module": "Submissions.Erdos1150LittlewoodUniformGap.SmokeControl",
+  "decl": "Submissions.Erdos1150LittlewoodUniformGap.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 003e976a-8135-4c07-96f1-ca49a356d56d."
+}
