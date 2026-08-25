@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos644SingletonTransversal",
+  "module": "Submissions.Erdos644SingletonTransversal.Degenerate",
+  "decl": "Submissions.Erdos644SingletonTransversal.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7360bd10-7f83-46a3-acfe-d267e0d22099."
+}
