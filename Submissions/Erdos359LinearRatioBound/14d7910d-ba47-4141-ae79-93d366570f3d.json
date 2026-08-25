@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos359LinearRatioBound",
+  "module": "Submissions.Erdos359LinearRatioBound.Direct",
+  "decl": "Submissions.Erdos359LinearRatioBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 14d7910d-ba47-4141-ae79-93d366570f3d."
+}
