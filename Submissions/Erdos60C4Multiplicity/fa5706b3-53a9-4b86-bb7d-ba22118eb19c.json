@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60C4Multiplicity",
+  "module": "Submissions.Erdos60C4Multiplicity.EightFrames",
+  "decl": "Submissions.Erdos60C4Multiplicity.EightFrames.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact fa5706b3-53a9-4b86-bb7d-ba22118eb19c."
+}
