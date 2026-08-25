@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos955ProperDivisorPreimages",
+  "module": "Submissions.Erdos955ProperDivisorPreimages.FleetAttacks",
+  "decl": "Submissions.Erdos955ProperDivisorPreimages.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ad032141-5ab5-4d49-9a22-4853f6cda9ba."
+}
