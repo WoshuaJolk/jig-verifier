@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23SparseEdgeRange",
+  "module": "Submissions.Erdos23SparseEdgeRange.Degenerate",
+  "decl": "Submissions.Erdos23SparseEdgeRange.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 38d14c68-4ec3-409a-90b3-b5be9a30555c."
+}
