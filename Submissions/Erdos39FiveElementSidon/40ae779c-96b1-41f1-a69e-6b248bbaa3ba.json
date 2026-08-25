@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos39FiveElementSidon",
+  "module": "Submissions.Erdos39FiveElementSidon.Worker03VacuousControl",
+  "decl": "Submissions.Erdos39FiveElementSidon.Worker03VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 40ae779c-96b1-41f1-a69e-6b248bbaa3ba."
+}
