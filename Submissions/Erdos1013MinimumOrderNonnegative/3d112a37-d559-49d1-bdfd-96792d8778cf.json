@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1013MinimumOrderNonnegative",
+  "module": "Submissions.Erdos1013MinimumOrderNonnegative.Direct",
+  "decl": "Submissions.Erdos1013MinimumOrderNonnegative.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3d112a37-d559-49d1-bdfd-96792d8778cf."
+}
