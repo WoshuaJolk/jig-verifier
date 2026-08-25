@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos646EvenFactorialValuations",
+  "module": "Submissions.Erdos646EvenFactorialValuations.Control",
+  "decl": "Submissions.Erdos646EvenFactorialValuations.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6fa06834-4c8c-4bdb-86a3-4e2e0029bf3f."
+}
