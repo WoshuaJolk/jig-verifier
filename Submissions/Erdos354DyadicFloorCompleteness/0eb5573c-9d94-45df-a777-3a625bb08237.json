@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos354DyadicFloorCompleteness",
+  "module": "Submissions.Erdos354DyadicFloorCompleteness.DegenerateCatalogue",
+  "decl": "Submissions.Erdos354DyadicFloorCompleteness.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0eb5573c-9d94-45df-a777-3a625bb08237."
+}
