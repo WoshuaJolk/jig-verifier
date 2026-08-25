@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos244ThreeRepresentable",
+  "module": "Submissions.Erdos244ThreeRepresentable.Worker04Smoke",
+  "decl": "Submissions.Erdos244ThreeRepresentable.Worker04Smoke.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 52577fea-dec7-4f12-b649-4d139c0fafd2."
+}
