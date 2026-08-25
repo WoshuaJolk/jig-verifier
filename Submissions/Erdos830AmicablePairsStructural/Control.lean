@@ -1,4 +1,4 @@
-import Mathlib.Data.Nat.Basic
+import Mathlib.NumberTheory.ArithmeticFunction.Misc
 
 namespace Submissions.Erdos830AmicablePairsStructural.Control
 

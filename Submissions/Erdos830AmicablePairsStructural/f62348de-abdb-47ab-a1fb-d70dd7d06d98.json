@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos830AmicablePairsStructural",
+  "module": "Submissions.Erdos830AmicablePairsStructural.Control",
+  "decl": "Submissions.Erdos830AmicablePairsStructural.Control.unrelated",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f62348de-abdb-47ab-a1fb-d70dd7d06d98."
+}
