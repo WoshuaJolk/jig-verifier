@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117IndependentColorTransport",
+  "module": "Submissions.Erdos117IndependentColorTransport.Control",
+  "decl": "Submissions.Erdos117IndependentColorTransport.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact b56606e2-96f9-4ce4-a8cc-dee4777ba474."
+}
