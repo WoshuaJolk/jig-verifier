@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos107TriangleBase",
+  "module": "Submissions.Erdos107TriangleBase.Direct",
+  "decl": "Submissions.Erdos107TriangleBase.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e5f97ded-cdcd-4e3c-b08a-dd6ae90c5666."
+}
