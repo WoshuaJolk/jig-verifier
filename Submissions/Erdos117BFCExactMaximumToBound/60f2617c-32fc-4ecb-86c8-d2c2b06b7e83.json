@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117BFCExactMaximumToBound",
+  "module": "Submissions.Erdos117BFCExactMaximumToBound.Control",
+  "decl": "Submissions.Erdos117BFCExactMaximumToBound.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 60f2617c-32fc-4ecb-86c8-d2c2b06b7e83."
+}
