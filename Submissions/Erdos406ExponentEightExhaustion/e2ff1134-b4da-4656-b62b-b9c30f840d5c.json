@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos406ExponentEightExhaustion",
+  "module": "Submissions.Erdos406ExponentEightExhaustion.Degenerate",
+  "decl": "Submissions.Erdos406ExponentEightExhaustion.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e2ff1134-b4da-4656-b62b-b9c30f840d5c."
+}
