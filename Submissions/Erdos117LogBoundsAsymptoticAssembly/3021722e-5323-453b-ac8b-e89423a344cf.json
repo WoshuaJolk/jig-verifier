@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117LogBoundsAsymptoticAssembly",
+  "module": "Submissions.Erdos117LogBoundsAsymptoticAssembly.Control",
+  "decl": "Submissions.Erdos117LogBoundsAsymptoticAssembly.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 3021722e-5323-453b-ac8b-e89423a344cf."
+}
