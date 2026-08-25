@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos98ZeroPointDistances",
+  "module": "Submissions.Erdos98ZeroPointDistances.Control",
+  "decl": "Submissions.Erdos98ZeroPointDistances.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7fd1a164-6b43-499c-b5c3-1e76952e78b9."
+}
