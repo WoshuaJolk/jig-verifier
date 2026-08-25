@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1126AlmostAdditive",
+  "module": "Submissions.Erdos1126AlmostAdditive.Full",
+  "decl": "Submissions.Erdos1126AlmostAdditive.Full.erdos_1126",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 77a98faf-a059-4fa7-a103-4a42ea5f853c."
+}
