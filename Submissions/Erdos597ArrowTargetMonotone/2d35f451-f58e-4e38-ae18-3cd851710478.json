@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos597ArrowTargetMonotone",
+  "module": "Submissions.Erdos597ArrowTargetMonotone.Worker09Middle",
+  "decl": "Submissions.Erdos597ArrowTargetMonotone.Worker09Middle.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2d35f451-f58e-4e38-ae18-3cd851710478."
+}
