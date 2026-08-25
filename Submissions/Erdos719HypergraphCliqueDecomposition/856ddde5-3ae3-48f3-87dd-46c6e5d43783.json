@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos719HypergraphCliqueDecomposition",
+  "module": "Submissions.Erdos719HypergraphCliqueDecomposition.Degenerate",
+  "decl": "Submissions.Erdos719HypergraphCliqueDecomposition.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 856ddde5-3ae3-48f3-87dd-46c6e5d43783."
+}
