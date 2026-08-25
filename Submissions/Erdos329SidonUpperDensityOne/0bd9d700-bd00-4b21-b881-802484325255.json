@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos329SidonUpperDensityOne",
+  "module": "Submissions.Erdos329SidonUpperDensityOne.Control",
+  "decl": "Submissions.Erdos329SidonUpperDensityOne.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0bd9d700-bd00-4b21-b881-802484325255."
+}
