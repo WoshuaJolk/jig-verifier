@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117IsoclinismNoncommutingGraph",
+  "module": "Submissions.Erdos117IsoclinismNoncommutingGraph.Control",
+  "decl": "Submissions.Erdos117IsoclinismNoncommutingGraph.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact a43d4071-c56d-4cb9-bff6-a441b0127754."
+}
