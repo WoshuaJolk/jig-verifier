@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos978RemainingDegreeReduction",
+  "module": "Submissions.Erdos978RemainingDegreeReduction.Direct",
+  "decl": "Submissions.Erdos978RemainingDegreeReduction.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 10f51aa8-8906-4be1-9b2e-a885fc5c067f."
+}
