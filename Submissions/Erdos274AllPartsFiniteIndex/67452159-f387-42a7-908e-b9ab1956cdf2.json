@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos274AllPartsFiniteIndex",
+  "module": "Submissions.Erdos274AllPartsFiniteIndex.NeumannReduction",
+  "decl": "Submissions.Erdos274AllPartsFiniteIndex.NeumannReduction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 67452159-f387-42a7-908e-b9ab1956cdf2."
+}
