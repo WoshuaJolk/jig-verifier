@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos654OneThirdBaseline",
+  "module": "Submissions.Erdos654OneThirdBaseline.Direct",
+  "decl": "Submissions.Erdos654OneThirdBaseline.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3c2bf107-2af0-41c4-9f14-e968fda7c8f8."
+}
