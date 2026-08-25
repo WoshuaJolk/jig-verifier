@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12InvolutionCompatibility",
+  "module": "Submissions.Erdos12InvolutionCompatibility.ParityOrientation",
+  "decl": "Submissions.Erdos12InvolutionCompatibility.ParityOrientation.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 861badd2-6e24-41fa-898e-39105f0022f7."
+}
