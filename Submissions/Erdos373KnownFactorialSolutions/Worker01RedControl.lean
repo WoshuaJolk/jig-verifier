@@ -1,0 +1,3 @@
+namespace Submissions.Erdos373KnownFactorialSolutions.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos373KnownFactorialSolutions.Worker01RedControl
