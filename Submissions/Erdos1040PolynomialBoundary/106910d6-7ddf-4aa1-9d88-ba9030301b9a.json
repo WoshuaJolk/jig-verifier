@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1040PolynomialBoundary",
+  "module": "Submissions.Erdos1040PolynomialBoundary.Degenerate",
+  "decl": "Submissions.Erdos1040PolynomialBoundary.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 106910d6-7ddf-4aa1-9d88-ba9030301b9a."
+}
