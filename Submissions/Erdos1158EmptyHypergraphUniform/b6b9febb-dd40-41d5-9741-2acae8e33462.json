@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1158EmptyHypergraphUniform",
+  "module": "Submissions.Erdos1158EmptyHypergraphUniform.Direct",
+  "decl": "Submissions.Erdos1158EmptyHypergraphUniform.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b6b9febb-dd40-41d5-9741-2acae8e33462."
+}
