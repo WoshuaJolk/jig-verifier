@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos974TijdemanClassification",
+  "module": "Submissions.Erdos974TijdemanClassification.Full",
+  "decl": "Submissions.Erdos974TijdemanClassification.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a2b3c90d-bea1-493b-ba87-fa915b76f1d8."
+}
