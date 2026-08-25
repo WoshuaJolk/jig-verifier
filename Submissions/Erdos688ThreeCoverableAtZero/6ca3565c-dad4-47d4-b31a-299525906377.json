@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos688ThreeCoverableAtZero",
+  "module": "Submissions.Erdos688ThreeCoverableAtZero.Worker04Smoke",
+  "decl": "Submissions.Erdos688ThreeCoverableAtZero.Worker04Smoke.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6ca3565c-dad4-47d4-b31a-299525906377."
+}
