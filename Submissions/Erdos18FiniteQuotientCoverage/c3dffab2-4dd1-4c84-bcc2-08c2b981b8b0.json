@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18FiniteQuotientCoverage",
+  "module": "Submissions.Erdos18FiniteQuotientCoverage.Direct",
+  "decl": "Submissions.Erdos18FiniteQuotientCoverage.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c3dffab2-4dd1-4c84-bcc2-08c2b981b8b0."
+}
