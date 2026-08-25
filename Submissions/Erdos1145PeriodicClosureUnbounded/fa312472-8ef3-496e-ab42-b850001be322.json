@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1145PeriodicClosureUnbounded",
+  "module": "Submissions.Erdos1145PeriodicClosureUnbounded.FalseHypothesis",
+  "decl": "Submissions.Erdos1145PeriodicClosureUnbounded.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact fa312472-8ef3-496e-ab42-b850001be322."
+}
