@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44ForbiddenDifferenceDeletion",
+  "module": "Submissions.Erdos44ForbiddenDifferenceDeletion.Direct",
+  "decl": "Submissions.Erdos44ForbiddenDifferenceDeletion.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 09232c87-1595-40e9-ab8e-a98fc06e9c9c."
+}
