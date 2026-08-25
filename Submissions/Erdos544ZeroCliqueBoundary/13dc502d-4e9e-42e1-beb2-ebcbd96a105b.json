@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos544ZeroCliqueBoundary",
+  "module": "Submissions.Erdos544ZeroCliqueBoundary.Worker04Smoke",
+  "decl": "Submissions.Erdos544ZeroCliqueBoundary.Worker04Smoke.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 13dc502d-4e9e-42e1-beb2-ebcbd96a105b."
+}
