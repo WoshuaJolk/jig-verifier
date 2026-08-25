@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1CrossSliceFourierEnergy",
+  "module": "Submissions.Erdos1CrossSliceFourierEnergy.PhaseAverage",
+  "decl": "Submissions.Erdos1CrossSliceFourierEnergy.PhaseAverage.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 51a9296d-5d7e-4f27-b4ba-8338666393ac."
+}
