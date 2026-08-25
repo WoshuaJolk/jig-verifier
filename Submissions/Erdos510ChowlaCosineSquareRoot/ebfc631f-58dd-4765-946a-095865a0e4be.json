@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos510ChowlaCosineSquareRoot",
+  "module": "Submissions.Erdos510ChowlaCosineSquareRoot.DegenerateCatalogue",
+  "decl": "Submissions.Erdos510ChowlaCosineSquareRoot.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ebfc631f-58dd-4765-946a-095865a0e4be."
+}
