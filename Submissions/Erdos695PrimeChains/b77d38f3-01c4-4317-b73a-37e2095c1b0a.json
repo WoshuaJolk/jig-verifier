@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos695PrimeChains",
+  "module": "Submissions.Erdos695PrimeChains.Degenerate",
+  "decl": "Submissions.Erdos695PrimeChains.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b77d38f3-01c4-4317-b73a-37e2095c1b0a."
+}
