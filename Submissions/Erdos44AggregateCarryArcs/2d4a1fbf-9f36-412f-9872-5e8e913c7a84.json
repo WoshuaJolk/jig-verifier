@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44AggregateCarryArcs",
+  "module": "Submissions.Erdos44AggregateCarryArcs.Direct",
+  "decl": "Submissions.Erdos44AggregateCarryArcs.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2d4a1fbf-9f36-412f-9872-5e8e913c7a84."
+}
