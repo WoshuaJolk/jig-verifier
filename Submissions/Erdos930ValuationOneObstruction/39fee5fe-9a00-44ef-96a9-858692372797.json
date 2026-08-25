@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos930ValuationOneObstruction",
+  "module": "Submissions.Erdos930ValuationOneObstruction.Direct",
+  "decl": "Submissions.Erdos930ValuationOneObstruction.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 39fee5fe-9a00-44ef-96a9-858692372797."
+}
