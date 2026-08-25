@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos370ConsecutiveSmoothNumbers",
+  "module": "Submissions.Erdos370ConsecutiveSmoothNumbers.Full",
+  "decl": "Submissions.Erdos370ConsecutiveSmoothNumbers.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 62537eae-c5df-4546-8e0a-98408df88d1e."
+}
