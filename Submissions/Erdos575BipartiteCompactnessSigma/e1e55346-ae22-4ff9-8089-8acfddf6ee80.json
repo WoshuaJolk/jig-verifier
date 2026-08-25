@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos575BipartiteCompactnessSigma",
+  "module": "Submissions.Erdos575BipartiteCompactnessSigma.FleetAttacks",
+  "decl": "Submissions.Erdos575BipartiteCompactnessSigma.FleetAttacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e1e55346-ae22-4ff9-8089-8acfddf6ee80."
+}
