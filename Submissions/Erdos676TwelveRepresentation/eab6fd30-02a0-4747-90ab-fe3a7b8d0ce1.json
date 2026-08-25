@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos676TwelveRepresentation",
+  "module": "Submissions.Erdos676TwelveRepresentation.Worker04Degenerate",
+  "decl": "Submissions.Erdos676TwelveRepresentation.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact eab6fd30-02a0-4747-90ab-fe3a7b8d0ce1."
+}
