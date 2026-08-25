@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos743TreePacking",
+  "module": "Submissions.Erdos743TreePacking.Degenerate",
+  "decl": "Submissions.Erdos743TreePacking.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9fd2f5db-c985-441f-bc42-5cb000341cd8."
+}
