@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos102RichLinesUnbounded",
+  "module": "Submissions.Erdos102RichLinesUnbounded.DegenerateCatalogue",
+  "decl": "Submissions.Erdos102RichLinesUnbounded.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact bce0de1f-674e-4ce4-971a-4285716c7bae."
+}
