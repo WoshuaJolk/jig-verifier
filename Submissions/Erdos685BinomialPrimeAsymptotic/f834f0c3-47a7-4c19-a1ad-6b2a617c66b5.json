@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos685BinomialPrimeAsymptotic",
+  "module": "Submissions.Erdos685BinomialPrimeAsymptotic.Worker01Degenerate",
+  "decl": "Submissions.Erdos685BinomialPrimeAsymptotic.Worker01Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f834f0c3-47a7-4c19-a1ad-6b2a617c66b5."
+}
