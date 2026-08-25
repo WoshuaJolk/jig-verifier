@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1094NoWidthOneExceptions",
+  "module": "Submissions.Erdos1094NoWidthOneExceptions.Direct",
+  "decl": "Submissions.Erdos1094NoWidthOneExceptions.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b549e5c7-64f0-4354-99f4-9f0a0fd7758b."
+}
