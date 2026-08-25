@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos249SeriesConvergenceBoundary",
+  "module": "Submissions.Erdos249SeriesConvergenceBoundary.Worker09Direct",
+  "decl": "Submissions.Erdos249SeriesConvergenceBoundary.Worker09Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6e2bb7ca-406f-4c91-94d7-0af9e1db5e61."
+}
