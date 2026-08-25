@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos80PositiveBook",
+  "module": "Submissions.Erdos80PositiveBook.Degenerate",
+  "decl": "Submissions.Erdos80PositiveBook.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ef3e3719-71cc-41ca-8495-e6ef59d06804."
+}
