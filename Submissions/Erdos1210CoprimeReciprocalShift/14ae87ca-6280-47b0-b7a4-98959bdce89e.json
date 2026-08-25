@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1210CoprimeReciprocalShift",
+  "module": "Submissions.Erdos1210CoprimeReciprocalShift.SmokeControl",
+  "decl": "Submissions.Erdos1210CoprimeReciprocalShift.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 14ae87ca-6280-47b0-b7a4-98959bdce89e."
+}
