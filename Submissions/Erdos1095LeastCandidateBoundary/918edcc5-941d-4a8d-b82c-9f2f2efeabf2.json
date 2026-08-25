@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1095LeastCandidateBoundary",
+  "module": "Submissions.Erdos1095LeastCandidateBoundary.Worker03VacuousControl",
+  "decl": "Submissions.Erdos1095LeastCandidateBoundary.Worker03VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 918edcc5-941d-4a8d-b82c-9f2f2efeabf2."
+}
