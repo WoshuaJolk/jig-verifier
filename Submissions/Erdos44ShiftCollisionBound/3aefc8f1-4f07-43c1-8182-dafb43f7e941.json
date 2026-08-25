@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44ShiftCollisionBound",
+  "module": "Submissions.Erdos44ShiftCollisionBound.Direct",
+  "decl": "Submissions.Erdos44ShiftCollisionBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3aefc8f1-4f07-43c1-8182-dafb43f7e941."
+}
