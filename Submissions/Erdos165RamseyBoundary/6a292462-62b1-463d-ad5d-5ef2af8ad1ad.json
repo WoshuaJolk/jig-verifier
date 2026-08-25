@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos165RamseyBoundary",
+  "module": "Submissions.Erdos165RamseyBoundary.Worker09Small",
+  "decl": "Submissions.Erdos165RamseyBoundary.Worker09Small.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6a292462-62b1-463d-ad5d-5ef2af8ad1ad."
+}
