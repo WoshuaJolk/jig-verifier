@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos251PrimeGapPartialSums",
+  "module": "Submissions.Erdos251PrimeGapPartialSums.Direct",
+  "decl": "Submissions.Erdos251PrimeGapPartialSums.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f767a332-3d03-43d8-a691-9b43752281ab."
+}
