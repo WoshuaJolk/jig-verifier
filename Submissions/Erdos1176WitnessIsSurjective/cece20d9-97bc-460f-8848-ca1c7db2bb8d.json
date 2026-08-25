@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1176WitnessIsSurjective",
+  "module": "Submissions.Erdos1176WitnessIsSurjective.OneVertexColor",
+  "decl": "Submissions.Erdos1176WitnessIsSurjective.OneVertexColor.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cece20d9-97bc-460f-8848-ca1c7db2bb8d."
+}
