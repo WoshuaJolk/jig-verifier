@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos726HalfPrimeReciprocalMass",
+  "module": "Submissions.Erdos726HalfPrimeReciprocalMass.DegenerateCatalogue",
+  "decl": "Submissions.Erdos726HalfPrimeReciprocalMass.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b49e33e5-e443-4d44-be03-4cf7e77e4df7."
+}
