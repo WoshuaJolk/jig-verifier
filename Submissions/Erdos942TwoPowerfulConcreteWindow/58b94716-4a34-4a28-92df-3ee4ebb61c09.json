@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos942TwoPowerfulConcreteWindow",
+  "module": "Submissions.Erdos942TwoPowerfulConcreteWindow.Direct",
+  "decl": "Submissions.Erdos942TwoPowerfulConcreteWindow.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 58b94716-4a34-4a28-92df-3ee4ebb61c09."
+}
