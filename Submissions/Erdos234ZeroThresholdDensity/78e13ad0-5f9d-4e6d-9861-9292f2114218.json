@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos234ZeroThresholdDensity",
+  "module": "Submissions.Erdos234ZeroThresholdDensity.Direct",
+  "decl": "Submissions.Erdos234ZeroThresholdDensity.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 78e13ad0-5f9d-4e6d-9861-9292f2114218."
+}
