@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52CrossLayerAdditive",
+  "module": "Submissions.Erdos52CrossLayerAdditive.P29",
+  "decl": "Submissions.Erdos52CrossLayerAdditive.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c6f9b6b7-7811-4658-bf98-d3cf1e2b8286."
+}
