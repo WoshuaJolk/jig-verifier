@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos233PrimeGapSquareUpper",
+  "module": "Submissions.Erdos233PrimeGapSquareUpper.Control",
+  "decl": "Submissions.Erdos233PrimeGapSquareUpper.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact bc252de8-2c61-4e96-a9b0-f3bd4b0dfc41."
+}
