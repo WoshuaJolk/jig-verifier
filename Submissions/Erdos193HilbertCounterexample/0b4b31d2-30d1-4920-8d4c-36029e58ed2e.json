@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos193HilbertCounterexample",
+  "module": "Submissions.Erdos193HilbertCounterexample.Published",
+  "decl": "Submissions.Erdos193HilbertCounterexample.Published.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "refutes": "Erdos193LatticeSWalkCollinearTriple",
+  "note": "Submitted through the Jig API as artifact 0b4b31d2-30d1-4920-8d4c-36029e58ed2e."
+}

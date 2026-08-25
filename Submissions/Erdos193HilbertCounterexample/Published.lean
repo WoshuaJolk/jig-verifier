@@ -1,4 +1,6 @@
-import Mathlib
+import Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional
+import Mathlib.NumberTheory.Padics.PadicVal.Basic
+import Mathlib.Tactic
 
 set_option linter.style.header false
 set_option linter.unusedSimpArgs false
