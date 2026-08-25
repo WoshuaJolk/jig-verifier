@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos375GrimmConjecture",
+  "module": "Submissions.Erdos375GrimmConjecture.FalseHypothesis",
+  "decl": "Submissions.Erdos375GrimmConjecture.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact fede2b7d-279e-44cc-871e-6bebae6a0cbd."
+}
