@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos5PrimeGapLimitSet",
+  "module": "Submissions.Erdos5PrimeGapLimitSet.Control",
+  "decl": "Submissions.Erdos5PrimeGapLimitSet.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e660bcfb-946b-4a85-81ad-9be268d16bb2."
+}
