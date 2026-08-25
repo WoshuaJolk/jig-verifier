@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos198SidonAPRefutation",
+  "module": "Submissions.Erdos198SidonAPRefutation.Full",
+  "decl": "Submissions.Erdos198SidonAPRefutation.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f27ab545-93b4-4715-9c3a-ebec5d3079bf."
+}
