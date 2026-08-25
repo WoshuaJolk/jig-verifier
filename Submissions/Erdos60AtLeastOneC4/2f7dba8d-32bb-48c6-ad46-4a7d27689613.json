@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60AtLeastOneC4",
+  "module": "Submissions.Erdos60AtLeastOneC4.Degenerate",
+  "decl": "Submissions.Erdos60AtLeastOneC4.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 2f7dba8d-32bb-48c6-ad46-4a7d27689613."
+}
