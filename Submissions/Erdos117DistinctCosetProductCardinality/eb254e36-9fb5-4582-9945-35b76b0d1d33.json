@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117DistinctCosetProductCardinality",
+  "module": "Submissions.Erdos117DistinctCosetProductCardinality.Kernel",
+  "decl": "Submissions.Erdos117DistinctCosetProductCardinality.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact eb254e36-9fb5-4582-9945-35b76b0d1d33."
+}
