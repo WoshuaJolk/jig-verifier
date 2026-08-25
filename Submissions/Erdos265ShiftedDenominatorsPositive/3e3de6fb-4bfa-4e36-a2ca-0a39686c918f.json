@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos265ShiftedDenominatorsPositive",
+  "module": "Submissions.Erdos265ShiftedDenominatorsPositive.Worker01",
+  "decl": "Submissions.Erdos265ShiftedDenominatorsPositive.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3e3de6fb-4bfa-4e36-a2ca-0a39686c918f."
+}
