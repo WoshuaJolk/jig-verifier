@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos234PrimeGapDensity",
+  "module": "Submissions.Erdos234PrimeGapDensity.DegenerateCatalogue",
+  "decl": "Submissions.Erdos234PrimeGapDensity.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 616a5004-f45b-492d-8c30-81fd78da9812."
+}
