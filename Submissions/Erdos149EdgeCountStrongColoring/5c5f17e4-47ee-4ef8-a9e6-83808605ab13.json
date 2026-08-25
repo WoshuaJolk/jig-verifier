@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149EdgeCountStrongColoring",
+  "module": "Submissions.Erdos149EdgeCountStrongColoring.Direct",
+  "decl": "Submissions.Erdos149EdgeCountStrongColoring.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5c5f17e4-47ee-4ef8-a9e6-83808605ab13."
+}
