@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos126ExtremalFunctionExists",
+  "module": "Submissions.Erdos126ExtremalFunctionExists.Direct",
+  "decl": "Submissions.Erdos126ExtremalFunctionExists.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 26242af7-2a80-498a-b35f-c9e92a304fd5."
+}
