@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos233ZeroGapSquareSum",
+  "module": "Submissions.Erdos233ZeroGapSquareSum.Direct",
+  "decl": "Submissions.Erdos233ZeroGapSquareSum.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e2de0358-5a31-4cfe-b66c-a09551f8f091."
+}
