@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos821TotientFiberNonnegative",
+  "module": "Submissions.Erdos821TotientFiberNonnegative.Direct",
+  "decl": "Submissions.Erdos821TotientFiberNonnegative.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a4f9ec22-b11d-4cec-b35f-d060f61a7149."
+}
