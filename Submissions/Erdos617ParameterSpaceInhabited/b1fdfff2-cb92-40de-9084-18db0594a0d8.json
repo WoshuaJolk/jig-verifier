@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos617ParameterSpaceInhabited",
+  "module": "Submissions.Erdos617ParameterSpaceInhabited.FalseHypothesis",
+  "decl": "Submissions.Erdos617ParameterSpaceInhabited.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b1fdfff2-cb92-40de-9084-18db0594a0d8."
+}
