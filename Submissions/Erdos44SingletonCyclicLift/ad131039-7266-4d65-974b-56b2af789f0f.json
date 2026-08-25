@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44SingletonCyclicLift",
+  "module": "Submissions.Erdos44SingletonCyclicLift.Direct",
+  "decl": "Submissions.Erdos44SingletonCyclicLift.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ad131039-7266-4d65-974b-56b2af789f0f."
+}
