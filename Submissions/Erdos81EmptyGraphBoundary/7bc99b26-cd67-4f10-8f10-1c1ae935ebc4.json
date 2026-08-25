@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos81EmptyGraphBoundary",
+  "module": "Submissions.Erdos81EmptyGraphBoundary.Worker09VacuousControl",
+  "decl": "Submissions.Erdos81EmptyGraphBoundary.Worker09VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7bc99b26-cd67-4f10-8f10-1c1ae935ebc4."
+}
