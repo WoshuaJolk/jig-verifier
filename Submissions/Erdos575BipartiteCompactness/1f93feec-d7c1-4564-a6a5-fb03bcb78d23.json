@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos575BipartiteCompactness",
+  "module": "Submissions.Erdos575BipartiteCompactness.Degenerate",
+  "decl": "Submissions.Erdos575BipartiteCompactness.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1f93feec-d7c1-4564-a6a5-fb03bcb78d23."
+}
