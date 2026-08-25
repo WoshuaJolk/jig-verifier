@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos20FactorialUpper",
+  "module": "Submissions.Erdos20FactorialUpper.Degenerate",
+  "decl": "Submissions.Erdos20FactorialUpper.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2c80b2b9-26a6-48d8-a4e0-8959683ad832."
+}
