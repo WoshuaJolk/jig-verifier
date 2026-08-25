@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117LogBoundsAsymptoticAssembly",
+  "module": "Submissions.Erdos117LogBoundsAsymptoticAssembly.Kernel",
+  "decl": "Submissions.Erdos117LogBoundsAsymptoticAssembly.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2961ee71-98ab-42fb-a464-5ed1b9c268c3."
+}
