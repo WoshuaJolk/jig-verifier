@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1SubsetSumTailBound",
+  "module": "Submissions.Erdos1SubsetSumTailBound.Erdos1SubsetSumTailBoundProof",
+  "decl": "Submissions.Erdos1SubsetSumTailBound.Erdos1SubsetSumTailBoundProof.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 22ce8a38-fce4-4cf9-b0f4-b8f8e58a8ac5."
+}
