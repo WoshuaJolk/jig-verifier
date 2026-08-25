@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos661TwoPointSetsWitness",
+  "module": "Submissions.Erdos661TwoPointSetsWitness.Worker01",
+  "decl": "Submissions.Erdos661TwoPointSetsWitness.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 41cfb864-e6d5-4b18-84ad-8d4f0faf7f62."
+}
