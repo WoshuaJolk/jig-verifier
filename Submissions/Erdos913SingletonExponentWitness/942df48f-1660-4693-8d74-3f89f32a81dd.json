@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos913SingletonExponentWitness",
+  "module": "Submissions.Erdos913SingletonExponentWitness.Worker01",
+  "decl": "Submissions.Erdos913SingletonExponentWitness.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 942df48f-1660-4693-8d74-3f89f32a81dd."
+}
