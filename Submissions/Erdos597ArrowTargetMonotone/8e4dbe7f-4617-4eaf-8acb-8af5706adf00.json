@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos597ArrowTargetMonotone",
+  "module": "Submissions.Erdos597ArrowTargetMonotone.Worker09MiddleControl",
+  "decl": "Submissions.Erdos597ArrowTargetMonotone.Worker09MiddleControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8e4dbe7f-4617-4eaf-8acb-8af5706adf00."
+}
