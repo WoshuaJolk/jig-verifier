@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos393OddSquareReduction",
+  "module": "Submissions.Erdos393OddSquareReduction.Worker09MiddleDegenerate",
+  "decl": "Submissions.Erdos393OddSquareReduction.Worker09MiddleDegenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 24131d8b-6fa1-46fd-a4bc-10dbb6de01e2."
+}
