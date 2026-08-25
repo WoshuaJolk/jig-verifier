@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12DyadicReflection",
+  "module": "Submissions.Erdos12DyadicReflection.PairExclusion",
+  "decl": "Submissions.Erdos12DyadicReflection.PairExclusion.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 161509cb-10bb-4769-8b6a-49b46dbdbe3d."
+}
