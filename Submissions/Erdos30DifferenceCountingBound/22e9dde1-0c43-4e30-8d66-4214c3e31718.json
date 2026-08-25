@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30DifferenceCountingBound",
+  "module": "Submissions.Erdos30DifferenceCountingBound.Direct",
+  "decl": "Submissions.Erdos30DifferenceCountingBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 22e9dde1-0c43-4e30-8d66-4214c3e31718."
+}
