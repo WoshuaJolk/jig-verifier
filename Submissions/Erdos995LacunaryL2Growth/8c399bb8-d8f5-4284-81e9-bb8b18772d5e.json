@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos995LacunaryL2Growth",
+  "module": "Submissions.Erdos995LacunaryL2Growth.Degenerate",
+  "decl": "Submissions.Erdos995LacunaryL2Growth.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8c399bb8-d8f5-4284-81e9-bb8b18772d5e."
+}
