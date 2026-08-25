@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos44RotationGap",
+  "module": "Submissions.Erdos44RotationGap.Direct",
+  "decl": "Submissions.Erdos44RotationGap.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8e96155c-56fe-4547-9d80-0bdd81d229ba."
+}
