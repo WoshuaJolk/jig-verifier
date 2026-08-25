@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos417ValueOneBoundary",
+  "module": "Submissions.Erdos417ValueOneBoundary.Worker09MiddleDegenerate",
+  "decl": "Submissions.Erdos417ValueOneBoundary.Worker09MiddleDegenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c3eab531-ef15-4d40-a5b5-53e36de4095b."
+}
