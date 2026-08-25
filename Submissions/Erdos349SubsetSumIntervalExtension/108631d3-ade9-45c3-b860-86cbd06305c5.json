@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos349SubsetSumIntervalExtension",
+  "module": "Submissions.Erdos349SubsetSumIntervalExtension.Worker01",
+  "decl": "Submissions.Erdos349SubsetSumIntervalExtension.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 108631d3-ade9-45c3-b860-86cbd06305c5."
+}
