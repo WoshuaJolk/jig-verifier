@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos942PowerfulNumbersBetweenSquares",
+  "module": "Submissions.Erdos942PowerfulNumbersBetweenSquares.DegenerateCatalogue",
+  "decl": "Submissions.Erdos942PowerfulNumbersBetweenSquares.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 4d2ab225-90be-400d-b553-11c117eacf76."
+}
