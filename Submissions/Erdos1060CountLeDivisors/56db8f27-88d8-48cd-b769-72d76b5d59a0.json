@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1060CountLeDivisors",
+  "module": "Submissions.Erdos1060CountLeDivisors.Worker04",
+  "decl": "Submissions.Erdos1060CountLeDivisors.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 56db8f27-88d8-48cd-b769-72d76b5d59a0."
+}
