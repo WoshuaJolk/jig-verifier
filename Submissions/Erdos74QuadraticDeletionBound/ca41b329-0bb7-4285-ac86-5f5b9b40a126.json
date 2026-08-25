@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos74QuadraticDeletionBound",
+  "module": "Submissions.Erdos74QuadraticDeletionBound.Universal",
+  "decl": "Submissions.Erdos74QuadraticDeletionBound.Universal.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ca41b329-0bb7-4285-ac86-5f5b9b40a126."
+}
