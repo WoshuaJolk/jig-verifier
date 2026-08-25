@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos628TihanyConjecture",
+  "module": "Submissions.Erdos628TihanyConjecture.FalseHypothesis",
+  "decl": "Submissions.Erdos628TihanyConjecture.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a850db84-f15d-4051-8008-b6016781b0ed."
+}
