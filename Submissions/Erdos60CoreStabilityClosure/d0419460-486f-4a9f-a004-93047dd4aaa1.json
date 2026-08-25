@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60CoreStabilityClosure",
+  "module": "Submissions.Erdos60CoreStabilityClosure.Composer",
+  "decl": "Submissions.Erdos60CoreStabilityClosure.Composer.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d0419460-486f-4a9f-a004-93047dd4aaa1."
+}
