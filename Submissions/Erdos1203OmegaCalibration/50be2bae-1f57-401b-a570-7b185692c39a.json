@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1203OmegaCalibration",
+  "module": "Submissions.Erdos1203OmegaCalibration.Kernel",
+  "decl": "Submissions.Erdos1203OmegaCalibration.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 50be2bae-1f57-401b-a570-7b185692c39a."
+}
