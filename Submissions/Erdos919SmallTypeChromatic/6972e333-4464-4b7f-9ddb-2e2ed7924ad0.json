@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos919SmallTypeChromatic",
+  "module": "Submissions.Erdos919SmallTypeChromatic.FleetAttacks",
+  "decl": "Submissions.Erdos919SmallTypeChromatic.FleetAttacks.definitionalEscape",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6972e333-4464-4b7f-9ddb-2e2ed7924ad0."
+}
