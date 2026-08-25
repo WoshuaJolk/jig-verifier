@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68FiniteScaledResidueFormula",
+  "module": "Submissions.Erdos68FiniteScaledResidueFormula.FiniteScaledResidueFormula",
+  "decl": "Submissions.Erdos68FiniteScaledResidueFormula.FiniteScaledResidueFormula.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9c7a5c2d-8f60-4a3f-aa7c-997da7ed82f2."
+}
