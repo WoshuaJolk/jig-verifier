@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos17NinetySevenNotCluster",
+  "module": "Submissions.Erdos17NinetySevenNotCluster.Direct",
+  "decl": "Submissions.Erdos17NinetySevenNotCluster.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 29c37aff-946d-4793-92c4-bff05f353f82."
+}
