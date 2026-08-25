@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1020MatchingConjecture",
+  "module": "Submissions.Erdos1020MatchingConjecture.FalseHypothesis",
+  "decl": "Submissions.Erdos1020MatchingConjecture.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact bc75ae36-a9fc-409a-a2f8-595ca7f8f1e1."
+}
