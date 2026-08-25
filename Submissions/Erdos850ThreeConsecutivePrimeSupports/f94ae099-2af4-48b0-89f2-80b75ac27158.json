@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos850ThreeConsecutivePrimeSupports",
+  "module": "Submissions.Erdos850ThreeConsecutivePrimeSupports.SmokeControl",
+  "decl": "Submissions.Erdos850ThreeConsecutivePrimeSupports.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f94ae099-2af4-48b0-89f2-80b75ac27158."
+}
