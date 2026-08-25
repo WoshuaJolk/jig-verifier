@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1062ForkFreeIrrationalDensity",
+  "module": "Submissions.Erdos1062ForkFreeIrrationalDensity.DegenerateCatalogue",
+  "decl": "Submissions.Erdos1062ForkFreeIrrationalDensity.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a7a2f026-4404-4c45-b0a5-e705d12518bb."
+}
