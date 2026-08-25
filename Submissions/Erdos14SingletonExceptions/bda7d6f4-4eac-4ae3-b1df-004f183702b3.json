@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14SingletonExceptions",
+  "module": "Submissions.Erdos14SingletonExceptions.Control",
+  "decl": "Submissions.Erdos14SingletonExceptions.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact bda7d6f4-4eac-4ae3-b1df-004f183702b3."
+}
