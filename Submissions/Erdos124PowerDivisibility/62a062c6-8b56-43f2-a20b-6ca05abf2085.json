@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos124PowerDivisibility",
+  "module": "Submissions.Erdos124PowerDivisibility.Worker04",
+  "decl": "Submissions.Erdos124PowerDivisibility.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 62a062c6-8b56-43f2-a20b-6ca05abf2085."
+}
