@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos561OneEdgeSizeRamsey",
+  "module": "Submissions.Erdos561OneEdgeSizeRamsey.Worker09MiddleExpectedRedEq",
+  "decl": "Submissions.Erdos561OneEdgeSizeRamsey.Worker09MiddleExpectedRedEq.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2ac863bd-1359-4a8b-ab84-db41be5013be."
+}
