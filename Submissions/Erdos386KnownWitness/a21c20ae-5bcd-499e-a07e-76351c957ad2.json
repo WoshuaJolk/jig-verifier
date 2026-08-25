@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos386KnownWitness",
+  "module": "Submissions.Erdos386KnownWitness.Control",
+  "decl": "Submissions.Erdos386KnownWitness.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a21c20ae-5bcd-499e-a07e-76351c957ad2."
+}
