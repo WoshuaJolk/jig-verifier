@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos61ComplementSymmetry",
+  "module": "Submissions.Erdos61ComplementSymmetry.Worker01",
+  "decl": "Submissions.Erdos61ComplementSymmetry.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4e0f97e5-3f6e-4aaf-9061-43bbda7d09ee."
+}
