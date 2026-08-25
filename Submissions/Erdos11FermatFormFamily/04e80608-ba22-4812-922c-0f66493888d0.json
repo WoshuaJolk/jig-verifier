@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos11FermatFormFamily",
+  "module": "Submissions.Erdos11FermatFormFamily.Direct",
+  "decl": "Submissions.Erdos11FermatFormFamily.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 04e80608-ba22-4812-922c-0f66493888d0."
+}
