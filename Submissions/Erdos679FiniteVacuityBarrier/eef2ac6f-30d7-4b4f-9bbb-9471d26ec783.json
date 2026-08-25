@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos679FiniteVacuityBarrier",
+  "module": "Submissions.Erdos679FiniteVacuityBarrier.Control",
+  "decl": "Submissions.Erdos679FiniteVacuityBarrier.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact eef2ac6f-30d7-4b4f-9bbb-9471d26ec783."
+}
