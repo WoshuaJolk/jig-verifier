@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117RestrictedFormRankLoss",
+  "module": "Submissions.Erdos117RestrictedFormRankLoss.Control",
+  "decl": "Submissions.Erdos117RestrictedFormRankLoss.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 216fc80f-b22b-4cf2-a04f-fa5aca19a50d."
+}
