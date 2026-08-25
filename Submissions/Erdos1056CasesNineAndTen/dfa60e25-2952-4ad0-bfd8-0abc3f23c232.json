@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1056CasesNineAndTen",
+  "module": "Submissions.Erdos1056CasesNineAndTen.ExplicitWitnesses",
+  "decl": "Submissions.Erdos1056CasesNineAndTen.ExplicitWitnesses.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dfa60e25-2952-4ad0-bfd8-0abc3f23c232."
+}
