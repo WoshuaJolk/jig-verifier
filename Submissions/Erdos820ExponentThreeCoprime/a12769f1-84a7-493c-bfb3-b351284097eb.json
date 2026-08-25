@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos820ExponentThreeCoprime",
+  "module": "Submissions.Erdos820ExponentThreeCoprime.Worker04Degenerate",
+  "decl": "Submissions.Erdos820ExponentThreeCoprime.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact a12769f1-84a7-493c-bfb3-b351284097eb."
+}
