@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14EmptySetExceptions",
+  "module": "Submissions.Erdos14EmptySetExceptions.Direct",
+  "decl": "Submissions.Erdos14EmptySetExceptions.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c462391d-c6a9-4da5-b0a7-818b09e284f0."
+}
