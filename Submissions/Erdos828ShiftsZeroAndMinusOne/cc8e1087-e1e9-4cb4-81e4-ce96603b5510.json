@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos828ShiftsZeroAndMinusOne",
+  "module": "Submissions.Erdos828ShiftsZeroAndMinusOne.ExplicitFamilies",
+  "decl": "Submissions.Erdos828ShiftsZeroAndMinusOne.ExplicitFamilies.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cc8e1087-e1e9-4cb4-81e4-ce96603b5510."
+}
