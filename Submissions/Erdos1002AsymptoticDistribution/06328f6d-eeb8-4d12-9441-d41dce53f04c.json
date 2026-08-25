@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1002AsymptoticDistribution",
+  "module": "Submissions.Erdos1002AsymptoticDistribution.DegenerateCatalogue",
+  "decl": "Submissions.Erdos1002AsymptoticDistribution.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 06328f6d-eeb8-4d12-9441-d41dce53f04c."
+}
