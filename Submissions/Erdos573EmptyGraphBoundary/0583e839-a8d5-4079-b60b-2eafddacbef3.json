@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos573EmptyGraphBoundary",
+  "module": "Submissions.Erdos573EmptyGraphBoundary.Worker09Middle",
+  "decl": "Submissions.Erdos573EmptyGraphBoundary.Worker09Middle.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0583e839-a8d5-4079-b60b-2eafddacbef3."
+}
