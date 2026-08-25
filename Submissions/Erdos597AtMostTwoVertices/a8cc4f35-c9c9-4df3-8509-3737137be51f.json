@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos597AtMostTwoVertices",
+  "module": "Submissions.Erdos597AtMostTwoVertices.Worker09Middle",
+  "decl": "Submissions.Erdos597AtMostTwoVertices.Worker09Middle.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a8cc4f35-c9c9-4df3-8509-3737137be51f."
+}
