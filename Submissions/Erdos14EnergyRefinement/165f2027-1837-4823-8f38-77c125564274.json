@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14EnergyRefinement",
+  "module": "Submissions.Erdos14EnergyRefinement.Direct",
+  "decl": "Submissions.Erdos14EnergyRefinement.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 165f2027-1837-4823-8f38-77c125564274."
+}
