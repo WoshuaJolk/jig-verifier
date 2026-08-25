@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos852BoundedDistinctRun",
+  "module": "Submissions.Erdos852BoundedDistinctRun.FalsePremise",
+  "decl": "Submissions.Erdos852BoundedDistinctRun.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c7a42e2d-aff2-422c-ace8-256210a4827c."
+}
