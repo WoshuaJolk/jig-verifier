@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos87SmallEpsilonFactorPositive",
+  "module": "Submissions.Erdos87SmallEpsilonFactorPositive.Direct",
+  "decl": "Submissions.Erdos87SmallEpsilonFactorPositive.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 49c388e5-74cb-476f-a33d-df01398f72e6."
+}
