@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos815EvenCyclesCriticalGraphs",
+  "module": "Submissions.Erdos815EvenCyclesCriticalGraphs.Degenerate",
+  "decl": "Submissions.Erdos815EvenCyclesCriticalGraphs.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 676ea35b-8c69-409c-b6e7-5f1983ad3c38."
+}
