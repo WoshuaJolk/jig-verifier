@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos138VanDerWaerdenRootGrowth",
+  "module": "Submissions.Erdos138VanDerWaerdenRootGrowth.DegenerateCatalogue",
+  "decl": "Submissions.Erdos138VanDerWaerdenRootGrowth.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9ea75b02-113e-4861-a78d-60d6c3eb5b2d."
+}
