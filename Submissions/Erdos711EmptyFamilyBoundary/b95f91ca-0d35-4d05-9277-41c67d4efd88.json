@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos711EmptyFamilyBoundary",
+  "module": "Submissions.Erdos711EmptyFamilyBoundary.Elim",
+  "decl": "Submissions.Erdos711EmptyFamilyBoundary.Elim.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b95f91ca-0d35-4d05-9277-41c67d4efd88."
+}
