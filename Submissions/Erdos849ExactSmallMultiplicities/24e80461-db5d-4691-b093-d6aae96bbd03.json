@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos849ExactSmallMultiplicities",
+  "module": "Submissions.Erdos849ExactSmallMultiplicities.Worker09Upper",
+  "decl": "Submissions.Erdos849ExactSmallMultiplicities.Worker09Upper.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 24e80461-db5d-4691-b093-d6aae96bbd03."
+}
