@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos282OddGreedyUnitFractions",
+  "module": "Submissions.Erdos282OddGreedyUnitFractions.DegenerateCatalogue",
+  "decl": "Submissions.Erdos282OddGreedyUnitFractions.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 78374a3f-88a5-4591-b604-434981cfcd69."
+}
