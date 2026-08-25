@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68FiniteRowTermination",
+  "module": "Submissions.Erdos68FiniteRowTermination.FiniteRowTermination",
+  "decl": "Submissions.Erdos68FiniteRowTermination.FiniteRowTermination.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 24c696ea-70e5-48fe-be11-a541998879a5."
+}
