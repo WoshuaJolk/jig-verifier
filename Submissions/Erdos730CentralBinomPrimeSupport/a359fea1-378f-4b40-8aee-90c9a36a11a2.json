@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos730CentralBinomPrimeSupport",
+  "module": "Submissions.Erdos730CentralBinomPrimeSupport.SmokeControl",
+  "decl": "Submissions.Erdos730CentralBinomPrimeSupport.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a359fea1-378f-4b40-8aee-90c9a36a11a2."
+}
