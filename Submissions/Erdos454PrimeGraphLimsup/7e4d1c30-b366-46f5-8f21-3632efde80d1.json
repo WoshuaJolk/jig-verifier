@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos454PrimeGraphLimsup",
+  "module": "Submissions.Erdos454PrimeGraphLimsup.SmokeControl",
+  "decl": "Submissions.Erdos454PrimeGraphLimsup.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7e4d1c30-b366-46f5-8f21-3632efde80d1."
+}
