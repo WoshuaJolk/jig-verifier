@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68TopDigitArbitraryRuns",
+  "module": "Submissions.Erdos68TopDigitArbitraryRuns.TopDigitArbitraryRuns",
+  "decl": "Submissions.Erdos68TopDigitArbitraryRuns.TopDigitArbitraryRuns.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 432c1deb-d5bf-476b-a705-3a6d019869a1."
+}
