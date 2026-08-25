@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52TreeOverlapObstruction",
+  "module": "Submissions.Erdos52TreeOverlapObstruction.P29",
+  "decl": "Submissions.Erdos52TreeOverlapObstruction.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 365ba9ad-3afa-4364-bf9e-7aff64cb9d98."
+}
