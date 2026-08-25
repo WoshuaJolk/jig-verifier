@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1ModularFiberBound",
+  "module": "Submissions.Erdos1ModularFiberBound.Erdos1ModularFiberBoundProof",
+  "decl": "Submissions.Erdos1ModularFiberBound.Erdos1ModularFiberBoundProof.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8232a295-2ce0-44ad-93ed-291abb45aa19."
+}
