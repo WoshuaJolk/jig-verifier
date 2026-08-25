@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos342UlamTwinPairs",
+  "module": "Submissions.Erdos342UlamTwinPairs.DegenerateCatalogue",
+  "decl": "Submissions.Erdos342UlamTwinPairs.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e1830fb6-42ec-4fc3-b100-5af5f6e56d24."
+}
