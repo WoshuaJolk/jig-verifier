@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos933InfinitelyOftenAboveOne",
+  "module": "Submissions.Erdos933InfinitelyOftenAboveOne.Worker09UpperDegenerate",
+  "decl": "Submissions.Erdos933InfinitelyOftenAboveOne.Worker09UpperDegenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0d691a8e-cf24-47b6-a541-a471953a17a1."
+}
