@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos879SingletonAdmissible",
+  "module": "Submissions.Erdos879SingletonAdmissible.FalsePremise",
+  "decl": "Submissions.Erdos879SingletonAdmissible.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9027737d-8b30-4f86-9763-1c084c818e02."
+}
