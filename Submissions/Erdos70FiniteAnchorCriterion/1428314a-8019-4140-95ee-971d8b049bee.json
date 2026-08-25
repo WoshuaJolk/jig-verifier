@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos70FiniteAnchorCriterion",
+  "module": "Submissions.Erdos70FiniteAnchorCriterion.Signatures",
+  "decl": "Submissions.Erdos70FiniteAnchorCriterion.Signatures.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1428314a-8019-4140-95ee-971d8b049bee."
+}
