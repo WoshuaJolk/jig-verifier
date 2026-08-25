@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos331BinaryDifferenceRefutation",
+  "module": "Submissions.Erdos331BinaryDifferenceRefutation.Full",
+  "decl": "Submissions.Erdos331BinaryDifferenceRefutation.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cb4861f8-5792-47e3-847d-1f125a8c32c3."
+}
