@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos463CompositeLeastFactorWindow",
+  "module": "Submissions.Erdos463CompositeLeastFactorWindow.Degenerate",
+  "decl": "Submissions.Erdos463CompositeLeastFactorWindow.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 81e2ee2f-255e-4350-8086-c665a8f3c32c."
+}
