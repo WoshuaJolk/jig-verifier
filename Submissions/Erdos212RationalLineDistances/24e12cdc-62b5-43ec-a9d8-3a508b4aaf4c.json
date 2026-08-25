@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos212RationalLineDistances",
+  "module": "Submissions.Erdos212RationalLineDistances.Degenerate",
+  "decl": "Submissions.Erdos212RationalLineDistances.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 24e12cdc-62b5-43ec-a9d8-3a508b4aaf4c."
+}
