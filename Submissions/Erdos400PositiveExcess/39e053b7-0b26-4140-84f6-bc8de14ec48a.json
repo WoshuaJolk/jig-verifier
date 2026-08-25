@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos400PositiveExcess",
+  "module": "Submissions.Erdos400PositiveExcess.Worker04",
+  "decl": "Submissions.Erdos400PositiveExcess.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 39e053b7-0b26-4140-84f6-bc8de14ec48a."
+}
