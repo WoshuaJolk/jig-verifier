@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117FiniteStemAssembly",
+  "module": "Submissions.Erdos117FiniteStemAssembly.Control",
+  "decl": "Submissions.Erdos117FiniteStemAssembly.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8ea2aca5-33a7-44ca-84f8-41c7e0f1025f."
+}
