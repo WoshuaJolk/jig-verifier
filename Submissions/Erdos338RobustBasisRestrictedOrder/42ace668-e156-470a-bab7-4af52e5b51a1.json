@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos338RobustBasisRestrictedOrder",
+  "module": "Submissions.Erdos338RobustBasisRestrictedOrder.Attacks",
+  "decl": "Submissions.Erdos338RobustBasisRestrictedOrder.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 42ace668-e156-470a-bab7-4af52e5b51a1."
+}
