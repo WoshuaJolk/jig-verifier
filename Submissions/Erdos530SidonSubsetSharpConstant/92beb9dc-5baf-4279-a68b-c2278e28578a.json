@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos530SidonSubsetSharpConstant",
+  "module": "Submissions.Erdos530SidonSubsetSharpConstant.Attacks",
+  "decl": "Submissions.Erdos530SidonSubsetSharpConstant.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 92beb9dc-5baf-4279-a68b-c2278e28578a."
+}
