@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos357OneTermBoundary",
+  "module": "Submissions.Erdos357OneTermBoundary.Worker09Middle",
+  "decl": "Submissions.Erdos357OneTermBoundary.Worker09Middle.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact aa3cbc7a-75ed-4559-a655-63dc69a28740."
+}
