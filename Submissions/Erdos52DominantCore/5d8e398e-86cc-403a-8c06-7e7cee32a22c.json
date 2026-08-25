@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52DominantCore",
+  "module": "Submissions.Erdos52DominantCore.P29",
+  "decl": "Submissions.Erdos52DominantCore.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5d8e398e-86cc-403a-8c06-7e7cee32a22c."
+}
