@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos738InducedTreesInfiniteChromatic",
+  "module": "Submissions.Erdos738InducedTreesInfiniteChromatic.DegenerateCatalogue",
+  "decl": "Submissions.Erdos738InducedTreesInfiniteChromatic.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9fc9ac64-a84f-4a38-9fcd-9d2f384bb982."
+}
