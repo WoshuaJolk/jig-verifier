@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos28RepresentationPositive",
+  "module": "Submissions.Erdos28RepresentationPositive.Worker04",
+  "decl": "Submissions.Erdos28RepresentationPositive.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6f96b814-bdcc-44d5-8ff2-f64bed4917d0."
+}
