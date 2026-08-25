@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos617NoBalancedColoring",
+  "module": "Submissions.Erdos617NoBalancedColoring.Control",
+  "decl": "Submissions.Erdos617NoBalancedColoring.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 27e376fd-e4f5-4bac-b720-5568bacba7c3."
+}
