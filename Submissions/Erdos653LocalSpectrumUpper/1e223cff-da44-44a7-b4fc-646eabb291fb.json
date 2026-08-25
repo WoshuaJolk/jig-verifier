@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos653LocalSpectrumUpper",
+  "module": "Submissions.Erdos653LocalSpectrumUpper.FalseHypothesis",
+  "decl": "Submissions.Erdos653LocalSpectrumUpper.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1e223cff-da44-44a7-b4fc-646eabb291fb."
+}
