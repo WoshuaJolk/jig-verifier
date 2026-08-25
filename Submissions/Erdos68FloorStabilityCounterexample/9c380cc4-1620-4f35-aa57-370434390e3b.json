@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68FloorStabilityCounterexample",
+  "module": "Submissions.Erdos68FloorStabilityCounterexample.FloorStabilityCounterexample",
+  "decl": "Submissions.Erdos68FloorStabilityCounterexample.FloorStabilityCounterexample.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9c380cc4-1620-4f35-aa57-370434390e3b."
+}
