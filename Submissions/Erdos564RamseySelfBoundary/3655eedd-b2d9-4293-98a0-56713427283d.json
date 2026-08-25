@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos564RamseySelfBoundary",
+  "module": "Submissions.Erdos564RamseySelfBoundary.Degenerate",
+  "decl": "Submissions.Erdos564RamseySelfBoundary.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 3655eedd-b2d9-4293-98a0-56713427283d."
+}
