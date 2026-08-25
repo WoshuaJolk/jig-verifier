@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos18PolynomialObstruction",
+  "module": "Submissions.Erdos18PolynomialObstruction.Direct",
+  "decl": "Submissions.Erdos18PolynomialObstruction.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6754a6f8-16af-49fd-92a0-194f603a66c9."
+}
