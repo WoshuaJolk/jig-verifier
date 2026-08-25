@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos949SmallForbiddenSetCase",
+  "module": "Submissions.Erdos949SmallForbiddenSetCase.Worker01",
+  "decl": "Submissions.Erdos949SmallForbiddenSetCase.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c4a58aa1-97ae-4150-a227-bd35c12731ce."
+}
