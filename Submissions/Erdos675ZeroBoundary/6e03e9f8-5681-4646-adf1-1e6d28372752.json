@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos675ZeroBoundary",
+  "module": "Submissions.Erdos675ZeroBoundary.Omega",
+  "decl": "Submissions.Erdos675ZeroBoundary.Omega.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6e03e9f8-5681-4646-adf1-1e6d28372752."
+}
