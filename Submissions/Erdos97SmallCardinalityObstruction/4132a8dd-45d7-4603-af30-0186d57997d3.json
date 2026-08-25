@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos97SmallCardinalityObstruction",
+  "module": "Submissions.Erdos97SmallCardinalityObstruction.Worker01",
+  "decl": "Submissions.Erdos97SmallCardinalityObstruction.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4132a8dd-45d7-4603-af30-0186d57997d3."
+}
