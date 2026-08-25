@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos963EmptyBoundary",
+  "module": "Submissions.Erdos963EmptyBoundary.Subset",
+  "decl": "Submissions.Erdos963EmptyBoundary.Subset.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b08decb8-ffde-4b6b-9a74-f8f6597d4916."
+}
