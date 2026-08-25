@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos390FactorialFactorLimit",
+  "module": "Submissions.Erdos390FactorialFactorLimit.DegenerateCatalogue",
+  "decl": "Submissions.Erdos390FactorialFactorLimit.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 12eb263e-5558-4915-8922-b519e13218b6."
+}
