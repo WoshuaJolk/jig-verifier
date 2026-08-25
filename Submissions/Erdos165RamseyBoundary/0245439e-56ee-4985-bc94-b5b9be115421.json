@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos165RamseyBoundary",
+  "module": "Submissions.Erdos165RamseyBoundary.Worker09VacuousControl",
+  "decl": "Submissions.Erdos165RamseyBoundary.Worker09VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0245439e-56ee-4985-bc94-b5b9be115421."
+}
