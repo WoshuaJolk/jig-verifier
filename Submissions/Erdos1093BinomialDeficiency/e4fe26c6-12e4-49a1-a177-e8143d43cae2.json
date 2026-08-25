@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1093BinomialDeficiency",
+  "module": "Submissions.Erdos1093BinomialDeficiency.Worker01Degenerate",
+  "decl": "Submissions.Erdos1093BinomialDeficiency.Worker01Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e4fe26c6-12e4-49a1-a177-e8143d43cae2."
+}
