@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos340LargeEpsilon",
+  "module": "Submissions.Erdos340LargeEpsilon.Worker04",
+  "decl": "Submissions.Erdos340LargeEpsilon.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e05cd514-f0bf-4087-8307-5fb538eb4bb3."
+}
