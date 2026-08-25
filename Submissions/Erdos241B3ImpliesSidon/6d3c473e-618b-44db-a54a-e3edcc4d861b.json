@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos241B3ImpliesSidon",
+  "module": "Submissions.Erdos241B3ImpliesSidon.Worker01RedControl",
+  "decl": "Submissions.Erdos241B3ImpliesSidon.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 6d3c473e-618b-44db-a54a-e3edcc4d861b."
+}
