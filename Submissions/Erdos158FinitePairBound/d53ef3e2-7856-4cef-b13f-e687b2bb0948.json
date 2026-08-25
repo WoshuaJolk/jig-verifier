@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos158FinitePairBound",
+  "module": "Submissions.Erdos158FinitePairBound.Control",
+  "decl": "Submissions.Erdos158FinitePairBound.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact d53ef3e2-7856-4cef-b13f-e687b2bb0948."
+}
