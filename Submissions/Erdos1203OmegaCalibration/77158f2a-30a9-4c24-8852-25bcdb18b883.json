@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1203OmegaCalibration",
+  "module": "Submissions.Erdos1203OmegaCalibration.FalsePremise",
+  "decl": "Submissions.Erdos1203OmegaCalibration.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 77158f2a-30a9-4c24-8852-25bcdb18b883."
+}
