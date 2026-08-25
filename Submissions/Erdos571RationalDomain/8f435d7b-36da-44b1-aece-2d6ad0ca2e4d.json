@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos571RationalDomain",
+  "module": "Submissions.Erdos571RationalDomain.Control",
+  "decl": "Submissions.Erdos571RationalDomain.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 8f435d7b-36da-44b1-aece-2d6ad0ca2e4d."
+}
