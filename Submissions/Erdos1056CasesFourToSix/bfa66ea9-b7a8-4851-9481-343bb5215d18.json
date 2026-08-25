@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1056CasesFourToSix",
+  "module": "Submissions.Erdos1056CasesFourToSix.ExplicitWitnesses",
+  "decl": "Submissions.Erdos1056CasesFourToSix.ExplicitWitnesses.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact bfa66ea9-b7a8-4851-9481-343bb5215d18."
+}
