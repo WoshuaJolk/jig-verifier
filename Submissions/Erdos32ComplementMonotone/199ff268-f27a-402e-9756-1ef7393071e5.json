@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos32ComplementMonotone",
+  "module": "Submissions.Erdos32ComplementMonotone.Direct",
+  "decl": "Submissions.Erdos32ComplementMonotone.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 199ff268-f27a-402e-9756-1ef7393071e5."
+}
