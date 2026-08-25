@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos238SingletonPrimeBlock",
+  "module": "Submissions.Erdos238SingletonPrimeBlock.Degenerate",
+  "decl": "Submissions.Erdos238SingletonPrimeBlock.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9cd3f9bf-188d-409e-a850-a3549e19f0e1."
+}
