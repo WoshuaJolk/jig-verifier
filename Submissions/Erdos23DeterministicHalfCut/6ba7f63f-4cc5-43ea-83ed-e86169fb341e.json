@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23DeterministicHalfCut",
+  "module": "Submissions.Erdos23DeterministicHalfCut.Direct",
+  "decl": "Submissions.Erdos23DeterministicHalfCut.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6ba7f63f-4cc5-43ea-83ed-e86169fb341e."
+}
