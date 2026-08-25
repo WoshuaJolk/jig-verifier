@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos643CommonVertexFree",
+  "module": "Submissions.Erdos643CommonVertexFree.Control",
+  "decl": "Submissions.Erdos643CommonVertexFree.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 9b82a580-7508-425e-996b-1991b6c4a7ff."
+}
