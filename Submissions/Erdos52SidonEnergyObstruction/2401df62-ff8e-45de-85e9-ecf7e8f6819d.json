@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52SidonEnergyObstruction",
+  "module": "Submissions.Erdos52SidonEnergyObstruction.P29",
+  "decl": "Submissions.Erdos52SidonEnergyObstruction.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2401df62-ff8e-45de-85e9-ecf7e8f6819d."
+}
