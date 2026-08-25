@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos654DistinctDistancesImprovement",
+  "module": "Submissions.Erdos654DistinctDistancesImprovement.DegenerateCatalogue",
+  "decl": "Submissions.Erdos654DistinctDistancesImprovement.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2667cf0f-9c97-473d-aa66-b6b68d6200d8."
+}
