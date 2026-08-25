@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos829SmallTwoCubeCounts",
+  "module": "Submissions.Erdos829SmallTwoCubeCounts.Worker01RedControl",
+  "decl": "Submissions.Erdos829SmallTwoCubeCounts.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 480dc40e-10e9-4e99-b86a-de3bf240d7da."
+}
