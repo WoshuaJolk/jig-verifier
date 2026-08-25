@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos919CountableInduced",
+  "module": "Submissions.Erdos919CountableInduced.Control",
+  "decl": "Submissions.Erdos919CountableInduced.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b5dbaf77-e22e-46d3-bacf-c04883f54018."
+}
