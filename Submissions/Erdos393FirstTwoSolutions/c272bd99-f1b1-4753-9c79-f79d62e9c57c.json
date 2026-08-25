@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos393FirstTwoSolutions",
+  "module": "Submissions.Erdos393FirstTwoSolutions.Worker09MiddleDegenerate",
+  "decl": "Submissions.Erdos393FirstTwoSolutions.Worker09MiddleDegenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c272bd99-f1b1-4753-9c79-f79d62e9c57c."
+}
