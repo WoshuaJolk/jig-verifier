@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos89DistinctDistancesLower",
+  "module": "Submissions.Erdos89DistinctDistancesLower.Control",
+  "decl": "Submissions.Erdos89DistinctDistancesLower.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7f6b8172-bbb7-4098-9b05-8700d8ffe54f."
+}
