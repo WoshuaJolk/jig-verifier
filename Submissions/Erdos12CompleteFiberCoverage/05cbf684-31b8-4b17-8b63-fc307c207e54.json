@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos12CompleteFiberCoverage",
+  "module": "Submissions.Erdos12CompleteFiberCoverage.QuotientResidues",
+  "decl": "Submissions.Erdos12CompleteFiberCoverage.QuotientResidues.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 05cbf684-31b8-4b17-8b63-fc307c207e54."
+}
