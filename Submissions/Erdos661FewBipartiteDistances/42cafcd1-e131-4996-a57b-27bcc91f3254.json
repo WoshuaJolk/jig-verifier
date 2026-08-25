@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos661FewBipartiteDistances",
+  "module": "Submissions.Erdos661FewBipartiteDistances.Worker01Degenerate",
+  "decl": "Submissions.Erdos661FewBipartiteDistances.Worker01Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 42cafcd1-e131-4996-a57b-27bcc91f3254."
+}
