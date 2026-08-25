@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117FiniteCoverNumberInvariant",
+  "module": "Submissions.Erdos117FiniteCoverNumberInvariant.SlimKernel",
+  "decl": "Submissions.Erdos117FiniteCoverNumberInvariant.SlimKernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1435df19-c068-41d2-b2c4-1691ff0ba300."
+}
