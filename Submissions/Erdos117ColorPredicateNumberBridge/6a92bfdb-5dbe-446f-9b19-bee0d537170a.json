@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117ColorPredicateNumberBridge",
+  "module": "Submissions.Erdos117ColorPredicateNumberBridge.Control",
+  "decl": "Submissions.Erdos117ColorPredicateNumberBridge.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "Extra False premise; must fail anti-restatement.",
+  "note": "Submitted through the Jig API as artifact 6a92bfdb-5dbe-446f-9b19-bee0d537170a."
+}
