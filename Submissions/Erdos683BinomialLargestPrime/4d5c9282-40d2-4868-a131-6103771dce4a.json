@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos683BinomialLargestPrime",
+  "module": "Submissions.Erdos683BinomialLargestPrime.Degenerate",
+  "decl": "Submissions.Erdos683BinomialLargestPrime.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 4d5c9282-40d2-4868-a131-6103771dce4a."
+}
