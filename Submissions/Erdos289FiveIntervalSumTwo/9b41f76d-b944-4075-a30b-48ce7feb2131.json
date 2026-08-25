@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos289FiveIntervalSumTwo",
+  "module": "Submissions.Erdos289FiveIntervalSumTwo.Worker01",
+  "decl": "Submissions.Erdos289FiveIntervalSumTwo.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9b41f76d-b944-4075-a30b-48ce7feb2131."
+}
