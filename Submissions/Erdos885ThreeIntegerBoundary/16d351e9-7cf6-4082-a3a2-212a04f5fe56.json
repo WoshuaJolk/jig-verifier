@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos885ThreeIntegerBoundary",
+  "module": "Submissions.Erdos885ThreeIntegerBoundary.Worker09Upper",
+  "decl": "Submissions.Erdos885ThreeIntegerBoundary.Worker09Upper.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 16d351e9-7cf6-4082-a3a2-212a04f5fe56."
+}
