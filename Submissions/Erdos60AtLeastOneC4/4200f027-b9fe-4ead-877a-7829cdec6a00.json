@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60AtLeastOneC4",
+  "module": "Submissions.Erdos60AtLeastOneC4.ExtremalBoundary",
+  "decl": "Submissions.Erdos60AtLeastOneC4.ExtremalBoundary.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4200f027-b9fe-4ead-877a-7829cdec6a00."
+}
