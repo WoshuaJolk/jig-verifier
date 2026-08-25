@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68FactorialTailBound",
+  "module": "Submissions.Erdos68FactorialTailBound.FactorialTailBound",
+  "decl": "Submissions.Erdos68FactorialTailBound.FactorialTailBound.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 39e284bf-c4b0-4ff6-8c61-383845a05083."
+}
