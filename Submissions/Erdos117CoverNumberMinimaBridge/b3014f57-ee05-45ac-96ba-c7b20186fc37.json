@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117CoverNumberMinimaBridge",
+  "module": "Submissions.Erdos117CoverNumberMinimaBridge.Kernel",
+  "decl": "Submissions.Erdos117CoverNumberMinimaBridge.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b3014f57-ee05-45ac-96ba-c7b20186fc37."
+}
