@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos563BalancedColoringThreshold",
+  "module": "Submissions.Erdos563BalancedColoringThreshold.Degenerate",
+  "decl": "Submissions.Erdos563BalancedColoringThreshold.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 127464d2-1bc7-4c1a-89b7-144620bddf6e."
+}
