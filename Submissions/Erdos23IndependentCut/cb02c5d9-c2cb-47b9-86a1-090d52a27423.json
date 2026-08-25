@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23IndependentCut",
+  "module": "Submissions.Erdos23IndependentCut.Direct",
+  "decl": "Submissions.Erdos23IndependentCut.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cb02c5d9-c2cb-47b9-86a1-090d52a27423."
+}
