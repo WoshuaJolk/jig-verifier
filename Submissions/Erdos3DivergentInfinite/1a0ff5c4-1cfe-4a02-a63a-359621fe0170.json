@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos3DivergentInfinite",
+  "module": "Submissions.Erdos3DivergentInfinite.Worker03VacuousControl",
+  "decl": "Submissions.Erdos3DivergentInfinite.Worker03VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1a0ff5c4-1cfe-4a02-a63a-359621fe0170."
+}
