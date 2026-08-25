@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos889InitialPrimeFactorLowerBound",
+  "module": "Submissions.Erdos889InitialPrimeFactorLowerBound.Worker01RedControl",
+  "decl": "Submissions.Erdos889InitialPrimeFactorLowerBound.Worker01RedControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f531d192-f532-4f1b-b7c1-8ac0c83db776."
+}

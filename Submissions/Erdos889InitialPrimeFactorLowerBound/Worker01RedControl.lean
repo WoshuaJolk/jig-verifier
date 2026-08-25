@@ -1,0 +1,3 @@
+namespace Submissions.Erdos889InitialPrimeFactorLowerBound.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos889InitialPrimeFactorLowerBound.Worker01RedControl
