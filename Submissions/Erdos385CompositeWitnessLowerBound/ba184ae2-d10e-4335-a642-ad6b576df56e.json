@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos385CompositeWitnessLowerBound",
+  "module": "Submissions.Erdos385CompositeWitnessLowerBound.Worker01",
+  "decl": "Submissions.Erdos385CompositeWitnessLowerBound.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ba184ae2-d10e-4335-a642-ad6b576df56e."
+}
