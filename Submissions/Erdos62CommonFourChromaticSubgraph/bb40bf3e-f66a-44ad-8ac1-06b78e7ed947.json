@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos62CommonFourChromaticSubgraph",
+  "module": "Submissions.Erdos62CommonFourChromaticSubgraph.Attacks",
+  "decl": "Submissions.Erdos62CommonFourChromaticSubgraph.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact bb40bf3e-f66a-44ad-8ac1-06b78e7ed947."
+}
