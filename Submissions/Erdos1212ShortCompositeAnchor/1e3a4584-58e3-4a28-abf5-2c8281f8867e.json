@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1212ShortCompositeAnchor",
+  "module": "Submissions.Erdos1212ShortCompositeAnchor.Degenerate",
+  "decl": "Submissions.Erdos1212ShortCompositeAnchor.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1e3a4584-58e3-4a28-abf5-2c8281f8867e."
+}
