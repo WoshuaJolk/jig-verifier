@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos886ShortDivisorInterval",
+  "module": "Submissions.Erdos886ShortDivisorInterval.SmokeControl",
+  "decl": "Submissions.Erdos886ShortDivisorInterval.SmokeControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 120bd327-fbb9-47bc-9e74-5fb1ba12273b."
+}
