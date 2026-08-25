@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos824ConcreteSigma",
+  "module": "Submissions.Erdos824ConcreteSigma.Degenerate",
+  "decl": "Submissions.Erdos824ConcreteSigma.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 7c7a0399-349f-4258-bc90-f9ca397a0833."
+}
