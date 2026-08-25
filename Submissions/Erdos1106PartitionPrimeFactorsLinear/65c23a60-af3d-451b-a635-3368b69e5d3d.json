@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1106PartitionPrimeFactorsLinear",
+  "module": "Submissions.Erdos1106PartitionPrimeFactorsLinear.Attacks",
+  "decl": "Submissions.Erdos1106PartitionPrimeFactorsLinear.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 65c23a60-af3d-451b-a635-3368b69e5d3d."
+}
