@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos247GrowthWitness",
+  "module": "Submissions.Erdos247GrowthWitness.Degenerate",
+  "decl": "Submissions.Erdos247GrowthWitness.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 4ed2f19b-8c6f-4198-ba78-85f11e1ff06a."
+}
