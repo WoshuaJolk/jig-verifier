@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos14EmptySetExceptions",
+  "module": "Submissions.Erdos14EmptySetExceptions.Attacks",
+  "decl": "Submissions.Erdos14EmptySetExceptions.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e8f2bdbc-bdfc-4991-bc9b-47862a46d7b5."
+}
