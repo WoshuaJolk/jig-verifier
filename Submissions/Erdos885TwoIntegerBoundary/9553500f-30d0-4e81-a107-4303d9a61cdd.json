@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos885TwoIntegerBoundary",
+  "module": "Submissions.Erdos885TwoIntegerBoundary.Worker09UpperDegenerate",
+  "decl": "Submissions.Erdos885TwoIntegerBoundary.Worker09UpperDegenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9553500f-30d0-4e81-a107-4303d9a61cdd."
+}
