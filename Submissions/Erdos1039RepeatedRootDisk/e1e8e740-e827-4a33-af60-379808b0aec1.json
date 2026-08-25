@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039RepeatedRootDisk",
+  "module": "Submissions.Erdos1039RepeatedRootDisk.Control",
+  "decl": "Submissions.Erdos1039RepeatedRootDisk.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e1e8e740-e827-4a33-af60-379808b0aec1."
+}
