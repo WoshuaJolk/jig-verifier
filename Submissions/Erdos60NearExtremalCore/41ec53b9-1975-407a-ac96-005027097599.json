@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60NearExtremalCore",
+  "module": "Submissions.Erdos60NearExtremalCore.KillCopies",
+  "decl": "Submissions.Erdos60NearExtremalCore.KillCopies.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 41ec53b9-1975-407a-ac96-005027097599."
+}
