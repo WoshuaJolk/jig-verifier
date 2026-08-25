@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1060CountDomainBound",
+  "module": "Submissions.Erdos1060CountDomainBound.Worker04Degenerate",
+  "decl": "Submissions.Erdos1060CountDomainBound.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 7f4a5eff-85f6-457b-9b33-038e2635295c."
+}
