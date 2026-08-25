@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos727CentralBinomialReduction",
+  "module": "Submissions.Erdos727CentralBinomialReduction.Direct",
+  "decl": "Submissions.Erdos727CentralBinomialReduction.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e4d7c49b-e064-43e6-9baf-bce1a97ebfa4."
+}
