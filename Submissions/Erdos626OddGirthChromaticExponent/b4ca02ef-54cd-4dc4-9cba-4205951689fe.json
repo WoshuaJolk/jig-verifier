@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos626OddGirthChromaticExponent",
+  "module": "Submissions.Erdos626OddGirthChromaticExponent.Attacks",
+  "decl": "Submissions.Erdos626OddGirthChromaticExponent.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b4ca02ef-54cd-4dc4-9cba-4205951689fe."
+}
