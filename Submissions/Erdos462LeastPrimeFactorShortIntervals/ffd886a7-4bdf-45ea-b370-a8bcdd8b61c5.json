@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos462LeastPrimeFactorShortIntervals",
+  "module": "Submissions.Erdos462LeastPrimeFactorShortIntervals.DegenerateCatalogue",
+  "decl": "Submissions.Erdos462LeastPrimeFactorShortIntervals.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ffd886a7-4bdf-45ea-b370-a8bcdd8b61c5."
+}
