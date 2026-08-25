@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos413OneIsOmegaBarrier",
+  "module": "Submissions.Erdos413OneIsOmegaBarrier.Control",
+  "decl": "Submissions.Erdos413OneIsOmegaBarrier.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 2a380618-31a4-4cf3-816a-bc183be61d30."
+}
