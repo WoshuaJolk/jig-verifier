@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1035ZeroCubeBoundary",
+  "module": "Submissions.Erdos1035ZeroCubeBoundary.FalsePremise",
+  "decl": "Submissions.Erdos1035ZeroCubeBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c22fb6d7-c80b-4f61-b85d-9cc129f607b9."
+}
