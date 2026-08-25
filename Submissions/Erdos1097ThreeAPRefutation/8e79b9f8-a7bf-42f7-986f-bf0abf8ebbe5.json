@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1097ThreeAPRefutation",
+  "module": "Submissions.Erdos1097ThreeAPRefutation.FalseHypothesis",
+  "decl": "Submissions.Erdos1097ThreeAPRefutation.FalseHypothesis.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8e79b9f8-a7bf-42f7-986f-bf0abf8ebbe5."
+}
