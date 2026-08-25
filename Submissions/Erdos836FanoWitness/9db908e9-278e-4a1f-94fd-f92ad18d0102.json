@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos836FanoWitness",
+  "module": "Submissions.Erdos836FanoWitness.Degenerate",
+  "decl": "Submissions.Erdos836FanoWitness.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9db908e9-278e-4a1f-94fd-f92ad18d0102."
+}
