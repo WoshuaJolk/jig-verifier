@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52CoprimeProductGrowth",
+  "module": "Submissions.Erdos52CoprimeProductGrowth.P29",
+  "decl": "Submissions.Erdos52CoprimeProductGrowth.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9182d35a-75c1-4fdc-bb88-5b2d934207e0."
+}
