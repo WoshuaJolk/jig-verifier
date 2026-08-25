@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos486DelayedCongruenceCounterexample",
+  "module": "Submissions.Erdos486DelayedCongruenceCounterexample.MustFail",
+  "decl": "Submissions.Erdos486DelayedCongruenceCounterexample.MustFail.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact fb5f18dc-5c98-4338-9c7f-0118c38cc9f9."
+}
