@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos489GapLimitFull",
+  "module": "Submissions.Erdos489GapLimitFull.ExpectedRed",
+  "decl": "Submissions.Erdos489GapLimitFull.ExpectedRed.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8f38edfa-8019-40b1-8590-5d705ac65ab4."
+}
