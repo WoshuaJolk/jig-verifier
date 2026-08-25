@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1150ParsevalBoundary",
+  "module": "Submissions.Erdos1150ParsevalBoundary.Parseval",
+  "decl": "Submissions.Erdos1150ParsevalBoundary.Parseval.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ddaff741-e5c5-420f-8f15-88781153f759."
+}
