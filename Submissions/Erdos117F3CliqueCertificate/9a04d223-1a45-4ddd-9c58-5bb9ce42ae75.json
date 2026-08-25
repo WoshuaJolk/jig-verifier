@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117F3CliqueCertificate",
+  "module": "Submissions.Erdos117F3CliqueCertificate.Kernel",
+  "decl": "Submissions.Erdos117F3CliqueCertificate.Kernel.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9a04d223-1a45-4ddd-9c58-5bb9ce42ae75."
+}
