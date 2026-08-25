@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30SidonErrorTerm",
+  "module": "Submissions.Erdos30SidonErrorTerm.DegenerateCatalogue",
+  "decl": "Submissions.Erdos30SidonErrorTerm.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e560ff9a-9e12-40e7-a004-204540c72c46."
+}
