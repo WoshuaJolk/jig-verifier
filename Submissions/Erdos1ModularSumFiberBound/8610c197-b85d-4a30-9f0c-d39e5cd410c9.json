@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1ModularSumFiberBound",
+  "module": "Submissions.Erdos1ModularSumFiberBound.Erdos1ModularSumFiberBoundProof",
+  "decl": "Submissions.Erdos1ModularSumFiberBound.Erdos1ModularSumFiberBoundProof.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8610c197-b85d-4a30-9f0c-d39e5cd410c9."
+}
