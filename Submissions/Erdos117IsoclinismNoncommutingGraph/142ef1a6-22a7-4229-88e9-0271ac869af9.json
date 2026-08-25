@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos117IsoclinismNoncommutingGraph",
+  "module": "Submissions.Erdos117IsoclinismNoncommutingGraph.Kernel",
+  "decl": "Submissions.Erdos117IsoclinismNoncommutingGraph.Kernel.solution",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 142ef1a6-22a7-4229-88e9-0271ac869af9."
+}
