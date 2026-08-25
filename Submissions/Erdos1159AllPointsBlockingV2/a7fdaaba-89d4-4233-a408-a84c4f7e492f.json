@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1159AllPointsBlockingV2",
+  "module": "Submissions.Erdos1159AllPointsBlockingV2.Control",
+  "decl": "Submissions.Erdos1159AllPointsBlockingV2.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a7fdaaba-89d4-4233-a408-a84c4f7e492f."
+}
