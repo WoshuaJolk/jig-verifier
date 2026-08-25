@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos325BinaryToTernaryInclusion",
+  "module": "Submissions.Erdos325BinaryToTernaryInclusion.Worker01",
+  "decl": "Submissions.Erdos325BinaryToTernaryInclusion.Worker01.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e42cd0ae-e265-4ddc-8d22-cf3e81972523."
+}
