@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos462PrimeWitnessMass",
+  "module": "Submissions.Erdos462PrimeWitnessMass.Direct",
+  "decl": "Submissions.Erdos462PrimeWitnessMass.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b5ecb37e-71c4-4a83-a810-b3c72f437e7e."
+}
