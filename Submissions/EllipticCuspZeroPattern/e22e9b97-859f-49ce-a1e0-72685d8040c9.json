@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "EllipticCuspZeroPattern",
+  "module": "Submissions.EllipticCuspZeroPattern.Character",
+  "decl": "Submissions.EllipticCuspZeroPattern.Character.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e22e9b97-859f-49ce-a1e0-72685d8040c9."
+}
