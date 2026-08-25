@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos28CofiniteLimsup",
+  "module": "Submissions.Erdos28CofiniteLimsup.Worker17",
+  "decl": "Submissions.Erdos28CofiniteLimsup.Worker17.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f908b679-08f3-440d-a61d-942634268b1d."
+}
