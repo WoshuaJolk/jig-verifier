@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos17NinetySevenNotCluster",
+  "module": "Submissions.Erdos17NinetySevenNotCluster.Control",
+  "decl": "Submissions.Erdos17NinetySevenNotCluster.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact c3f57e59-df35-422f-a6a6-8b085f18de75."
+}
