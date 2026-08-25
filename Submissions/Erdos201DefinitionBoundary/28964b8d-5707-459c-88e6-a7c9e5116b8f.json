@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos201DefinitionBoundary",
+  "module": "Submissions.Erdos201DefinitionBoundary.Worker09VacuousControl",
+  "decl": "Submissions.Erdos201DefinitionBoundary.Worker09VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 28964b8d-5707-459c-88e6-a7c9e5116b8f."
+}
