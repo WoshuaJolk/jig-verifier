@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1107SmallRepresentations",
+  "module": "Submissions.Erdos1107SmallRepresentations.Worker03VacuousControl",
+  "decl": "Submissions.Erdos1107SmallRepresentations.Worker03VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f83e3386-616e-42b8-bd44-f821183ddf8a."
+}
