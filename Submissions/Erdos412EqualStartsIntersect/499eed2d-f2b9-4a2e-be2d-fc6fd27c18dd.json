@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos412EqualStartsIntersect",
+  "module": "Submissions.Erdos412EqualStartsIntersect.Worker04",
+  "decl": "Submissions.Erdos412EqualStartsIntersect.Worker04.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 499eed2d-f2b9-4a2e-be2d-fc6fd27c18dd."
+}
