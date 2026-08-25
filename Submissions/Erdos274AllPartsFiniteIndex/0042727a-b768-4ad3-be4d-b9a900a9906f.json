@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos274AllPartsFiniteIndex",
+  "module": "Submissions.Erdos274AllPartsFiniteIndex.Degenerate",
+  "decl": "Submissions.Erdos274AllPartsFiniteIndex.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 0042727a-b768-4ad3-be4d-b9a900a9906f."
+}
