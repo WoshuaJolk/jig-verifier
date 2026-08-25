@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos849KnownOccurrences",
+  "module": "Submissions.Erdos849KnownOccurrences.Worker09UpperDegenerate",
+  "decl": "Submissions.Erdos849KnownOccurrences.Worker09UpperDegenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9da96ec2-98d0-4f93-aa97-80df22d56cac."
+}
