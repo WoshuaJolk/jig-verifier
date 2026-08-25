@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos969SquarefreeCountCeiling",
+  "module": "Submissions.Erdos969SquarefreeCountCeiling.Direct",
+  "decl": "Submissions.Erdos969SquarefreeCountCeiling.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 80b3c68a-7fe9-4459-a829-73649311dc92."
+}
