@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos70VaryingCutLinksClassification",
+  "module": "Submissions.Erdos70VaryingCutLinksClassification.Collapse",
+  "decl": "Submissions.Erdos70VaryingCutLinksClassification.Collapse.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1d241f93-ca5c-483d-ae30-c5bb4e76e7bb."
+}
