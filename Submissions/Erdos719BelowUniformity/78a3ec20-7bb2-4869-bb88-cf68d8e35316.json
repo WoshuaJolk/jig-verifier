@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos719BelowUniformity",
+  "module": "Submissions.Erdos719BelowUniformity.Control",
+  "decl": "Submissions.Erdos719BelowUniformity.Control.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 78a3ec20-7bb2-4869-bb88-cf68d8e35316."
+}
