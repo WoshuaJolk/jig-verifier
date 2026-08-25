@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68PrimeLastOccurrence",
+  "module": "Submissions.Erdos68PrimeLastOccurrence.PrimeLastOccurrence",
+  "decl": "Submissions.Erdos68PrimeLastOccurrence.PrimeLastOccurrence.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5df6e0be-814a-49f3-a692-e4b3c3f8d802."
+}
