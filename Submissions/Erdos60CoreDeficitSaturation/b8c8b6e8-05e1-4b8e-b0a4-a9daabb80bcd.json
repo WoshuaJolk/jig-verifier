@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos60CoreDeficitSaturation",
+  "module": "Submissions.Erdos60CoreDeficitSaturation.DeficitBound",
+  "decl": "Submissions.Erdos60CoreDeficitSaturation.DeficitBound.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b8c8b6e8-05e1-4b8e-b0a4-a9daabb80bcd."
+}
