@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos345FirstPowerThreshold",
+  "module": "Submissions.Erdos345FirstPowerThreshold.Worker09Middle",
+  "decl": "Submissions.Erdos345FirstPowerThreshold.Worker09Middle.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e88eb059-d180-4529-9be8-6b63fe5c6a90."
+}
