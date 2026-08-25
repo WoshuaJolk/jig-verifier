@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos730ExplicitPrimeSupportPairs",
+  "module": "Submissions.Erdos730ExplicitPrimeSupportPairs.KernelCheck",
+  "decl": "Submissions.Erdos730ExplicitPrimeSupportPairs.KernelCheck.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact bcf99fe5-a53e-4847-928b-023ea72a0301."
+}
