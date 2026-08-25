@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos366SquarefullThenCubefull",
+  "module": "Submissions.Erdos366SquarefullThenCubefull.DegenerateCatalogue",
+  "decl": "Submissions.Erdos366SquarefullThenCubefull.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 8a1cc15b-968c-4e0e-88ce-0ba9da93970a."
+}
