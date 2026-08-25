@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1083SingletonBoundary",
+  "module": "Submissions.Erdos1083SingletonBoundary.FalsePremise",
+  "decl": "Submissions.Erdos1083SingletonBoundary.FalsePremise.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a1293711-84ba-43a4-9645-4aca57f3e423."
+}
