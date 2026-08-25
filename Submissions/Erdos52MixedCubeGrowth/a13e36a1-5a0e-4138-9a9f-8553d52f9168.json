@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52MixedCubeGrowth",
+  "module": "Submissions.Erdos52MixedCubeGrowth.P29",
+  "decl": "Submissions.Erdos52MixedCubeGrowth.P29.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a13e36a1-5a0e-4138-9a9f-8553d52f9168."
+}
