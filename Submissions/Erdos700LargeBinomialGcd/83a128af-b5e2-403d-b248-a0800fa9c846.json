@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos700LargeBinomialGcd",
+  "module": "Submissions.Erdos700LargeBinomialGcd.Control",
+  "decl": "Submissions.Erdos700LargeBinomialGcd.Control.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 83a128af-b5e2-403d-b248-a0800fa9c846."
+}
