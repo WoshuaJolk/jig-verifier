@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos32ComplementInfinite",
+  "module": "Submissions.Erdos32ComplementInfinite.BoundedComplement",
+  "decl": "Submissions.Erdos32ComplementInfinite.BoundedComplement.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2bec6093-badd-4810-8907-b3beb6c27c09."
+}
