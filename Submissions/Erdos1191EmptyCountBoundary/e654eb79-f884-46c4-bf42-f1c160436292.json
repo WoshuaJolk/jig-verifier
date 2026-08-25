@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1191EmptyCountBoundary",
+  "module": "Submissions.Erdos1191EmptyCountBoundary.Simp",
+  "decl": "Submissions.Erdos1191EmptyCountBoundary.Simp.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e654eb79-f884-46c4-bf42-f1c160436292."
+}
