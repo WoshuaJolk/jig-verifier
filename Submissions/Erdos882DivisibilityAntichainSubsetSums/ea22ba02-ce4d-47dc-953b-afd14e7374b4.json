@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos882DivisibilityAntichainSubsetSums",
+  "module": "Submissions.Erdos882DivisibilityAntichainSubsetSums.DegenerateCatalogue",
+  "decl": "Submissions.Erdos882DivisibilityAntichainSubsetSums.DegenerateCatalogue.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact ea22ba02-ce4d-47dc-953b-afd14e7374b4."
+}
