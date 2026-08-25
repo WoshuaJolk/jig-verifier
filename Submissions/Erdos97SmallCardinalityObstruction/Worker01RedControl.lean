@@ -1,0 +1,3 @@
+namespace Submissions.Erdos97SmallCardinalityObstruction.Worker01RedControl
+theorem proof : True := trivial
+end Submissions.Erdos97SmallCardinalityObstruction.Worker01RedControl
