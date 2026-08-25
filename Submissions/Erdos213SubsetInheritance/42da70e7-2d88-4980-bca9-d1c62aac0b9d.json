@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos213SubsetInheritance",
+  "module": "Submissions.Erdos213SubsetInheritance.Worker09VacuousControl",
+  "decl": "Submissions.Erdos213SubsetInheritance.Worker09VacuousControl.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 42da70e7-2d88-4980-bca9-d1c62aac0b9d."
+}
