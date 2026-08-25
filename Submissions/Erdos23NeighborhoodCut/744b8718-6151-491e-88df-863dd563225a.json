@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23NeighborhoodCut",
+  "module": "Submissions.Erdos23NeighborhoodCut.Direct",
+  "decl": "Submissions.Erdos23NeighborhoodCut.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 744b8718-6151-491e-88df-863dd563225a."
+}
