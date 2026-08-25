@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1049ParameterSpaceInhabited",
+  "module": "Submissions.Erdos1049ParameterSpaceInhabited.Direct",
+  "decl": "Submissions.Erdos1049ParameterSpaceInhabited.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7faffec4-1958-4833-b8a8-0cba9085355b."
+}
