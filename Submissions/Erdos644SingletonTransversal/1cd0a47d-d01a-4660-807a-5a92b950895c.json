@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos644SingletonTransversal",
+  "module": "Submissions.Erdos644SingletonTransversal.Direct",
+  "decl": "Submissions.Erdos644SingletonTransversal.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1cd0a47d-d01a-4660-807a-5a92b950895c."
+}
