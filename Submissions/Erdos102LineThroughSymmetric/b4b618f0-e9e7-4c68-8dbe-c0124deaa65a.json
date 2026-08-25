@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos102LineThroughSymmetric",
+  "module": "Submissions.Erdos102LineThroughSymmetric.Direct",
+  "decl": "Submissions.Erdos102LineThroughSymmetric.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b4b618f0-e9e7-4c68-8dbe-c0124deaa65a."
+}
