@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos839ConsecutiveSumFree",
+  "module": "Submissions.Erdos839ConsecutiveSumFree.Degenerate",
+  "decl": "Submissions.Erdos839ConsecutiveSumFree.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 757b5ce1-a88c-47be-a38b-b9dffb527c99."
+}
