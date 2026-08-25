@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos608PentagonalEdgesDisproof",
+  "module": "Submissions.Erdos608PentagonalEdgesDisproof.Full",
+  "decl": "Submissions.Erdos608PentagonalEdgesDisproof.Full.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c707c654-4c2c-42c2-8970-fed8e1d7484e."
+}
