@@ -90,16 +90,17 @@ jobs:
           set -euo pipefail
           lake exe cache get
 
-      # Deliberately not `lake build`. Canonical statements are written into
-      # Statements/ by the Conject API on behalf of whoever posed them, so the
-      # glob is untrusted: one contributor's statement that does not compile
-      # would otherwise fail this step and block verification for every other
-      # problem in the repo. The Lean driver builds the specific statement and
-      # submission it needs, so a broken statement surfaces as `build_failed` on
-      # that problem's own artifacts and nowhere else.
+      # Deliberately not `lake build`. Statements/ and Submissions/ are written
+      # by the Conject API on behalf of whoever posed or submitted them, so both
+      # globs are untrusted: one file that does not compile would otherwise fail
+      # this step and block verification for every other problem in the repo.
+      # The glob is also unbounded, and building every submission ever filed ran
+      # ~9,900 targets and exhausted the budget below before the driver started.
+      # The Lean driver builds the specific statement and submission it needs.
       - name: Build harness
+        id: harness
         timeout-minutes: 15
-        run: lake build Commons Verify Submissions
+        run: lake build Commons Verify
 
       # A red verdict fails this step on purpose: "not verified" should read as a failed
       # check. The verdict JSON is still produced and uploaded by the always() steps.
@@ -130,7 +131,7 @@ jobs:
       # a verdict, cancellations included, and a settle is permanent: it froze a
       # correct proof red, and the later run that proved it green was refused 409.
       - name: Guarantee a verdict exists
-        if: always() && !cancelled()
+        if: always() && !cancelled() && steps.harness.outcome == 'success'
         env:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
@@ -163,6 +164,13 @@ jobs:
         if: cancelled()
         run: |
           echo "::warning::run cancelled before a verdict existed; nothing delivered, artifact stays pending"
+
+      # A harness failure says nothing about the submission: the driver never
+      # ran it. Same rule as a cancellation, leave the artifact pending.
+      - name: Report a harness failure without settling anything
+        if: always() && !cancelled() && steps.harness.outcome != 'success'
+        run: |
+          echo "::warning::harness build did not succeed, so the verifier never ran; nothing delivered, artifact stays pending"
 
       - name: Verdict summary
         if: always()
