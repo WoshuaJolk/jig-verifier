@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos86HypercubeFourCycleDensity",
+  "module": "Submissions.Erdos86HypercubeFourCycleDensity.Attacks",
+  "decl": "Submissions.Erdos86HypercubeFourCycleDensity.Attacks.vacuousHypothesis",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1726560c-23de-4336-90b0-6ae7587f5195."
+}
