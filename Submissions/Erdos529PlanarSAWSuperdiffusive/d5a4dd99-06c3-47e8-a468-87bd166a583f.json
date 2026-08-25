@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos529PlanarSAWSuperdiffusive",
+  "module": "Submissions.Erdos529PlanarSAWSuperdiffusive.Worker01Degenerate",
+  "decl": "Submissions.Erdos529PlanarSAWSuperdiffusive.Worker01Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact d5a4dd99-06c3-47e8-a468-87bd166a583f."
+}
