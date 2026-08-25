@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos727FactorialSquareDivisibility",
+  "module": "Submissions.Erdos727FactorialSquareDivisibility.Degenerate",
+  "decl": "Submissions.Erdos727FactorialSquareDivisibility.Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 1b294fe2-969a-4204-aca3-25c2e59ef661."
+}
