@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos208FirstSquarefree",
+  "module": "Submissions.Erdos208FirstSquarefree.Worker04Degenerate",
+  "decl": "Submissions.Erdos208FirstSquarefree.Worker04Degenerate.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f23021f5-abfa-419c-a7cf-fe64c91dc072."
+}
