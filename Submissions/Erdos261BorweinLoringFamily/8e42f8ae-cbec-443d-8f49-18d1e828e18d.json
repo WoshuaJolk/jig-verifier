@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos261BorweinLoringFamily",
+  "module": "Submissions.Erdos261BorweinLoringFamily.BorweinLoring",
+  "decl": "Submissions.Erdos261BorweinLoringFamily.BorweinLoring.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8e42f8ae-cbec-443d-8f49-18d1e828e18d."
+}
