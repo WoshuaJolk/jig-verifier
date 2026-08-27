@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos98RefutedSupMetric",
+  "module": "Submissions.Erdos98RefutedSupMetric.SupMetricWitness",
+  "decl": "Submissions.Erdos98RefutedSupMetric.SupMetricWitness.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "refutes": "Erdos98GeneralPositionDistances",
+  "note": "Submitted through the Jig API as artifact bcad6a4d-243b-472f-b307-7e7e1c03d72f."
+}
