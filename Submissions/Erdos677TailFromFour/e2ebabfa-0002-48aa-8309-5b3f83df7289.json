@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677TailFromFour",
+  "module": "Submissions.Erdos677TailFromFour.Frontier",
+  "decl": "Submissions.Erdos677TailFromFour.Frontier.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e2ebabfa-0002-48aa-8309-5b3f83df7289."
+}
