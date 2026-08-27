@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos15SeriesNotAbsolutelySummable",
+  "module": "Submissions.Erdos15SeriesNotAbsolutelySummable.NotAbsolutelySummable",
+  "decl": "Submissions.Erdos15SeriesNotAbsolutelySummable.NotAbsolutelySummable.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "refutes": "Erdos15AlternatingPrimeSeries",
+  "note": "Submitted through the Jig API as artifact 7d7b8671-4896-44e6-80ae-29f163c5f393."
+}
