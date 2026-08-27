@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677LengthThreeFromCore",
+  "module": "Submissions.Erdos677LengthThreeFromCore.Reduction",
+  "decl": "Submissions.Erdos677LengthThreeFromCore.Reduction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2013791b-280f-4a6e-a662-a5752bffa82a."
+}
