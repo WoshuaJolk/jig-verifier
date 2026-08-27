@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677LengthFourFromPell",
+  "module": "Submissions.Erdos677LengthFourFromPell.Reduction",
+  "decl": "Submissions.Erdos677LengthFourFromPell.Reduction.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d91a8ca6-a853-419d-8588-4d143aa7bdb9."
+}
