@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677LcmTripleProduct",
+  "module": "Submissions.Erdos677LcmTripleProduct.TripleProduct",
+  "decl": "Submissions.Erdos677LcmTripleProduct.TripleProduct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 005f4c95-fbcc-4153-be68-86d67c27eb47."
+}
