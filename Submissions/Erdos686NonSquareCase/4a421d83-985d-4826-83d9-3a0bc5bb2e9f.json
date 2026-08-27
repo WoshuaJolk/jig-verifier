@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos686NonSquareCase",
+  "module": "Submissions.Erdos686NonSquareCase.PellNonSquare",
+  "decl": "Submissions.Erdos686NonSquareCase.PellNonSquare.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4a421d83-985d-4826-83d9-3a0bc5bb2e9f."
+}
