@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos617TwoCliquePartitionedColors",
+  "module": "Submissions.Erdos617TwoCliquePartitionedColors.Main",
+  "decl": "Submissions.Erdos617TwoCliquePartitionedColors.Main.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 53c6c02f-cc41-43c1-bd85-1440bc5ab83f."
+}
