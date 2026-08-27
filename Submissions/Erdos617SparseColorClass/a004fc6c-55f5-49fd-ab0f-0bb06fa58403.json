@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos617SparseColorClass",
+  "module": "Submissions.Erdos617SparseColorClass.Main",
+  "decl": "Submissions.Erdos617SparseColorClass.Main.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a004fc6c-55f5-49fd-ab0f-0bb06fa58403."
+}
