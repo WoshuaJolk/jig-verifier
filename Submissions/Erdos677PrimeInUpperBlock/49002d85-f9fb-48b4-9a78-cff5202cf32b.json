@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677PrimeInUpperBlock",
+  "module": "Submissions.Erdos677PrimeInUpperBlock.PrimeBlock",
+  "decl": "Submissions.Erdos677PrimeInUpperBlock.PrimeBlock.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 49002d85-f9fb-48b4-9a78-cff5202cf32b."
+}
