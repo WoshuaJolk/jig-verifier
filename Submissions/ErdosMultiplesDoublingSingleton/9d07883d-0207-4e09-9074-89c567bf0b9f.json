@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingSingleton",
+  "module": "Submissions.ErdosMultiplesDoublingSingleton.MalloryWeakened",
+  "decl": "Submissions.ErdosMultiplesDoublingSingleton.MalloryWeakened.proof",
+  "author": "woshuajolk",
+  "expect": "red",
+  "note": "Submitted through the Jig API as artifact 9d07883d-0207-4e09-9074-89c567bf0b9f."
+}
