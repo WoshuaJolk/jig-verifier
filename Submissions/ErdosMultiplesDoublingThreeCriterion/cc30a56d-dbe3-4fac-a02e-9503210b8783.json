@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingThreeCriterion",
+  "module": "Submissions.ErdosMultiplesDoublingThreeCriterion.Injection",
+  "decl": "Submissions.ErdosMultiplesDoublingThreeCriterion.Injection.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cc30a56d-dbe3-4fac-a02e-9503210b8783."
+}
