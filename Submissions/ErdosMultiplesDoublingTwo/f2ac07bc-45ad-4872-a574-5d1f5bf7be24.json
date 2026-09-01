@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingTwo",
+  "module": "Submissions.ErdosMultiplesDoublingTwo.TwoGen",
+  "decl": "Submissions.ErdosMultiplesDoublingTwo.TwoGen.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f2ac07bc-45ad-4872-a574-5d1f5bf7be24."
+}
