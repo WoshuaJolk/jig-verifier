@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingFourCriterion",
+  "module": "Submissions.ErdosMultiplesDoublingFourCriterion.Shift",
+  "decl": "Submissions.ErdosMultiplesDoublingFourCriterion.Shift.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 465e760f-c151-4799-b275-7d823827dd2c."
+}
