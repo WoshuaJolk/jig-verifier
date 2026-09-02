@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingMaxGenDead",
+  "module": "Submissions.ErdosMultiplesDoublingMaxGenDead.Witness",
+  "decl": "Submissions.ErdosMultiplesDoublingMaxGenDead.Witness.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0d2a8a46-bbac-48d8-a72e-e3ee70a19081."
+}
