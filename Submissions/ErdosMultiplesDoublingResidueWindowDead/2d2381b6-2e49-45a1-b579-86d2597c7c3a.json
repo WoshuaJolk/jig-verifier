@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingResidueWindowDead",
+  "module": "Submissions.ErdosMultiplesDoublingResidueWindowDead.Witness",
+  "decl": "Submissions.ErdosMultiplesDoublingResidueWindowDead.Witness.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2d2381b6-2e49-45a1-b579-86d2597c7c3a."
+}
