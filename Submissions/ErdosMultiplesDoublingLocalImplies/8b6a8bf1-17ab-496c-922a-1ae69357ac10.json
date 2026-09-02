@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingLocalImplies",
+  "module": "Submissions.ErdosMultiplesDoublingLocalImplies.FiberSum",
+  "decl": "Submissions.ErdosMultiplesDoublingLocalImplies.FiberSum.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8b6a8bf1-17ab-496c-922a-1ae69357ac10."
+}
