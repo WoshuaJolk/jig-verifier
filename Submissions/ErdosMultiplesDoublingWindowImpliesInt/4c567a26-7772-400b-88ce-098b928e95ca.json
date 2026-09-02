@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingWindowImpliesInt",
+  "module": "Submissions.ErdosMultiplesDoublingWindowImpliesInt.Blocks",
+  "decl": "Submissions.ErdosMultiplesDoublingWindowImpliesInt.Blocks.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4c567a26-7772-400b-88ce-098b928e95ca."
+}
