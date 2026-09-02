@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingHarmonicSingleton",
+  "module": "Submissions.ErdosMultiplesDoublingHarmonicSingleton.Envelope",
+  "decl": "Submissions.ErdosMultiplesDoublingHarmonicSingleton.Envelope.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d26b6ea3-b89a-4982-9ec4-ab6ea76ce56b."
+}
