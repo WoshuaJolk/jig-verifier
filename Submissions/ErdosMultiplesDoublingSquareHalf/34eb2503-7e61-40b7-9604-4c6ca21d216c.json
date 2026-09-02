@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingSquareHalf",
+  "module": "Submissions.ErdosMultiplesDoublingSquareHalf.SumBound",
+  "decl": "Submissions.ErdosMultiplesDoublingSquareHalf.SumBound.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 34eb2503-7e61-40b7-9604-4c6ca21d216c."
+}
