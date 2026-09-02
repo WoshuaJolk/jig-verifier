@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingDivisorDead",
+  "module": "Submissions.ErdosMultiplesDoublingDivisorDead.ForcedPrimes",
+  "decl": "Submissions.ErdosMultiplesDoublingDivisorDead.ForcedPrimes.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1fa5c5d5-d874-46db-9a9c-3489a0d8e815."
+}
