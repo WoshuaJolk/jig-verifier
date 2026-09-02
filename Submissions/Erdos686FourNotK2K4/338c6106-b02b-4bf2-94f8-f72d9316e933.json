@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos686FourNotK2K4",
+  "module": "Submissions.Erdos686FourNotK2K4.Squares",
+  "decl": "Submissions.Erdos686FourNotK2K4.Squares.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 338c6106-b02b-4bf2-94f8-f72d9316e933."
+}
