@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos137ElementwisePowerfulBlock",
+  "module": "Submissions.Erdos137ElementwisePowerfulBlock.ElementwiseProof",
+  "decl": "Submissions.Erdos137ElementwisePowerfulBlock.ElementwiseProof.proof",
+  "author": "mitul-s",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 72fe5955-7017-4be2-961f-d287455935d7."
+}
