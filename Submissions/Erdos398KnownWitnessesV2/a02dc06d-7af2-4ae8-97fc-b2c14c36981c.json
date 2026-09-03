@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos398KnownWitnessesV2",
+  "module": "Submissions.Erdos398KnownWitnessesV2.JohnPhamousKnownWitnesses",
+  "decl": "Submissions.Erdos398KnownWitnessesV2.JohnPhamousKnownWitnesses.proof",
+  "author": "johnphamous",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a02dc06d-7af2-4ae8-97fc-b2c14c36981c."
+}
