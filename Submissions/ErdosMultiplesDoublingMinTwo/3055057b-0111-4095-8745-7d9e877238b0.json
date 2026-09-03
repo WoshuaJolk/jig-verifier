@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesDoublingMinTwo",
+  "module": "Submissions.ErdosMultiplesDoublingMinTwo.MinTwoProof",
+  "decl": "Submissions.ErdosMultiplesDoublingMinTwo.MinTwoProof.proof",
+  "author": "schmitzandrew",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3055057b-0111-4095-8745-7d9e877238b0."
+}
