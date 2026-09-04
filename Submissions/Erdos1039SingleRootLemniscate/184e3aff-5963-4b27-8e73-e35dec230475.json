@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039SingleRootLemniscate",
+  "module": "Submissions.Erdos1039SingleRootLemniscate.Direct",
+  "decl": "Submissions.Erdos1039SingleRootLemniscate.Direct.proof",
+  "author": "schmitzandrew",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 184e3aff-5963-4b27-8e73-e35dec230475."
+}
