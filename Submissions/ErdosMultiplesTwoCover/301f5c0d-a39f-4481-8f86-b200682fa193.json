@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesTwoCover",
+  "module": "Submissions.ErdosMultiplesTwoCover.Cover",
+  "decl": "Submissions.ErdosMultiplesTwoCover.Cover.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 301f5c0d-a39f-4481-8f86-b200682fa193."
+}
