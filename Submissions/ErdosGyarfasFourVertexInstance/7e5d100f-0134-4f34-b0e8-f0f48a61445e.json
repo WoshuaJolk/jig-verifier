@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasFourVertexInstance",
+  "module": "Submissions.ErdosGyarfasFourVertexInstance.K4Direct",
+  "decl": "Submissions.ErdosGyarfasFourVertexInstance.K4Direct.proof",
+  "author": "am00lya",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7e5d100f-0134-4f34-b0e8-f0f48a61445e."
+}
