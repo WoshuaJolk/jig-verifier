@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesLCMChain",
+  "module": "Submissions.ErdosMultiplesLCMChain.Chain",
+  "decl": "Submissions.ErdosMultiplesLCMChain.Chain.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3c5426c4-7026-4aeb-bed6-70bc907bf154."
+}
