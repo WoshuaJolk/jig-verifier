@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesLocalRefuted",
+  "module": "Submissions.ErdosMultiplesLocalRefuted.Bottleneck",
+  "decl": "Submissions.ErdosMultiplesLocalRefuted.Bottleneck.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "refutes": "ErdosMultiplesDoublingLocal",
+  "note": "Submitted through the Jig API as artifact 3079d9f3-0b74-4f9e-ac19-5ad6361e9a9a."
+}
