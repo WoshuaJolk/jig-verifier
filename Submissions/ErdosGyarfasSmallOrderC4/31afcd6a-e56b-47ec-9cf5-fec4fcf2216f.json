@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasSmallOrderC4",
+  "module": "Submissions.ErdosGyarfasSmallOrderC4.CherryCount",
+  "decl": "Submissions.ErdosGyarfasSmallOrderC4.CherryCount.proof",
+  "author": "am00lya",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 31afcd6a-e56b-47ec-9cf5-fec4fcf2216f."
+}
