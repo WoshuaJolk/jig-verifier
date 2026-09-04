@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasFourVertexInstance",
+  "module": "Submissions.ErdosGyarfasFourVertexInstance.WeakenedComplete",
+  "decl": "Submissions.ErdosGyarfasFourVertexInstance.WeakenedComplete.proof",
+  "author": "am00lya",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact b0542f2a-38e7-49ef-986c-83892125a58f."
+}
