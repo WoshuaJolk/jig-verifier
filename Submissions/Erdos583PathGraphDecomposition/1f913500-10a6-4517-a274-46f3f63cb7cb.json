@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos583PathGraphDecomposition",
+  "module": "Submissions.Erdos583PathGraphDecomposition.SchmitzAndrewProof",
+  "decl": "Submissions.Erdos583PathGraphDecomposition.SchmitzAndrewProof.target",
+  "author": "schmitzandrew",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1f913500-10a6-4517-a274-46f3f63cb7cb."
+}
