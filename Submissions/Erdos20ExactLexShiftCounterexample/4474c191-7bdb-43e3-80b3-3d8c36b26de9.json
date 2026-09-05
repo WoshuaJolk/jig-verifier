@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos20ExactLexShiftCounterexample",
+  "module": "Submissions.Erdos20ExactLexShiftCounterexample.Declan",
+  "decl": "Submissions.Erdos20ExactLexShiftCounterexample.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4474c191-7bdb-43e3-80b3-3d8c36b26de9."
+}
