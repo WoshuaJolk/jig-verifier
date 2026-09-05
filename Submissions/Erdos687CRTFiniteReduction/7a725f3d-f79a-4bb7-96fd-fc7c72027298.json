@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos687CRTFiniteReduction",
+  "module": "Submissions.Erdos687CRTFiniteReduction.Declan",
+  "decl": "Submissions.Erdos687CRTFiniteReduction.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7a725f3d-f79a-4bb7-96fd-fc7c72027298."
+}
