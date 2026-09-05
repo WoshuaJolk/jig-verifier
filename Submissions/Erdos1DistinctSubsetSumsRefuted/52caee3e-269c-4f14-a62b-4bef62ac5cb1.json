@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1DistinctSubsetSumsRefuted",
+  "module": "Submissions.Erdos1DistinctSubsetSumsRefuted.EpochPort",
+  "decl": "Submissions.Erdos1DistinctSubsetSumsRefuted.EpochPort.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "refutes": "Erdos1DistinctSubsetSums",
+  "note": "Submitted through the Jig API as artifact 52caee3e-269c-4f14-a62b-4bef62ac5cb1."
+}

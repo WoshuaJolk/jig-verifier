@@ -1,0 +1,2136 @@
+import Mathlib.Tactic
+import Mathlib.Analysis.SpecialFunctions.Pow.Real
+import Mathlib.Analysis.SpecificLimits.Normed
+import Mathlib.Analysis.SpecificLimits.Basic
+import Mathlib.LinearAlgebra.Matrix.Block
+import Mathlib.LinearAlgebra.Matrix.Permutation
+import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
+import Mathlib.LinearAlgebra.Matrix.Transvection
+import Mathlib.Topology.Instances.Matrix
+import Mathlib.GroupTheory.Perm.Fin
+import Mathlib.Algebra.Order.Floor.Ring
+import Mathlib.Combinatorics.Colex
+import Mathlib.Data.Finset.Powerset
+import Mathlib.Order.Interval.Finset.Nat
+
+/- Original proof: Epoch AI / GPT-6 Astra, downloaded by campaign coordinator.
+This file ports that proof to Lean4.33.0 and pinned Mathlib.
+No new discovery is claimed. -/
+
+set_option backward.isDefEq.respectTransparency false
+set_option backward.isDefEq.respectTransparency.types false
+
+namespace Submissions.Erdos1DistinctSubsetSumsRefuted.EpochPort
+
+/-!
+# Erdős Problem 1
+
+*Reference:* [erdosproblems.com/1](https://www.erdosproblems.com/1)
+-/
+
+open Filter
+
+open scoped Topology Real
+
+namespace Erdos1
+
+/--
+A finite set of naturals $A$ is said to be a sum-distinct set for $N \in \mathbb{N}$ if
+$A\subseteq\{1, ..., N\}$ and the sums $\sum_{a\in S}a$ are distinct for all $S\subseteq A$
+-/
+abbrev IsSumDistinctSet (A : Finset ℕ) (N : ℕ) : Prop :=
+    A ⊆ Finset.Icc 1 N ∧ (fun (⟨S, _⟩ : A.powerset) => S.sum id).Injective
+
+end Erdos1
+
+/- Full-rank cyclic lattice construction and its transfer to subset sums. -/
+
+/- CyclicPowers -/
+namespace Erdos1CyclicPowers
+open Finset
+
+def action (l : ℕ) (R T : ℤ) (z : ℕ → ℤ) (i : ℕ) : ℤ :=
+  R*z i + T*z (if i = 0 then l else i-1)
+
+lemma strict_sign_step {R T x y : ℤ} (hR : 0 < R) (hT : 0 ≤ T)
+    (hx : x ≠ 0) (hh : |R*x+T*y| < R) :
+    y ≠ 0 ∧ Int.sign y = -Int.sign x := by
+  have hb := abs_lt.mp hh
+  rcases lt_or_gt_of_ne hx with hn | hp
+  · have hx' : x ≤ -1 := by omega
+    have hy : 0 < y := by
+      by_contra h
+      have hy' : y ≤ 0 := by omega
+      have hprod : T*y ≤ 0 := mul_nonpos_of_nonneg_of_nonpos hT hy'
+      nlinarith
+    exact ⟨ne_of_gt hy, by rw [Int.sign_eq_one_of_pos hy, Int.sign_eq_neg_one_of_neg hn]; norm_num⟩
+  · have hx' : 1 ≤ x := by omega
+    have hy : y < 0 := by
+      by_contra h
+      have hy' : 0 ≤ y := by omega
+      have hprod : 0 ≤ T*y := mul_nonneg hT hy'
+      nlinarith
+    exact ⟨ne_of_lt hy, by rw [Int.sign_eq_neg_one_of_neg hy, Int.sign_eq_one_of_pos hp]⟩
+
+lemma sign_ne_zero {x : ℤ} (hx : x ≠ 0) : Int.sign x ≠ 0 := by
+  rcases lt_or_gt_of_ne hx with hn | hp
+  · rw [Int.sign_eq_neg_one_of_neg hn]
+    norm_num
+  · rw [Int.sign_eq_one_of_pos hp]
+    norm_num
+
+theorem odd_cycle_radius (m : ℕ) {R T : ℤ} (hR : 0 < R) (hT : 0 ≤ T)
+    (z : ℕ → ℤ) (hsmall : ∀ i < 2*m+1, |action (2*m) R T z i| < R) :
+    ∀ i < 2*m+1, z i = 0 := by
+  have hs : ∀ i ≤ 2*m, z i ≠ 0 →
+      z 0 ≠ 0 ∧ Int.sign (z i) = (-1 : ℤ)^i * Int.sign (z 0) := by
+    intro i
+    induction i with
+    | zero => intro hi hz; exact ⟨hz, by simp⟩
+    | succ i ih =>
+      intro hi hz
+      have hh := hsmall (i+1) (by omega)
+      simp only [action, if_neg (by omega : i+1 ≠ 0), Nat.add_sub_cancel] at hh
+      obtain ⟨hn, he⟩ := strict_sign_step hR hT hz hh
+      obtain ⟨h0, he'⟩ := ih (by omega) hn
+      refine ⟨h0, ?_⟩
+      have hh' : Int.sign (z (i+1)) = -Int.sign (z i) := by omega
+      rw [hh', he', pow_succ]
+      ring
+  intro i hi
+  by_contra hn
+  have h0 := (hs i (by omega) hn).1
+  have hh := hsmall 0 (by omega)
+  change |R*z 0+T*z (2*m)| < R at hh
+  obtain ⟨hl, he⟩ := strict_sign_step hR hT h0 hh
+  have he' := (hs (2*m) (by omega) hl).2
+  simp [pow_mul] at he'
+  have hz := sign_ne_zero h0
+  omega
+
+end Erdos1CyclicPowers
+
+/- CyclicStrip -/
+namespace Erdos1CyclicStrip
+open Finset
+set_option maxHeartbeats 3000000
+
+def image (l : ℕ) (u : ℕ → ℝ) (i : ℕ) : ℝ :=
+  2*u i + u (if i = 0 then l else i-1)
+
+lemma input_bound (l : ℕ) (u : ℕ → ℝ)
+    (hu : ∀ i ≤ l, |image l u i| < 2) : ∀ i ≤ l, |u i| < 2 := by
+  obtain ⟨j,hj,hmax⟩ := exists_max_image (range (l+1)) (fun i => |u i|)
+    (by exact ⟨0,by simp⟩)
+  have hjl : j ≤ l := by simpa using hj
+  have hp : (if j = 0 then l else j-1) ≤ l := by split_ifs <;> omega
+  have hpred := hmax (if j = 0 then l else j-1) (mem_range.mpr (by omega))
+  have he : 2*u j = image l u j - u (if j = 0 then l else j-1) := by
+    unfold image; ring
+  have hh := abs_add_le (image l u j) (-u (if j = 0 then l else j-1))
+  rw [← sub_eq_add_neg, ← he, abs_mul, abs_neg] at hh
+  norm_num at hh
+  have hjb := hu j hjl
+  have hb : |u j| < 2 := by linarith
+  intro i hi
+  exact (hmax i (mem_range.mpr (by omega))).trans_lt hb
+
+lemma tail_bound (l : ℕ) (u : ℕ → ℝ) (z : ℕ → ℤ)
+    (hz : ∀ i, 0 < i → i ≤ l → u i = (z i : ℝ))
+    (hu : ∀ i ≤ l, |image l u i| < 2) {i : ℕ} (hi : 0 < i) (hil : i ≤ l) :
+    -1 ≤ z i ∧ z i ≤ 1 := by
+  have hh := input_bound l u hu i hil
+  rw [hz i hi hil] at hh
+  have hb : |z i| < (2 : ℤ) := by exact_mod_cast hh
+  have := abs_lt.mp hb
+  omega
+
+lemma first_not_large (m : ℕ) (hm : 0 < m) (u : ℕ → ℝ) (z : ℕ → ℤ)
+    (hz : ∀ i, 0 < i → i ≤ 2*m → u i = (z i : ℝ))
+    (hu : ∀ i ≤ 2*m, |image (2*m) u i| < 2) : ¬ 1 ≤ u 0 := by
+  intro ha
+  let w : ℕ → ℤ := fun i => if i = 0 then 1 else z i
+  have hw : ∀ i < 2*m+1, |Erdos1CyclicPowers.action (2*m) 2 1 w i| < 2 := by
+    intro i hi
+    by_cases hi0 : i = 0
+    · subst i
+      have ht := tail_bound (2*m) u z hz hu (by omega : 0 < 2*m) le_rfl
+      have hb := abs_lt.mp (hu 0 (by omega))
+      norm_num [image] at hb
+      rw [hz (2*m) (by omega) le_rfl] at hb
+      have hzlast : z (2*m) = -1 := by
+        have htR : (-1:ℝ) ≤ (z (2*m):ℝ) := by exact_mod_cast ht.1
+        have hlt : (z (2*m):ℝ) < 0 := by linarith
+        have hltZ : z (2*m) < 0 := by exact_mod_cast hlt
+        omega
+      simp [Erdos1CyclicPowers.action,w,show 2*m ≠ 0 by omega,hzlast]
+    · by_cases hi1 : i = 1
+      · subst i
+        have ht := tail_bound (2*m) u z hz hu (by omega : 0 < 1) (by omega)
+        have hb := abs_lt.mp (hu 1 (by omega))
+        norm_num [image] at hb
+        rw [hz 1 (by omega) (by omega)] at hb
+        have hlt : (z 1 : ℝ) < 1 := by linarith
+        have hltZ : z 1 < 1 := by exact_mod_cast hlt
+        have he : z 1 = -1 ∨ z 1 = 0 := by omega
+        rcases he with he | he <;> simp [Erdos1CyclicPowers.action,w,he]
+      · have hb := hu i (by omega)
+        simp only [image, if_neg hi0] at hb
+        rw [hz i (by omega) (by omega),hz (i-1) (by omega) (by omega)] at hb
+        have hbZ : |2*z i+z (i-1)| < (2:ℤ) := by exact_mod_cast hb
+        simpa [Erdos1CyclicPowers.action,w,hi0,show i-1 ≠ 0 by omega] using hbZ
+  have hzero := Erdos1CyclicPowers.odd_cycle_radius m (by norm_num : (0:ℤ)<2)
+    (by norm_num : (0:ℤ)≤1) w hw 0 (by omega)
+  simp [w] at hzero
+
+lemma first_bound (m : ℕ) (u : ℕ → ℝ) (z : ℕ → ℤ)
+    (hz : ∀ i, 0 < i → i ≤ 2*m → u i = (z i : ℝ))
+    (hu : ∀ i ≤ 2*m, |image (2*m) u i| < 2) : |u 0| < 1 := by
+  by_cases hm : m = 0
+  · subst m
+    have hh := abs_lt.mp (hu 0 (by omega))
+    norm_num [image] at hh
+    rw [abs_lt]
+    constructor <;> linarith
+  · have hm0 : 0 < m := by omega
+    have hpos := first_not_large m hm0 u z hz hu
+    have hneg := first_not_large m hm0 (fun i => -u i) (fun i => -z i)
+      (by intro i hi hil; simp [hz i hi hil]) (by
+        intro i hi
+        have he : image (2*m) (fun j => -u j) i = -image (2*m) u i := by
+          unfold image; ring
+        simpa only [he, abs_neg] using hu i hi)
+    rw [abs_lt]
+    constructor <;> linarith
+
+lemma alternating_sum (n : ℕ) (z : ℕ → ℤ)
+    (hz : ∀ i, i+1 < n → z (i+1) = 0 ∨ z (i+1) = -z i) :
+    (∑ i ∈ range n, z i) = 0 ∨ (∑ i ∈ range n, z i) = z 0 := by
+  induction n generalizing z with
+  | zero => simp
+  | succ n ih =>
+    rw [sum_range_succ']
+    rcases ih (fun i => z (i+1)) (by intro i hi; exact hz (i+1) (by omega)) with he | he
+    · simp [he]
+    · by_cases hn : n = 0
+      · subst n; simp
+      · rcases hz 0 (by omega) with h | h
+        · right; simp_all
+        · left; simp_all
+
+theorem sum_strip (m : ℕ) (u : ℕ → ℝ) (z : ℕ → ℤ)
+    (hz : ∀ i, 0 < i → i ≤ 2*m → u i = (z i : ℝ))
+    (hu : ∀ i ≤ 2*m, |image (2*m) u i| < 2) :
+    |∑ i ∈ range (2*m+1), u i| < 1 := by
+  have hfirst := first_bound m u z hz hu
+  by_cases hm : m = 0
+  · subst m; simpa using hfirst
+  have hm0 : 0 < m := by omega
+  have hstep (i : ℕ) (hi : i+1 < 2*m) :
+      z (i+2) = 0 ∨ z (i+2) = -z (i+1) := by
+    have hb := hu (i+2) (by omega)
+    simp only [image, if_neg (by omega : i+2 ≠ 0), show i+2-1 = i+1 by omega] at hb
+    rw [hz (i+2) (by omega) (by omega),hz (i+1) (by omega) (by omega)] at hb
+    have hbZ : |2*z (i+2)+z (i+1)| < (2:ℤ) := by exact_mod_cast hb
+    have ht := tail_bound (2*m) u z hz hu (by omega : 0 < i+1) (by omega)
+    have ht' := tail_bound (2*m) u z hz hu (by omega : 0 < i+2) (by omega)
+    have := abs_lt.mp hbZ
+    omega
+  have hs : (∑ i ∈ range (2*m), z (i+1)) = 0 ∨
+      (∑ i ∈ range (2*m), z (i+1)) = z 1 :=
+    alternating_sum (2*m) (fun i => z (i+1)) (by
+      intro i hi; simpa only [Nat.add_assoc] using hstep i hi)
+  have htail : (∑ i ∈ range (2*m), u (i+1)) = (∑ i ∈ range (2*m), z (i+1) : ℤ) := by
+    push_cast
+    apply sum_congr rfl
+    intro i hi
+    exact hz (i+1) (by omega) (by have := mem_range.mp hi; omega)
+  rw [sum_range_succ',htail]
+  rcases hs with hs | hs
+  · simpa [hs] using hfirst
+  · rw [hs]
+    have ht := tail_bound (2*m) u z hz hu (by omega : 0 < 1) (by omega)
+    have hb := abs_lt.mp (hu 1 (by omega))
+    norm_num [image] at hb
+    rw [hz 1 (by omega) (by omega)] at hb
+    have hf := abs_lt.mp hfirst
+    have he : z 1 = -1 ∨ z 1 = 0 ∨ z 1 = 1 := by omega
+    rcases he with he | he | he <;>
+      simp only [he, Int.cast_neg, Int.cast_one, Int.cast_zero] at hb ⊢ <;>
+      rw [abs_lt] <;> constructor <;> linarith
+
+end Erdos1CyclicStrip
+
+/- CyclicReversePair -/
+namespace Erdos1CyclicReversePair
+open Finset
+variable {I : Type} [Fintype I] [DecidableEq I]
+set_option maxHeartbeats 3000000
+set_option linter.unusedSectionVars false
+
+def factor (σ : Equiv.Perm I) (R T : ℝ) (v : I → ℝ) (i : I) : ℝ :=
+  R*v i+T*v (σ i)
+
+end Erdos1CyclicReversePair
+
+/- SkewDeterminant -/
+namespace Erdos1SkewDeterminant
+open Matrix Finset
+variable {α : Type*} [Fintype α] [DecidableEq α]
+
+lemma det_row_piecewise {R : Type*} [CommRing R] (B : Matrix α α R)
+    (p q : R) (s : Finset α) :
+    Matrix.det (s.piecewise (p • B) (q • (1 : Matrix α α R))) =
+      p^s.card * q^(Fintype.card α-s.card) * (B.submatrix ((↑) : s → α) ((↑) : s → α)).det := by
+  let e := Equiv.sumCompl (fun i => i ∈ s)
+  let C : Matrix s {i // i ∉ s} R := fun i j => p * B i j
+  have hb : Matrix.submatrix (s.piecewise (p • B) (q • (1 : Matrix α α R))) e e =
+      fromBlocks (p • B.submatrix ((↑) : s → α) ((↑) : s → α)) C 0
+        (q • (1 : Matrix {i // i ∉ s} {i // i ∉ s} R)) := by
+    ext i j
+    cases i with
+    | inl i =>
+      cases j with
+      | inl j => simp [e, Matrix.submatrix, Matrix.fromBlocks, Finset.piecewise, i.property]
+      | inr j => simp [e, Matrix.submatrix, Matrix.fromBlocks, Finset.piecewise, i.property, C]
+    | inr i =>
+      cases j with
+      | inl j =>
+        have hij : (i:α) ≠ j := by intro he; exact i.property (he ▸ j.property)
+        simp [e, Matrix.submatrix, Matrix.fromBlocks, Finset.piecewise, i.property, hij]
+      | inr j =>
+        simp [e, Matrix.submatrix, Matrix.fromBlocks, Finset.piecewise, i.property, Matrix.one_apply, Subtype.ext_iff]
+  rw [← det_submatrix_equiv_self e, hb, det_fromBlocks_zero₂₁, det_smul, det_smul,
+    det_one, mul_one]
+  simp only [Fintype.card_coe, Fintype.card_subtype_compl]
+  ring
+
+lemma det_scalar_add (B : Matrix α α ℝ) (p q : ℝ) :
+    (q • (1 : Matrix α α ℝ) + p • B).det =
+      ∑ s : Finset α, p^s.card * q^(Fintype.card α-s.card) *
+        (B.submatrix ((↑) : s → α) ((↑) : s → α)).det := by
+  rw [add_comm]
+  have he := (detRowAlternating.toMultilinearMap :
+    MultilinearMap ℝ (fun _ : α => α → ℝ) ℝ).map_add_univ (p • B) (q • (1 : Matrix α α ℝ))
+  change (p • B + q • (1 : Matrix α α ℝ)).det = ∑ s : Finset α, Matrix.det (s.piecewise (p • B) (q • (1 : Matrix α α ℝ))) at he
+  rw [he]
+  apply sum_congr rfl
+  intro s _
+  exact det_row_piecewise B p q s
+
+def balancedMatrix {n : ℕ} {R : Type*} [Sub R] (C : Matrix (Fin (n+1)) (Fin (n+1)) R) :
+    Matrix (Fin n) (Fin n) R := fun i j => C i.succ j.succ - C i.succ 0
+
+lemma det_of_column_sum {n : ℕ} {R : Type*} [CommRing R]
+    (C : Matrix (Fin (n+1)) (Fin (n+1)) R) (q : R)
+    (hcol : ∀ j, (∑ i, C i j) = q) : C.det = q * (balancedMatrix C).det := by
+  let E := C.updateRow 0 (fun _ => q)
+  have heq : E = C.updateRow 0 (∑ k, (1:R) • C k) := by
+    dsimp only [E]
+    apply congrArg (C.updateRow 0)
+    funext j
+    simpa [Finset.sum_apply] using (hcol j).symm
+  have he : E.det = C.det := by
+    rw [heq,det_updateRow_sum]
+    simp
+  let c : Fin (n+1) → R := fun j => if j = 0 then 0 else -1
+  let F : Matrix (Fin (n+1)) (Fin (n+1)) R := fun i j => E i j + c j * E i 0
+  have hf : F.det = E.det := by
+    rw [← det_transpose F,← det_transpose E]
+    apply det_eq_of_forall_row_eq_smul_add_const c 0 (by simp [c])
+    intro i j
+    rfl
+  have hf0 (j : Fin (n+1)) : F 0 j = if j = 0 then q else 0 := by
+    by_cases hj : j = 0 <;> simp [F,E,c,hj]
+  have hsub : F.submatrix Fin.succ Fin.succ = balancedMatrix C := by
+    ext i j
+    simp [Matrix.submatrix, F,E,c,balancedMatrix,sub_eq_add_neg]
+  rw [← he,← hf,det_succ_row_zero, sum_eq_single 0]
+  · simp only [hf0, ite_true, Fin.val_zero, pow_zero, one_mul,
+      Fin.succAbove_zero, hsub]
+  · intro j _ hj
+    simp [hf0,hj]
+  · simp
+
+end Erdos1SkewDeterminant
+
+/- CyclicReverseDeterminant -/
+namespace Erdos1CyclicReverseDeterminant
+open Finset Matrix Erdos1CyclicReversePair Erdos1SkewDeterminant
+variable {I : Type} [Fintype I] [DecidableEq I]
+set_option maxHeartbeats 4000000
+set_option linter.unusedSectionVars false
+
+lemma perm_entry (σ : Equiv.Perm I) (i j : I) :
+    (σ.permMatrix ℝ) i j = if σ i = j then 1 else 0 := by
+  simp [Equiv.Perm.permMatrix,Equiv.toPEquiv_apply]
+
+lemma cycle_exit (σ : Equiv.Perm I) (hc : σ.IsCycle) (hf : ∀ i, σ i ≠ i)
+    (s : Finset I) (hne : s.Nonempty) (hproper : s ≠ univ) :
+    ∃ i ∈ s, σ i ∉ s := by
+  classical
+  by_contra hn
+  push_neg at hn
+  obtain ⟨a,ha⟩ := hne
+  have he : s = univ := by
+    apply eq_univ_of_forall
+    intro b
+    obtain ⟨k,hk⟩ := hc.exists_pow_eq (hf a) (hf b)
+    have hp : ∀ k : ℕ, (σ^k) a ∈ s := by
+      intro k
+      induction k with
+      | zero => simpa using ha
+      | succ k ih =>
+        simpa only [pow_succ',Equiv.Perm.mul_apply] using hn _ ih
+    exact hk ▸ hp k
+  exact hproper he
+
+lemma proper_minor_zero (σ : Equiv.Perm I) (hc : σ.IsCycle) (hf : ∀ i, σ i ≠ i)
+    (s : Finset I) (hne : s.Nonempty) (hproper : s ≠ univ) :
+    ((σ.permMatrix ℝ).submatrix ((↑) : s → I) ((↑) : s → I)).det = 0 := by
+  obtain ⟨i,hi,hout⟩ := cycle_exit σ hc hf s hne hproper
+  apply det_eq_zero_of_row_eq_zero ⟨i,hi⟩
+  intro j
+  change (σ.permMatrix ℝ) i j.val = 0
+  rw [perm_entry,if_neg]
+  intro he
+  exact hout (he.symm ▸ j.property)
+
+lemma full_minor_det (M : Matrix I I ℝ) :
+    (M.submatrix (fun i : ↥(univ : Finset I) => i.val)
+      (fun i : ↥(univ : Finset I) => i.val)).det =
+      M.det := by
+  exact det_submatrix_equiv_self (Equiv.subtypeUnivEquiv (fun i : I => mem_univ i)) M
+
+def factorMatrix (σ : Equiv.Perm I) (R T : ℝ) : Matrix I I ℝ :=
+  R • (1 : Matrix I I ℝ)+T • σ.permMatrix ℝ
+
+lemma cycle_det (σ : Equiv.Perm I) (hc : σ.IsCycle) (hf : ∀ i, σ i ≠ i)
+    (R T : ℝ) : (factorMatrix σ R T).det =
+      R^Fintype.card I+(Equiv.Perm.sign σ:ℝ)*T^Fintype.card I := by
+  classical
+  have hne : (univ : Finset I) ≠ ∅ := by
+    obtain ⟨a,ha⟩ := hc.nonempty_support
+    exact nonempty_iff_ne_empty.mp ⟨a,mem_univ a⟩
+  let f : Finset I → ℝ := fun s => T^s.card*R^(Fintype.card I-s.card)*
+    ((σ.permMatrix ℝ).submatrix ((↑) : s → I) ((↑) : s → I)).det
+  have hz (s : Finset I) (h₀ : s ≠ ∅) (h₁ : s ≠ univ) : f s = 0 := by
+    simp only [f,proper_minor_zero σ hc hf s (nonempty_iff_ne_empty.mpr h₀) h₁,mul_zero]
+  have hs : (∑ s : Finset I, f s) = ∑ s ∈ ({∅,univ} : Finset (Finset I)), f s := by
+    symm
+    apply sum_subset (subset_univ _)
+    intro s _ hn
+    have h₀ : s ≠ ∅ := by intro he; subst s; simp at hn
+    have h₁ : s ≠ univ := by intro he; subst s; simp at hn
+    exact hz s h₀ h₁
+  rw [factorMatrix,det_scalar_add]
+  change (∑ s : Finset I, f s) = _
+  rw [hs,sum_pair (Ne.symm hne)]
+  simp [f,full_minor_det,mul_comm]
+
+lemma factorMatrix_apply (σ : Equiv.Perm I) (R T : ℝ) (v : I → ℝ) (i : I) :
+    (factorMatrix σ R T *ᵥ v) i = factor σ R T v i := by
+  simp [factorMatrix,add_mulVec,smul_mulVec,permMatrix_mulVec,factor,Function.comp_def]
+
+lemma factor_column_sum (σ : Equiv.Perm I) (R T : ℝ) (j : I) :
+    (∑ i, factorMatrix σ R T i j) = R+T := by
+  simp only [factorMatrix,Matrix.add_apply,Matrix.smul_apply,smul_eq_mul,
+    Matrix.one_apply,perm_entry,sum_add_distrib,← mul_sum]
+  have he : (∑ i, if σ i = j then (1:ℝ) else 0) = 1 := by
+    simp_rw [Equiv.apply_eq_iff_eq_symm_apply]
+    simp
+  rw [he]
+  simp
+
+lemma factor_transpose (σ : Equiv.Perm I) (R T : ℝ) :
+    (factorMatrix σ R T)ᵀ = factorMatrix σ.symm R T := by
+  simp [factorMatrix,Equiv.Perm.inv_def]
+
+end Erdos1CyclicReverseDeterminant
+
+/- CyclicPowerDeterminants -/
+namespace Erdos1CyclicPowerDeterminants
+open Finset Matrix Erdos1CyclicReverseDeterminant Erdos1SkewDeterminant
+variable {I : Type} [Fintype I] [DecidableEq I]
+set_option maxHeartbeats 3000000
+
+lemma full_cycle_det {m : ℕ} (hm : 0 < m) (R T : ℝ) :
+    (factorMatrix (finRotate (2*m+1)) R T).det = R^(2*m+1)+T^(2*m+1) := by
+  let σ := finRotate (2*m+1)
+  have hc : σ.IsCycle := isCycle_finRotate_of_le (by omega)
+  have hf : ∀ i, σ i ≠ i := by
+    intro i
+    apply Equiv.Perm.mem_support.mp
+    rw [show σ.support = univ from support_finRotate_of_le (by omega)]
+    exact mem_univ _
+  have hsign : Equiv.Perm.sign σ = 1 := by
+    simp [σ,sign_finRotate,pow_mul]
+  have hd := cycle_det σ hc hf R T
+  simpa [hsign] using hd
+
+end Erdos1CyclicPowerDeterminants
+
+/- CyclicLift -/
+namespace Erdos1CyclicLift
+open Finset Matrix
+noncomputable section
+open Erdos1CyclicReverseDeterminant Erdos1CyclicPowerDeterminants
+set_option maxHeartbeats 4000000
+set_option linter.unusedSectionVars false
+
+variable {I : Type*} [Fintype I] [DecidableEq I]
+
+def Admissible (C : Matrix I I ℝ) : Prop :=
+  ∀ z : I → ℤ, (∀ i, |(C *ᵥ fun j => (z j : ℝ)) i| < 1) → z = 0
+
+def base (m : ℕ) : Matrix (Fin (2*m+1)) (Fin (2*m+1)) ℝ :=
+  (factorMatrix (finRotate (2*m+1)) 1 (1/2))ᵀ
+
+lemma base_det (m : ℕ) (hm : 0 < m) : (base m).det = 1+(1/2:ℝ)^(2*m+1) := by
+  rw [base,det_transpose,full_cycle_det hm]
+  simp
+
+lemma base_column (m : ℕ) (j : Fin (2*m+1)) : (∑ i, base m i j) = 3/2 := by
+  rw [base,factor_transpose]
+  norm_num [factor_column_sum]
+
+lemma rotate_castSucc (l : ℕ) (i : Fin l) : finRotate (l+1) i.castSucc = i.succ := by
+  apply Fin.ext
+  rw [coe_finRotate_of_ne_last (by
+    intro he
+    have hh := congrArg Fin.val he
+    simp only [Fin.val_castSucc,Fin.val_last] at hh
+    omega)]
+  rfl
+
+lemma base_apply_zero (m : ℕ) (u : Fin (2*m+1) → ℝ) :
+    (base m *ᵥ u) 0 = u 0 + u (Fin.last (2*m))/2 := by
+  rw [base,factor_transpose,factorMatrix_apply]
+  have he : (finRotate (2*m+1)).symm 0 = Fin.last (2*m) :=
+    (Equiv.symm_apply_eq _).mpr finRotate_last.symm
+  simp [Erdos1CyclicReversePair.factor,he]
+  ring
+
+lemma base_apply_succ (m : ℕ) (u : Fin (2*m+1) → ℝ) (i : Fin (2*m)) :
+    (base m *ᵥ u) i.succ = u i.succ + u i.castSucc/2 := by
+  rw [base,factor_transpose,factorMatrix_apply]
+  have he : (finRotate (2*m+1)).symm i.succ = i.castSucc :=
+    (Equiv.symm_apply_eq _).mpr (rotate_castSucc (2*m) i).symm
+  simp [Erdos1CyclicReversePair.factor,he]
+  ring
+
+lemma base_strip (m : ℕ) (u : Fin (2*m+1) → ℝ) (z : Fin (2*m) → ℤ)
+    (hz : ∀ j, u j.succ = (z j : ℝ))
+    (hu : ∀ i, |(base m *ᵥ u) i| < 1) : |∑ i, u i| < 1 := by
+  let v : ℕ → ℝ := fun i => if hi : i < 2*m+1 then u ⟨i,hi⟩ else 0
+  let w : ℕ → ℤ := fun i => if hi : 0 < i ∧ i ≤ 2*m then z ⟨i-1,by omega⟩ else 0
+  have hv (i : Fin (2*m+1)) : v i.val = u i := by simp only [v,dif_pos i.isLt]
+  have hw : ∀ i, 0 < i → i ≤ 2*m → v i = (w i : ℝ) := by
+    intro i hi hil
+    let j : Fin (2*m) := ⟨i-1,by omega⟩
+    have hj : j.succ.val = i := by dsimp [j]; omega
+    have hwi : w i = z j := by simp only [w,dif_pos (And.intro hi hil)]; rfl
+    rw [hwi,← hz j,← hj,hv]
+  have hsmall : ∀ i ≤ 2*m, |Erdos1CyclicStrip.image (2*m) v i| < 2 := by
+    intro i hi
+    by_cases hi0 : i = 0
+    · subst i
+      have hh := hu 0
+      rw [base_apply_zero] at hh
+      have he : Erdos1CyclicStrip.image (2*m) v 0 =
+          2*(u 0+u (Fin.last (2*m))/2) := by
+        change 2*v 0+v (2*m) = _
+        rw [show v 0 = u 0 by simpa only [Fin.val_zero] using hv 0,
+          show v (2*m) = u (Fin.last (2*m)) by simpa only [Fin.val_last] using hv (Fin.last (2*m))]
+        ring
+      rw [he,abs_mul]
+      norm_num
+      linarith
+    · let j : Fin (2*m) := ⟨i-1,by omega⟩
+      have hj : j.succ.val = i := by dsimp [j]; omega
+      have hh := hu j.succ
+      rw [base_apply_succ] at hh
+      have he : Erdos1CyclicStrip.image (2*m) v i =
+          2*(u j.succ+u j.castSucc/2) := by
+        simp only [Erdos1CyclicStrip.image,if_neg hi0]
+        rw [← hj,hv]
+        change 2*u j.succ+v (i-1) = _
+        have hp : v (i-1) = u j.castSucc := hv j.castSucc
+        rw [hp]; ring
+      rw [he,abs_mul]
+      norm_num
+      linarith
+  have hh := Erdos1CyclicStrip.sum_strip m v w hw hsmall
+  rw [← Fin.sum_univ_eq_sum_range] at hh
+  simpa only [hv] using hh
+
+lemma base_admissible (m : ℕ) : Admissible (base m) := by
+  intro z hz
+  let w : ℕ → ℤ := fun i => if hi : i < 2*m+1 then z ⟨i,hi⟩ else 0
+  have hw (i : Fin (2*m+1)) : w i.val = z i := by simp only [w,dif_pos i.isLt]
+  have hs : ∀ i < 2*m+1, |Erdos1CyclicPowers.action (2*m) 2 1 w i| < 2 := by
+    intro i hi
+    let j : Fin (2*m+1) := ⟨i,hi⟩
+    have hj : j.val = i := rfl
+    have hb := hz j
+    have he (q : Fin (2*m+1)) : ((Erdos1CyclicPowers.action (2*m) 2 1 w q.val : ℤ):ℝ) =
+        2*(base m *ᵥ fun k => (z k:ℝ)) q := by
+      refine Fin.cases ?_ (fun k => ?_) q
+      · rw [base_apply_zero]
+        simp only [Erdos1CyclicPowers.action,Fin.val_zero,ite_true,one_mul]
+        rw [show w 0 = z 0 by simpa only [Fin.val_zero] using hw 0,
+          show w (2*m) = z (Fin.last (2*m)) by simpa only [Fin.val_last] using hw (Fin.last (2*m))]
+        push_cast
+        ring
+      · rw [base_apply_succ]
+        simp only [Erdos1CyclicPowers.action,Fin.val_succ,Nat.add_one_ne_zero,if_false,
+          Nat.add_sub_cancel,one_mul]
+        rw [show w (k.val+1) = z k.succ from hw k.succ,
+          show w k.val = z k.castSucc from hw k.castSucc]
+        push_cast
+        ring
+    have hreal : |((Erdos1CyclicPowers.action (2*m) 2 1 w i : ℤ):ℝ)| < 2 := by
+      rw [show i = j.val from rfl,he j,abs_mul]
+      norm_num
+      linarith
+    exact_mod_cast hreal
+  have hh := Erdos1CyclicPowers.odd_cycle_radius m (by norm_num : (0:ℤ)<2)
+    (by norm_num : (0:ℤ)≤1) w hs
+  funext i
+  exact (hw i).symm.trans (hh i.val i.isLt)
+
+def blocksEquiv (l : ℕ) : (I ⊕ (I × Fin l)) ≃ (Fin (l+1) × I) where
+  toFun := Sum.elim (fun i => (0,i)) (fun p => (p.2.succ,p.1))
+  invFun p := Fin.cases (Sum.inl p.2) (fun j => Sum.inr (p.2,j)) p.1
+  left_inv x := by cases x <;> simp
+  right_inv p := by rcases p with ⟨j,i⟩; refine Fin.cases ?_ (fun k => ?_) j <;> simp
+
+def upper (l : ℕ) (C : Matrix I I ℝ) : Matrix I (I × Fin l) ℝ :=
+  fun i p => C i p.1 - if i = p.1 then 1 else 0
+
+def change (l : ℕ) (C : Matrix I I ℝ) : Matrix (I ⊕ (I × Fin l)) (I ⊕ (I × Fin l)) ℝ :=
+  fromBlocks C (upper l C) 0 1
+
+def diagonal (m : ℕ) : Matrix (I ⊕ (I × Fin (2*m))) (I ⊕ (I × Fin (2*m))) ℝ :=
+  (blockDiagonal (fun _ : I => base m)).submatrix (blocksEquiv (2*m)) (blocksEquiv (2*m))
+
+def lift (m : ℕ) (C : Matrix I I ℝ) :
+    Matrix (I ⊕ (I × Fin (2*m))) (I ⊕ (I × Fin (2*m))) ℝ := diagonal m * change (2*m) C
+
+lemma change_det (l : ℕ) (C : Matrix I I ℝ) : (change l C).det = C.det := by
+  rw [change,det_fromBlocks_zero₂₁,det_one,mul_one]
+
+lemma diagonal_det (m : ℕ) : (diagonal (I := I) m).det = (base m).det^Fintype.card I := by
+  rw [diagonal,det_submatrix_equiv_self,det_blockDiagonal]
+  simp
+
+lemma lift_det (m : ℕ) (C : Matrix I I ℝ) :
+    (lift m C).det = (base m).det^Fintype.card I * C.det := by
+  rw [lift,det_mul,diagonal_det,change_det]
+
+lemma change_anchor (l : ℕ) (C : Matrix I I ℝ) (x : I ⊕ (I × Fin l) → ℝ) (i : I) :
+    (change l C *ᵥ x) (Sum.inl i) =
+      (C *ᵥ fun k => x (Sum.inl k)+∑ j, x (Sum.inr (k,j))) i - ∑ j, x (Sum.inr (i,j)) := by
+  simp only [change,mulVec,dotProduct,Fintype.sum_sum_type,fromBlocks_apply₁₁,fromBlocks_apply₁₂,
+    upper,Fintype.sum_prod_type,sub_mul,sum_sub_distrib,ite_mul,one_mul,zero_mul]
+  have he : (∑ k : I, ∑ j : Fin l, if i = k then x (Sum.inr (k,j)) else 0) =
+      ∑ j, x (Sum.inr (i,j)) := by
+    rw [sum_comm]
+    simp
+  rw [he]
+  simp_rw [mul_add, mul_sum, sum_add_distrib]
+  ring
+
+lemma change_tail (l : ℕ) (C : Matrix I I ℝ) (x : I ⊕ (I × Fin l) → ℝ) (i : I) (j : Fin l) :
+    (change l C *ᵥ x) (Sum.inr (i,j)) = x (Sum.inr (i,j)) := by
+  simp [change,mulVec,dotProduct,Fintype.sum_sum_type,Matrix.one_apply]
+
+lemma diagonal_apply (m : ℕ) (x : I ⊕ (I × Fin (2*m)) → ℝ) (i : I) (j : Fin (2*m+1)) :
+    (diagonal m *ᵥ x) ((blocksEquiv (2*m)).symm (j,i)) =
+      (base m *ᵥ fun k => x ((blocksEquiv (2*m)).symm (k,i))) j := by
+  unfold diagonal mulVec dotProduct
+  have he := Fintype.sum_equiv (blocksEquiv (I := I) (2*m))
+    (fun p => (blockDiagonal (fun _ : I => base m)) (j,i) (blocksEquiv (2*m) p) * x p)
+    (fun p => (blockDiagonal (fun _ : I => base m)) (j,i) p * x ((blocksEquiv (2*m)).symm p))
+    (by intro p; simp)
+  simp only [submatrix_apply,Equiv.apply_symm_apply]
+  rw [he]
+  simp [Fintype.sum_prod_type,blockDiagonal_apply,ite_mul]
+
+lemma change_column (l : ℕ) (C : Matrix I I ℝ) (q : ℝ)
+    (hcol : ∀ j, (∑ i, C i j) = q) (j : I ⊕ (I × Fin l)) :
+    (∑ i, change l C i j) = q := by
+  cases j with
+  | inl j => simpa [change,Fintype.sum_sum_type] using hcol j
+  | inr p =>
+    rcases p with ⟨j,k⟩
+    simp [change,upper,Fintype.sum_sum_type,Matrix.one_apply,sum_sub_distrib,hcol]
+
+lemma diagonal_column (m : ℕ) (j : I ⊕ (I × Fin (2*m))) :
+    (∑ i, diagonal m i j) = 3/2 := by
+  unfold diagonal
+  simp only [submatrix_apply]
+  rw [Fintype.sum_equiv (blocksEquiv (I := I) (2*m))
+    (fun i => blockDiagonal (fun _ : I => base m) (blocksEquiv (2*m) i) (blocksEquiv (2*m) j))
+    (fun i => blockDiagonal (fun _ : I => base m) i (blocksEquiv (2*m) j)) (by intro i; rfl)]
+  simp [Fintype.sum_prod_type,blockDiagonal_apply,base_column]
+
+lemma lift_column (m : ℕ) (C : Matrix I I ℝ) (q : ℝ)
+    (hcol : ∀ j, (∑ i, C i j) = q) (j : I ⊕ (I × Fin (2*m))) :
+    (∑ i, lift m C i j) = (3/2)*q := by
+  simp only [lift,mul_apply]
+  rw [sum_comm]
+  simp_rw [← sum_mul,diagonal_column]
+  rw [← mul_sum,change_column (2*m) C q hcol]
+
+theorem lift_admissible (m : ℕ) (C : Matrix I I ℝ) (hC : Admissible C) :
+    Admissible (lift m C) := by
+  intro x hx
+  let xr : I ⊕ (I × Fin (2*m)) → ℝ := fun j => (x j : ℝ)
+  let t : I → ℤ := fun i => x (Sum.inl i)+∑ j, x (Sum.inr (i,j))
+  let y := change (2*m) C *ᵥ xr
+  let u : I → Fin (2*m+1) → ℝ := fun i j => y ((blocksEquiv (2*m)).symm (j,i))
+  have hu0 (i : I) : u i 0 =
+      (C *ᵥ fun k => (t k : ℝ)) i - ∑ j, (x (Sum.inr (i,j)):ℝ) := by
+    change (change (2*m) C *ᵥ xr) (Sum.inl i) = _
+    rw [change_anchor]
+    simp [xr,t]
+  have hus (i : I) (j : Fin (2*m)) : u i j.succ = (x (Sum.inr (i,j)):ℝ) := by
+    change (change (2*m) C *ᵥ xr) (Sum.inr (i,j)) = _
+    exact change_tail (2*m) C xr i j
+  have hsum (i : I) : (∑ j, u i j) = (C *ᵥ fun k => (t k : ℝ)) i := by
+    rw [Fin.sum_univ_succ,hu0]
+    simp only [hus]
+    ring
+  have hu (i : I) (j : Fin (2*m+1)) : |(base m *ᵥ u i) j| < 1 := by
+    have hh := hx ((blocksEquiv (2*m)).symm (j,i))
+    change |(lift m C *ᵥ xr) _| < 1 at hh
+    rw [lift,← mulVec_mulVec] at hh
+    rw [diagonal_apply] at hh
+    exact hh
+  have ht : t = 0 := by
+    apply hC t
+    intro i
+    rw [← hsum]
+    exact base_strip m (u i) (fun j => x (Sum.inr (i,j))) (hus i) (hu i)
+  have hye : y = xr := by
+    funext j
+    cases j with
+    | inl i =>
+      have hti := congrFun ht i
+      have htiR : (x (Sum.inl i):ℝ)+(∑ j, (x (Sum.inr (i,j)):ℝ)) = 0 := by
+        exact_mod_cast hti
+      change u i 0 = (x (Sum.inl i):ℝ)
+      rw [hu0,ht]
+      simp [mulVec,dotProduct]
+      linarith
+    | inr p => exact change_tail (2*m) C xr p.1 p.2
+  have hz (i : I) : (fun j => x ((blocksEquiv (2*m)).symm (j,i))) = 0 := by
+    apply base_admissible m
+    intro j
+    have hh := hu i j
+    have he : u i = fun k => (x ((blocksEquiv (2*m)).symm (k,i)):ℝ) := by
+      funext k
+      change y _ = xr _
+      rw [hye]
+    simpa only [he] using hh
+  funext j
+  have hh := congrFun (hz ((blocksEquiv (2*m) j).2)) ((blocksEquiv (2*m) j).1)
+  simpa using hh
+
+end
+end Erdos1CyclicLift
+
+/- CyclicFamily -/
+namespace Erdos1CyclicFamily
+open Finset Matrix Erdos1CyclicLift
+noncomputable section
+set_option maxHeartbeats 4000000
+
+variable {I J K : Type*} [Fintype I] [Fintype J] [Fintype K]
+
+def Dyadic (r : ℕ) (C : Matrix I J ℝ) : Prop :=
+  ∀ i j, ∃ z : ℤ, (2:ℝ)^r*C i j = z
+
+lemma dyadic_one [DecidableEq I] (r : ℕ) : Dyadic r (1 : Matrix I I ℝ) := by
+  intro i j
+  by_cases he : i = j
+  · subst j; exact ⟨(2:ℤ)^r,by simp⟩
+  · exact ⟨0,by simp [Matrix.one_apply,he]⟩
+
+lemma dyadic_mul {r s : ℕ} {A : Matrix I J ℝ} {B : Matrix J K ℝ}
+    (hA : Dyadic r A) (hB : Dyadic s B) : Dyadic (r+s) (A*B) := by
+  classical
+  choose a ha using hA
+  choose b hb using hB
+  intro i k
+  refine ⟨∑ j, a i j*b j k,?_⟩
+  simp only [mul_apply,Int.cast_sum,Int.cast_mul,mul_sum,pow_add]
+  apply sum_congr rfl
+  intro j hj
+  rw [← ha i j,← hb j k]
+  ring
+
+lemma base_dyadic (m : ℕ) : Dyadic 1 (base m) := by
+  intro i j
+  let a : ℤ := if j = i then 1 else 0
+  let b : ℤ := if finRotate (2*m+1) j = i then 1 else 0
+  refine ⟨2*a+b,?_⟩
+  simp only [base,Erdos1CyclicReverseDeterminant.factorMatrix,transpose_apply,Matrix.add_apply,Matrix.smul_apply,
+    smul_eq_mul,Matrix.one_apply,Erdos1CyclicReverseDeterminant.perm_entry,pow_one]
+  dsimp [a,b]
+  split_ifs <;> norm_num
+
+lemma change_dyadic [DecidableEq I] {r : ℕ} (l : ℕ) (C : Matrix I I ℝ)
+    (hC : Dyadic r C) : Dyadic r (change l C) := by
+  intro i j
+  cases i with
+  | inl i =>
+    cases j with
+    | inl j => exact hC i j
+    | inr p =>
+      obtain ⟨z,hz⟩ := hC i p.1
+      by_cases he : i = p.1
+      · refine ⟨z-(2:ℤ)^r,?_⟩
+        simp [change,upper,he,mul_sub]
+        simpa only [he] using hz
+      · refine ⟨z,?_⟩
+        simpa [change,upper,he] using hz
+  | inr p =>
+    cases j with
+    | inl j => exact ⟨0,by simp [change]⟩
+    | inr q => exact dyadic_one r p q
+
+lemma diagonal_dyadic [DecidableEq I] (m : ℕ) : Dyadic 1 (Erdos1CyclicLift.diagonal (I := I) m) := by
+  intro i j
+  unfold Erdos1CyclicLift.diagonal
+  simp only [submatrix_apply,blockDiagonal_apply]
+  split_ifs
+  · exact base_dyadic m _ _
+  · exact ⟨0,by simp⟩
+
+lemma lift_dyadic [DecidableEq I] {r : ℕ} (m : ℕ) (C : Matrix I I ℝ)
+    (hC : Dyadic r C) : Dyadic (r+1) (lift m C) := by
+  simpa only [lift, Nat.add_comm] using
+    dyadic_mul (diagonal_dyadic (I := I) m) (change_dyadic (2*m) C hC)
+
+def Index (m : ℕ) : ℕ → Type
+  | 0 => Unit
+  | h+1 => Index m h ⊕ (Index m h × Fin (2*m))
+
+instance indexFintype (m : ℕ) : (h : ℕ) → Fintype (Index m h)
+  | 0 => inferInstanceAs (Fintype Unit)
+  | h+1 => letI := indexFintype m h; inferInstanceAs (Fintype (Index m h ⊕ (Index m h × Fin (2*m))))
+
+instance indexDecidableEq (m : ℕ) : (h : ℕ) → DecidableEq (Index m h)
+  | 0 => inferInstanceAs (DecidableEq Unit)
+  | h+1 => letI := indexDecidableEq m h; inferInstanceAs (DecidableEq (Index m h ⊕ (Index m h × Fin (2*m))))
+
+lemma card_index (m h : ℕ) : Fintype.card (Index m h) = (2*m+1)^h := by
+  induction h with
+  | zero => rfl
+  | succ h ih =>
+    change Fintype.card (Index m h ⊕ (Index m h × Fin (2*m))) = _
+    simp only [Fintype.card_sum,Fintype.card_prod,Fintype.card_fin,ih,pow_succ]
+    ring
+
+def family (m : ℕ) : (h : ℕ) → Matrix (Index m h) (Index m h) ℝ
+  | 0 => 1
+  | h+1 => lift m (family m h)
+
+lemma family_admissible (m h : ℕ) : Admissible (family m h) := by
+  induction h with
+  | zero =>
+    intro z hz
+    funext i
+    have hi := hz i
+    simp only [family,one_mulVec] at hi
+    have hiZ : |z i| < (1:ℤ) := by exact_mod_cast hi
+    have := abs_lt.mp hiZ
+    change z i = 0
+    omega
+  | succ h ih => exact lift_admissible m (family m h) ih
+
+lemma family_column (m h : ℕ) (j : Index m h) :
+    (∑ i, family m h i j) = (3/2:ℝ)^h := by
+  induction h with
+  | zero => simp [family,Matrix.one_apply]
+  | succ h ih =>
+    change (∑ i : Index m h ⊕ (Index m h × Fin (2*m)),
+      lift m (family m h) i j) = (3/2:ℝ)^(h+1)
+    rw [lift_column m (family m h) ((3/2:ℝ)^h) ih j, pow_succ]
+    ring
+
+lemma family_dyadic (m h : ℕ) : Dyadic h (family m h) := by
+  induction h with
+  | zero => exact dyadic_one 0
+  | succ h ih => exact lift_dyadic m (family m h) ih
+
+def exponent (m h : ℕ) : ℕ := ∑ j ∈ range h, (2*m+1)^j
+
+lemma family_det (m h : ℕ) (hm : 0 < m) :
+    (family m h).det = (1+(1/2:ℝ)^(2*m+1))^(exponent m h) := by
+  induction h with
+  | zero => simp [family,exponent]
+  | succ h ih =>
+    rw [family,lift_det,base_det m hm,card_index,ih]
+    simp only [exponent,sum_range_succ,pow_add]
+    ring
+
+end
+end Erdos1CyclicFamily
+
+/- CyclicFamilyLimit -/
+namespace Erdos1CyclicFamilyLimit
+open Finset Filter Matrix Erdos1CyclicFamily
+open scoped Topology
+set_option maxHeartbeats 3000000
+
+lemma exponent_error_limit (h : ℕ) :
+    Tendsto (fun m : ℕ => (exponent m h : ℝ)*(1/2:ℝ)^(2*m+1)) atTop (𝓝 0) := by
+  have hidx : Tendsto (fun m : ℕ => 2*m+1) atTop atTop :=
+    tendsto_atTop_mono (fun m => by omega : ∀ m : ℕ, m ≤ 2*m+1) tendsto_id
+  have hterm (j : ℕ) : Tendsto (fun m : ℕ => ((2*m+1:ℕ):ℝ)^j*(1/2:ℝ)^(2*m+1))
+      atTop (𝓝 0) :=
+    (tendsto_pow_const_mul_const_pow_of_lt_one j (by norm_num : (0:ℝ)≤1/2)
+      (by norm_num : (1/2:ℝ)<1)).comp hidx
+  have hh := tendsto_finset_sum (range h) (fun j _ => hterm j)
+  simpa only [sum_const_zero,exponent,Nat.cast_sum,Nat.cast_pow,sum_mul] using hh
+
+lemma determinant_exp_bound (m h : ℕ) (hm : 0 < m) :
+    (family m h).det ≤ Real.exp ((exponent m h:ℝ)*(1/2:ℝ)^(2*m+1)) := by
+  rw [family_det m h hm]
+  have hh := pow_le_pow_left₀ (by positivity : (0:ℝ)≤1+(1/2:ℝ)^(2*m+1))
+    (by simpa only [add_comm] using Real.add_one_le_exp ((1/2:ℝ)^(2*m+1))) (exponent m h)
+  simpa only [Real.exp_nat_mul,Nat.add_comm] using hh
+
+lemma eventually_small_det (h : ℕ) : ∀ᶠ m : ℕ in atTop, 0 < m ∧ (family m h).det < 2 := by
+  have he := Real.continuous_exp.continuousAt.tendsto.comp (exponent_error_limit h)
+  have he' : Tendsto (fun m : ℕ => Real.exp ((exponent m h:ℝ)*(1/2:ℝ)^(2*m+1)))
+      atTop (𝓝 1) := by simpa [Function.comp_def] using he
+  have hbound := (tendsto_order.mp he').2 2 (by norm_num)
+  filter_upwards [hbound,eventually_gt_atTop (0:ℕ)] with m hm hm0
+  exact ⟨hm0,(determinant_exp_bound m h hm0).trans_lt hm⟩
+
+theorem exists_small_ratio (k : ℕ) : ∃ m h : ℕ, 0 < m ∧ 0 < h ∧
+    (k:ℝ)*(family m h).det < (3/2:ℝ)^h := by
+  have hp : Tendsto (fun h : ℕ => (3/2:ℝ)^h) atTop atTop :=
+    tendsto_pow_atTop_atTop_of_one_lt (by norm_num)
+  have hex := hp.eventually (eventually_gt_atTop (2*(k:ℝ)))
+  obtain ⟨h,hh,hh0⟩ := (hex.and (eventually_gt_atTop (0:ℕ))).exists
+  obtain ⟨m,hm0,hm⟩ := (eventually_small_det h).exists
+  refine ⟨m,h,hm0,hh0,?_⟩
+  have hmul := mul_le_mul_of_nonneg_left hm.le (show (0:ℝ)≤k by positivity)
+  linarith
+
+end Erdos1CyclicFamilyLimit
+
+/- IntegerTriangular -/
+namespace Erdos1IntegerTriangular
+open Finset Matrix
+set_option maxHeartbeats 4000000
+
+variable {I : Type*} [Fintype I] [DecidableEq I]
+
+def colPerm (σ : Equiv.Perm I) : Matrix I I ℤ := (1 : Matrix I I ℤ).submatrix id σ
+
+lemma colPerm_det_unit (σ : Equiv.Perm I) : IsUnit (colPerm σ).det := by
+  rw [colPerm,det_permute',det_one,mul_one]
+  exact (Equiv.Perm.sign σ).isUnit.map (Int.castRingHom ℤ)
+
+lemma mul_colPerm (M : Matrix I I ℤ) (σ : Equiv.Perm I) (i j : I) :
+    (M*colPerm σ) i j = M i (σ j) := by
+  simp [colPerm,mul_apply,Matrix.one_apply]
+
+lemma abs_det_unit {U : Matrix I I ℤ} (hU : IsUnit U.det) : |U.det| = 1 := by
+  rcases Int.isUnit_iff.mp hU with h | h <;> simp [h]
+
+lemma divisible_pivot {n : ℕ} (M : Matrix (Fin (n+1)) (Fin (n+1)) ℤ) (hM : M.det ≠ 0) :
+    ∃ U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ, IsUnit U.det ∧
+      (M*U) 0 0 ≠ 0 ∧ ∀ j, (M*U) 0 0 ∣ (M*U) 0 j := by
+  classical
+  have hrow : ∃ j, M 0 j ≠ 0 := by
+    by_contra hn
+    push_neg at hn
+    exact hM (det_eq_zero_of_row_eq_zero 0 hn)
+  obtain ⟨j,hj⟩ := hrow
+  have hex : ∃ k : ℕ, ∃ U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ,
+      IsUnit U.det ∧ (M*U) 0 0 ≠ 0 ∧ ((M*U) 0 0).natAbs = k := by
+    refine ⟨(M 0 j).natAbs,colPerm (Equiv.swap 0 j),colPerm_det_unit _,?_,?_⟩ <;>
+      simpa only [mul_colPerm,Equiv.swap_apply_left] using hj <;> rfl
+  obtain ⟨U,hU,hp,heq⟩ := Nat.find_spec hex
+  have hmin (V : Matrix (Fin (n+1)) (Fin (n+1)) ℤ) (hV : IsUnit V.det)
+      (hv : (M*V) 0 0 ≠ 0) : ((M*U) 0 0).natAbs ≤ ((M*V) 0 0).natAbs := by
+    rw [heq]
+    exact Nat.find_min' hex ⟨V,hV,hv,rfl⟩
+  refine ⟨U,hU,hp,?_⟩
+  intro j
+  by_cases hj0 : j = 0
+  · subst j; exact dvd_refl _
+  by_contra hd
+  let p := (M*U) 0 0
+  let a := (M*U) 0 j
+  have hp' : p ≠ 0 := hp
+  have hrem : a % p ≠ 0 := fun he => hd (Int.dvd_of_emod_eq_zero he)
+  let T := transvection (0 : Fin (n+1)) j (-(a/p))
+  let P := colPerm (Equiv.swap 0 j)
+  let V := U*T*P
+  have hT : IsUnit T.det := by
+    dsimp only [T]
+    rw [det_transvection_of_ne _ _ (Ne.symm hj0)]
+    exact isUnit_one
+  have hP : IsUnit P.det := colPerm_det_unit _
+  have hV : IsUnit V.det := by
+    dsimp only [V]
+    rw [det_mul,det_mul]
+    exact (hU.mul hT).mul hP
+  have hvp : (M*V) 0 0 = a % p := by
+    dsimp only [V,P]
+    rw [← mul_assoc,mul_colPerm,Equiv.swap_apply_left,← mul_assoc]
+    dsimp only [T]
+    rw [mul_transvection_apply_same]
+    change a + -(a/p)*p = a%p
+    have hh := Int.emod_add_ediv_mul a p
+    linear_combination -hh
+  have hle := hmin V hV (by rw [hvp]; exact hrem)
+  rw [hvp] at hle
+  have hlo := Int.emod_nonneg a hp'
+  have hhi := Int.emod_lt_abs a hp'
+  have habs : (a%p).natAbs < p.natAbs := by
+    exact_mod_cast (show ((a%p).natAbs:ℤ) < (p.natAbs:ℤ) by
+      rw [Int.natAbs_of_nonneg hlo,Int.natCast_natAbs]
+      exact hhi)
+  omega
+
+def clearShear {n : ℕ} (c : Fin (n+1) → ℤ) : Matrix (Fin (n+1)) (Fin (n+1)) ℤ :=
+  fun i j => (if i = j then 1 else 0) + if i = 0 then c j else 0
+
+lemma clearShear_det {n : ℕ} (c : Fin (n+1) → ℤ) (hc : c 0 = 0) :
+    (clearShear c).det = 1 := by
+  have htri : (clearShear c).BlockTriangular id := by
+    intro i j hij
+    have hi0 : i ≠ 0 := by intro he; subst i; simp at hij
+    have hij' : i ≠ j := ne_of_gt hij
+    simp [clearShear,hi0,hij']
+  rw [det_of_upperTriangular htri]
+  have hdiag (i : Fin (n+1)) : clearShear c i i = 1 := by
+    by_cases hi : i = 0 <;> simp [clearShear,hi,hc]
+  simp [hdiag]
+
+lemma mul_clearShear {n : ℕ} (M : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (c : Fin (n+1) → ℤ) (i j : Fin (n+1)) :
+    (M*clearShear c) i j = M i j+c j*M i 0 := by
+  simp [mul_apply,clearShear,mul_add,sum_add_distrib,mul_ite]
+  ring
+
+lemma first_row_reduce {n : ℕ} (M : Matrix (Fin (n+1)) (Fin (n+1)) ℤ) (hM : M.det ≠ 0) :
+    ∃ U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ, IsUnit U.det ∧
+      (M*U) 0 0 ≠ 0 ∧ ∀ j, j ≠ 0 → (M*U) 0 j = 0 := by
+  obtain ⟨U,hU,hp,hdiv⟩ := divisible_pivot M hM
+  let c : Fin (n+1) → ℤ := fun j => if j = 0 then 0 else -((M*U) 0 j / (M*U) 0 0)
+  have hc : c 0 = 0 := by simp [c]
+  refine ⟨U*clearShear c,?_,?_,?_⟩
+  · rw [det_mul,clearShear_det c hc,mul_one]
+    exact hU
+  · rw [← mul_assoc,mul_clearShear,hc,zero_mul,add_zero]
+    exact hp
+  · intro j hj
+    rw [← mul_assoc,mul_clearShear]
+    simp only [c,if_neg hj,neg_mul,Int.ediv_mul_cancel (hdiv j)]
+    ring
+
+def extend {n : ℕ} (U : Matrix (Fin n) (Fin n) ℤ) : Matrix (Fin (n+1)) (Fin (n+1)) ℤ :=
+  fun i j => Fin.cases (if j = 0 then 1 else 0)
+    (fun a => Fin.cases 0 (fun b => U a b) j) i
+
+@[simp] lemma extend_zero_zero {n : ℕ} (U : Matrix (Fin n) (Fin n) ℤ) : extend U 0 0 = 1 := by
+  simp [extend]
+@[simp] lemma extend_zero_succ {n : ℕ} (U : Matrix (Fin n) (Fin n) ℤ) (j : Fin n) :
+    extend U 0 j.succ = 0 := by simp [extend]
+@[simp] lemma extend_succ_succ {n : ℕ} (U : Matrix (Fin n) (Fin n) ℤ) (i j : Fin n) :
+    extend U i.succ j.succ = U i j := by simp [extend]
+
+lemma det_first_row {n : ℕ} (M : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (hrow : ∀ j, j ≠ 0 → M 0 j = 0) :
+    M.det = M 0 0*(M.submatrix Fin.succ Fin.succ).det := by
+  rw [det_succ_row_zero,sum_eq_single 0]
+  · simp
+  · intro j hj hj0; simp [hrow j hj0]
+  · simp
+
+lemma extend_det {n : ℕ} (U : Matrix (Fin n) (Fin n) ℤ) : (extend U).det = U.det := by
+  have hrow : ∀ j, j ≠ 0 → extend U 0 j = 0 := by
+    intro j
+    refine Fin.cases ?_ (fun k _ => extend_zero_succ U k) j
+    intro hj
+    exact (hj rfl).elim
+  rw [det_first_row _ hrow]
+  simp only [extend_zero_zero,one_mul]
+  congr 1
+
+lemma mul_extend_succ {n : ℕ} (M : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (U : Matrix (Fin n) (Fin n) ℤ) (i : Fin (n+1)) (j : Fin n) :
+    (M*extend U) i j.succ = ∑ k, M i k.succ*U k j := by
+  simp [mul_apply,Fin.sum_univ_succ]
+
+def Lower {n : ℕ} (M : Matrix (Fin n) (Fin n) ℤ) : Prop :=
+  ∀ i j, i < j → M i j = 0
+
+theorem exists_lower : ∀ n : ℕ, ∀ M : Matrix (Fin n) (Fin n) ℤ, M.det ≠ 0 →
+    ∃ U : Matrix (Fin n) (Fin n) ℤ, IsUnit U.det ∧ Lower (M*U) := by
+  intro n
+  induction n with
+  | zero =>
+    intro M hM
+    refine ⟨1,by simp,?_⟩
+    intro i
+    exact Fin.elim0 i
+  | succ n ih =>
+    intro M hM
+    obtain ⟨U,hU,hpivot,hrow⟩ := first_row_reduce M hM
+    let A := M*U
+    change ∀ j, j ≠ 0 → A 0 j = 0 at hrow
+    let B := A.submatrix Fin.succ Fin.succ
+    have hA : A.det ≠ 0 := by
+      dsimp [A]
+      rw [det_mul]
+      exact mul_ne_zero hM hU.ne_zero
+    have hB : B.det ≠ 0 := by
+      intro he
+      apply hA
+      rw [det_first_row A hrow]
+      change A 0 0*B.det = 0
+      rw [he,mul_zero]
+    obtain ⟨V,hV,hLower⟩ := ih B hB
+    refine ⟨U*extend V,?_,?_⟩
+    · rw [det_mul,extend_det]
+      exact hU.mul hV
+    · rw [← mul_assoc]
+      change Lower (A*extend V)
+      intro i j
+      refine Fin.cases ?_ (fun a => ?_) i
+      · refine Fin.cases ?_ (fun b => ?_) j
+        · intro hij; exact (lt_irrefl _ hij).elim
+        · intro hij
+          rw [mul_extend_succ]
+          apply sum_eq_zero
+          intro k hk
+          rw [hrow k.succ (Fin.succ_ne_zero k),zero_mul]
+      · refine Fin.cases ?_ (fun b => ?_) j
+        · intro hij
+          have hj : ¬ a.succ < (0 : Fin (n+1)) := not_lt_of_ge (Fin.zero_le _)
+          exact (hj hij).elim
+        · intro hij
+          rw [mul_extend_succ]
+          have hab : a < b := by simpa using hij
+          exact hLower a b hab
+
+end Erdos1IntegerTriangular
+
+/- Reduction -/
+namespace Erdos1Reduction
+
+abbrev IsSumDistinctSet (A : Finset ℕ) (N : ℕ) : Prop :=
+  A ⊆ Finset.Icc 1 N ∧
+    (fun (⟨S, _⟩ : A.powerset) => S.sum id).Injective
+
+def UniformRealBound : Prop :=
+  ∃ C > (0 : ℝ), ∀ (N : ℕ) (A : Finset ℕ) (_ : IsSumDistinctSet A N),
+    N ≠ 0 → C * 2 ^ A.card < N
+
+def UniformNatBound : Prop :=
+  ∃ k : ℕ, ∀ (N : ℕ) (A : Finset ℕ) (_ : IsSumDistinctSet A N),
+    N ≠ 0 → 2 ^ A.card ≤ k * N
+
+theorem real_iff_nat : UniformRealBound ↔ UniformNatBound := by
+  constructor
+  · rintro ⟨C, hC, h⟩
+    obtain ⟨k, hk⟩ := exists_nat_gt C⁻¹
+    have hkpos : (0 : ℝ) < k := (inv_pos.mpr hC).trans hk
+    have hkc : (1 : ℝ) < k * C := by
+      have ht := mul_lt_mul_of_pos_right hk hC
+      simpa only [inv_mul_cancel₀ hC.ne'] using ht
+    refine ⟨k, ?_⟩
+    intro N A hA hN
+    have h₁ := mul_lt_mul_of_pos_left (h N A hA hN) hkpos
+    have h₂ := mul_le_mul_of_nonneg_right hkc.le
+      (show (0 : ℝ) ≤ 2 ^ A.card from pow_nonneg (by norm_num) _)
+    have ht : (2 : ℝ) ^ A.card < (k : ℝ) * N := by nlinarith
+    exact_mod_cast ht.le
+  · rintro ⟨k, h⟩
+    have hd : (0 : ℝ) < k + 1 := by positivity
+    refine ⟨((k : ℝ) + 1)⁻¹, inv_pos.mpr hd, ?_⟩
+    intro N A hA hN
+    have hb : (2 : ℝ) ^ A.card ≤ (k : ℝ) * N := by exact_mod_cast h N A hA hN
+    have hn : (0 : ℝ) < N := by exact_mod_cast Nat.pos_of_ne_zero hN
+    have ht : (2 : ℝ) ^ A.card < ((k : ℝ) + 1) * N := by nlinarith
+    have hi := mul_lt_mul_of_pos_left ht (inv_pos.mpr hd)
+    simpa only [← mul_assoc, inv_mul_cancel₀ hd.ne', one_mul] using hi
+
+theorem neg_real_iff_counterexamples :
+    ¬ UniformRealBound ↔
+      ∀ k : ℕ, ∃ (N : ℕ) (A : Finset ℕ),
+        IsSumDistinctSet A N ∧ N ≠ 0 ∧ k * N < 2 ^ A.card := by
+  rw [real_iff_nat]
+  simp only [UniformNatBound, not_exists, not_forall, not_le, exists_prop]
+
+end Erdos1Reduction
+
+/- DigitBoxes -/
+namespace Erdos1DigitBoxes
+open Finset
+
+variable {α : Type} [Fintype α] [DecidableEq α]
+
+def BoxDistinct (q : ℕ) (a : α → ℕ) : Prop :=
+  Function.Injective (fun x : α → Fin q => ∑ i, (x i).val * a i)
+
+def IndexedDistinct (a : α → ℕ) : Prop :=
+  Function.Injective (fun S : Finset α => ∑ i ∈ S, a i)
+
+def row {m : ℕ} (S : Finset (α × Fin m)) (i : α) : Finset ℕ :=
+  (univ.filter (fun j : Fin m => (i,j) ∈ S)).image Fin.val
+
+omit [Fintype α] in
+lemma mem_row {m : ℕ} (S : Finset (α × Fin m)) (i : α) (j : Fin m) :
+    j.val ∈ row S i ↔ (i,j) ∈ S := by
+  simp [row, Fin.val_inj]
+
+omit [Fintype α] in
+lemma row_bound {m : ℕ} (S : Finset (α × Fin m)) (i : α) :
+    (∑ j ∈ row S i, 2^j) < 2^m := by
+  apply Nat.geomSum_lt (by omega)
+  intro j hj
+  obtain ⟨k,hk,rfl⟩ := mem_image.mp hj
+  exact k.isLt
+
+def digits {m : ℕ} (S : Finset (α × Fin m)) (i : α) : Fin (2^m) :=
+  ⟨∑ j ∈ row S i, 2^j, row_bound S i⟩
+
+lemma digits_sum {m : ℕ} (a : α → ℕ) (S : Finset (α × Fin m)) :
+    (∑ i, (digits S i).val * a i) = ∑ p ∈ S, 2^p.2.val * a p.1 := by
+  simp only [digits, row, sum_image Fin.val_injective.injOn, sum_filter,
+    sum_mul, ite_mul, zero_mul]
+  rw [← Fintype.sum_prod_type (fun p : α × Fin m => if p ∈ S then 2^p.2.val*a p.1 else 0)]
+  simp
+
+omit [Fintype α] in
+lemma digits_injective {m : ℕ} :
+    Function.Injective (digits : Finset (α × Fin m) → α → Fin (2^m)) := by
+  intro S T hST
+  have hrow (i : α) : row S i = row T i := by
+    apply geomSum_injective (by omega : 2 ≤ 2)
+    exact congrArg Fin.val (congrFun hST i)
+  ext p
+  rw [← mem_row S p.1 p.2, hrow, mem_row]
+
+lemma BoxDistinct.binary_expansion {m : ℕ} {a : α → ℕ}
+    (ha : BoxDistinct (2^m) a) :
+    IndexedDistinct (fun p : α × Fin m => 2^p.2.val * a p.1) := by
+  intro S T hST
+  apply digits_injective
+  apply ha
+  simpa only [digits_sum] using hST
+
+omit [Fintype α] [DecidableEq α] in
+lemma IndexedDistinct.injective {a : α → ℕ} (ha : IndexedDistinct a) :
+    Function.Injective a := by
+  intro i j hij
+  have h : ({i} : Finset α) = {j} := ha (by simpa using hij)
+  simpa using h
+
+omit [Fintype α] [DecidableEq α] in
+lemma IndexedDistinct.positive {a : α → ℕ} (ha : IndexedDistinct a) (i : α) :
+    0 < a i := by
+  by_contra hh
+  have he : a i = 0 := by omega
+  have hs : ({i} : Finset α) = ∅ := ha (by simpa using he)
+  simp at hs
+
+omit [DecidableEq α] in
+lemma IndexedDistinct.sumDistinctSet {a : α → ℕ} {N : ℕ} (ha : IndexedDistinct a)
+    (hN : ∀ i, a i ≤ N) :
+    Erdos1Reduction.IsSumDistinctSet (univ.image a) N := by
+  refine ⟨?_, ?_⟩
+  · intro x hx
+    obtain ⟨i,hi,rfl⟩ := mem_image.mp hx
+    exact mem_Icc.mpr ⟨ha.positive i,hN i⟩
+  · intro S T hST
+    obtain ⟨U,hU,heU⟩ := subset_image_iff.mp (mem_powerset.mp S.property)
+    obtain ⟨V,hV,heV⟩ := subset_image_iff.mp (mem_powerset.mp T.property)
+    have hs : (∑ i ∈ U, a i) = ∑ i ∈ V, a i := by
+      change S.val.sum id = T.val.sum id at hST
+      rw [← heU, ← heV, sum_image ha.injective.injOn, sum_image ha.injective.injOn] at hST
+      exact hST
+    have hUV := ha hs
+    apply Subtype.ext
+    rw [← heU, ← heV, hUV]
+
+theorem BoxDistinct.expanded_set {m N : ℕ} (hm : 0 < m) {a : α → ℕ}
+    (ha : BoxDistinct (2^m) a) (hN : ∀ i, a i ≤ N) :
+    ∃ A : Finset ℕ,
+      Erdos1Reduction.IsSumDistinctSet A (2^(m-1)*N) ∧
+      A.card = Fintype.card α * m := by
+  let b : α × Fin m → ℕ := fun p => 2^p.2.val * a p.1
+  have hb : IndexedDistinct b := ha.binary_expansion
+  refine ⟨univ.image b, hb.sumDistinctSet ?_, ?_⟩
+  · intro p
+    apply Nat.mul_le_mul _ (hN p.1)
+    exact Nat.pow_le_pow_right (by omega : 0 < 2) (by have := p.2.isLt; omega)
+  · rw [card_image_of_injective _ hb.injective]
+    simp
+
+omit [DecidableEq α] in
+
+theorem box_iff_no_short_relation (q : ℕ) (a : α → ℕ) :
+    BoxDistinct q a ↔ ∀ z : α → ℤ,
+      (∀ i, |z i| < (q : ℤ)) → (∑ i, z i * (a i : ℤ)) = 0 → ∀ i, z i = 0 := by
+  constructor
+  · intro h z hz hsum
+    let x : α → Fin q := fun i => ⟨(z i).toNat, by
+      have := abs_lt.mp (hz i)
+      omega⟩
+    let y : α → Fin q := fun i => ⟨(-z i).toNat, by
+      have := abs_lt.mp (hz i)
+      omega⟩
+    have he (i : α) : ((x i).val : ℤ) - (y i).val = z i := by
+      dsimp only [x,y]
+      omega
+    have hxy : (∑ i, (x i).val * a i) = ∑ i, (y i).val * a i := by
+      have hh : (∑ i, ((x i).val : ℤ) * a i) - (∑ i, ((y i).val : ℤ) * a i) = 0 := by
+        rw [← sum_sub_distrib]
+        simpa only [← sub_mul, he] using hsum
+      have hh' : (∑ i, ((x i).val : ℤ) * a i) = ∑ i, ((y i).val : ℤ) * a i := by omega
+      exact_mod_cast hh'
+    have hfun := h hxy
+    intro i
+    have hi := congrArg Fin.val (congrFun hfun i)
+    have := he i
+    omega
+  · intro h x y hxy
+    have hz (i : α) : |((x i).val : ℤ) - (y i).val| < (q : ℤ) := by
+      have hx := (x i).isLt
+      have hy := (y i).isLt
+      rw [abs_lt]
+      constructor <;> omega
+    have hzero : (∑ i, (((x i).val : ℤ) - (y i).val) * (a i : ℤ)) = 0 := by
+      rw [sum_congr rfl (fun i hi => sub_mul _ _ _), sum_sub_distrib]
+      have hh : (∑ i, ((x i).val : ℤ)*a i) = ∑ i, ((y i).val : ℤ)*a i := by
+        exact_mod_cast hxy
+      omega
+    have he := h (fun i => ((x i).val : ℤ) - (y i).val) hz hzero
+    funext i
+    apply Fin.ext
+    have hi := he i
+    change ((x i).val : ℤ) - (y i).val = 0 at hi
+    omega
+
+end Erdos1DigitBoxes
+
+/- LatticePrimitive -/
+namespace Erdos1LatticePrimitive
+open Finset Matrix
+
+def balance (n : ℕ) : (Fin (n+1) → ℤ) ≃ₗ[ℤ] (Fin (n+1) → ℤ) where
+  toFun x := Fin.lastCases (x (Fin.last n) - ∑ i : Fin n, x i.castSucc)
+    (fun i => x i.castSucc)
+  invFun x := Fin.lastCases (x (Fin.last n) + ∑ i : Fin n, x i.castSucc)
+    (fun i => x i.castSucc)
+  left_inv x := by
+    funext i
+    refine Fin.lastCases ?_ (fun j => ?_) i <;> simp
+  right_inv x := by
+    funext i
+    refine Fin.lastCases ?_ (fun j => ?_) i <;> simp
+  map_add' x y := by
+    funext i
+    refine Fin.lastCases ?_ (fun j => ?_) i
+    · simp only [Fin.lastCases_last,Pi.add_apply,sum_add_distrib]
+      ring
+    · simp
+  map_smul' c x := by
+    funext i
+    refine Fin.lastCases ?_ (fun j => ?_) i
+    · simp [mul_sub,mul_sum]
+    · simp
+
+@[simp] lemma balance_head (n : ℕ) (x : Fin (n+1) → ℤ) (i : Fin n) :
+    balance n x i.castSucc = x i.castSucc := by simp [balance]
+
+@[simp] lemma balance_last (n : ℕ) (x : Fin (n+1) → ℤ) :
+    balance n x (Fin.last n) = x (Fin.last n) - ∑ i : Fin n, x i.castSucc := by simp [balance]
+
+variable {n : ℕ}
+
+lemma unit_det {U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ}
+    (htri : U.BlockTriangular id) (hdiag : ∀ i, U i i = 1) : IsUnit U.det := by
+  rw [det_of_upperTriangular htri]
+  simp [hdiag]
+
+noncomputable def coordinate (U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (hU : IsUnit U.det) : (Fin (n+1) → ℤ) →ₗ[ℤ] ℤ :=
+  (LinearMap.proj 0).comp ((Matrix.toLinearEquiv (Pi.basisFun ℤ (Fin (n+1))) U hU).symm.toLinearMap.comp
+    (balance n).symm.toLinearMap)
+
+noncomputable def coefficient (U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (hU : IsUnit U.det) (i : Fin (n+1)) : ℤ :=
+  coordinate U hU (Pi.single i 1)
+
+def image (U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (z : Fin n → ℤ) : Fin (n+1) → ℤ :=
+  balance n (U.mulVec (Fin.cons 0 z))
+
+lemma coordinate_dot (U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (hU : IsUnit U.det) (x : Fin (n+1) → ℤ) :
+    coordinate U hU x = ∑ i, coefficient U hU i * x i := by
+  have hx : x = ∑ i, x i • (Pi.single i (1:ℤ)) := by
+    funext j
+    simp [Pi.single_apply]
+  conv_lhs => rw [hx]
+  rw [map_sum]
+  simp only [map_smul,smul_eq_mul,coefficient]
+  apply sum_congr rfl
+  intro i hi
+  ring
+
+theorem kernel_iff (U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (hU : IsUnit U.det) (x : Fin (n+1) → ℤ) :
+    coordinate U hU x = 0 ↔ ∃ z : Fin n → ℤ, x = image U z := by
+  let e := Matrix.toLinearEquiv (Pi.basisFun ℤ (Fin (n+1))) U hU
+  constructor
+  · intro hx
+    let y := e.symm ((balance n).symm x)
+    have hy : y 0 = 0 := hx
+    refine ⟨Fin.tail y,?_⟩
+    have he : Fin.cons 0 (Fin.tail y) = y := by
+      rw [← hy]
+      exact Fin.cons_self_tail y
+    dsimp only [image]
+    rw [he]
+    change x = balance n (e y)
+    simp [y]
+  · rintro ⟨z,rfl⟩
+    change (e.symm ((balance n).symm (balance n (e (Fin.cons 0 z))))) 0 = 0
+    simp
+
+theorem box_of_admissible (U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (hU : IsUnit U.det) (q : ℕ) (a : Fin (n+1) → ℕ)
+    (ha : ∀ i, (a i : ℤ) = coefficient U hU i)
+    (hadm : ∀ z : Fin n → ℤ, (∀ i, |image U z i| < (q:ℤ)) → z = 0) :
+    Erdos1DigitBoxes.BoxDistinct q a := by
+  rw [Erdos1DigitBoxes.box_iff_no_short_relation]
+  intro x hx hr
+  have hc : coordinate U hU x = 0 := by
+    rw [coordinate_dot]
+    simpa only [ha,mul_comm] using hr
+  obtain ⟨z,rfl⟩ := (kernel_iff U hU x).mp hc
+  have hz := hadm z hx
+  subst z
+  intro i
+  have he : (Fin.cons 0 0 : Fin (n+1) → ℤ) = 0 := by
+    funext j
+    refine Fin.cases ?_ (fun k => ?_) j <;> simp
+  simp [image,he]
+
+def shifted (B : Matrix (Fin n) (Fin n) ℤ) :
+    Matrix (Fin (n+1)) (Fin (n+1)) ℤ := fun i j =>
+  Fin.cases 0 (fun c => Fin.lastCases 0 (fun r => B r c) i) j
+
+lemma shifted_zero {B : Matrix (Fin n) (Fin n) ℤ}
+    (hB : B.BlockTriangular id) (i j : Fin (n+1)) (hji : j ≤ i) :
+    shifted B i j = 0 := by
+  revert hji
+  refine Fin.cases ?_ (fun c => ?_) j
+  · simp [shifted]
+  · refine Fin.lastCases ?_ (fun r => ?_) i
+    · simp [shifted]
+    · intro hji
+      have hcr : c < r := by
+        change c.val < r.val
+        change c.val+1 ≤ r.val at hji
+        omega
+      simpa [shifted] using hB hcr
+
+def perturb (B : Matrix (Fin n) (Fin n) ℤ) (t : ℤ) :
+    Matrix (Fin (n+1)) (Fin (n+1)) ℤ := 1 + t • shifted B
+
+lemma perturb_upper {B : Matrix (Fin n) (Fin n) ℤ}
+    (hB : B.BlockTriangular id) (t : ℤ) : (perturb B t).BlockTriangular id := by
+  intro i j hji
+  have hij : i ≠ j := by intro h; subst j; exact (lt_irrefl _ hji)
+  simp only [perturb,Matrix.add_apply,Matrix.smul_apply,Matrix.one_apply,
+    if_neg hij,shifted_zero hB i j (le_of_lt hji),smul_zero,add_zero]
+
+lemma perturb_diag {B : Matrix (Fin n) (Fin n) ℤ}
+    (hB : B.BlockTriangular id) (t : ℤ) (i : Fin (n+1)) : perturb B t i i = 1 := by
+  simp only [perturb,Matrix.add_apply,Matrix.smul_apply,Matrix.one_apply,
+    if_true,shifted_zero hB i i le_rfl,smul_zero,add_zero]
+
+lemma perturb_unit {B : Matrix (Fin n) (Fin n) ℤ}
+    (hB : B.BlockTriangular id) (t : ℤ) : IsUnit (perturb B t).det :=
+  unit_det (perturb_upper hB t) (perturb_diag hB t)
+
+def lift (x : Fin n → ℤ) : Fin (n+1) → ℤ := Fin.lastCases 0 x
+
+lemma shifted_mulVec (B : Matrix (Fin n) (Fin n) ℤ) (z : Fin n → ℤ) :
+    (shifted B).mulVec (Fin.cons 0 z) = lift (B.mulVec z) := by
+  funext i
+  refine Fin.lastCases ?_ (fun r => ?_) i <;>
+    simp [shifted,lift,Matrix.mulVec,dotProduct,Fin.sum_univ_succ]
+
+theorem perturb_image (B : Matrix (Fin n) (Fin n) ℤ) (t : ℤ) (z : Fin n → ℤ) :
+    image (perturb B t) z =
+      t • balance n (lift (B.mulVec z)) + balance n (Fin.cons 0 z) := by
+  dsimp only [image,perturb]
+  rw [add_mulVec,one_mulVec,smul_mulVec,shifted_mulVec,map_add,map_smul]
+  exact add_comm _ _
+
+end Erdos1LatticePrimitive
+
+/- LatticeStability -/
+namespace Erdos1LatticeStability
+open Finset Matrix Erdos1LatticePrimitive
+variable {n : ℕ}
+
+def adjCost (B : Matrix (Fin n) (Fin n) ℤ) : ℤ :=
+  ∑ i, ∑ j, |B.adjugate i j|
+
+lemma adjCost_nonneg (B : Matrix (Fin n) (Fin n) ℤ) : 0 ≤ adjCost B := by
+  exact sum_nonneg (fun i hi => sum_nonneg (fun j hj => abs_nonneg _))
+
+theorem coordinate_bound (B : Matrix (Fin n) (Fin n) ℤ) (hB : B.det ≠ 0)
+    (z : Fin n → ℤ) {M : ℤ} (hM : 0 ≤ M)
+    (hz : ∀ i, |B.mulVec z i| ≤ M) (i : Fin n) : |z i| ≤ adjCost B * M := by
+  have hd : 1 ≤ |B.det| := by have := abs_pos.mpr hB; omega
+  have he : B.det * z i = ∑ j, B.adjugate i j * B.mulVec z j := by
+    have hh := congrFun (mulVec_mulVec z B.adjugate B) i
+    rw [adjugate_mul,smul_mulVec,one_mulVec] at hh
+    simpa only [Matrix.mulVec,dotProduct,Pi.smul_apply,smul_eq_mul] using hh.symm
+  have hrow : (∑ j, |B.adjugate i j|) ≤ adjCost B := by
+    exact single_le_sum
+      (fun j hj => sum_nonneg (fun k hk => abs_nonneg (B.adjugate j k))) (mem_univ i)
+  calc
+    |z i| ≤ |B.det| * |z i| := by nlinarith [abs_nonneg (z i)]
+    _ = |∑ j, B.adjugate i j * B.mulVec z j| := by rw [← abs_mul,he]
+    _ ≤ ∑ j, |B.adjugate i j * B.mulVec z j| := abs_sum_le_sum_abs _ _
+    _ ≤ ∑ j, |B.adjugate i j| * M := by
+      apply sum_le_sum
+      intro j hj
+      rw [abs_mul]
+      exact mul_le_mul_of_nonneg_left (hz j) (abs_nonneg _)
+    _ = (∑ j, |B.adjugate i j|) * M := by rw [sum_mul]
+    _ ≤ adjCost B * M := mul_le_mul_of_nonneg_right hrow hM
+
+def leading (B : Matrix (Fin n) (Fin n) ℤ) (z : Fin n → ℤ) : Fin (n+1) → ℤ :=
+  balance n (lift (B.mulVec z))
+
+def errorCost (B : Matrix (Fin n) (Fin n) ℤ) : ℤ := (n+1) * adjCost B
+
+lemma errorCost_nonneg (B : Matrix (Fin n) (Fin n) ℤ) : 0 ≤ errorCost B := by
+  exact mul_nonneg (by positivity) (adjCost_nonneg B)
+
+set_option maxHeartbeats 1000000 in
+lemma error_bound (B : Matrix (Fin n) (Fin n) ℤ) (hB : B.det ≠ 0)
+    (z : Fin n → ℤ) {M : ℤ} (hM : 0 ≤ M)
+    (hz : ∀ i, |leading B z i| ≤ M) (i : Fin (n+1)) :
+    |balance n (Fin.cons 0 z) i| ≤ errorCost B * M := by
+  let v : Fin (n+1) → ℤ := Fin.cons 0 z
+  have hb (j : Fin n) : |B.mulVec z j| ≤ M := by
+    simpa [leading,lift] using hz j.castSucc
+  have hk := adjCost_nonneg B
+  have hkm : 0 ≤ adjCost B * M := mul_nonneg hk hM
+  have hcons (j : Fin (n+1)) : |(Fin.cons 0 z : Fin (n+1) → ℤ) j| ≤ adjCost B * M := by
+    refine Fin.cases ?_ (fun k => ?_) j
+    · simpa using hkm
+    · simpa using coordinate_bound B hB z hM hb k
+  have hlarger : adjCost B * M ≤ errorCost B * M := by
+    dsimp [errorCost]
+    nlinarith [mul_nonneg (show 0 ≤ (n:ℤ) by positivity) hkm]
+  change |balance n v i| ≤ errorCost B * M
+  refine Fin.lastCases ?_ (fun j => ?_) i
+  · rw [balance_last]
+    calc
+      |v (Fin.last n) - ∑ j : Fin n, v j.castSucc| ≤
+          |v (Fin.last n)| + |∑ j : Fin n, v j.castSucc| := by
+        simpa only [sub_eq_add_neg,abs_neg] using
+          abs_add_le (v (Fin.last n)) (-(∑ j : Fin n, v j.castSucc))
+      _ ≤ adjCost B * M + ∑ j : Fin n, |v j.castSucc| :=
+        add_le_add (hcons _) (abs_sum_le_sum_abs _ _)
+      _ ≤ adjCost B * M + ∑ _j : Fin n, adjCost B * M :=
+        add_le_add le_rfl (sum_le_sum (fun j hj => hcons j.castSucc))
+      _ = errorCost B * M := by simp [errorCost]; ring
+  · rw [balance_head]
+    exact (hcons _).trans hlarger
+
+theorem perturb_admissible (B : Matrix (Fin n) (Fin n) ℤ) (hB : B.det ≠ 0)
+    {R t : ℤ} {q : ℕ}
+    (hR : ∀ z : Fin n → ℤ, z ≠ 0 → ∃ i, R ≤ |leading B z i|)
+    (ht : errorCost B ≤ t) (hq : (q:ℤ) ≤ (t-errorCost B)*R)
+    (z : Fin n → ℤ) (hsmall : ∀ i, |image (perturb B t) z i| < (q:ℤ)) : z = 0 := by
+  by_contra hne
+  obtain ⟨j,hj,hmax⟩ := exists_max_image univ (fun i => |leading B z i|) univ_nonempty
+  have hmax' (i : Fin (n+1)) : |leading B z i| ≤ |leading B z j| := hmax i (mem_univ i)
+  obtain ⟨k,hk⟩ := hR z hne
+  have hrj : R ≤ |leading B z j| := hk.trans (hmax' k)
+  have he := error_bound B hB z (abs_nonneg _) hmax' j
+  have ht0 : 0 ≤ t := (errorCost_nonneg B).trans ht
+  have hi : image (perturb B t) z j =
+      t * leading B z j + balance n (Fin.cons 0 z) j := by
+    have hh := congrFun (perturb_image B t z) j
+    simpa only [leading,Pi.add_apply,Pi.smul_apply,smul_eq_mul] using hh
+  have htriangle : t * |leading B z j| ≤
+      |image (perturb B t) z j| + |balance n (Fin.cons 0 z) j| := by
+    calc
+      t * |leading B z j| = |t * leading B z j| := by rw [abs_mul,abs_of_nonneg ht0]
+      _ = |image (perturb B t) z j - balance n (Fin.cons 0 z) j| := by rw [hi]; ring_nf
+      _ ≤ _ := by simpa only [sub_eq_add_neg,abs_neg] using
+        abs_add_le (image (perturb B t) z j) (-balance n (Fin.cons 0 z) j)
+  have hlo := mul_le_mul_of_nonneg_left hrj (sub_nonneg.mpr ht)
+  have hs := hsmall j
+  nlinarith
+
+theorem perturb_box (B : Matrix (Fin n) (Fin n) ℤ)
+    (htri : B.BlockTriangular id) (hB : B.det ≠ 0)
+    {R t : ℤ} {q : ℕ}
+    (hR : ∀ z : Fin n → ℤ, z ≠ 0 → ∃ i, R ≤ |leading B z i|)
+    (ht : errorCost B ≤ t) (hq : (q:ℤ) ≤ (t-errorCost B)*R)
+    (a : Fin (n+1) → ℕ)
+    (ha : ∀ i, (a i : ℤ) = coefficient (perturb B t) (perturb_unit htri t) i) :
+    Erdos1DigitBoxes.BoxDistinct q a := by
+  apply box_of_admissible (perturb B t) (perturb_unit htri t) q a ha
+  exact perturb_admissible B hB hR ht hq
+
+end Erdos1LatticeStability
+
+/- LatticeAsymptotic -/
+namespace Erdos1LatticeAsymptotic
+open Finset Matrix Filter Erdos1LatticePrimitive
+open scoped Topology
+variable {n : ℕ}
+
+lemma coefficient_cramer (U : Matrix (Fin (n+1)) (Fin (n+1)) ℤ)
+    (hU : IsUnit U.det) (hdet : U.det = 1) (i : Fin (n+1)) :
+    coefficient U hU i =
+      (U.updateCol 0 ((balance n).symm (Pi.single i 1))).det := by
+  let e := Matrix.toLinearEquiv (Pi.basisFun ℤ (Fin (n+1))) U hU
+  let x := (balance n).symm (Pi.single i 1)
+  have hc : U.mulVec (U.cramer x) = x := by simpa [hdet] using mulVec_cramer U x
+  have he : e.symm x = U.cramer x := by
+    apply e.injective
+    rw [LinearEquiv.apply_symm_apply]
+    exact hc.symm
+  change e.symm x 0 = _
+  rw [he]
+  rfl
+
+lemma inverse_basis_last (i : Fin (n+1)) :
+    (balance n).symm (Pi.single i 1) (Fin.last n) = 1 := by
+  let v : Fin (n+1) → ℤ := Pi.single i 1
+  have he : (balance n).symm v (Fin.last n) =
+      v (Fin.last n) + (∑ j : Fin n, v j.castSucc) := by simp [balance]
+  rw [he,add_comm,← Fin.sum_univ_castSucc]
+  simp [v]
+
+def normalReal (B : Matrix (Fin n) (Fin n) ℤ) (t : ℝ) (i : Fin (n+1)) : ℝ :=
+  ((1 + t • ((shifted B).map (fun x : ℤ => (x:ℝ)))).updateCol 0
+    (fun j => ((balance n).symm (Pi.single i 1) j : ℝ))).det
+
+lemma coefficient_real (B : Matrix (Fin n) (Fin n) ℤ)
+    (hB : B.BlockTriangular id) (t : ℤ) (i : Fin (n+1)) :
+    (coefficient (perturb B t) (perturb_unit hB t) i : ℝ) = normalReal B t i := by
+  have hd : (perturb B t).det = 1 := by
+    rw [det_of_upperTriangular (perturb_upper hB t)]
+    simp [perturb_diag hB]
+  rw [coefficient_cramer _ _ hd,Int.cast_det]
+  congr 1
+  ext j k
+  by_cases hk : k = 0
+  · subst k
+    simp [Matrix.map_apply]
+  · simp only [Matrix.map_apply,Matrix.updateCol_ne hk,perturb,
+      Matrix.add_apply,Matrix.smul_apply]
+    simp [Matrix.one_apply]
+
+def normalized (B : Matrix (Fin n) (Fin n) ℤ) (s : ℝ) (i : Fin (n+1)) : ℝ :=
+  ((s • (1 : Matrix (Fin (n+1)) (Fin (n+1)) ℝ) +
+    (shifted B).map (fun x : ℤ => (x:ℝ))).updateCol 0
+      (fun j => ((balance n).symm (Pi.single i 1) j : ℝ))).det
+
+lemma normalize_normal (B : Matrix (Fin n) (Fin n) ℤ) {t : ℝ} (ht : t ≠ 0)
+    (i : Fin (n+1)) : normalReal B t i / t^n = normalized B t⁻¹ i := by
+  have he : t • (t⁻¹ • (1 : Matrix (Fin (n+1)) (Fin (n+1)) ℝ) +
+      (shifted B).map (fun x : ℤ => (x:ℝ))) =
+      1 + t • (shifted B).map (fun x : ℤ => (x:ℝ)) := by
+    rw [smul_add,smul_smul,mul_inv_cancel₀ ht,one_smul]
+  dsimp only [normalReal,normalized]
+  rw [← he,det_updateCol_smul_left]
+  simp [ht]
+
+lemma normalized_zero (B : Matrix (Fin n) (Fin n) ℤ) (i : Fin (n+1)) :
+    normalized B 0 i = (-1:ℝ)^n * (B.det:ℝ) := by
+  let S := (shifted B).map (fun x : ℤ => (x:ℝ))
+  let v : Fin (n+1) → ℝ := fun j => ((balance n).symm (Pi.single i 1) j : ℝ)
+  have hv : v (Fin.last n) = 1 := by simp [v,inverse_basis_last]
+  have hlast (j : Fin (n+1)) : S (Fin.last n) j = 0 := by
+    refine Fin.cases ?_ (fun k => ?_) j <;> simp [S,shifted]
+  have hminor : (S.updateCol 0 v).submatrix (Fin.last n).succAbove (0:Fin (n+1)).succAbove =
+      B.map (fun x : ℤ => (x:ℝ)) := by
+    ext j k
+    simp [S,Matrix.submatrix_apply,shifted]
+  simp only [Fin.succAbove_last,Fin.succAbove_zero] at hminor
+  change ((0 • (1 : Matrix (Fin (n+1)) (Fin (n+1)) ℝ) + S).updateCol 0 v).det = _
+  rw [zero_smul,zero_add,det_succ_row _ (Fin.last n)]
+  rw [Fintype.sum_eq_single 0]
+  · simp [hv,hminor,Int.cast_det]
+  · intro j hj
+    simp [Matrix.updateCol,Function.update_of_ne hj,hlast]
+
+lemma normalized_continuous (B : Matrix (Fin n) (Fin n) ℤ) (i : Fin (n+1)) :
+    Continuous (fun s : ℝ => normalized B s i) := by
+  unfold normalized
+  apply Continuous.matrix_det
+  apply continuous_pi
+  intro j
+  apply continuous_pi
+  intro k
+  by_cases hk : k = 0
+  · subst k
+    simp only [Matrix.updateCol_self]
+    exact continuous_const
+  · simp only [Matrix.updateCol_ne hk,Matrix.add_apply,Matrix.smul_apply]
+    fun_prop
+
+theorem normal_limit (B : Matrix (Fin n) (Fin n) ℤ) (i : Fin (n+1)) :
+    Tendsto (fun t : ℝ => normalReal B t i / t^n) atTop
+      (𝓝 ((-1:ℝ)^n * (B.det:ℝ))) := by
+  have hh := (normalized_continuous B i).continuousAt.tendsto.comp
+    (tendsto_inv_atTop_zero : Tendsto (fun t : ℝ => t⁻¹) atTop (𝓝 0))
+  rw [normalized_zero] at hh
+  apply hh.congr'
+  filter_upwards [eventually_gt_atTop (0:ℝ)] with t ht
+  exact (normalize_normal B (ne_of_gt ht) i).symm
+
+end Erdos1LatticeAsymptotic
+
+/- LatticeReduction -/
+namespace Erdos1LatticeReduction
+open Finset Matrix Filter Erdos1LatticePrimitive Erdos1LatticeStability
+  Erdos1LatticeAsymptotic Erdos1DigitBoxes
+open scoped Topology
+variable {n : ℕ}
+
+lemma shifted_normal_limit (B : Matrix (Fin n) (Fin n) ℤ) (K : ℝ) (i : Fin (n+1)) :
+    Tendsto (fun t : ℝ => normalReal B (t+K) i / t^n) atTop
+      (𝓝 ((-1:ℝ)^n * (B.det:ℝ))) := by
+  have hshift : Tendsto (fun t : ℝ => t+K) atTop atTop :=
+    tendsto_atTop_add_const_right _ K tendsto_id
+  have hmain := (normal_limit B i).comp hshift
+  have hr : Tendsto (fun t : ℝ => (t+K)/t) atTop (𝓝 1) := by
+    have hh := (tendsto_const_nhds : Tendsto (fun _t : ℝ => (1:ℝ)) atTop (𝓝 1)).add
+      ((tendsto_inv_atTop_zero : Tendsto (fun t : ℝ => t⁻¹) atTop (𝓝 0)).const_mul K)
+    simp only [mul_zero,add_zero] at hh
+    apply hh.congr'
+    filter_upwards [eventually_gt_atTop (0:ℝ)] with t ht
+    field_simp
+  have hh := hmain.mul (hr.pow n)
+  simp only [one_pow,mul_one] at hh
+  apply hh.congr'
+  filter_upwards [eventually_gt_atTop (max (0:ℝ) (-K))] with t ht
+  have ht0 : t ≠ 0 := ne_of_gt ((le_max_left _ _).trans_lt ht)
+  have htk : t+K ≠ 0 := by have := (le_max_right (0:ℝ) (-K)).trans_lt ht; linarith
+  simp only [Function.comp_apply,div_pow]
+  field_simp
+
+lemma eventual_shifted_bounds (B : Matrix (Fin n) (Fin n) ℤ) (K : ℝ)
+    (hD : 0 < (-1:ℝ)^n * (B.det:ℝ)) :
+    ∀ᶠ t : ℝ in atTop, ∀ i : Fin (n+1),
+      0 < normalReal B (t+K) i ∧
+      normalReal B (t+K) i ≤ (2*((-1:ℝ)^n * (B.det:ℝ))) * t^n := by
+  rw [eventually_all]
+  intro i
+  have hh := tendsto_order.mp (shifted_normal_limit B K i)
+  have hlo := hh.1 0 hD
+  have hhi := hh.2 (2*((-1:ℝ)^n * (B.det:ℝ))) (by linarith)
+  filter_upwards [hlo,hhi,eventually_gt_atTop (0:ℝ)] with t htlo hthi ht
+  have hp : 0 < t^n := pow_pos ht _
+  constructor
+  · have h := (lt_div_iff₀ hp).mp htlo
+    simpa using h
+  · exact ((div_lt_iff₀ hp).mp hthi).le
+
+noncomputable def coeff (B : Matrix (Fin n) (Fin n) ℤ) (hB : B.BlockTriangular id)
+    (m : ℕ) (i : Fin (n+1)) : ℤ :=
+  coefficient (perturb B ((2:ℤ)^m+errorCost B))
+    (perturb_unit hB ((2:ℤ)^m+errorCost B)) i
+
+lemma eventual_coeff_bounds (B : Matrix (Fin n) (Fin n) ℤ)
+    (hB : B.BlockTriangular id) {D : ℕ} (hD : 0 < D)
+    (hdet : (-1:ℤ)^n * B.det = D) :
+    ∀ᶠ m : ℕ in atTop, ∀ i : Fin (n+1),
+      0 < coeff B hB m i ∧ coeff B hB m i ≤ 2*(D:ℤ)*((2:ℤ)^m)^n := by
+  have hdet' : (-1:ℝ)^n * (B.det:ℝ) = D := by exact_mod_cast hdet
+  have hD' : 0 < (-1:ℝ)^n * (B.det:ℝ) := by rw [hdet']; exact_mod_cast hD
+  have hp : Tendsto (fun m : ℕ => (2:ℝ)^m) atTop atTop :=
+    tendsto_pow_atTop_atTop_of_one_lt (by norm_num)
+  have hh := hp.eventually (eventual_shifted_bounds B (errorCost B) hD')
+  filter_upwards [hh] with m hm
+  intro i
+  have hc : (coeff B hB m i : ℝ) =
+      normalReal B ((2:ℝ)^m+(errorCost B:ℝ)) i := by
+    simpa [coeff] using coefficient_real B hB ((2:ℤ)^m+errorCost B) i
+  have hi := hm i
+  rw [← hc,hdet'] at hi
+  exact_mod_cast hi
+
+theorem eventual_binary_family (B : Matrix (Fin n) (Fin n) ℤ)
+    (htri : B.BlockTriangular id) {D : ℕ} (hD : 0 < D)
+    (hdet : (-1:ℤ)^n * B.det = D) (r : ℕ)
+    (hR : ∀ z : Fin n → ℤ, z ≠ 0 → ∃ i, (2:ℤ)^r ≤ |leading B z i|) :
+    ∀ᶠ m : ℕ in atTop, 0 < m ∧ ∃ A : Finset ℕ,
+      Erdos1Reduction.IsSumDistinctSet A (2^(m+r-1)*(2*D*(2^m)^n)) ∧
+      A.card = (n+1)*(m+r) := by
+  have hne : B.det ≠ 0 := by
+    intro hh
+    rw [hh,mul_zero] at hdet
+    have : 0 < (D:ℤ) := by exact_mod_cast hD
+    omega
+  filter_upwards [eventual_coeff_bounds B htri hD hdet,eventually_gt_atTop 0] with m hm hm0
+  let a : Fin (n+1) → ℕ := fun i => (coeff B htri m i).toNat
+  have ha (i : Fin (n+1)) : (a i : ℤ) = coeff B htri m i :=
+    Int.toNat_of_nonneg (hm i).1.le
+  have ht : errorCost B ≤ (2:ℤ)^m+errorCost B := by
+    have : 0 ≤ (2:ℤ)^m := by positivity
+    omega
+  have hq : ((2^(m+r) : ℕ):ℤ) ≤
+      ((2:ℤ)^m+errorCost B-errorCost B)*(2:ℤ)^r := by
+    simp [pow_add]
+  have hb : BoxDistinct (2^(m+r)) a :=
+    perturb_box B htri hne hR ht hq a ha
+  have hN (i : Fin (n+1)) : a i ≤ 2*D*(2^m)^n := by
+    have hh : (a i : ℤ) ≤ 2*(D:ℤ)*((2:ℤ)^m)^n := by rw [ha]; exact (hm i).2
+    exact_mod_cast hh
+  refine ⟨hm0,?_⟩
+  simpa using hb.expanded_set (by omega : 0 < m+r) hN
+
+lemma binary_bound_factor (m n r D : ℕ) (hm : 0 < m) :
+    2^(m+r-1)*(2*D*(2^m)^n) = D*2^((n+1)*m+r) := by
+  have hp : (2:ℕ)^(m+r-1)*2 = 2^(m+r) := by
+    rw [← pow_succ]
+    congr 1
+    omega
+  calc
+    2^(m+r-1)*(2*D*(2^m)^n) = (2^(m+r-1)*2)*D*(2^m)^n := by ring
+    _ = 2^(m+r)*D*2^(m*n) := by rw [hp,← pow_mul]
+    _ = D*(2^(m+r)*2^(m*n)) := by ring
+    _ = D*2^((n+1)*m+r) := by rw [← pow_add]; congr 2 <;> ring
+
+theorem defeats_multiplier (B : Matrix (Fin n) (Fin n) ℤ)
+    (htri : B.BlockTriangular id) {D : ℕ} (hD : 0 < D)
+    (hdet : (-1:ℤ)^n * B.det = D) (r k : ℕ)
+    (hR : ∀ z : Fin n → ℤ, z ≠ 0 → ∃ i, (2:ℤ)^r ≤ |leading B z i|)
+    (hsmall : k*D < 2^(n*r)) :
+    ∃ (N : ℕ) (A : Finset ℕ),
+      Erdos1Reduction.IsSumDistinctSet A N ∧ N ≠ 0 ∧ k*N < 2^A.card := by
+  obtain ⟨m,hm, A,hA,hcard⟩ := (eventual_binary_family B htri hD hdet r hR).exists
+  refine ⟨2^(m+r-1)*(2*D*(2^m)^n),A,hA,by positivity,?_⟩
+  rw [hcard,binary_bound_factor m n r D hm]
+  have hexp : (n+1)*(m+r) = ((n+1)*m+r)+n*r := by ring
+  rw [hexp,pow_add]
+  have hh := Nat.mul_lt_mul_of_pos_left hsmall (by positivity : 0 < 2^((n+1)*m+r))
+  simpa only [pow_add,Nat.mul_assoc,Nat.mul_comm,Nat.mul_left_comm] using hh
+
+def LowDeterminantFamily : Prop :=
+  ∀ k : ℕ, ∃ (n r D : ℕ) (B : Matrix (Fin n) (Fin n) ℤ),
+    B.BlockTriangular id ∧ 0 < D ∧ (-1:ℤ)^n * B.det = D ∧
+    (∀ z : Fin n → ℤ, z ≠ 0 → ∃ i, (2:ℤ)^r ≤ |leading B z i|) ∧
+    k*D < 2^(n*r)
+
+theorem low_determinant_implies_negation (h : LowDeterminantFamily) :
+    ¬ Erdos1Reduction.UniformRealBound := by
+  rw [Erdos1Reduction.neg_real_iff_counterexamples]
+  intro k
+  obtain ⟨n,r,D,B,htri,hD,hdet,hR,hsmall⟩ := h k
+  exact defeats_multiplier B htri hD hdet r k hR hsmall
+
+end Erdos1LatticeReduction
+
+/- LatticeBasisTransfer -/
+namespace Erdos1LatticeBasisTransfer
+open Finset Matrix Erdos1IntegerTriangular Erdos1LatticeStability Erdos1LatticePrimitive
+set_option maxHeartbeats 4000000
+
+variable {I J : Type*} [Fintype I] [Fintype J] [DecidableEq I] [DecidableEq J]
+
+def BalancedAdmissible (B : Matrix I I ℤ) (R : ℤ) : Prop :=
+  ∀ z : I → ℤ, (∀ i, |(B*ᵥz) i| < R) → |∑ i, (B*ᵥz) i| < R → z = 0
+
+lemma unit_mulVec_zero (U : Matrix I I ℤ) (hU : IsUnit U.det) (z : I → ℤ)
+    (hz : U*ᵥz = 0) : z = 0 := by
+  let e := Matrix.toLinearEquiv (Pi.basisFun ℤ I) U hU
+  apply e.injective
+  change U*ᵥz = U*ᵥ0
+  simpa using hz
+
+lemma BalancedAdmissible.mul_right {B : Matrix I I ℤ} {R : ℤ} (hB : BalancedAdmissible B R)
+    (U : Matrix I I ℤ) (hU : IsUnit U.det) : BalancedAdmissible (B*U) R := by
+  intro z hz hs
+  have hw : U*ᵥz = 0 := hB (U*ᵥz)
+    (by simpa only [mulVec_mulVec] using hz) (by simpa only [mulVec_mulVec] using hs)
+  exact unit_mulVec_zero U hU z hw
+
+lemma reindex_mulVec (B : Matrix I I ℤ) (e : J ≃ I) (z : J → ℤ) (j : J) :
+    (B.submatrix e e *ᵥ z) j = (B *ᵥ fun i => z (e.symm i)) (e j) := by
+  simp only [mulVec,dotProduct,submatrix_apply]
+  exact Fintype.sum_equiv e _ _ (by intro i; simp)
+
+lemma BalancedAdmissible.reindex {B : Matrix I I ℤ} {R : ℤ} (hB : BalancedAdmissible B R)
+    (e : J ≃ I) : BalancedAdmissible (B.submatrix e e) R := by
+  intro z hz hs
+  have hw : (fun i => z (e.symm i)) = 0 := by
+    apply hB
+    · intro i
+      have hi := hz (e.symm i)
+      simpa only [reindex_mulVec,Equiv.apply_symm_apply] using hi
+    · simpa only [reindex_mulVec,Equiv.sum_comp] using hs
+  funext j
+  have hh := congrFun hw (e j)
+  simpa using hh
+
+lemma BalancedAdmissible.leading {n : ℕ} {B : Matrix (Fin n) (Fin n) ℤ} {R : ℤ}
+    (hB : BalancedAdmissible B R) (z : Fin n → ℤ)
+    (hz : ∀ i, |leading B z i| < R) : z = 0 := by
+  apply hB z
+  · intro i
+    simpa [Erdos1LatticeStability.leading,Erdos1LatticePrimitive.balance,Erdos1LatticePrimitive.lift] using hz i.castSucc
+  · simpa [Erdos1LatticeStability.leading,Erdos1LatticePrimitive.balance,Erdos1LatticePrimitive.lift,abs_neg] using hz (Fin.last n)
+
+theorem oriented_triangular {n : ℕ} (hn : 0 < n) (B : Matrix (Fin n) (Fin n) ℤ)
+    (hdet : B.det ≠ 0) (R : ℤ) (hB : BalancedAdmissible B R) :
+    ∃ T : Matrix (Fin n) (Fin n) ℤ,
+      T.BlockTriangular id ∧ BalancedAdmissible T R ∧ (-1:ℤ)^n*T.det = |B.det| := by
+  classical
+  letI : NeZero n := ⟨by omega⟩
+  obtain ⟨U,hU,hLower⟩ := exists_lower n B hdet
+  let L := B*U
+  let K := L.submatrix Fin.revPerm Fin.revPerm
+  have hK : K.BlockTriangular id := by
+    intro i j hij
+    exact hLower i.rev j.rev (Fin.rev_lt_rev.mpr hij)
+  have hKA : BalancedAdmissible K R := (hB.mul_right U hU).reindex Fin.revPerm
+  have hKd : K.det = B.det*U.det := by
+    dsimp only [K]
+    rw [det_submatrix_equiv_self]
+    exact det_mul B U
+  have hKabs : |K.det| = |B.det| := by rw [hKd,abs_mul,abs_det_unit hU,mul_one]
+  have hKne : K.det ≠ 0 := by rw [hKd]; exact mul_ne_zero hdet hU.ne_zero
+  let s : ℤ := if 0 < (-1:ℤ)^n*K.det then 1 else -1
+  let D : Matrix (Fin n) (Fin n) ℤ := Matrix.diagonal (fun i => if i = 0 then s else 1)
+  have hDd : D.det = s := by simp [D,det_diagonal]
+  have hs : IsUnit s := by dsimp [s]; split_ifs <;> simp
+  have hD : IsUnit D.det := by rw [hDd]; exact hs
+  refine ⟨K*D,hK.mul (blockTriangular_diagonal _),hKA.mul_right D hD,?_⟩
+  rw [det_mul,hDd,← mul_assoc]
+  have hx : (-1:ℤ)^n*K.det ≠ 0 := mul_ne_zero (pow_ne_zero _ (by norm_num)) hKne
+  have hxa : |(-1:ℤ)^n*K.det| = |B.det| := by rw [abs_mul,abs_neg_one_pow,one_mul,hKabs]
+  dsimp [s]
+  split_ifs with hp
+  · simpa [abs_of_pos hp] using hxa
+  · have hn : (-1:ℤ)^n*K.det < 0 := lt_of_le_of_ne (le_of_not_gt hp) hx
+    simpa [abs_of_neg hn] using hxa
+
+end Erdos1LatticeBasisTransfer
+
+/- CyclicLatticeConstruction -/
+namespace Erdos1CyclicLatticeConstruction
+open Finset Matrix
+open Erdos1CyclicLift Erdos1CyclicFamily Erdos1CyclicFamilyLimit
+open Erdos1LatticeBasisTransfer Erdos1SkewDeterminant Erdos1LatticeReduction
+set_option maxHeartbeats 5000000
+noncomputable section
+
+variable {I J : Type*} [Fintype I] [Fintype J] [DecidableEq I] [DecidableEq J]
+
+lemma real_reindex_mulVec (C : Matrix I I ℝ) (e : J ≃ I) (z : J → ℤ) (j : J) :
+    (C.submatrix e e *ᵥ fun k => (z k:ℝ)) j =
+      (C *ᵥ fun i => (z (e.symm i):ℝ)) (e j) := by
+  simp only [mulVec,dotProduct,submatrix_apply]
+  exact Fintype.sum_equiv e _ _ (by intro i; simp)
+
+lemma admissible_reindex (C : Matrix I I ℝ) (hC : Admissible C) (e : J ≃ I) :
+    Admissible (C.submatrix e e) := by
+  intro z hz
+  have hw := hC (fun i => z (e.symm i)) (by
+    intro i
+    simpa only [real_reindex_mulVec,Equiv.apply_symm_apply] using hz (e.symm i))
+  funext j
+  simpa using congrFun hw (e j)
+
+lemma column_reindex (C : Matrix I I ℝ) (q : ℝ) (hcol : ∀ j, (∑ i, C i j) = q)
+    (e : J ≃ I) (j : J) : (∑ i, C.submatrix e e i j) = q := by
+  change (∑ i, C (e i) (e j)) = q
+  rw [e.sum_comp (fun i => C i (e j)),hcol]
+
+theorem scaled_balanced {n r : ℕ} (C : Matrix (Fin (n+1)) (Fin (n+1)) ℝ)
+    (hC : Admissible C) (q : ℝ) (hq : 0 < q) (hcol : ∀ j, (∑ i, C i j) = q)
+    (hdet : 0 < C.det) (hdy : Dyadic r C) (k : ℕ) (hsmall : (k:ℝ)*C.det < q) :
+    ∃ B : Matrix (Fin n) (Fin n) ℤ, BalancedAdmissible B ((2:ℤ)^r) ∧
+      0 < B.det ∧ (k:ℝ)*(B.det:ℝ) < (2:ℝ)^(n*r) := by
+  classical
+  choose g hg using hdy
+  let G : Matrix (Fin (n+1)) (Fin (n+1)) ℤ := g
+  have hG (i j : Fin (n+1)) : (2:ℝ)^r*C i j = (G i j:ℝ) := hg i j
+  let R : ℝ := (2:ℝ)^r
+  have hR : 0 < R := by dsimp [R]; positivity
+  have hmap : G.map (fun a : ℤ => (a:ℝ)) = R • C := by
+    ext i j
+    exact (hG i j).symm
+  have hcolG (j : Fin (n+1)) : (∑ i, (G i j:ℝ)) = R*q := by
+    simp_rw [← hG]
+    rw [← mul_sum,hcol]
+  have hcolZ (j : Fin (n+1)) : (∑ i, G i j) = ∑ i, G i 0 := by
+    exact_mod_cast (hcolG j).trans (hcolG 0).symm
+  let B := balancedMatrix G
+  have hBmap : balancedMatrix (G.map (fun a : ℤ => (a:ℝ))) = B.map (fun a : ℤ => (a:ℝ)) := by
+    ext i j
+    simp [B,balancedMatrix]
+  have hfactor : R^(n+1)*C.det = (R*q)*(B.det:ℝ) := by
+    have hh := det_of_column_sum (G.map (fun a : ℤ => (a:ℝ))) (R*q) hcolG
+    rw [hBmap,← Int.cast_det (R := ℝ) B,hmap,det_smul,Fintype.card_fin] at hh
+    exact hh
+  have hBd : q*(B.det:ℝ) = R^n*C.det := by
+    apply mul_left_cancel₀ hR.ne'
+    calc
+      R*(q*(B.det:ℝ)) = (R*q)*(B.det:ℝ) := by ring
+      _ = R^(n+1)*C.det := hfactor.symm
+      _ = R*(R^n*C.det) := by rw [pow_succ]; ring
+  have hBposR : (0:ℝ) < B.det := by
+    have hh : 0 < q*(B.det:ℝ) := by rw [hBd]; exact mul_pos (pow_pos hR _) hdet
+    exact (mul_pos_iff_of_pos_left hq).mp hh
+  have hBpos : 0 < B.det := by exact_mod_cast hBposR
+  have hBsmall : (k:ℝ)*(B.det:ℝ) < R^n := by
+    apply (mul_lt_mul_iff_right₀ hq).mp
+    calc
+      q*((k:ℝ)*(B.det:ℝ)) = (k:ℝ)*(q*(B.det:ℝ)) := by ring
+      _ = R^n*((k:ℝ)*C.det) := by rw [hBd]; ring
+      _ < R^n*q := mul_lt_mul_of_pos_left hsmall (pow_pos hR _)
+      _ = q*R^n := by ring
+  have hGadm : ∀ w : Fin (n+1) → ℤ,
+      (∀ i, |(G*ᵥw) i| < (2:ℤ)^r) → w = 0 := by
+    intro w hw
+    apply hC w
+    intro i
+    have he : ((G*ᵥw) i:ℝ) = R*(C*ᵥ fun j => (w j:ℝ)) i := by
+      simp only [mulVec,dotProduct,Int.cast_sum,Int.cast_mul,← hG,mul_sum]
+      apply sum_congr rfl
+      intro j hj
+      ring
+    have hb : |((G*ᵥw) i:ℝ)| < R := by
+      change |((G*ᵥw) i:ℝ)| < (2:ℝ)^r
+      exact_mod_cast hw i
+    rw [he,abs_mul,abs_of_pos hR] at hb
+    exact (mul_lt_mul_iff_right₀ hR).mp (by simpa using hb)
+  have hBA : BalancedAdmissible B ((2:ℤ)^r) := by
+    intro z hz hs
+    let w : Fin (n+1) → ℤ := Fin.cons (-(∑ j, z j)) z
+    have htail (i : Fin n) : (G*ᵥw) i.succ = (B*ᵥz) i := by
+      simp only [mulVec,dotProduct,Fin.sum_univ_succ,w,Fin.cons_zero,Fin.cons_succ,
+        B,balancedMatrix,sub_mul,sum_sub_distrib,← mul_sum]
+      ring
+    have hsum : (∑ i, (G*ᵥw) i) = 0 := by
+      simp only [mulVec,dotProduct]
+      rw [sum_comm]
+      simp_rw [← sum_mul,hcolZ]
+      rw [← mul_sum]
+      simp [w,Fin.sum_univ_succ]
+    have hzero : (G*ᵥw) 0 = -(∑ i, (B*ᵥz) i) := by
+      rw [Fin.sum_univ_succ] at hsum
+      simp only [htail] at hsum
+      omega
+    have hw : w = 0 := hGadm w (by
+      intro i
+      refine Fin.cases ?_ (fun j => ?_) i
+      · simpa only [hzero,abs_neg] using hs
+      · simpa only [htail] using hz j)
+    funext i
+    have hh := congrFun hw i.succ
+    simpa [w] using hh
+  refine ⟨B,hBA,hBpos,?_⟩
+  simpa only [R,← pow_mul,Nat.mul_comm] using hBsmall
+
+theorem low_determinant_family : LowDeterminantFamily := by
+  intro k
+  obtain ⟨m,h,hm,hh,hsmall⟩ := exists_small_ratio k
+  let I := Index m h
+  have hpow : 2*m+1 ≤ (2*m+1)^h := by
+    calc
+      2*m+1 = (2*m+1)^1 := by simp
+      _ ≤ (2*m+1)^h := Nat.pow_le_pow_right (by omega) (by omega)
+  let n := (2*m+1)^h-1
+  have hn : 0 < n := by dsimp [n]; omega
+  have hcard : Fintype.card I = n+1 := by
+    change Fintype.card (Index m h) = n+1
+    rw [card_index]
+    dsimp [n]
+    omega
+  let e : Fin (n+1) ≃ I := (Fintype.equivFinOfCardEq hcard).symm
+  let C := (family m h).submatrix e e
+  have hCd : C.det = (family m h).det := det_submatrix_equiv_self e _
+  have hCpos : 0 < C.det := by
+    rw [hCd,family_det m h hm]
+    positivity
+  have hCs : (k:ℝ)*C.det < (3/2:ℝ)^h := by rwa [hCd]
+  obtain ⟨B,hBA,hBd,hBs⟩ := scaled_balanced C
+    (admissible_reindex _ (family_admissible m h) e) ((3/2:ℝ)^h) (by positivity)
+    (column_reindex _ _ (family_column m h) e) hCpos
+    (fun i j => family_dyadic m h (e i) (e j)) k hCs
+  obtain ⟨T,htri,hTA,hTd⟩ := oriented_triangular hn B hBd.ne' ((2:ℤ)^h) hBA
+  let D := B.det.toNat
+  have hDcast : (D:ℤ) = B.det := Int.toNat_of_nonneg hBd.le
+  have hD : 0 < D := by exact_mod_cast (show (0:ℤ) < D by rw [hDcast]; exact hBd)
+  refine ⟨n,h,D,T,htri,hD,?_,?_,?_⟩
+  · rw [hTd,abs_of_pos hBd,hDcast]
+  · intro z hz
+    by_contra he
+    push_neg at he
+    exact hz (hTA.leading z he)
+  · have hDreal : (D:ℝ) = (B.det:ℝ) := by exact_mod_cast hDcast
+    rw [← hDreal] at hBs
+    exact_mod_cast hBs
+
+end
+end Erdos1CyclicLatticeConstruction
+
+namespace Erdos1
+
+/--
+If $A\subseteq\{1, ..., N\}$ with $|A| = n$ is such that the subset sums $\sum_{a\in S}a$ are
+distinct for all $S\subseteq A$ then
+$$
+  N \gg 2 ^ n.
+$$
+-/
+theorem erdos_1.disproof : ¬ (∃ C > (0 : ℝ), ∀ (N : ℕ) (A : Finset ℕ) (_ : IsSumDistinctSet A N),
+    N ≠ 0 → C * 2 ^ A.card < N) := by
+  exact Erdos1LatticeReduction.low_determinant_implies_negation
+    Erdos1CyclicLatticeConstruction.low_determinant_family
+
+/--
+A finite set of real numbers is said to be sum-distinct if all the subset sums differ by
+at least $1$.
+-/
+abbrev IsSumDistinctRealSet (A : Finset ℝ) (N : ℕ) : Prop :=
+  ↑A ⊆ Set.Ioc (0 : ℝ) N ∧ (A.powerset : Set (Finset ℝ)).Pairwise fun S₁ S₂ =>
+    1 ≤ dist (S₁.sum id) (S₂.sum id)
+
+end Erdos1
+
+abbrev IsSumDistinctSet (A : Finset ℕ) (N : ℕ) : Prop :=
+  A ⊆ Finset.Icc 1 N ∧
+    (fun (S : A.powerset) => S.1.sum id).Injective
+
+theorem proof : ¬ (∃ C > (0 : ℝ), ∀ (N : ℕ) (A : Finset ℕ),
+    IsSumDistinctSet A N → N ≠ 0 → C * 2 ^ A.card < N) :=
+  Erdos1.erdos_1.disproof
+
+#print axioms proof
+end Submissions.Erdos1DistinctSubsetSumsRefuted.EpochPort
