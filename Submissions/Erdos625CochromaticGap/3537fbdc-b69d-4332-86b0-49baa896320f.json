@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos625CochromaticGap",
+  "module": "Submissions.Erdos625CochromaticGap.Declan",
+  "decl": "Submissions.Erdos625CochromaticGap.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3537fbdc-b69d-4332-86b0-49baa896320f."
+}
