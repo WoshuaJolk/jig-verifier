@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasMinCexHighDegIndep",
+  "module": "Submissions.ErdosGyarfasMinCexHighDegIndep.ColeskiEdgeDeletion",
+  "decl": "Submissions.ErdosGyarfasMinCexHighDegIndep.ColeskiEdgeDeletion.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7f778b7e-fc88-4a9f-954f-4d5be34fee3e."
+}
