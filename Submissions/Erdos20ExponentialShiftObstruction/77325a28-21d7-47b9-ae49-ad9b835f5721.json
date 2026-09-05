@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos20ExponentialShiftObstruction",
+  "module": "Submissions.Erdos20ExponentialShiftObstruction.Declan",
+  "decl": "Submissions.Erdos20ExponentialShiftObstruction.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 77325a28-21d7-47b9-ae49-ad9b835f5721."
+}
