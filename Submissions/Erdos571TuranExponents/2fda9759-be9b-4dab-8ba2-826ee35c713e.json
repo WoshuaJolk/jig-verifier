@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos571TuranExponents",
+  "module": "Submissions.Erdos571TuranExponents.EpochPort",
+  "decl": "Submissions.Erdos571TuranExponents.EpochPort.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2fda9759-be9b-4dab-8ba2-826ee35c713e."
+}
