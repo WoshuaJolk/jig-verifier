@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesStaticPeelingDead",
+  "module": "Submissions.ErdosMultiplesStaticPeelingDead.Witness",
+  "decl": "Submissions.ErdosMultiplesStaticPeelingDead.Witness.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1b10a9b5-70b1-45cd-91a8-8fe0378c7d07."
+}
