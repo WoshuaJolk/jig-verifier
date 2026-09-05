@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos625ZeroGapBoundary",
+  "module": "Submissions.Erdos625ZeroGapBoundary.Declan",
+  "decl": "Submissions.Erdos625ZeroGapBoundary.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9310e079-f5c6-437f-bd20-830159898298."
+}
