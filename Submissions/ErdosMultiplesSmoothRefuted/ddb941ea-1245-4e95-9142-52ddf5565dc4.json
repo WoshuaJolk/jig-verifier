@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosMultiplesSmoothRefuted",
+  "module": "Submissions.ErdosMultiplesSmoothRefuted.Counterexample",
+  "decl": "Submissions.ErdosMultiplesSmoothRefuted.Counterexample.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "refutes": "ErdosMultiplesDoubling",
+  "note": "Submitted through the Jig API as artifact ddb941ea-1245-4e95-9142-52ddf5565dc4."
+}
