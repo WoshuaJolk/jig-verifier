@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos625ZeroGapBoundary",
+  "module": "Submissions.Erdos625ZeroGapBoundary.Weakened",
+  "decl": "Submissions.Erdos625ZeroGapBoundary.Weakened.proof",
+  "author": "declangessel",
+  "expect": "red",
+  "expect_reason": "restatement: impossible False hypothesis added to the canonical boundary claim",
+  "note": "Submitted through the Jig API as artifact f11f15ef-a462-4423-b342-e0694cf18090."
+}
