@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos126AdditivePrimeFactors",
+  "module": "Submissions.Erdos126AdditivePrimeFactors.EpochPort",
+  "decl": "Submissions.Erdos126AdditivePrimeFactors.EpochPort.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2db4aa1f-71a8-424e-8d33-7ab291454809."
+}
