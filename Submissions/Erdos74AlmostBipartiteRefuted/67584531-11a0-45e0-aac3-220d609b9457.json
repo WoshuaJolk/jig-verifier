@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos74AlmostBipartiteRefuted",
+  "module": "Submissions.Erdos74AlmostBipartiteRefuted.EpochPort",
+  "decl": "Submissions.Erdos74AlmostBipartiteRefuted.EpochPort.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "refutes": "Erdos74AlmostBipartite",
+  "note": "Submitted through the Jig API as artifact 67584531-11a0-45e0-aac3-220d609b9457."
+}
