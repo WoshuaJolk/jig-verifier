@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasBoundaryFourStructure",
+  "module": "Submissions.ErdosGyarfasBoundaryFourStructure.Cole",
+  "decl": "Submissions.ErdosGyarfasBoundaryFourStructure.Cole.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 38a8d144-a88a-4f18-8645-f2cf886bea8d."
+}
