@@ -6,8 +6,11 @@ import Lean
 Trusted, harness-owned commands used by the generated check files. Nothing here is
 importable by a submission (the verifier rejects submissions that import `Verify.*`).
 
-Three commands:
+Four commands:
 
+* `#conject_refutation refuted target` — kernel-check that `refuted` is the literal negation
+  of `target` at shared universe parameters. `example : R ↔ ¬ T := Iff.rfl` generalizes the
+  two sides' universes independently, so it rejects every universe-polymorphic refutation.
 * `#conject_provenance d "Mod"` — fail unless constant `d` was declared in module `Mod`.
   This is what stops a submission from shadowing the canonical statement.
 * `#conject_no_new_axioms "Mod"` — fail if module `Mod` declares any `axiom`.
@@ -224,5 +227,39 @@ def elabAudit : CommandElab := fun stx => do
     ++ "}"
   IO.FS.writeFile (prefixPath ++ ".json") json
   IO.println s!"CONJECT_AUDIT_OK: {declName}"
+
+/-- `#conject_refutation R T` — `R` must be definitionally `¬ T`, at the same universe
+parameters on both sides. The kernel does the check, via `addDecl`. -/
+syntax (name := conjectRefutation) "#conject_refutation " ident ppSpace ident : command
+
+@[command_elab conjectRefutation]
+def elabRefutation : CommandElab := fun stx => do
+  let refutedName := stx[1].getId
+  let targetName := stx[2].getId
+  let env ← getEnv
+  let some refuted := env.find? refutedName
+    | fail "refutation_missing_decl" s!"constant '{refutedName}' does not exist"
+  let some target := env.find? targetName
+    | fail "refutation_missing_decl" s!"constant '{targetName}' does not exist"
+  unless refuted.levelParams.length == target.levelParams.length do
+    fail "not_a_refutation"
+      s!"'{refutedName}' has {refuted.levelParams.length} universe parameter(s) but '{targetName}' has {target.levelParams.length}"
+  let levels := refuted.levelParams.map Level.param
+  let lhs := mkConst refutedName levels
+  let rhs := mkApp (mkConst ``Not) (mkConst targetName levels)
+  let decl : Declaration := .thmDecl {
+    name := `Conject.Refutation.bridge
+    levelParams := refuted.levelParams
+    type := mkApp2 (mkConst ``Iff) lhs rhs
+    value := mkApp (mkConst ``Iff.rfl) lhs }
+  -- Synchronous: the elaborator's `addDecl` defers kernel checking, and a deferred
+  -- failure would land after the OK line below.
+  let opts ← getOptions
+  match env.toKernelEnv.addDecl opts decl with
+  | .error ex =>
+    fail "not_a_refutation"
+      s!"'{refutedName}' is not definitionally '¬ {targetName}': {← (ex.toMessageData opts).toString}"
+  | .ok _ => pure ()
+  IO.println s!"CONJECT_REFUTATION_OK: {refutedName} ↔ ¬ {targetName}"
 
 end Conject.Guard

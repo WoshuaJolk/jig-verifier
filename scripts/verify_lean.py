@@ -67,15 +67,18 @@ example : {statement_const} := @{decl}
 """
 
 REFUTATION_TEMPLATE = """\
+import Verify.Guard
 import {statement_module}
 import {target_module}
 
 /- The refutation link. `{statement_const}` must BE the negation of
    `{target_const}`, up to definitional equality: nothing here takes the
-   submitter's word for which statement is being refuted. -/
+   submitter's word for which statement is being refuted. Checked by the
+   kernel at shared universe parameters; `example : R ↔ ¬ T := Iff.rfl`
+   generalizes the two universes apart and rejects every polymorphic pair. -/
 set_option maxHeartbeats 2000000 in
 set_option maxRecDepth 8000 in
-example : {statement_const} ↔ ¬ {target_const} := Iff.rfl
+#conject_refutation {statement_const} {target_const}
 """
 
 AUDIT_TEMPLATE = """\
