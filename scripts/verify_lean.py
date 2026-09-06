@@ -69,13 +69,19 @@ example : {statement_const} := @{decl}
 REFUTATION_TEMPLATE = """\
 import {statement_module}
 import {target_module}
+import Verify.Guard
 
 /- The refutation link. `{statement_const}` must BE the negation of
    `{target_const}`, up to definitional equality: nothing here takes the
-   submitter's word for which statement is being refuted. -/
+   submitter's word for which statement is being refuted.
+
+   Not `example : ... ↔ ¬ ... := Iff.rfl`: that generalises the two sides over
+   independent universes, so it compared the target at one universe with its
+   negation at another and refused an exact refutation of a polymorphic
+   statement. The command reads both at the same rigid parameters. -/
 set_option maxHeartbeats 2000000 in
 set_option maxRecDepth 8000 in
-example : {statement_const} ↔ ¬ {target_const} := Iff.rfl
+#conject_refutation {statement_const} {target_const}
 """
 
 AUDIT_TEMPLATE = """\

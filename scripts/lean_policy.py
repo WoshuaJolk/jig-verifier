@@ -33,7 +33,10 @@ FORBIDDEN = [
     (r"\bnative_decide\b", "native_decide"),
     (r"\bofReduceBool\b", "native_decide"),
     (r"\bofReduceNat\b", "native_decide"),
-    (r"^\s*axiom\b", "axiom declaration"),
+    # Not `^\s*axiom`: `section  axiom oracle : ...` put it mid-line and the
+    # scan returned clean. The audit still caught it, so the red arrived with
+    # the wrong reason rather than not at all.
+    (r"\baxiom\b", "axiom declaration"),
     (r"\bunsafe\b", "unsafe"),
     (r"\bpartial\b", "partial"),
     (r"\bimplemented_by\b", "implemented_by"),
