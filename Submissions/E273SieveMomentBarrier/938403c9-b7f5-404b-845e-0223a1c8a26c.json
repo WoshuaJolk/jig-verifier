@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E273SieveMomentBarrier",
+  "module": "Submissions.E273SieveMomentBarrier.CompactBarrier",
+  "decl": "Submissions.E273SieveMomentBarrier.CompactBarrier.target",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 938403c9-b7f5-404b-845e-0223a1c8a26c."
+}
