@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E811D10NoThirds",
+  "module": "Submissions.E811D10NoThirds.Complete",
+  "decl": "Submissions.E811D10NoThirds.Complete.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact db06ce21-a023-460f-9c8f-2be0196e6bb7."
+}
