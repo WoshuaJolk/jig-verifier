@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasMinCexCubicNeighbour",
+  "module": "Submissions.ErdosGyarfasMinCexCubicNeighbour.VertexDeletion",
+  "decl": "Submissions.ErdosGyarfasMinCexCubicNeighbour.VertexDeletion.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ecef278d-f829-4087-9437-cf8870909739."
+}
