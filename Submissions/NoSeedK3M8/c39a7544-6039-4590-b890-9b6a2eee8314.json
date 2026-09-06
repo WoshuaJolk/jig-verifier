@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "NoSeedK3M8",
+  "module": "Submissions.NoSeedK3M8.SeedEight",
+  "decl": "Submissions.NoSeedK3M8.SeedEight.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c39a7544-6039-4590-b890-9b6a2eee8314."
+}
