@@ -1,0 +1,9 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "ErdosMultiplesSmoothExplicit48",
+  "witness": "3797d214-3db4-447a-b820-8f4df0ff37cd.witness",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3797d214-3db4-447a-b820-8f4df0ff37cd."
+}
