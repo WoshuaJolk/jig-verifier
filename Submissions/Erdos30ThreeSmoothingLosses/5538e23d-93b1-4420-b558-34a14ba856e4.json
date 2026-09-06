@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30ThreeSmoothingLosses",
+  "module": "Submissions.Erdos30ThreeSmoothingLosses.Declan",
+  "decl": "Submissions.Erdos30ThreeSmoothingLosses.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5538e23d-93b1-4420-b558-34a14ba856e4."
+}
