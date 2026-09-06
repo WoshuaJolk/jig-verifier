@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVConj1NeedsTLeqK",
+  "module": "Submissions.OVConj1NeedsTLeqK.EasyTriageWork",
+  "decl": "Submissions.OVConj1NeedsTLeqK.EasyTriageWork.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a3d2d24c-f18d-4ca9-a080-914e8d33696c."
+}
