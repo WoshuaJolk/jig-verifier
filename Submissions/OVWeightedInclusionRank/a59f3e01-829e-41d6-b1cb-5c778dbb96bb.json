@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVWeightedInclusionRank",
+  "module": "Submissions.OVWeightedInclusionRank.Coleski",
+  "decl": "Submissions.OVWeightedInclusionRank.Coleski.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a59f3e01-829e-41d6-b1cb-5c778dbb96bb."
+}
