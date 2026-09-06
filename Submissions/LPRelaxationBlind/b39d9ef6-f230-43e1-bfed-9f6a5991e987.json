@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "LPRelaxationBlind",
+  "module": "Submissions.LPRelaxationBlind.BalancedWeights",
+  "decl": "Submissions.LPRelaxationBlind.BalancedWeights.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b39d9ef6-f230-43e1-bfed-9f6a5991e987."
+}
