@@ -1,0 +1,13 @@
+{
+  "schema": "conject.certificate.v1",
+  "id": "ErdosMultiplesSmoothExplicit48",
+  "title": "Erdős #488, explicit smooth-band witness with k = 48 (Jig #398 statement 41)",
+  "statement": "With T = 256^48, A = 257-smooth integers in (T, 256T], n = 256T, m = 2TQ (Q = product of the odd primes below 257): n*M(m) > 2*m*M(n).",
+  "witness_format": "one decimal integer S in [1000, 50000]: the rounding denominator for ln p. The checker recomputes rigorous bounds H_lo(T) and |A|_hi by exact knapsack DP with logs rounded in the safe directions and accepts iff 64*phi(Q)*H_lo > Q*|A|_hi, which implies the statement by the two lemmas in statement 41. S = 8000 suffices (about 10 CPU-seconds, ratio floor 1.00063) and is the witness that fits the default lane; S = 20000 gives the published floor 1.0021 but needs about 30 CPU-seconds and does not fit.",
+  "limits": {
+    "wall_sec": 60,
+    "cpu_sec": 30,
+    "address_space_mb": 2048,
+    "output_bytes": 65536
+  }
+}

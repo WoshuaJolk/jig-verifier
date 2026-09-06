@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "ErdosMultiplesSmoothExplicit48",
+  "witness": "s1000-should-fail.witness",
+  "author": "woshuajolk",
+  "expect": "red",
+  "expect_reason": "invalid_witness",
+  "note": "Must-fail control: S = 1000 rounds too coarsely, ratio floor 0.9835."
+}
