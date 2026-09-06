@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E30VectorSmoothingFloor",
+  "module": "Submissions.E30VectorSmoothingFloor.Coleski",
+  "decl": "Submissions.E30VectorSmoothingFloor.Coleski.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 667f52b7-81c0-4266-ab28-ef40fb2d26a8."
+}
