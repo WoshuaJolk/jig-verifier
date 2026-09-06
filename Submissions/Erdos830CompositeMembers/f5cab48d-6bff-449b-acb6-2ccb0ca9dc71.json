@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos830CompositeMembers",
+  "module": "Submissions.Erdos830CompositeMembers.CompositeMembers",
+  "decl": "Submissions.Erdos830CompositeMembers.CompositeMembers.proof",
+  "author": "hd1932",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f5cab48d-6bff-449b-acb6-2ccb0ca9dc71."
+}
