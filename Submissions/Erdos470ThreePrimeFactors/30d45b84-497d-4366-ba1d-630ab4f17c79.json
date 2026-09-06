@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos470ThreePrimeFactors",
+  "module": "Submissions.Erdos470ThreePrimeFactors.Direct",
+  "decl": "Submissions.Erdos470ThreePrimeFactors.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 30d45b84-497d-4366-ba1d-630ab4f17c79. Settles nothing."
+}
