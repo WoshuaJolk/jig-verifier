@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PaleyLocThetaExceedsSqrtHalf",
+  "module": "Submissions.PaleyLocThetaExceedsSqrtHalf.Paley173",
+  "decl": "Submissions.PaleyLocThetaExceedsSqrtHalf.Paley173.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 605e6339-342f-468c-b66f-c1ef18024722."
+}
