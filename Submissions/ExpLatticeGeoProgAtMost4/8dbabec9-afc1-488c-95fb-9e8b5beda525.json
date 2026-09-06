@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ExpLatticeGeoProgAtMost4",
+  "module": "Submissions.ExpLatticeGeoProgAtMost4.BatchTwoGeoProg",
+  "decl": "Submissions.ExpLatticeGeoProgAtMost4.BatchTwoGeoProg.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8dbabec9-afc1-488c-95fb-9e8b5beda525."
+}
