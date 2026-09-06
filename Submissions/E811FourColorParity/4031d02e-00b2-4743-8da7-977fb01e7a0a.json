@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E811FourColorParity",
+  "module": "Submissions.E811FourColorParity.Complete",
+  "decl": "Submissions.E811FourColorParity.Complete.target",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4031d02e-00b2-4743-8da7-977fb01e7a0a."
+}
