@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E811LowSupport",
+  "module": "Submissions.E811LowSupport.Complete",
+  "decl": "Submissions.E811LowSupport.Complete.target",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1fb23073-e537-4db5-be5c-fe5a66d820f7."
+}
