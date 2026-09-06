@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasWeightedCubicBound",
+  "module": "Submissions.ErdosGyarfasWeightedCubicBound.Cole",
+  "decl": "Submissions.ErdosGyarfasWeightedCubicBound.Cole.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 20a40e63-32db-4990-8fcf-345ff0693669."
+}
