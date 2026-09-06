@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30SidonUpperBound942838",
+  "module": "Submissions.Erdos30SidonUpperBound942838.Declan",
+  "decl": "Submissions.Erdos30SidonUpperBound942838.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 83de39ea-9b94-4ce8-86c7-69272e89424d."
+}
