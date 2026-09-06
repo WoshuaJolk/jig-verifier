@@ -10,7 +10,7 @@ open ArithmeticFunction Finset
 
 /-- `σ(p^a) * (p - 1) + 1 = p^(a+1)` for a prime `p`. -/
 lemma sigma_prime_pow_mul_pred_add_one {p : ℕ} (hp : p.Prime) (a : ℕ) :
-    σ 1 (p ^ a) * (p - 1) + 1 = p ^ (a + 1) := by
+    ArithmeticFunction.sigma 1 (p ^ a) * (p - 1) + 1 = p ^ (a + 1) := by
   rw [sigma_one_apply_prime_pow hp]
   have h := geom_sum_mul_add (p - 1) (a + 1)
   have hp1 : p - 1 + 1 = p := Nat.sub_add_cancel hp.one_lt.le
@@ -21,13 +21,13 @@ lemma sigma_prime_pow_mul_pred_add_one {p : ℕ} (hp : p.Prime) (a : ℕ) :
 `σ(p^a * q^b) < 2 * p^a * q^b`. -/
 lemma sigma_two_odd_primes_lt {p q a b : ℕ} (hp : p.Prime) (hq : q.Prime)
     (hp3 : 3 ≤ p) (hq5 : 5 ≤ q) (hpq : p ≠ q) :
-    σ 1 (p ^ a * q ^ b) < 2 * (p ^ a * q ^ b) := by
+    ArithmeticFunction.sigma 1 (p ^ a * q ^ b) < 2 * (p ^ a * q ^ b) := by
   have hcop : Nat.Coprime (p ^ a) (q ^ b) := (Nat.coprime_pow_primes a b hp hq hpq)
   rw [isMultiplicative_sigma.map_mul_of_coprime hcop]
   have hA := sigma_prime_pow_mul_pred_add_one hp a
   have hB := sigma_prime_pow_mul_pred_add_one hq b
-  set A := σ 1 (p ^ a) with hAdef
-  set B := σ 1 (q ^ b) with hBdef
+  set A := ArithmeticFunction.sigma 1 (p ^ a) with hAdef
+  set B := ArithmeticFunction.sigma 1 (q ^ b) with hBdef
   set u := p ^ a with hu
   set v := q ^ b with hv
   rw [pow_succ] at hA hB
@@ -78,7 +78,7 @@ theorem three_le_card_primeFactors_of_odd_abundant (n : ℕ) (hodd : Odd n)
   have hqn : q ∣ n := Nat.dvd_of_mem_primeFactors (by rw [hpf]; simp)
   -- n = p ^ a * q ^ b
   have hfact : n = p ^ n.factorization p * q ^ n.factorization q := by
-    conv_lhs => rw [← Nat.factorization_prod_pow_eq_self hn0]
+    conv_lhs => rw [← Nat.prod_factorization_pow_eq_self hn0]
     rw [Finsupp.prod, Nat.support_factorization, hpf, Finset.prod_pair hpq]
   -- p, q odd
   have hp2 : p ≠ 2 := by
