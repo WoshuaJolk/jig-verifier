@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E287SlowBandGap",
+  "module": "Submissions.E287SlowBandGap.Cole",
+  "decl": "Submissions.E287SlowBandGap.Cole.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 13b93be4-118f-441b-8113-f69f29cd5791."
+}
