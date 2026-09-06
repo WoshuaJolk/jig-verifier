@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E817TernaryLatticeRefutation",
+  "module": "Submissions.E817TernaryLatticeRefutation.TernaryTransfer",
+  "decl": "Submissions.E817TernaryLatticeRefutation.TernaryTransfer.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "refutes": "Erdos817SubsetSumsThreeAPLowerBound",
+  "note": "Submitted through the Jig API as artifact 47eefaa1-14dd-4405-9265-566281901b2c."
+}
