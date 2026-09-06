@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasMinCexCubicStrict",
+  "module": "Submissions.ErdosGyarfasMinCexCubicStrict.CubicStrictWork",
+  "decl": "Submissions.ErdosGyarfasMinCexCubicStrict.CubicStrictWork.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 605e598f-8334-465a-b4e7-c96593e72eac."
+}
