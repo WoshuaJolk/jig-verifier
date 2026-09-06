@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30SmoothingBarrier13_18",
+  "module": "Submissions.Erdos30SmoothingBarrier13_18.Declan",
+  "decl": "Submissions.Erdos30SmoothingBarrier13_18.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c8345672-b649-4393-8e1f-4aa2455e5c66."
+}
