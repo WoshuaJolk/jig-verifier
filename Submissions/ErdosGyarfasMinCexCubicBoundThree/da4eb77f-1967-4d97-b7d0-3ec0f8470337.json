@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasMinCexCubicBoundThree",
+  "module": "Submissions.ErdosGyarfasMinCexCubicBoundThree.CubicBoundThreeWork",
+  "decl": "Submissions.ErdosGyarfasMinCexCubicBoundThree.CubicBoundThreeWork.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact da4eb77f-1967-4d97-b7d0-3ec0f8470337."
+}
