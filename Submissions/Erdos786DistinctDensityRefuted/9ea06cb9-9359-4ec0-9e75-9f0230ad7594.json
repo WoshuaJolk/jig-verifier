@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos786DistinctDensityRefuted",
+  "module": "Submissions.Erdos786DistinctDensityRefuted.BadPrimes",
+  "decl": "Submissions.Erdos786DistinctDensityRefuted.BadPrimes.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "refutes": "Erdos786DenseDistinctProductLengths",
+  "note": "Submitted through the Jig API as artifact 9ea06cb9-9359-4ec0-9e75-9f0230ad7594."
+}
