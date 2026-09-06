@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30VectorSmoothingCertificate942838",
+  "module": "Submissions.Erdos30VectorSmoothingCertificate942838.Declan",
+  "decl": "Submissions.Erdos30VectorSmoothingCertificate942838.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ded72081-9b11-4693-b81c-d51d065bb8c7."
+}
