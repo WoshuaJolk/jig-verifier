@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosStrausCombinedResidual",
+  "module": "Submissions.ErdosStrausCombinedResidual.CombinedResidual",
+  "decl": "Submissions.ErdosStrausCombinedResidual.CombinedResidual.proof",
+  "author": "davidtsong",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 376fbe20-2976-4736-84ac-9cb1b01ea284."
+}
