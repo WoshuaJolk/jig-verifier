@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E488Unbounded",
+  "module": "Submissions.E488Unbounded.Cole",
+  "decl": "Submissions.E488Unbounded.Cole.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0bd20596-fdbd-4fdf-ac0a-3ed0ad6afc23."
+}
