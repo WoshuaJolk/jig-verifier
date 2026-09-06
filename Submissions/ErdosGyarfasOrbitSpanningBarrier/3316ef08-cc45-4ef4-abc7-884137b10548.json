@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasOrbitSpanningBarrier",
+  "module": "Submissions.ErdosGyarfasOrbitSpanningBarrier.Declan",
+  "decl": "Submissions.ErdosGyarfasOrbitSpanningBarrier.Declan.proof",
+  "author": "declangessel",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3316ef08-cc45-4ef4-abc7-884137b10548."
+}
