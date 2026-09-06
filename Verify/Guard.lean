@@ -6,10 +6,12 @@ import Lean
 Trusted, harness-owned commands used by the generated check files. Nothing here is
 importable by a submission (the verifier rejects submissions that import `Verify.*`).
 
-Three commands:
+Four commands:
 
 * `#conject_provenance d "Mod"` — fail unless constant `d` was declared in module `Mod`.
   This is what stops a submission from shadowing the canonical statement.
+* `#conject_refutation r t` — kernel-check that `r` is literally `¬ t`, with both read
+  at the same rigid universe parameters.
 * `#conject_no_new_axioms "Mod"` — fail if module `Mod` declares any `axiom`.
 * `#conject_audit d "Mod" "out/prefix"` — write the axiom set and a normalized
   serialization of `d`'s elaborated proof term to `out/prefix.json` / `out/prefix.term`.
@@ -198,6 +200,41 @@ def elabNoNewAxioms : CommandElab := fun stx => do
   unless bad.isEmpty do
     fail "declares_axiom" s!"module '{modName}' declares axioms: {bad.toList}"
   IO.println s!"CONJECT_NO_NEW_AXIOMS_OK: {modName}"
+
+/-- `#conject_refutation Refuted.statement Root.statement` — the refutation link.
+
+`example : Refuted.statement ↔ ¬ Root.statement := Iff.rfl` generalises the two
+declarations over *independent* universes, so an exact refutation of a
+universe-polymorphic statement failed: the check compared `Root.statement.{u_1}`
+against `¬ Root.statement.{u_2}`. Both are read here at one set of rigid level
+parameters, and the `Iff.rfl` proof still goes through the kernel, so a merely
+logically equivalent formula is refused exactly as before. -/
+syntax (name := conjectRefutation) "#conject_refutation " ident ppSpace ident : command
+
+@[command_elab conjectRefutation]
+def elabRefutation : CommandElab := fun stx => do
+  let refutedName := stx[1].getId
+  let targetName := stx[2].getId
+  let env ← getEnv
+  let some refuted := env.find? refutedName
+    | fail "refutation_missing" s!"constant '{refutedName}' does not exist"
+  let some target := env.find? targetName
+    | fail "refutation_missing" s!"constant '{targetName}' does not exist"
+  -- Rigid parameters, never universe metavariables: a refutation that only holds
+  -- at `Type 0`, or one universe up, is not a refutation of the statement.
+  unless refuted.levelParams.length == target.levelParams.length do
+    fail "not_a_refutation"
+      s!"universe arity {refuted.levelParams.length} vs {target.levelParams.length}: a refutation is read at the target's own parameters"
+  let levels := refuted.levelParams.map Level.param
+  let lhs := mkConst refutedName levels
+  let rhs := mkApp (mkConst ``Not) (mkConst targetName levels)
+  liftCoreM <| addDecl <| .thmDecl {
+    name := `Conject.Refutation.bridge
+    levelParams := refuted.levelParams
+    type := mkApp2 (mkConst ``Iff) lhs rhs
+    value := mkApp (mkConst ``Iff.rfl) lhs
+  }
+  IO.println s!"CONJECT_REFUTATION_OK: {refutedName} <-> not {targetName}"
 
 /-- `#conject_audit Foo.bar "Foo" "path/prefix"` — emit axioms + normalized term. -/
 syntax (name := conjectAudit) "#conject_audit " ident ppSpace str ppSpace str : command
