@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos470SigmaProductBound",
+  "module": "Submissions.Erdos470SigmaProductBound.Direct",
+  "decl": "Submissions.Erdos470SigmaProductBound.Direct.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 40366b8c-07b9-46a4-aca0-c457238eb469."
+}
