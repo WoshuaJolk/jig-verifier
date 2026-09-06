@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E287HighSmooth",
+  "module": "Submissions.E287HighSmooth.Cole",
+  "decl": "Submissions.E287HighSmooth.Cole.high_smooth_not_one",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 15c2c611-7980-468e-9c29-8821e828c498."
+}
