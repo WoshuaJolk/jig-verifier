@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos786DistinctDensityLe34",
+  "module": "Submissions.Erdos786DistinctDensityLe34.Bonferroni",
+  "decl": "Submissions.Erdos786DistinctDensityLe34.Bonferroni.proof",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e1c0a212-ba36-4930-ba6a-15af6777524a."
+}
