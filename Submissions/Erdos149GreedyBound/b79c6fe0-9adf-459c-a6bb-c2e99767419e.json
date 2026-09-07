@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149GreedyBound",
+  "module": "Submissions.Erdos149GreedyBound.Savcab",
+  "decl": "Submissions.Erdos149GreedyBound.Savcab.greedy_bound",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b79c6fe0-9adf-459c-a6bb-c2e99767419e."
+}
