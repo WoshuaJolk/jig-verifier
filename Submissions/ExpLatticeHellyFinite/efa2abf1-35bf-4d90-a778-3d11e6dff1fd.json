@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ExpLatticeHellyFinite",
+  "module": "Submissions.ExpLatticeHellyFinite.Staircase",
+  "decl": "Submissions.ExpLatticeHellyFinite.Staircase.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact efa2abf1-35bf-4d90-a778-3d11e6dff1fd."
+}
