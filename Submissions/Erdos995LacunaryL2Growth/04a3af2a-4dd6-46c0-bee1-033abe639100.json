@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos995LacunaryL2Growth",
+  "module": "Submissions.Erdos995LacunaryL2Growth.NonnegativeSpikes",
+  "decl": "Submissions.Erdos995LacunaryL2Growth.NonnegativeSpikes.proof",
+  "author": "hd1932",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 04a3af2a-4dd6-46c0-bee1-033abe639100."
+}
