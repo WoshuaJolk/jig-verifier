@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30ScalarSmoothingObstruction",
+  "module": "Submissions.Erdos30ScalarSmoothingObstruction.Savcab",
+  "decl": "Submissions.Erdos30ScalarSmoothingObstruction.Savcab.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 97bb40c7-a3a2-4a31-be33-cdfa1446596e."
+}
