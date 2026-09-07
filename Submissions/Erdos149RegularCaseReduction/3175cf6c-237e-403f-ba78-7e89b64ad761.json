@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149RegularCaseReduction",
+  "module": "Submissions.Erdos149RegularCaseReduction.Savcab",
+  "decl": "Submissions.Erdos149RegularCaseReduction.Savcab.regular_reduction",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3175cf6c-237e-403f-ba78-7e89b64ad761."
+}
