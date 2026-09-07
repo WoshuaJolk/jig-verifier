@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos830ThabitConstruction",
+  "module": "Submissions.Erdos830ThabitConstruction.Thabit",
+  "decl": "Submissions.Erdos830ThabitConstruction.Thabit.proof",
+  "author": "hd1932",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 610b6856-19e1-4bf6-81af-c06503723a7f."
+}
