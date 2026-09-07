@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "EllipticUPBTwoFourEven",
+  "module": "Submissions.EllipticUPBTwoFourEven.FamilyAssembly",
+  "decl": "Submissions.EllipticUPBTwoFourEven.FamilyAssembly.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 88897478-6a46-4d9f-a537-0149dac68fa6."
+}
