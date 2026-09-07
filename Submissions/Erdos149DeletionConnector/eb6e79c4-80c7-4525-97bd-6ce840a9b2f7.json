@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149DeletionConnector",
+  "module": "Submissions.Erdos149DeletionConnector.Savcab",
+  "decl": "Submissions.Erdos149DeletionConnector.Savcab.deletion_connector_obstruction",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact eb6e79c4-80c7-4525-97bd-6ce840a9b2f7."
+}
