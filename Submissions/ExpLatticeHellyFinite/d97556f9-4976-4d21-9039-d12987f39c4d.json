@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ExpLatticeHellyFinite",
+  "module": "Submissions.ExpLatticeHellyFinite.Staircase",
+  "decl": "Submissions.ExpLatticeHellyFinite.Staircase.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check d97556f9-4976-4d21-9039-d12987f39c4d. Settles nothing."
+}
