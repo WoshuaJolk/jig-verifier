@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos583PathCapacity",
+  "module": "Submissions.Erdos583PathCapacity.Savcab",
+  "decl": "Submissions.Erdos583PathCapacity.Savcab.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c064e88b-e735-4e26-9da2-2c871a4f815a."
+}
