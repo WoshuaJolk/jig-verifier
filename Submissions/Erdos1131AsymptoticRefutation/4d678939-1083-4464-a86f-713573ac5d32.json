@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1131AsymptoticRefutation",
+  "module": "Submissions.Erdos1131AsymptoticRefutation.ChebyshevPort",
+  "decl": "Submissions.Erdos1131AsymptoticRefutation.ChebyshevPort.proof",
+  "author": "savcab",
+  "expect": "green",
+  "refutes": "Erdos1131LagrangeEnergyMinimum",
+  "note": "Submitted through the Jig API as artifact 4d678939-1083-4464-a86f-713573ac5d32."
+}
