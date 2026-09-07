@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos786DistinctAdditiveStructure",
+  "module": "Submissions.Erdos786DistinctAdditiveStructure.FreshQuotient",
+  "decl": "Submissions.Erdos786DistinctAdditiveStructure.FreshQuotient.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact da9badf5-e3d1-435f-b0af-f869ea50e59d."
+}
