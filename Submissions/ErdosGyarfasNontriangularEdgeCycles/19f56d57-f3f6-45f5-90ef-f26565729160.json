@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasNontriangularEdgeCycles",
+  "module": "Submissions.ErdosGyarfasNontriangularEdgeCycles.Cole",
+  "decl": "Submissions.ErdosGyarfasNontriangularEdgeCycles.Cole.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 19f56d57-f3f6-45f5-90ef-f26565729160."
+}
