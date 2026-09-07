@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1020MatchingBoundary",
+  "module": "Submissions.Erdos1020MatchingBoundary.Main",
+  "decl": "Submissions.Erdos1020MatchingBoundary.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e0ec8ecc-67f7-46d7-bf79-204e8bd7105e."
+}
