@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos529ReflectAndPack",
+  "module": "Submissions.Erdos529ReflectAndPack.Main",
+  "decl": "Submissions.Erdos529ReflectAndPack.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f8b7a6fd-d80d-4057-ae74-83f8833bb574."
+}
