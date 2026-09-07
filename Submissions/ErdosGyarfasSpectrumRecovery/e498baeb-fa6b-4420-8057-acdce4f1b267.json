@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasSpectrumRecovery",
+  "module": "Submissions.ErdosGyarfasSpectrumRecovery.Work",
+  "decl": "Submissions.ErdosGyarfasSpectrumRecovery.Work.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e498baeb-fa6b-4420-8057-acdce4f1b267."
+}
