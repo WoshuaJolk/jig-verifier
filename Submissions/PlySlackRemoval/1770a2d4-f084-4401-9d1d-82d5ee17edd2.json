@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PlySlackRemoval",
+  "module": "Submissions.PlySlackRemoval.Amplification",
+  "decl": "Submissions.PlySlackRemoval.Amplification.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1770a2d4-f084-4401-9d1d-82d5ee17edd2."
+}
