@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30SignedSmoothingBarrier",
+  "module": "Submissions.Erdos30SignedSmoothingBarrier.Savcab",
+  "decl": "Submissions.Erdos30SignedSmoothingBarrier.Savcab.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 52ccac70-7aa9-4780-ba84-07c462ce00b2."
+}
