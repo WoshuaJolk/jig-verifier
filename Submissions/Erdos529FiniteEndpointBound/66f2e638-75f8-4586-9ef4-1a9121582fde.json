@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos529FiniteEndpointBound",
+  "module": "Submissions.Erdos529FiniteEndpointBound.Main",
+  "decl": "Submissions.Erdos529FiniteEndpointBound.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 66f2e638-75f8-4586-9ef4-1a9121582fde."
+}
