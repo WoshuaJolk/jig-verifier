@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E287OmittedSquares",
+  "module": "Submissions.E287OmittedSquares.Cole",
+  "decl": "Submissions.E287OmittedSquares.Cole.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ecfcf01b-f374-451c-b579-396c9c0a61ea."
+}
