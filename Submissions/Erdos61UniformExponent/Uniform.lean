@@ -120,7 +120,7 @@ example {n : ℕ} (hn : 2 ≤ n) :
   have hi : n ≤ (⊥ : SimpleGraph (Fin n)).indepNum := by
     have h : (⊥ : SimpleGraph (Fin n)).IsIndepSet
         (↑(Finset.univ : Finset (Fin n)) : Set (Fin n)) := by
-      simp [SimpleGraph.IsIndepSet]
+      simp [SimpleGraph.IsIndepSet, Set.Pairwise]
     simpa using h.card_le_indepNum
   calc
     n < n * n := Nat.lt_mul_self_iff.2 (by omega)

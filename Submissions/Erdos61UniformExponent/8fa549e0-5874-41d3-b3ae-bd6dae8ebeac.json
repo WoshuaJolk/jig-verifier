@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos61UniformExponent",
+  "module": "Submissions.Erdos61UniformExponent.Uniform",
+  "decl": "Submissions.Erdos61UniformExponent.Uniform.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 8fa549e0-5874-41d3-b3ae-bd6dae8ebeac. Settles nothing."
+}
