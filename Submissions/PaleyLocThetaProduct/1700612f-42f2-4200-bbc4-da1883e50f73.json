@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PaleyLocThetaProduct",
+  "module": "Submissions.PaleyLocThetaProduct.Product",
+  "decl": "Submissions.PaleyLocThetaProduct.Product.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1700612f-42f2-4200-bbc4-da1883e50f73."
+}
