@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1150EndpointBoundary",
+  "module": "Submissions.Erdos1150EndpointBoundary.Main",
+  "decl": "Submissions.Erdos1150EndpointBoundary.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a9e7fa66-751b-4a1f-967c-5ad6d27d0c66."
+}
