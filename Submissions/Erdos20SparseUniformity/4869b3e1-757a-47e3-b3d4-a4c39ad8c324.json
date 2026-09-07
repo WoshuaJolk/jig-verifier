@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos20SparseUniformity",
+  "module": "Submissions.Erdos20SparseUniformity.Tensor",
+  "decl": "Submissions.Erdos20SparseUniformity.Tensor.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4869b3e1-757a-47e3-b3d4-a4c39ad8c324."
+}
