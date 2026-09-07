@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "GroupingSpreadingCounterexample",
+  "module": "Submissions.GroupingSpreadingCounterexample.Counterexample",
+  "decl": "Submissions.GroupingSpreadingCounterexample.Counterexample.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0d94491f-d1b0-47dd-aa76-4d236dee54ee."
+}
