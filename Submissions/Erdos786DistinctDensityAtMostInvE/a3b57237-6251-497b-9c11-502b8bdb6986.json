@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos786DistinctDensityAtMostInvE",
+  "module": "Submissions.Erdos786DistinctDensityAtMostInvE.FreshQuotient",
+  "decl": "Submissions.Erdos786DistinctDensityAtMostInvE.FreshQuotient.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a3b57237-6251-497b-9c11-502b8bdb6986."
+}
