@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149DegreeAtMostTwo",
+  "module": "Submissions.Erdos149DegreeAtMostTwo.Savcab",
+  "decl": "Submissions.Erdos149DegreeAtMostTwo.Savcab.degree_at_most_two",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dda8271c-1aee-4652-9da6-048c21475a0c."
+}
