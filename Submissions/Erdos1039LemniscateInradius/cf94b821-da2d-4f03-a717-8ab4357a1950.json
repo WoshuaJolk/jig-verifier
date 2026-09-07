@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039LemniscateInradius",
+  "module": "Submissions.Erdos1039LemniscateInradius.KitamuraPort",
+  "decl": "Submissions.Erdos1039LemniscateInradius.KitamuraPort.proof",
+  "author": "hd1932",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cf94b821-da2d-4f03-a717-8ab4357a1950."
+}
