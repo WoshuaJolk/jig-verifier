@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PlyGridOptimalRefuted",
+  "module": "Submissions.PlyGridOptimalRefuted.Counterexample",
+  "decl": "Submissions.PlyGridOptimalRefuted.Counterexample.proof",
+  "author": "savcab",
+  "expect": "green",
+  "refutes": "PlyGridOptimal",
+  "note": "Submitted through the Jig API as artifact f560182a-54c3-46b5-b34e-8d54e472cacf."
+}
