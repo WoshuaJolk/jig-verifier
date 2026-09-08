@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E352AnchoredQuadraticCliques",
+  "module": "Submissions.E352AnchoredQuadraticCliques.SlopeProof",
+  "decl": "Submissions.E352AnchoredQuadraticCliques.SlopeProof.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e0bc83ad-9f71-442d-8407-fb6c6123ce62."
+}
