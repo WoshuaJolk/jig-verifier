@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E301OddQuarterTransfer",
+  "module": "Submissions.E301OddQuarterTransfer.OddQuarterProof",
+  "decl": "Submissions.E301OddQuarterTransfer.OddQuarterProof.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ada6bbf3-928c-496b-b9fd-5868cdaf46d3."
+}
