@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E312MajorityCompletion",
+  "module": "Submissions.E312MajorityCompletion.Majority",
+  "decl": "Submissions.E312MajorityCompletion.Majority.majority_completion",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b1682112-9c10-4875-8b3f-fd8abf916de6."
+}
