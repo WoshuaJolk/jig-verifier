@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos3SeparatedBlocks",
+  "module": "Submissions.Erdos3SeparatedBlocks.Basic",
+  "decl": "Submissions.Erdos3SeparatedBlocks.Basic.translated_union",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ef8870ae-7a8c-420e-a89b-d62df2768d22."
+}
