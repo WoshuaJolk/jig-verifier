@@ -1,0 +1,8 @@
+import Commons.ColeskiE811Sig20260909_SignatureDesignPaletteReduction
+import Commons.ColeskiE811Sig20260909_SignatureChecksAssembly
+namespace Submissions.E811DesignPalette.ColeskiSignature
+open ColeskiSignatureChecksAssembly
+theorem proof : ColeskiSubmittedE811DesignPalette.statement :=
+  ColeskiSignatureDesignPaletteReduction.target_from_checks row_checks positivity
+end Submissions.E811DesignPalette.ColeskiSignature
+#print axioms Submissions.E811DesignPalette.ColeskiSignature.proof
