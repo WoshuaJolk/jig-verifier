@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E811DNoBalancedBase",
+  "module": "Submissions.E811DNoBalancedBase.ColeskiSignature",
+  "decl": "Submissions.E811DNoBalancedBase.ColeskiSignature.proof",
+  "author": "~kvntgn",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 049d912e-ad33-4400-897a-475a3572a48c. Settles nothing."
+}
