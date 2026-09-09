@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1159LogarithmicBlocking",
+  "module": "Submissions.Erdos1159LogarithmicBlocking.Counting",
+  "decl": "Submissions.Erdos1159LogarithmicBlocking.Counting.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 52112ed4-481e-4921-97b6-7a4db6ebe7c6."
+}
