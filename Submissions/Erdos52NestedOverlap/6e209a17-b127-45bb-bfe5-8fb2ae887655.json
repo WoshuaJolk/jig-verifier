@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52NestedOverlap",
+  "module": "Submissions.Erdos52NestedOverlap.CRT",
+  "decl": "Submissions.Erdos52NestedOverlap.CRT.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6e209a17-b127-45bb-bfe5-8fb2ae887655."
+}
