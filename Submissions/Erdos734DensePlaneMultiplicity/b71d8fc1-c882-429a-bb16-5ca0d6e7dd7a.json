@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos734DensePlaneMultiplicity",
+  "module": "Submissions.Erdos734DensePlaneMultiplicity.Proof",
+  "decl": "Submissions.Erdos734DensePlaneMultiplicity.Proof.dense_plane_multiplicity",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b71d8fc1-c882-429a-bb16-5ca0d6e7dd7a."
+}
