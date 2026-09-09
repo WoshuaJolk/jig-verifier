@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1191FiniteObstruction",
+  "module": "Submissions.Erdos1191FiniteObstruction.Compactness",
+  "decl": "Submissions.Erdos1191FiniteObstruction.Compactness.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d7c2f237-af73-422d-a396-8f3de40f86e1."
+}
