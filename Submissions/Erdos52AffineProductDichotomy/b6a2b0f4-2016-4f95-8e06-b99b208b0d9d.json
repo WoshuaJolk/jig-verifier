@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52AffineProductDichotomy",
+  "module": "Submissions.Erdos52AffineProductDichotomy.Finite",
+  "decl": "Submissions.Erdos52AffineProductDichotomy.Finite.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b6a2b0f4-2016-4f95-8e06-b99b208b0d9d."
+}
