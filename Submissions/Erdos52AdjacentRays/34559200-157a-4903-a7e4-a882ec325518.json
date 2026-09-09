@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52AdjacentRays",
+  "module": "Submissions.Erdos52AdjacentRays.Rays",
+  "decl": "Submissions.Erdos52AdjacentRays.Rays.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 34559200-157a-4903-a7e4-a882ec325518."
+}
