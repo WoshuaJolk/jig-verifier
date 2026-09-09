@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos241BoseChowlaConstruction",
+  "module": "Submissions.Erdos241BoseChowlaConstruction.BoseFinite",
+  "decl": "Submissions.Erdos241BoseChowlaConstruction.BoseFinite.lower_bound_prime",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f095300c-7d71-475b-975f-e0fd3e8cc163."
+}
