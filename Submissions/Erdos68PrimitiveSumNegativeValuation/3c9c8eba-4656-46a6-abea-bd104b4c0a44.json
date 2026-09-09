@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68PrimitiveSumNegativeValuation",
+  "module": "Submissions.Erdos68PrimitiveSumNegativeValuation.Mw2000",
+  "decl": "Submissions.Erdos68PrimitiveSumNegativeValuation.Mw2000.proof",
+  "author": "mw2000",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3c9c8eba-4656-46a6-abea-bd104b4c0a44."
+}
