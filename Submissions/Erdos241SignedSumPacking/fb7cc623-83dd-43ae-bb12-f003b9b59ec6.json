@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos241SignedSumPacking",
+  "module": "Submissions.Erdos241SignedSumPacking.Packing",
+  "decl": "Submissions.Erdos241SignedSumPacking.Packing.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact fb7cc623-83dd-43ae-bb12-f003b9b59ec6."
+}
