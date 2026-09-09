@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGyarfasClosedNeighborhoodCycles",
+  "module": "Submissions.ErdosGyarfasClosedNeighborhoodCycles.ClosedNeighborhoodContraction",
+  "decl": "Submissions.ErdosGyarfasClosedNeighborhoodCycles.ClosedNeighborhoodContraction.target",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5a840f80-f270-4449-91e4-03b6f66c205f."
+}
