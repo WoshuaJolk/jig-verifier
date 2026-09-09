@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos30IntervalReduction",
+  "module": "Submissions.Erdos30IntervalReduction.Savcab",
+  "decl": "Submissions.Erdos30IntervalReduction.Savcab.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 956e297d-c9fe-4322-a0d5-52665d407658."
+}
