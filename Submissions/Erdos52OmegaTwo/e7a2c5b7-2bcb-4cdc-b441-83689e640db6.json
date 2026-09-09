@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52OmegaTwo",
+  "module": "Submissions.Erdos52OmegaTwo.Finite",
+  "decl": "Submissions.Erdos52OmegaTwo.Finite.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e7a2c5b7-2bcb-4cdc-b441-83689e640db6."
+}
