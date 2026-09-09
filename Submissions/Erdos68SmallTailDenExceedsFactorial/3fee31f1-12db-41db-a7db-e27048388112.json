@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68SmallTailDenExceedsFactorial",
+  "module": "Submissions.Erdos68SmallTailDenExceedsFactorial.Mw2000",
+  "decl": "Submissions.Erdos68SmallTailDenExceedsFactorial.Mw2000.proof",
+  "author": "mw2000",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3fee31f1-12db-41db-a7db-e27048388112."
+}
