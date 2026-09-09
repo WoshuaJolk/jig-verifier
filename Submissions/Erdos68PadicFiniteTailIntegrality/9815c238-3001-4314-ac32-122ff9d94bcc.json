@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos68PadicFiniteTailIntegrality",
+  "module": "Submissions.Erdos68PadicFiniteTailIntegrality.Mw2000",
+  "decl": "Submissions.Erdos68PadicFiniteTailIntegrality.Mw2000.proof",
+  "author": "mw2000",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9815c238-3001-4314-ac32-122ff9d94bcc."
+}
