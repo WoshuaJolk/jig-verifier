@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52SameSumPathProducts",
+  "module": "Submissions.Erdos52SameSumPathProducts.Path",
+  "decl": "Submissions.Erdos52SameSumPathProducts.Path.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ea078c2e-f198-4381-89cf-1a63b7b40389."
+}
