@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos687PeriodicCapacity",
+  "module": "Submissions.Erdos687PeriodicCapacity.Main",
+  "decl": "Submissions.Erdos687PeriodicCapacity.Main.survivor_loss",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1f1ba435-405e-4f94-a915-790d8ddfbd8c."
+}
