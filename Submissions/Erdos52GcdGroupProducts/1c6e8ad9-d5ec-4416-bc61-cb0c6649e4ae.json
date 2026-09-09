@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos52GcdGroupProducts",
+  "module": "Submissions.Erdos52GcdGroupProducts.Groups",
+  "decl": "Submissions.Erdos52GcdGroupProducts.Groups.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1c6e8ad9-d5ec-4416-bc61-cb0c6649e4ae."
+}
