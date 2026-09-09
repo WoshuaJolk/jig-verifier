@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos20MemberTransitive",
+  "module": "Submissions.Erdos20MemberTransitive.Transitive",
+  "decl": "Submissions.Erdos20MemberTransitive.Transitive.proves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f6213871-431a-401b-9adc-90cb65761a21."
+}
