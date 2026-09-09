@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos241BoseChowlaLowerAsymptotic",
+  "module": "Submissions.Erdos241BoseChowlaLowerAsymptotic.LowerBound",
+  "decl": "Submissions.Erdos241BoseChowlaLowerAsymptotic.LowerBound.lower_bound",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 09ceb774-83cf-402c-871e-48e81b5b3cf2."
+}
