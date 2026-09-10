@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1150MomentTransfer",
+  "module": "Submissions.Erdos1150MomentTransfer.Main",
+  "decl": "Submissions.Erdos1150MomentTransfer.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cd23d6fa-4e29-4169-96a5-2553f8c9d729."
+}
