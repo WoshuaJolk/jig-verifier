@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1150IntegerCriterion",
+  "module": "Submissions.Erdos1150IntegerCriterion.Main",
+  "decl": "Submissions.Erdos1150IntegerCriterion.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 70882758-51b2-4e8b-8624-9ce2f9d50f94."
+}
