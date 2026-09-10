@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos583EvenReduction",
+  "module": "Submissions.Erdos583EvenReduction.Savcab",
+  "decl": "Submissions.Erdos583EvenReduction.Savcab.full_iff_even",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 81bc73d9-0438-4cb8-9426-102f60f6d331."
+}
