@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos743Stars",
+  "module": "Submissions.Erdos743Stars.Stars",
+  "decl": "Submissions.Erdos743Stars.Stars.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c9d5bfe5-dc25-4a24-9c35-49eaa7207857."
+}
