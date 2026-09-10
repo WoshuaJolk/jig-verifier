@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos241UpperFourAsymptotic",
+  "module": "Submissions.Erdos241UpperFourAsymptotic.UpperBound",
+  "decl": "Submissions.Erdos241UpperFourAsymptotic.UpperBound.upper_bound",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 8dafc9d4-6525-4a40-8326-fad29856c0ab."
+}
