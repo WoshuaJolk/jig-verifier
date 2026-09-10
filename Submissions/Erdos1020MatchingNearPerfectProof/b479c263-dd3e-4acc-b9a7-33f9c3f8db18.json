@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1020MatchingNearPerfectProof",
+  "module": "Submissions.Erdos1020MatchingNearPerfectProof.Main",
+  "decl": "Submissions.Erdos1020MatchingNearPerfectProof.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b479c263-dd3e-4acc-b9a7-33f9c3f8db18."
+}
