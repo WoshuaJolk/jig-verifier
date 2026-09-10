@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "QuarticSeedEvenOrders",
+  "module": "Submissions.QuarticSeedEvenOrders.Assembly",
+  "decl": "Submissions.QuarticSeedEvenOrders.Assembly.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 557920f2-213c-468a-bff1-1645416cbb36."
+}
