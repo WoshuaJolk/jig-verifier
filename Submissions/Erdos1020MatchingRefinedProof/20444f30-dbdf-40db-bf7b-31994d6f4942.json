@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1020MatchingRefinedProof",
+  "module": "Submissions.Erdos1020MatchingRefinedProof.Main",
+  "decl": "Submissions.Erdos1020MatchingRefinedProof.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 20444f30-dbdf-40db-bf7b-31994d6f4942."
+}
