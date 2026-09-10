@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos529EndpointCollisionCriterion",
+  "module": "Submissions.Erdos529EndpointCollisionCriterion.Main",
+  "decl": "Submissions.Erdos529EndpointCollisionCriterion.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7f96ca97-c6b8-4c2f-a14f-bc1018494f6c."
+}
