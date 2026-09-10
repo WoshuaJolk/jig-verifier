@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos529FiniteRepulsionTransfer",
+  "module": "Submissions.Erdos529FiniteRepulsionTransfer.Main",
+  "decl": "Submissions.Erdos529FiniteRepulsionTransfer.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 44851537-c469-4c14-88d1-4371c0b5008d."
+}
