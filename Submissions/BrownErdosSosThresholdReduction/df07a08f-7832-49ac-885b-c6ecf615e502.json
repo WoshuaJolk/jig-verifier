@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "BrownErdosSosThresholdReduction",
+  "module": "Submissions.BrownErdosSosThresholdReduction.Main",
+  "decl": "Submissions.BrownErdosSosThresholdReduction.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact df07a08f-7832-49ac-885b-c6ecf615e502."
+}
