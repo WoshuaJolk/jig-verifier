@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos643CoreCountingCriterion",
+  "module": "Submissions.Erdos643CoreCountingCriterion.Main",
+  "decl": "Submissions.Erdos643CoreCountingCriterion.Main.card_le_choose_of_core_counting",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6e46e1c7-0c1f-4236-b49d-54794ae076cb."
+}
