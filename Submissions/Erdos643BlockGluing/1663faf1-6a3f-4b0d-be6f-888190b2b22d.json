@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos643BlockGluing",
+  "module": "Submissions.Erdos643BlockGluing.Main",
+  "decl": "Submissions.Erdos643BlockGluing.Main.block_gluing_avoids",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1663faf1-6a3f-4b0d-be6f-888190b2b22d."
+}
