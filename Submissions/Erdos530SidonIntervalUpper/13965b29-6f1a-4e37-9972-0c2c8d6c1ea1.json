@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos530SidonIntervalUpper",
+  "module": "Submissions.Erdos530SidonIntervalUpper.Main",
+  "decl": "Submissions.Erdos530SidonIntervalUpper.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 13965b29-6f1a-4e37-9972-0c2c8d6c1ea1."
+}
