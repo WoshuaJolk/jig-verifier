@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149FalseTwinDeletion",
+  "module": "Submissions.Erdos149FalseTwinDeletion.Savcab",
+  "decl": "Submissions.Erdos149FalseTwinDeletion.Savcab.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 4456d020-9072-4974-aab4-7a8ef69299f6."
+}
