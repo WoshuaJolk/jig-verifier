@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos963TernaryBound",
+  "module": "Submissions.Erdos963TernaryBound.Savcab",
+  "decl": "Submissions.Erdos963TernaryBound.Savcab.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 3cd1602c-dc4b-4aba-b542-b295843c0f78."
+}
