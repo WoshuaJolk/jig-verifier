@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos149K23Deletion",
+  "module": "Submissions.Erdos149K23Deletion.Savcab",
+  "decl": "Submissions.Erdos149K23Deletion.Savcab.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b2f03904-dd1d-4896-8f65-6510d60f29e1."
+}
