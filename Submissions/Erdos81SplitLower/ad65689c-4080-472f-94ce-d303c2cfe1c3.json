@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos81SplitLower",
+  "module": "Submissions.Erdos81SplitLower.SplitLower",
+  "decl": "Submissions.Erdos81SplitLower.SplitLower.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ad65689c-4080-472f-94ce-d303c2cfe1c3."
+}
