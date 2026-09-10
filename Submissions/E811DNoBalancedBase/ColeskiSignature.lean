@@ -1,8 +1,0 @@
-import Commons.ColeskiE811Sig20260909_SignatureDReduction
-import Commons.ColeskiE811Sig20260909_SignatureChecksAssembly
-namespace Submissions.E811DNoBalancedBase.ColeskiSignature
-open ColeskiSignatureChecksAssembly
-theorem proof : ColeskiSubmittedE811DNoBalancedBase.statement :=
-  ColeskiSignatureDReduction.target_from_checks row_checks positivity
-end Submissions.E811DNoBalancedBase.ColeskiSignature
-#print axioms Submissions.E811DNoBalancedBase.ColeskiSignature.proof
