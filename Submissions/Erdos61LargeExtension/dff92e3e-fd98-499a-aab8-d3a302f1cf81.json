@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos61LargeExtension",
+  "module": "Submissions.Erdos61LargeExtension.Extension",
+  "decl": "Submissions.Erdos61LargeExtension.Extension.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dff92e3e-fd98-499a-aab8-d3a302f1cf81."
+}
