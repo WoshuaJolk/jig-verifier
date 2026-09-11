@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E810ProperExtraction",
+  "module": "Submissions.E810ProperExtraction.Proof",
+  "decl": "Submissions.E810ProperExtraction.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0945ec1c-2f5c-4bee-b506-c05845b5a13a."
+}
