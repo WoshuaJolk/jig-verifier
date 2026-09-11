@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1020MatchingFKFiveThirdsProof",
+  "module": "Submissions.Erdos1020MatchingFKFiveThirdsProof.Main",
+  "decl": "Submissions.Erdos1020MatchingFKFiveThirdsProof.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0e65aa2d-a733-4243-8423-3c5bb872550d."
+}
