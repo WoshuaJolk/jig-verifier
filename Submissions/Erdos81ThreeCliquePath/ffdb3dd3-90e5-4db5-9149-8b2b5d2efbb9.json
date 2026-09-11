@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos81ThreeCliquePath",
+  "module": "Submissions.Erdos81ThreeCliquePath.Proof",
+  "decl": "Submissions.Erdos81ThreeCliquePath.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ffdb3dd3-90e5-4db5-9149-8b2b5d2efbb9."
+}
