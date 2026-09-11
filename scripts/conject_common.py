@@ -13,6 +13,7 @@ import os
 import pathlib
 import subprocess
 import sys
+import time
 
 VERDICT_SCHEMA = "conject.verdict.v1"
 
@@ -175,6 +176,82 @@ def run(cmd, cwd=None, timeout=None, env=None):
         text=True,
         errors="replace",
     )
+
+
+class Streamed:
+    """What a streamed command did: its output, and how far it got."""
+
+    def __init__(self, returncode: int, output: str, built: int, last: str, seconds: float):
+        self.returncode = returncode
+        self.stdout = output
+        self.stderr = ""
+        self.built = built
+        self.last = last
+        self.seconds = seconds
+
+
+def run_streamed(cmd, timeout: float, cwd=None, env=None, every: int = 250, keep: int = 400) -> Streamed:
+    """Run a build, echoing progress as it goes.
+
+    A capture-everything run tells you nothing until it ends, so a five-hour build
+    that timed out reported no output at all. This prints one line per `every`
+    modules and keeps the tail for the verdict. Raises TimeoutExpired past
+    `timeout`, carrying the progress made.
+    """
+    import collections
+    import threading
+
+    started = time.monotonic()
+    proc = subprocess.Popen(
+        cmd,
+        cwd=cwd or REPO_ROOT,
+        env=env or os.environ.copy(),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        errors="replace",
+        bufsize=1,
+    )
+    lines: collections.deque = collections.deque(maxlen=keep)
+    state = {"built": 0, "last": ""}
+
+    def reader() -> None:
+        assert proc.stdout is not None
+        for line in proc.stdout:
+            line = line.rstrip()
+            lines.append(line)
+            if "] Built " in line:
+                state["built"] += 1
+                state["last"] = line[-140:]
+                if state["built"] % every == 0:
+                    print(f"[{(time.monotonic() - started) / 60:6.1f}m] built {state['built']}: {state['last']}", flush=True)
+
+    t = threading.Thread(target=reader, daemon=True)
+    t.start()
+    while proc.poll() is None:
+        if time.monotonic() - started > timeout:
+            proc.kill()
+            t.join(timeout=5)
+            raise subprocess.TimeoutExpired(
+                cmd, timeout, output=f"{state['built']}\t{state['last']}"
+            )
+        time.sleep(1)
+    t.join(timeout=10)
+    return Streamed(proc.returncode, "\n".join(lines), state["built"], state["last"], time.monotonic() - started)
+
+
+def machine_info() -> dict:
+    """Cores and memory, so a slow build can be read against the box it ran on."""
+    info: dict = {"cpus": os.cpu_count()}
+    try:
+        meminfo = pathlib.Path("/proc/meminfo").read_text()
+        for ln in meminfo.splitlines():
+            if ln.startswith("MemTotal:"):
+                info["memory_mb"] = int(ln.split()[1]) // 1024
+                break
+    except Exception:
+        pass
+    return info
 
 
 def tail(s: str, n: int = 4000) -> str:

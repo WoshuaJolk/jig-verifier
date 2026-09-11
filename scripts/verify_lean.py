@@ -35,7 +35,9 @@ from conject_common import (  # noqa: E402
     finish,
     new_verdict,
     record,
+    machine_info,
     run,
+    run_streamed,
     sha256_file,
     tail,
     toolchain_info,
@@ -282,12 +284,21 @@ def main() -> int:
     if refutes:
         build_targets.append(f"Statements.{refutes}")
     t0 = time.monotonic()
+    verdict["machine"] = machine_info()
+    expected = f" of {len(found)}" if external else ""
     try:
-        proc = run(["lake", "build", *build_targets], timeout=remaining())
-    except subprocess.TimeoutExpired:
-        record(verdict, "build", False, "timeout")
-        return finish(fail(verdict, "timeout", "step=build: lake build exceeded the wall budget"), args.out)
+        proc = run_streamed(["lake", "build", *build_targets], timeout=remaining())
+    except subprocess.TimeoutExpired as e:
+        built, _, last = (e.output if isinstance(e.output, str) else "").partition("\t")
+        verdict["timings_sec"]["build"] = round(time.monotonic() - t0, 2)
+        if external:
+            verdict["external"]["modules_built"] = int(built or 0)
+        d = f"step=build: lake build exceeded the wall budget having built {built or 0}{expected} modules"
+        record(verdict, "build", False, d, output=f"last: {last}")
+        return finish(fail(verdict, "timeout", d), args.out)
     verdict["timings_sec"]["build"] = round(time.monotonic() - t0, 2)
+    if external:
+        verdict["external"]["modules_built"] = proc.built
     if proc.returncode != 0:
         full = lean_output(proc)
         d = tail(lean_errors(proc) or full)
