@@ -26,6 +26,7 @@ import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
+import external_source  # noqa: E402
 import lean_policy  # noqa: E402
 from conject_common import (  # noqa: E402
     ALLOWED_AXIOMS,
@@ -212,7 +213,10 @@ def main() -> int:
         record(verdict, "manifest", False, d)
         return finish(fail(verdict, "bad_manifest", d), args.out)
 
-    if not decl.startswith(module + "."):
+    external = manifest.get("external")
+    # A pinned package names its own modules, so its decl need not share the root's prefix;
+    # provenance still pins the decl to the root module.
+    if not external and not decl.startswith(module + "."):
         d = f"decl {decl!r} is not inside module {module!r}"
         record(verdict, "manifest", False, d)
         return finish(fail(verdict, "bad_manifest", d), args.out)
@@ -220,29 +224,52 @@ def main() -> int:
     statement_module = f"Statements.{sid}"
     statement_const = f"{statement_module}.statement"
     stmt_src = module_to_path(statement_module)
-    sub_src = module_to_path(module)
 
     if not stmt_src.exists():
         d = f"no canonical statement at {stmt_src.relative_to(REPO_ROOT)}"
         record(verdict, "manifest", False, d)
         return finish(fail(verdict, "unknown_statement", d), args.out)
-    if not sub_src.exists():
-        d = f"no source at {sub_src.relative_to(REPO_ROOT)}"
-        record(verdict, "manifest", False, d)
-        return finish(fail(verdict, "missing_source", d), args.out)
+
+    if external:
+        t0 = time.monotonic()
+        try:
+            spec = external_source.validate(external)
+            verdict["external"] = dict(spec)
+            src = external_source.fetch(spec, timeout=min(900.0, remaining()))
+            found = external_source.closure(src, module)
+            problems = external_source.admit(found, src)
+            sub_src, source_hash = external_source.stage(found, module)
+        except external_source.Rejected as e:
+            record(verdict, "manifest", False, e.detail)
+            return finish(fail(verdict, e.reason, e.detail), args.out)
+        except subprocess.TimeoutExpired:
+            record(verdict, "manifest", False, "timeout")
+            return finish(fail(verdict, "timeout", "step=fetch: fetching the pinned source exceeded the budget"), args.out)
+        verdict["timings_sec"]["fetch"] = round(time.monotonic() - t0, 2)
+        verdict["external"].update(
+            modules=len(found), source_bytes=sum(p.stat().st_size for p in found.values())
+        )
+        verdict["submission_source_hash"] = source_hash
+    else:
+        sub_src = module_to_path(module)
+        if not sub_src.exists():
+            d = f"no source at {sub_src.relative_to(REPO_ROOT)}"
+            record(verdict, "manifest", False, d)
+            return finish(fail(verdict, "missing_source", d), args.out)
+        verdict["submission_source_hash"] = sha256_file(sub_src)
+        problems = lean_policy.scan(sub_src.read_text())
 
     record(verdict, "manifest", True)
-    verdict["submission_source_hash"] = sha256_file(sub_src)
     verdict["statement_source_hash"] = sha256_file(stmt_src)
 
     workdir = REPO_ROOT / args.work / f"{sid}__{module.replace('.', '_')}"
     workdir.mkdir(parents=True, exist_ok=True)
 
     # --- 1. static policy scan ---------------------------------------------
-    problems = lean_policy.scan(sub_src.read_text())
+    # Never build a source the scan refused: building runs its code.
     if problems:
-        record(verdict, "static_policy", False, "; ".join(problems))
-        fail(verdict, "forbidden_syntax", problems[0])
+        record(verdict, "static_policy", False, "; ".join(problems[:50]))
+        return finish(fail(verdict, "forbidden_syntax", problems[0]), args.out)
     else:
         record(verdict, "static_policy", True)
 
@@ -442,7 +469,11 @@ def main() -> int:
 
 if __name__ == "__main__":
     try:
-        sys.exit(main())
+        try:
+            code = main()
+        finally:
+            external_source.unstage()
+        sys.exit(code)
     except Exception as e:  # a crashing verifier must still say RED
         v = new_verdict(kind="lean", reason="verifier_error", detail=f"{type(e).__name__}: {e}")
         out = None
