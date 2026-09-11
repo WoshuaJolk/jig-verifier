@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1020MatchingFKRankFiveProof",
+  "module": "Submissions.Erdos1020MatchingFKRankFiveProof.Main",
+  "decl": "Submissions.Erdos1020MatchingFKRankFiveProof.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9f5aa057-6fec-4745-8b97-1a0160eec6de."
+}
