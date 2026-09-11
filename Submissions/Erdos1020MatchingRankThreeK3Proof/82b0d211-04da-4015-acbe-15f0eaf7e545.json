@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1020MatchingRankThreeK3Proof",
+  "module": "Submissions.Erdos1020MatchingRankThreeK3Proof.Main",
+  "decl": "Submissions.Erdos1020MatchingRankThreeK3Proof.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 82b0d211-04da-4015-acbe-15f0eaf7e545."
+}
