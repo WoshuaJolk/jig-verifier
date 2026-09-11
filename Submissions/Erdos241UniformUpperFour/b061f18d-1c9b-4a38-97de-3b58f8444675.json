@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos241UniformUpperFour",
+  "module": "Submissions.Erdos241UniformUpperFour.Proof",
+  "decl": "Submissions.Erdos241UniformUpperFour.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b061f18d-1c9b-4a38-97de-3b58f8444675."
+}
