@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos563RamseyAsymptotic",
+  "module": "Submissions.Erdos563RamseyAsymptotic.Main",
+  "decl": "Submissions.Erdos563RamseyAsymptotic.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dc3b2639-e70b-49e1-928d-c56d9e4cf673."
+}
