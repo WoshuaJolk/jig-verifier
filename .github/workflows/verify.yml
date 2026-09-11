@@ -24,7 +24,7 @@ on:
         required: false
         default: "default"
         type: choice
-        options: [default, heavy]
+        options: [default, heavy, long]
   pull_request:
   push:
     branches: [main]
@@ -47,19 +47,24 @@ env:
   # pays nothing either way. It is a trust control. A verification nobody can
   # afford to repeat is not much better than testimony, so the default stays
   # tight and anything slower has to ask, in the open, on the record.
-  CONJECT_TIMEOUT: ${{ (github.event.inputs.lane == 'heavy') && '3300' || '900' }}
+  #
+  # `long` is for Lean builds only (a pinned package of thousands of modules): proof
+  # grade does not depend on compile time. It runs up to GitHub's 6-hour job ceiling.
+  CONJECT_TIMEOUT: ${{ (github.event.inputs.lane == 'long') && '20100' || ((github.event.inputs.lane == 'heavy') && '3300' || '900') }}
 
 jobs:
   verify:
     runs-on: ubuntu-latest
     # A backstop, not the budget: CONJECT_TIMEOUT above is what actually bounds a
     # run, and it always stops the driver first so a verdict gets written.
-    timeout-minutes: 70
+    timeout-minutes: ${{ github.event.inputs.lane == 'long' && 355 || 70 }}
 
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref || github.ref }}
+          # Submission code runs during the build; it gets no token to find.
+          persist-credentials: false
 
       - name: Install elan
         run: |
@@ -198,8 +203,10 @@ jobs:
       # graph or the submission stays `pending` forever and nothing auto-closes.
       # Signed with the shared secret; the receiver compares in constant time
       # and is idempotent, so a retry cannot double-settle.
+      # Not on a cancellation or job timeout: the driver never wrote its verdict, and
+      # whatever sits in the working tree may have been written by submission code.
       - name: Deliver verdicts
-        if: always()
+        if: always() && !cancelled()
         env:
           CONJECT_API_URL: ${{ secrets.CONJECT_API_URL }}
           CONJECT_WEBHOOK_SECRET: ${{ secrets.CONJECT_WEBHOOK_SECRET }}
@@ -221,7 +228,10 @@ jobs:
           forced = (os.environ.get("ARTIFACT_ID") or "").strip()
           UUID   = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
 
-          files = sorted(glob.glob(".conject/verdicts/*.json")) + glob.glob("verdict.json")
+          # A dispatched run settles one artifact, from the file the driver wrote last.
+          # Self-test verdicts are only delivered on runs that carry no artifact.
+          files = glob.glob("verdict.json") if forced else (
+              sorted(glob.glob(".conject/verdicts/*.json")) + glob.glob("verdict.json"))
           if not files:
               print("::warning::no verdict files to deliver")
               sys.exit(0)
@@ -273,6 +283,11 @@ jobs:
           # Delivery failure must be loud. A silent drop leaves the graph wrong.
           sys.exit(1 if failed else 0)
           PY
+
+      # A pinned package's oleans must not reach the shared build cache saved below.
+      - name: Drop external build output
+        if: always()
+        run: python3 scripts/external_source.py --drop-build
 
       - name: Upload verdicts
         if: always()

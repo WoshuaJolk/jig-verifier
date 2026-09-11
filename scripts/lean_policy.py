@@ -51,9 +51,27 @@ FORBIDDEN = [
     (r"\bskipKernelTC\b", "debug.skipKernelTC"),
     (r"set_option\s+debug\b", "set_option debug.*"),
     (r"\bregister_simp_attr\b", "register_simp_attr"),
+    # Each of these runs arbitrary code while the file elaborates.
+    (r"\bunsafe[A-Z]\w*", "unsafe primitive"),
+    (r"\brun_tac\b", "run_tac"),
+    (r"\brun_meta\b", "run_meta"),
+    (r"\brun_elab\b", "run_elab"),
+    (r"\bbuiltin_initialize\b", "builtin_initialize"),
+    (r"\b(?:builtin_)?d?simproc(?:_decl)?\b", "simproc"),
+    (r"^[ \t]*(?:@\[[^\]]*\][ \t]*)?(?:(?:local|scoped|private|protected)[ \t]+)*"
+     r"(?:macro|macro_rules|syntax|elab|elab_rules|declare_syntax_cat)\b",
+     "macro, syntax or elab declaration"),
+    (r"(?:@\[|\battribute[ \t]*\[)[^\]]*\b(?:tactic|command_elab|term_elab|macro|delab|"
+     r"app_unexpander|init|builtin_init|norm_num|positivity|env_linter|command_parser|"
+     r"term_parser)\b", "attribute that registers code"),
+    (r"\b(?:IO|EIO|BaseIO|TacticM|MetaM|CoreM|TermElabM|CommandElabM|MacroM|DelabM|SimprocM)\b",
+     "IO or metaprogramming monad"),
+    (r"\bLean\.(?:Elab|Meta|Parser|Compiler|IR|Environment|Macro)\b", "metaprogramming API"),
+    (r"^[ \t]*open\b[^\n]*\b(?:Elab|Meta|Parser)\b", "opens a metaprogramming namespace"),
 ]
 
 _COMPILED = [(re.compile(p, re.MULTILINE), name) for p, name in FORBIDDEN]
+_IMPORT = re.compile(r"^\s*import\s+([A-Za-z0-9_.']+)", re.MULTILINE)
 
 
 def strip_comments(src: str) -> str:
@@ -110,15 +128,26 @@ def strip_comments(src: str) -> str:
     return "".join(out)
 
 
-def scan(src: str) -> list[str]:
-    """Return a list of policy violations. Empty means the source is admissible."""
+def imports(src: str) -> list[str]:
+    """The modules a source imports, read after comments are stripped."""
+    clean = strip_comments(src)
+    return [m.group(1) for m in _IMPORT.finditer(clean)]
+
+
+def scan(src: str, local_modules: frozenset[str] = frozenset()) -> list[str]:
+    """Return a list of policy violations. Empty means the source is admissible.
+
+    `local_modules` are the other files of the same pinned submission, which it may import.
+    """
     clean = strip_comments(src)
     problems: list[str] = []
 
-    for m in re.finditer(r"^\s*import\s+([A-Za-z0-9_.']+)", clean, re.MULTILINE):
+    for m in _IMPORT.finditer(clean):
         mod = m.group(1)
         root = mod.split(".")[0]
         line = clean[: m.start()].count("\n") + 1
+        if mod in local_modules:
+            continue
         if root in EXPLAINED_IMPORT_ROOTS:
             problems.append(
                 f"line {line}: forbidden import `{mod}` — {EXPLAINED_IMPORT_ROOTS[root]}"
