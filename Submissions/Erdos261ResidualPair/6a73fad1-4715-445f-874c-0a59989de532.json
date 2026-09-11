@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos261ResidualPair",
+  "module": "Submissions.Erdos261ResidualPair.Proof",
+  "decl": "Submissions.Erdos261ResidualPair.Proof.proof",
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6a73fad1-4715-445f-874c-0a59989de532."
+}
