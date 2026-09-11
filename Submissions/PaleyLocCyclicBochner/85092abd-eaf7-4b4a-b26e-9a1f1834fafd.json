@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PaleyLocCyclicBochner",
+  "module": "Submissions.PaleyLocCyclicBochner.FiniteBochner",
+  "decl": "Submissions.PaleyLocCyclicBochner.FiniteBochner.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 85092abd-eaf7-4b4a-b26e-9a1f1834fafd."
+}
