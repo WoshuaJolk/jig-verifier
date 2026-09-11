@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "E810BalancedReduction",
+  "module": "Submissions.E810BalancedReduction.Proof",
+  "decl": "Submissions.E810BalancedReduction.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a51db8bf-07e0-47ad-a372-e11ab043672a."
+}
