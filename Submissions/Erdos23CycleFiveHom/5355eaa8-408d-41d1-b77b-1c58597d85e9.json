@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos23CycleFiveHom",
+  "module": "Submissions.Erdos23CycleFiveHom.Main",
+  "decl": "Submissions.Erdos23CycleFiveHom.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5355eaa8-408d-41d1-b77b-1c58597d85e9."
+}
