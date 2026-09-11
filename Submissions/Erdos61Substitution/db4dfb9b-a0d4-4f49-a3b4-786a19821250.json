@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos61Substitution",
+  "module": "Submissions.Erdos61Substitution.Closure",
+  "decl": "Submissions.Erdos61Substitution.Closure.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact db4dfb9b-a0d4-4f49-a3b4-786a19821250."
+}
