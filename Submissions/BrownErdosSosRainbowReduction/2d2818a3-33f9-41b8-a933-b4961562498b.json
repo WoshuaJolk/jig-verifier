@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "BrownErdosSosRainbowReduction",
+  "module": "Submissions.BrownErdosSosRainbowReduction.Main",
+  "decl": "Submissions.BrownErdosSosRainbowReduction.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2d2818a3-33f9-41b8-a933-b4961562498b."
+}
