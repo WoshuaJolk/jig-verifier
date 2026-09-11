@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos530SidonStripDomination",
+  "module": "Submissions.Erdos530SidonStripDomination.Main",
+  "decl": "Submissions.Erdos530SidonStripDomination.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 41c859c4-b13b-4bf6-882d-0d2af2b155b8."
+}
