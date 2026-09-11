@@ -1,0 +1,15 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1045SixPointExact",
+  "module": "Erdos1045N6Final",
+  "decl": "Erdos1045N6.six_point_exact_maximum",
+  "external": {
+    "dir": "erdos1045-n6",
+    "repo": "https://github.com/coleski/erdos1045",
+    "commit": "59ede5a12403d62d00fa21b59597dbb6c01fb0a2"
+  },
+  "author": "~amqrrk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b790d1d8-99d5-47eb-99ad-0fff45dc792e."
+}
