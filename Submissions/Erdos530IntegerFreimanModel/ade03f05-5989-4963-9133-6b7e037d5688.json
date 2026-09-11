@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos530IntegerFreimanModel",
+  "module": "Submissions.Erdos530IntegerFreimanModel.Main",
+  "decl": "Submissions.Erdos530IntegerFreimanModel.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ade03f05-5989-4963-9133-6b7e037d5688."
+}
