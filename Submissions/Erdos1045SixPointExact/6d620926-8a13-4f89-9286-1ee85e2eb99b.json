@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1045SixPointExact",
+  "module": "Submissions.Erdos1045SixPointExact.ColeskiCompact",
+  "decl": "Submissions.Erdos1045SixPointExact.ColeskiCompact.proof",
+  "author": "~amqrrk",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 6d620926-8a13-4f89-9286-1ee85e2eb99b. Settles nothing."
+}
