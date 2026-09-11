@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos530IntegerFreimanCompression",
+  "module": "Submissions.Erdos530IntegerFreimanCompression.Main",
+  "decl": "Submissions.Erdos530IntegerFreimanCompression.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 10c1d9ed-1801-44b6-b227-d68df508540c."
+}
