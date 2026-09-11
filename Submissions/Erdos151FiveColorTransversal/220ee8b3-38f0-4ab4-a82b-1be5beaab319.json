@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos151FiveColorTransversal",
+  "module": "Submissions.Erdos151FiveColorTransversal.Main",
+  "decl": "Submissions.Erdos151FiveColorTransversal.Main.result",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 220ee8b3-38f0-4ab4-a82b-1be5beaab319."
+}
