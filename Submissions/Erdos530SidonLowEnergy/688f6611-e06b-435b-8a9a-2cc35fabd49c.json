@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos530SidonLowEnergy",
+  "module": "Submissions.Erdos530SidonLowEnergy.Main",
+  "decl": "Submissions.Erdos530SidonLowEnergy.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 688f6611-e06b-435b-8a9a-2cc35fabd49c."
+}
