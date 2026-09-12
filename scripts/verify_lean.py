@@ -179,6 +179,13 @@ def main() -> int:
     ap.add_argument("--out", help="where to write the verdict JSON")
     ap.add_argument("--timeout", type=int, default=1200, help="total wall budget, seconds")
     ap.add_argument("--work", default=".conject/work")
+    # A package too large for one job is built by several, each running one phase.
+    ap.add_argument("--phase", default="all",
+                    choices=["all", "plan", "build", "replay", "finish"])
+    ap.add_argument("--plan", default=".conject/external/plan.json")
+    ap.add_argument("--wave", type=int, default=0)
+    ap.add_argument("--shard", type=int, default=0)
+    ap.add_argument("--max-shards", type=int, default=12)
     args = ap.parse_args()
 
     started = time.monotonic()
@@ -275,14 +282,86 @@ def main() -> int:
     else:
         record(verdict, "static_policy", True)
 
+    # --- phases -------------------------------------------------------------
+    # Every phase stages the source first: the lakefile library, the module paths
+    # and the hash all have to exist before a shard can build or replay anything.
+    shard: list[str] = []
+    if args.phase != "all":
+        if not external:
+            d = "--phase is only for a pinned package"
+            record(verdict, "manifest", False, d)
+            return finish(fail(verdict, "bad_manifest", d), args.out)
+        plan_path = pathlib.Path(args.plan)
+        if args.phase == "plan":
+            plan = external_source.waves(found, max_shards=args.max_shards)
+            plan_path.parent.mkdir(parents=True, exist_ok=True)
+            plan_path.write_text(json.dumps({
+                "statement_id": sid,
+                "module": module,
+                "decl": decl,
+                "external": verdict["external"],
+                "source_hash": verdict["submission_source_hash"],
+                "modules": len(found),
+                "waves": plan,
+            }, indent=1))
+            print(f"planned {len(found)} modules into {len(plan)} waves, "
+                  f"{sum(len(w) for w in plan)} shards -> {plan_path}")
+            return 0
+        try:
+            planned = json.loads(plan_path.read_text())
+        except Exception as e:
+            d = f"could not read the plan at {args.plan}: {e}"
+            record(verdict, "manifest", False, d)
+            return finish(fail(verdict, "verifier_error", d), args.out)
+        # The commit is pinned, so a staged tree that hashes differently means the
+        # phases are not looking at the same source.
+        if planned.get("source_hash") != verdict["submission_source_hash"]:
+            d = "the staged source does not match the plan's source hash"
+            record(verdict, "manifest", False, d)
+            return finish(fail(verdict, "verifier_error", d), args.out)
+        if args.phase in ("build", "replay"):
+            try:
+                shard = planned["waves"][args.wave][args.shard]
+            except Exception:
+                d = f"no shard {args.wave}/{args.shard} in the plan"
+                record(verdict, "manifest", False, d)
+                return finish(fail(verdict, "verifier_error", d), args.out)
+
+    # --- kernel replay (one shard) ------------------------------------------
+    # Shards trust each other's oleans, so before the bridge every declaration is
+    # replayed through the kernel. This is what makes a build split across runners
+    # worth the same as one built here.
+    if args.phase == "replay":
+        t0 = time.monotonic()
+        for i in range(0, len(shard), 100):
+            chunk = shard[i : i + 100]
+            try:
+                proc = run(["lake", "env", "leanchecker", *chunk], timeout=remaining())
+            except subprocess.TimeoutExpired:
+                d = f"step=replay: exceeded the wall budget after {i} of {len(shard)} modules"
+                record(verdict, "kernel_replay", False, d)
+                return finish(fail(verdict, "timeout", d), args.out)
+            if proc.returncode != 0:
+                full = lean_output(proc)
+                d = tail(lean_errors(proc) or full)
+                record(verdict, "kernel_replay", False, d, output=full)
+                return finish(fail(verdict, "audit_failed", f"step=replay: {d}"), args.out)
+            print(f"replayed {min(i + 100, len(shard))}/{len(shard)}", flush=True)
+        print(f"kernel replayed {len(shard)} modules in {time.monotonic() - t0:.0f}s")
+        return 0
+
     # --- 2. build -----------------------------------------------------------
     # The refutation target is imported by the bridge in step 6, so it has to be
     # built here with everything else. Leaving it out made a missing olean look
     # like a failed refutation.
     refutes = manifest.get("refutes")
-    build_targets = [module, statement_module, "Verify.Guard"]
-    if refutes:
-        build_targets.append(f"Statements.{refutes}")
+    if args.phase == "build":
+        # Only this shard: its dependencies arrive already built from earlier waves.
+        build_targets = list(shard)
+    else:
+        build_targets = [module, statement_module, "Verify.Guard"]
+        if refutes:
+            build_targets.append(f"Statements.{refutes}")
     t0 = time.monotonic()
     verdict["machine"] = machine_info()
     expected = f" of {len(found)}" if external else ""
@@ -305,6 +384,9 @@ def main() -> int:
         record(verdict, "build", False, d, output=full)
         return finish(fail(verdict, "build_failed", d), args.out)
     record(verdict, "build", True)
+    if args.phase == "build":
+        print(f"built {proc.built} of {len(shard)} modules in wave {args.wave} shard {args.shard}")
+        return 0
 
     # --- 3. anti-restatement -----------------------------------------------
     tc_file = workdir / "TypeCheck.lean"
