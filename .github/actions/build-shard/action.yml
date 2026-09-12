@@ -1,0 +1,91 @@
+name: Build or replay one shard
+description: Restore earlier waves' oleans, run one phase of a pinned package, and hand the output on.
+
+inputs:
+  phase:
+    description: build or replay
+    required: true
+  wave:
+    required: false
+    default: "0"
+  shard:
+    required: true
+  statement_id:
+    required: true
+  submission:
+    required: true
+  timeout:
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/lean-setup
+
+    - name: Fetch the plan
+      uses: actions/download-artifact@v4
+      with:
+        name: conject-plan
+        path: .conject/external
+
+    # Everything built so far. Lake reads these as up to date and builds only
+    # what this shard owns; without them it would rebuild the whole closure.
+    - name: Restore earlier waves
+      if: ${{ inputs.phase == 'replay' || inputs.wave != '0' }}
+      uses: actions/download-artifact@v4
+      with:
+        pattern: oleans-*
+        merge-multiple: true
+        path: .lake/build/lib/lean
+
+    - name: Run the shard
+      shell: bash
+      env:
+        STATEMENT_ID: ${{ inputs.statement_id }}
+        SUBMISSION: ${{ inputs.submission }}
+      run: |
+        set -uo pipefail
+        python3 scripts/verify_lean.py \
+          --statement "$STATEMENT_ID" \
+          --submission "$SUBMISSION" \
+          --phase "${{ inputs.phase }}" \
+          --wave "${{ inputs.wave }}" \
+          --shard "${{ inputs.shard }}" \
+          --plan .conject/external/plan.json \
+          --out verdict.json \
+          --timeout "${{ inputs.timeout }}"
+
+    # Only this shard's modules: the artifact is what the next wave unpacks.
+    - name: Collect this shard's output
+      if: ${{ inputs.phase == 'build' }}
+      shell: bash
+      run: |
+        set -euo pipefail
+        python3 - <<'PY' > .conject/shard-modules.txt
+        import json, os
+        plan = json.load(open(".conject/external/plan.json"))
+        print("\n".join(plan["waves"][int(os.environ["WAVE"])][int(os.environ["SHARD"])]))
+        PY
+        python3 scripts/external_source.py --collect .conject/out .conject/shard-modules.txt
+      env:
+        WAVE: ${{ inputs.wave }}
+        SHARD: ${{ inputs.shard }}
+
+    - name: Hand the output to the next wave
+      if: ${{ inputs.phase == 'build' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: oleans-w${{ inputs.wave }}-s${{ inputs.shard }}
+        path: .conject/out
+        retention-days: 1
+        if-no-files-found: error
+
+    # A failed shard carries the reason; the finish job never runs, and the
+    # artifact stays pending rather than settling on a partial build.
+    - name: Upload this shard's verdict
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: shard-verdict-${{ inputs.phase }}-w${{ inputs.wave }}-s${{ inputs.shard }}
+        path: verdict.json
+        if-no-files-found: ignore

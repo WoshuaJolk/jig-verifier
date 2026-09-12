@@ -1,0 +1,36 @@
+name: Lean setup
+description: Install elan and restore the Mathlib and build caches. Check out first.
+
+runs:
+  using: composite
+  steps:
+    - name: Install elan
+      shell: bash
+      run: |
+        set -euo pipefail
+        curl -sSfL https://elan.lean-lang.org/elan-init.sh -o elan-init.sh
+        bash elan-init.sh -y --default-toolchain none
+        echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+    - name: Cache Mathlib
+      uses: actions/cache@v4
+      with:
+        # The unpacked dependency oleans. On a hit `lake exe cache get` becomes a
+        # no-op instead of a multi-gigabyte download.
+        path: .lake/packages
+        key: mathlib-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}
+
+    - name: Cache Conject build output
+      uses: actions/cache@v4
+      with:
+        path: .lake/build
+        key: conject-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ hashFiles('Commons/**', 'Statements/**', 'Submissions/**', 'Verify/**') }}
+        restore-keys: |
+          conject-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+
+    - name: Fetch Mathlib oleans
+      shell: bash
+      timeout-minutes: 12
+      run: |
+        set -euo pipefail
+        lake exe cache get
