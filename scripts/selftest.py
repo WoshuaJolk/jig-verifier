@@ -30,6 +30,14 @@ def main() -> int:
     failures = []
 
     for man in manifests():
+        # A pinned package is fetched from the network and can be thousands of
+        # modules; the corpus is for the examples in this repo.
+        try:
+            if json.loads(man.read_text()).get("external"):
+                print(f"skip {man.relative_to(ROOT)}: pinned package")
+                continue
+        except Exception:
+            pass
         meta = json.loads(man.read_text())
         rel = str(man.relative_to(ROOT))
         out = ROOT / ".conject/verdicts" / (rel.replace("/", "__"))
