@@ -70,6 +70,7 @@ jobs:
     timeout-minutes: 25
     outputs:
       sharded: ${{ steps.plan.outputs.sharded }}
+      wave_count: ${{ steps.plan.outputs.wave_count }}
       shard_lists: ${{ steps.plan.outputs.shard_lists }}
       replay_shards: ${{ steps.plan.outputs.replay_shards }}
     steps:
@@ -93,7 +94,8 @@ jobs:
           sub = pathlib.Path(os.environ["SUBMISSION"])
           out = pathlib.Path(os.environ["GITHUB_OUTPUT"])
           # Five wave stages exist below; a package is planned into at most that many.
-          idle = {"sharded": "false", "shard_lists": json.dumps([[0]] * 5), "replay_shards": json.dumps([0])}
+          idle = {"sharded": "false", "wave_count": "0",
+                  "shard_lists": json.dumps([[0]] * 5), "replay_shards": json.dumps([0])}
 
           def emit(d):
               with out.open("a") as f:
@@ -135,6 +137,7 @@ jobs:
                 f"{sum(len(w) for w in waves)} build shards, {len(plan['replay'])} replay shards")
           emit({
               "sharded": str(sharded).lower(),
+              "wave_count": str(len(waves)),
               "shard_lists": json.dumps(lists[:5]),
               "replay_shards": json.dumps(list(range(len(plan["replay"])))),
           })
@@ -287,7 +290,7 @@ jobs:
 
   wave1:
     needs: [plan, wave0]
-    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.shard_lists || '[[0],[0],[0],[0],[0]]')[1][0] != null
+    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.wave_count || '0') > 1
     runs-on: ubuntu-latest
     timeout-minutes: 355
     strategy:
@@ -310,7 +313,7 @@ jobs:
 
   wave2:
     needs: [plan, wave1]
-    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.shard_lists || '[[0],[0],[0],[0],[0]]')[2][0] != null
+    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.wave_count || '0') > 2
     runs-on: ubuntu-latest
     timeout-minutes: 355
     strategy:
@@ -333,7 +336,7 @@ jobs:
 
   wave3:
     needs: [plan, wave2]
-    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.shard_lists || '[[0],[0],[0],[0],[0]]')[3][0] != null
+    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.wave_count || '0') > 3
     runs-on: ubuntu-latest
     timeout-minutes: 355
     strategy:
@@ -356,7 +359,7 @@ jobs:
 
   wave4:
     needs: [plan, wave3]
-    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.shard_lists || '[[0],[0],[0],[0],[0]]')[4][0] != null
+    if: needs.plan.outputs.sharded == 'true' && fromJSON(needs.plan.outputs.wave_count || '0') > 4
     runs-on: ubuntu-latest
     timeout-minutes: 355
     strategy:
