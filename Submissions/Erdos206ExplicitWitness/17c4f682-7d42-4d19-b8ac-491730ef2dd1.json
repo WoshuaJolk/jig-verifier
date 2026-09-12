@@ -1,0 +1,15 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos206ExplicitWitness",
+  "module": "JigSubmission",
+  "decl": "Submissions.Erdos206ExplicitWitness.Coleski.proof",
+  "external": {
+    "repo": "https://github.com/coleski/erdos206",
+    "commit": "0685473300e85c31866cb7c17430a2b138a5266f",
+    "dir": "."
+  },
+  "author": "coleski",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 17c4f682-7d42-4d19-b8ac-491730ef2dd1. Settles nothing."
+}
