@@ -8,7 +8,8 @@ same static policy as a single-file submission, and stages it as a Lake library 
 its own. Nothing from the package runs except Lean elaborating its `.lean` files:
 its lakefile, scripts and caches are never read.
 
-    external_source.py --drop-build    # delete the staged modules' build output
+    external_source.py --drop-build                 # delete the staged modules' build output
+    external_source.py --collect DIR MODULES.txt    # gather those modules' build output
 """
 
 from __future__ import annotations
@@ -256,6 +257,29 @@ def unstage() -> None:
         LAKEFILE.write_text(text.split(marker, 1)[0].rstrip("\n") + "\n")
 
 
+BUILD_SUFFIXES = (".olean", ".ilean", ".trace")
+
+
+def collect_build_outputs(dest: pathlib.Path, modules: list[str]) -> int:
+    """Copy one shard's build output to `dest`, for the next wave to unpack.
+
+    Lake treats a module as built only when its .olean, .ilean AND .trace are all
+    present, so all three travel; the .hash files are rebuilt on demand.
+    """
+    top = REPO_ROOT / ".lake" / "build" / "lib" / "lean"
+    copied = 0
+    for mod in modules:
+        for suffix in BUILD_SUFFIXES:
+            f = top / (mod.replace(".", "/") + suffix)
+            if not f.exists():
+                continue
+            out = dest / f.relative_to(top)
+            out.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(f, out)
+            copied += 1
+    return copied
+
+
 def drop_build_outputs() -> int:
     """Delete the staged modules' oleans so a shared build cache never saves them."""
     if not MODULES_FILE.exists():
@@ -282,8 +306,14 @@ def drop_build_outputs() -> int:
 
 
 if __name__ == "__main__":
-    if sys.argv[1:] == ["--drop-build"]:
+    argv = sys.argv[1:]
+    if argv[:1] == ["--drop-build"]:
         print(f"dropped {drop_build_outputs()} external build files")
+        sys.exit(0)
+    if argv[:1] == ["--collect"] and len(argv) == 3:
+        mods = [m for m in pathlib.Path(argv[2]).read_text().split() if m]
+        n = collect_build_outputs(pathlib.Path(argv[1]), mods)
+        print(f"collected {n} build files for {len(mods)} modules")
         sys.exit(0)
     print(__doc__)
     sys.exit(2)

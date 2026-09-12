@@ -186,6 +186,7 @@ def main() -> int:
     ap.add_argument("--wave", type=int, default=0)
     ap.add_argument("--shard", type=int, default=0)
     ap.add_argument("--max-shards", type=int, default=12)
+    ap.add_argument("--min-per-shard", type=int, default=150)
     args = ap.parse_args()
 
     started = time.monotonic()
@@ -293,7 +294,9 @@ def main() -> int:
             return finish(fail(verdict, "bad_manifest", d), args.out)
         plan_path = pathlib.Path(args.plan)
         if args.phase == "plan":
-            plan = external_source.waves(found, max_shards=args.max_shards)
+            plan = external_source.waves(
+                found, max_shards=args.max_shards, min_per_shard=args.min_per_shard
+            )
             plan_path.parent.mkdir(parents=True, exist_ok=True)
             plan_path.write_text(json.dumps({
                 "statement_id": sid,
@@ -385,7 +388,8 @@ def main() -> int:
         return finish(fail(verdict, "build_failed", d), args.out)
     record(verdict, "build", True)
     if args.phase == "build":
-        print(f"built {proc.built} of {len(shard)} modules in wave {args.wave} shard {args.shard}")
+        print(f"wave {args.wave} shard {args.shard}: {len(shard)} modules up to date "
+              f"({proc.built} built here, the rest already present)")
         return 0
 
     # --- 3. anti-restatement -----------------------------------------------
