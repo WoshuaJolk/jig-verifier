@@ -306,6 +306,9 @@ def main() -> int:
                 "source_hash": verdict["submission_source_hash"],
                 "modules": len(found),
                 "waves": plan,
+                "replay": external_source.replay_shards(
+                    found, max_shards=args.max_shards, min_per_shard=args.min_per_shard
+                ),
             }, indent=1))
             print(f"planned {len(found)} modules into {len(plan)} waves, "
                   f"{sum(len(w) for w in plan)} shards -> {plan_path}")
@@ -324,7 +327,11 @@ def main() -> int:
             return finish(fail(verdict, "verifier_error", d), args.out)
         if args.phase in ("build", "replay"):
             try:
-                shard = planned["waves"][args.wave][args.shard]
+                shard = (
+                    planned["replay"][args.shard]
+                    if args.phase == "replay"
+                    else planned["waves"][args.wave][args.shard]
+                )
             except Exception:
                 d = f"no shard {args.wave}/{args.shard} in the plan"
                 record(verdict, "manifest", False, d)

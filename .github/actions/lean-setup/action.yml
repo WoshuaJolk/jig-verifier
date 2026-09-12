@@ -30,7 +30,6 @@ runs:
 
     - name: Fetch Mathlib oleans
       shell: bash
-      timeout-minutes: 12
       run: |
         set -euo pipefail
         lake exe cache get

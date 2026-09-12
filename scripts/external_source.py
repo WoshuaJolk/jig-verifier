@@ -190,7 +190,10 @@ def layers(found: dict[str, pathlib.Path]) -> list[list[str]]:
 
 
 def waves(
-    found: dict[str, pathlib.Path], max_shards: int = 12, min_per_shard: int = 150
+    found: dict[str, pathlib.Path],
+    max_shards: int = 12,
+    min_per_shard: int = 150,
+    max_waves: int = 5,
 ) -> list[list[list[str]]]:
     """Group the layers into waves of shards: waves run in order, shards in parallel.
 
@@ -210,7 +213,19 @@ def waves(
         batch.extend(layer)
     if batch:
         plan.append(_split(batch, found, max_shards, min_per_shard))
+    # The pipeline has a fixed number of wave stages. Merging the tail keeps a
+    # deep package correct: a shard whose dependency lands in its own wave simply
+    # builds that dependency itself, trading duplicated work for a barrier.
+    if len(plan) > max_waves:
+        tail = [m for wave in plan[max_waves - 1 :] for shard in wave for m in shard]
+        plan = plan[: max_waves - 1] + [_split(sorted(tail), found, max_shards, min_per_shard)]
     return plan
+
+
+def replay_shards(found: dict[str, pathlib.Path], max_shards: int = 12, min_per_shard: int = 150) -> list[list[str]]:
+    """Every module, split for the kernel-replay pass. Replay has no dependency
+    order: a module is replayed against its imports' oleans, which all exist by then."""
+    return _split(sorted(found), found, max_shards, min_per_shard)
 
 
 def _split(
