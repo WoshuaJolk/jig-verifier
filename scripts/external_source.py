@@ -159,6 +159,73 @@ def admit(found: dict[str, pathlib.Path], src: pathlib.Path) -> list[str]:
     return problems
 
 
+def local_deps(found: dict[str, pathlib.Path]) -> dict[str, list[str]]:
+    """Each module's imports that belong to the package itself."""
+    return {
+        m: [d for d in lean_policy.imports(p.read_text(errors="replace")) if d in found]
+        for m, p in found.items()
+    }
+
+
+def layers(found: dict[str, pathlib.Path]) -> list[list[str]]:
+    """The closure in dependency order: every module sits above all of its imports.
+
+    A layer can be built entirely in parallel once the layers below it exist, which
+    is what lets one package span several runners.
+    """
+    deps = local_deps(found)
+    depth = {m: 0 for m in found}
+    changed = True
+    while changed:
+        changed = False
+        for m, ds in deps.items():
+            want = max([depth[d] + 1 for d in ds] or [0])
+            if want != depth[m]:
+                depth[m], changed = want, True
+    out: list[list[str]] = [[] for _ in range(max(depth.values(), default=-1) + 1)]
+    for m, d in depth.items():
+        out[d].append(m)
+    return [sorted(layer) for layer in out]
+
+
+def waves(
+    found: dict[str, pathlib.Path], max_shards: int = 12, min_per_shard: int = 150
+) -> list[list[list[str]]]:
+    """Group the layers into waves of shards: waves run in order, shards in parallel.
+
+    Consecutive layers merge into one wave while the merged batch still fits the
+    shard budget, because a wave costs a runner handoff and most layers are thin.
+    Within a wave the split is by source size, the only cost estimate available
+    before anything is built: a wave is as slow as its slowest shard, so an even
+    split is worth more than a tidy one.
+    """
+    plan: list[list[list[str]]] = []
+    batch: list[str] = []
+    budget = max_shards * min_per_shard
+    for layer in layers(found):
+        if batch and len(batch) + len(layer) > budget:
+            plan.append(_split(batch, found, max_shards, min_per_shard))
+            batch = []
+        batch.extend(layer)
+    if batch:
+        plan.append(_split(batch, found, max_shards, min_per_shard))
+    return plan
+
+
+def _split(
+    modules: list[str], found: dict[str, pathlib.Path], max_shards: int, min_per_shard: int
+) -> list[list[str]]:
+    """Longest-first bin packing by source size, into as few shards as the budget allows."""
+    n = max(1, min(max_shards, -(-len(modules) // min_per_shard)))
+    shards: list[list[str]] = [[] for _ in range(n)]
+    load = [0] * n
+    for m in sorted(modules, key=lambda m: -found[m].stat().st_size):
+        i = load.index(min(load))
+        shards[i].append(m)
+        load[i] += found[m].stat().st_size
+    return [sorted(sh) for sh in shards if sh]
+
+
 def stage(found: dict[str, pathlib.Path], root: str) -> tuple[pathlib.Path, str]:
     """Copy the closure into its own source tree and add it to the lakefile.
 
