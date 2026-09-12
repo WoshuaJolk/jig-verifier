@@ -80,6 +80,14 @@ runs:
         retention-days: 1
         if-no-files-found: error
 
+    # The shard's own artifact carries its oleans to the next wave. Leaving them
+    # in .lake/build would also write them to the build cache this job restored,
+    # which is shared with every other run and capped at 10 GB.
+    - name: Drop external build output
+      if: always()
+      shell: bash
+      run: python3 scripts/external_source.py --drop-build
+
     # A failed shard carries the reason; the finish job never runs, and the
     # artifact stays pending rather than settling on a partial build.
     - name: Upload this shard's verdict
