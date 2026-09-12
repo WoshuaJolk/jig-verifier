@@ -1,0 +1,15 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1135EvenStep",
+  "module": "DemoCollatz.Final",
+  "decl": "DemoCollatz.proof",
+  "external": {
+    "repo": "https://github.com/WoshuaJolk/jig-verifier",
+    "commit": "d8f580620727d94286b45df3ccc5d5c662b80432",
+    "dir": "Examples/ExternalDemo"
+  },
+  "author": "WoshuaJolk",
+  "expect": "green",
+  "note": "Exercises the sharded pinned-package path. Carries no artifact id, so no verdict is delivered."
+}
