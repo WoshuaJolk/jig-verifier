@@ -1,0 +1,16 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos196FullRefutation",
+  "module": "Erdos196",
+  "decl": "Erdos196.erdos_196_negative",
+  "external": {
+    "dir": "",
+    "repo": "https://github.com/coleski/erdos196",
+    "commit": "994b1cd0456d4a69c7bb6911e652acf4a85fd68d"
+  },
+  "author": "coleski",
+  "expect": "green",
+  "refutes": "Erdos196MonotoneFourAP",
+  "note": "Submitted through the Jig API as artifact 50b32c8b-0027-4024-ab4a-64cfc1081daa."
+}
