@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P26StateObstruction",
+  "module": "Submissions.J4P26StateObstruction.Proof",
+  "decl": "Submissions.J4P26StateObstruction.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 6efa3c77-ca0f-4601-b667-6632d92058f2."
+}
