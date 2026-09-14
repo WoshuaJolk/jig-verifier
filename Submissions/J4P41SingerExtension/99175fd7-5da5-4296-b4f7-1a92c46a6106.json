@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P41SingerExtension",
+  "module": "Submissions.J4P41SingerExtension.Proof",
+  "decl": "Submissions.J4P41SingerExtension.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 99175fd7-5da5-4296-b4f7-1a92c46a6106."
+}
