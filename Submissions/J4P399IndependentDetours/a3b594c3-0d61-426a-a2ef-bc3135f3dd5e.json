@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P399IndependentDetours",
+  "module": "Submissions.J4P399IndependentDetours.Proof",
+  "decl": "Submissions.J4P399IndependentDetours.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a3b594c3-0d61-426a-a2ef-bc3135f3dd5e."
+}
