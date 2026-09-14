@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P399HamiltonianExchange",
+  "module": "Submissions.J4P399HamiltonianExchange.Proof",
+  "decl": "Submissions.J4P399HamiltonianExchange.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5ca3dc0d-007e-4041-b299-bd103e74c8ca."
+}
