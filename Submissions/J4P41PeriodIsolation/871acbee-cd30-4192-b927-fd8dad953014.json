@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P41PeriodIsolation",
+  "module": "Submissions.J4P41PeriodIsolation.Proof",
+  "decl": "Submissions.J4P41PeriodIsolation.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 871acbee-cd30-4192-b927-fd8dad953014."
+}
