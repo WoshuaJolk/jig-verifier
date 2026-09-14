@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P399AverageDegreeControl",
+  "module": "Submissions.J4P399AverageDegreeControl.Proof",
+  "decl": "Submissions.J4P399AverageDegreeControl.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact cd78bf53-5056-4c07-b9d6-40ab257b0f11."
+}
