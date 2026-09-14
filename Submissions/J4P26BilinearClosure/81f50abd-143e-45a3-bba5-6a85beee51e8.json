@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P26BilinearClosure",
+  "module": "Submissions.J4P26BilinearClosure.Proof",
+  "decl": "Submissions.J4P26BilinearClosure.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 81f50abd-143e-45a3-bba5-6a85beee51e8."
+}
