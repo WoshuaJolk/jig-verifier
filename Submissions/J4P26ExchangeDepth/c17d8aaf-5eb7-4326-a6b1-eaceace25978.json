@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P26ExchangeDepth",
+  "module": "Submissions.J4P26ExchangeDepth.Proof",
+  "decl": "Submissions.J4P26ExchangeDepth.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c17d8aaf-5eb7-4326-a6b1-eaceace25978."
+}
