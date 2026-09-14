@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P16PathClosure",
+  "module": "Submissions.J4P16PathClosure.Proof",
+  "decl": "Submissions.J4P16PathClosure.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c1fb39c3-ae1e-4edc-be1b-0dfb2e84f9fb."
+}
