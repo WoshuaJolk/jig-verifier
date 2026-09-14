@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P280SidonBlockEnergy",
+  "module": "Submissions.J4P280SidonBlockEnergy.Proof",
+  "decl": "Submissions.J4P280SidonBlockEnergy.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ddd6c076-7c78-42c8-850b-fd47f5659204."
+}
