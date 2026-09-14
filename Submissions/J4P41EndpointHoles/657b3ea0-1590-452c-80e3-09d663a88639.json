@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P41EndpointHoles",
+  "module": "Submissions.J4P41EndpointHoles.Proof",
+  "decl": "Submissions.J4P41EndpointHoles.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 657b3ea0-1590-452c-80e3-09d663a88639."
+}
