@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P26SpikeObstruction",
+  "module": "Submissions.J4P26SpikeObstruction.Proof",
+  "decl": "Submissions.J4P26SpikeObstruction.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 12379674-6e50-40f6-a9c7-bb8c5e5c6be8."
+}
