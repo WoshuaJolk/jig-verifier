@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P41DenseRepair",
+  "module": "Submissions.J4P41DenseRepair.Proof",
+  "decl": "Submissions.J4P41DenseRepair.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 343837dc-9d1e-4104-beba-e98d8487b4eb."
+}
