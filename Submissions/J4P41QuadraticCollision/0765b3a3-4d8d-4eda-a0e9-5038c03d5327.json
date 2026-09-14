@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P41QuadraticCollision",
+  "module": "Submissions.J4P41QuadraticCollision.Proof",
+  "decl": "Submissions.J4P41QuadraticCollision.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0765b3a3-4d8d-4eda-a0e9-5038c03d5327."
+}
