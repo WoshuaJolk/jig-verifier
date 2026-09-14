@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P26QuarticTemplates",
+  "module": "Submissions.J4P26QuarticTemplates.Proof",
+  "decl": "Submissions.J4P26QuarticTemplates.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact db60a6de-bace-4119-8b20-fed7ceaca6b5."
+}
