@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P16WitnessProjection",
+  "module": "Submissions.J4P16WitnessProjection.Proof",
+  "decl": "Submissions.J4P16WitnessProjection.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dfbbf908-cd4a-4c25-8f40-99680365a039."
+}
