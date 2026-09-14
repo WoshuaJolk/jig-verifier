@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P399ThetaMatching",
+  "module": "Submissions.J4P399ThetaMatching.Proof",
+  "decl": "Submissions.J4P399ThetaMatching.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 458d0d94-7ab6-46d0-9d41-89d19e2875e4."
+}
