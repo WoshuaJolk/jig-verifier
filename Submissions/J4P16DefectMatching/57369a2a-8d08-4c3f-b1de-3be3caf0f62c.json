@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J4P16DefectMatching",
+  "module": "Submissions.J4P16DefectMatching.Proof",
+  "decl": "Submissions.J4P16DefectMatching.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 57369a2a-8d08-4c3f-b1de-3be3caf0f62c."
+}
