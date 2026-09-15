@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P399PowerPathNonHelly",
+  "module": "Submissions.J5P399PowerPathNonHelly.Proof",
+  "decl": "Submissions.J5P399PowerPathNonHelly.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact e0619370-4f8d-4da7-bda9-b8f2ee0a96f2."
+}
