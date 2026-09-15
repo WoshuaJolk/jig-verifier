@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1135ShortOddCycles",
+  "module": "Submissions.Erdos1135ShortOddCycles.ShortCycles",
+  "decl": "Submissions.Erdos1135ShortOddCycles.ShortCycles.proof",
+  "author": "adamjkozak",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check c77384fe-d996-4e16-8132-ef70a7892c73. Settles nothing."
+}
