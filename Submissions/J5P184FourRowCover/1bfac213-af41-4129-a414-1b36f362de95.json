@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P184FourRowCover",
+  "module": "Submissions.J5P184FourRowCover.Proof",
+  "decl": "Submissions.J5P184FourRowCover.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1bfac213-af41-4129-a414-1b36f362de95."
+}
