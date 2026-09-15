@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P16PrivateCodeGraft",
+  "module": "Submissions.J5P16PrivateCodeGraft.Proof",
+  "decl": "Submissions.J5P16PrivateCodeGraft.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f6c1b71b-f32f-4693-8cc8-d26b8dcb9b1f."
+}
