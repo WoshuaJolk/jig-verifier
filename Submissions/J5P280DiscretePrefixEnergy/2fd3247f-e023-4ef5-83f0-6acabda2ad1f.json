@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P280DiscretePrefixEnergy",
+  "module": "Submissions.J5P280DiscretePrefixEnergy.Proof",
+  "decl": "Submissions.J5P280DiscretePrefixEnergy.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2fd3247f-e023-4ef5-83f0-6acabda2ad1f."
+}
