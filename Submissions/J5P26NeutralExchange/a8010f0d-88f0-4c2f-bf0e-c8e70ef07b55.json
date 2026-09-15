@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P26NeutralExchange",
+  "module": "Submissions.J5P26NeutralExchange.Proof",
+  "decl": "Submissions.J5P26NeutralExchange.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a8010f0d-88f0-4c2f-bf0e-c8e70ef07b55."
+}
