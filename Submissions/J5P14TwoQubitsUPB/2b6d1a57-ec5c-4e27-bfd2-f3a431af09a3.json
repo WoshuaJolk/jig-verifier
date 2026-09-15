@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P14TwoQubitsUPB",
+  "module": "Submissions.J5P14TwoQubitsUPB.Proof",
+  "decl": "Submissions.J5P14TwoQubitsUPB.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2b6d1a57-ec5c-4e27-bfd2-f3a431af09a3."
+}
