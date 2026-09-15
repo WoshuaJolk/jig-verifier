@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P26SumsetPlateau",
+  "module": "Submissions.J5P26SumsetPlateau.Proof",
+  "decl": "Submissions.J5P26SumsetPlateau.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9dc73f5b-e1e2-44fe-aab2-851eb113052c."
+}
