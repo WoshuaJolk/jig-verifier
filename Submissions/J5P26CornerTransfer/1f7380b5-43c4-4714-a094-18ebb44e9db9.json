@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P26CornerTransfer",
+  "module": "Submissions.J5P26CornerTransfer.Proof",
+  "decl": "Submissions.J5P26CornerTransfer.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1f7380b5-43c4-4714-a094-18ebb44e9db9."
+}
