@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P26RecordThinning",
+  "module": "Submissions.J5P26RecordThinning.Proof",
+  "decl": "Submissions.J5P26RecordThinning.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 86019326-2ac1-4f98-ac64-5d70983c4d5f."
+}
