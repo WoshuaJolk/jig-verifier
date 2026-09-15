@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P41OrderCrossings",
+  "module": "Submissions.J5P41OrderCrossings.Proof",
+  "decl": "Submissions.J5P41OrderCrossings.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7564443c-4598-4e67-b5a4-facee84b0812."
+}
