@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P399NonportGluing",
+  "module": "Submissions.J5P399NonportGluing.Proof",
+  "decl": "Submissions.J5P399NonportGluing.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 70332150-9feb-4916-8a46-30c050cc3e0d."
+}
