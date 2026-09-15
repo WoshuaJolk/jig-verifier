@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DMJ143SeparationCounterexample",
+  "module": "Submissions.DMJ143SeparationCounterexample.Proof",
+  "decl": "Submissions.DMJ143SeparationCounterexample.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 1dd59355-7745-4a07-82fe-904d2e2af7dc."
+}
