@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosStrausShiftObstruction409577",
+  "module": "Submissions.ErdosStrausShiftObstruction409577.ShiftObstruction",
+  "decl": "Submissions.ErdosStrausShiftObstruction409577.ShiftObstruction.proof",
+  "author": "adamjkozak",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 238c8d9e-9738-48fe-a565-c6d9760672e4. Settles nothing."
+}
