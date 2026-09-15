@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P26ProjectionRankCover",
+  "module": "Submissions.J5P26ProjectionRankCover.Proof",
+  "decl": "Submissions.J5P26ProjectionRankCover.Proof.solves",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact edf52952-821d-49d6-9ea6-55e86ee662dd."
+}
