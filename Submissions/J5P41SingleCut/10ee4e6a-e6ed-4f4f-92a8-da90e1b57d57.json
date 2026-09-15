@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P41SingleCut",
+  "module": "Submissions.J5P41SingleCut.Proof",
+  "decl": "Submissions.J5P41SingleCut.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 10ee4e6a-e6ed-4f4f-92a8-da90e1b57d57."
+}
