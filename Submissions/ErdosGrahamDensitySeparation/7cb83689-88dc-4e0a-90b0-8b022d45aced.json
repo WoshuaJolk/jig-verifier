@@ -1,0 +1,15 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "ErdosGrahamDensitySeparation",
+  "module": "Erdos168",
+  "decl": "Erdos168.infinite_density_comparison",
+  "external": {
+    "dir": "168/lean",
+    "repo": "https://github.com/coleski/erdos",
+    "commit": "b622414f225d5e879bb2f9463b822e90f321f71e"
+  },
+  "author": "coleski",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 7cb83689-88dc-4e0a-90b0-8b022d45aced."
+}
