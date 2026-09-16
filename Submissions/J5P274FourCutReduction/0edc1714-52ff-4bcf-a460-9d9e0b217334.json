@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P274FourCutReduction",
+  "module": "Submissions.J5P274FourCutReduction.Proof",
+  "decl": "Submissions.J5P274FourCutReduction.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0edc1714-52ff-4bcf-a460-9d9e0b217334."
+}
