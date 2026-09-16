@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P184CyclicPrimeBound",
+  "module": "Submissions.J5P184CyclicPrimeBound.Proof",
+  "decl": "Submissions.J5P184CyclicPrimeBound.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f2c53dae-1beb-47b5-935c-109821fcae00."
+}
