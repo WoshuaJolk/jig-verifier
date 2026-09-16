@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1152NearMinimalInterpolation",
+  "module": "Submissions.Erdos1152NearMinimalInterpolation.FullProof",
+  "decl": "Submissions.Erdos1152NearMinimalInterpolation.FullProof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 16781167-326a-46c2-a8a7-13eea12a2aac."
+}
