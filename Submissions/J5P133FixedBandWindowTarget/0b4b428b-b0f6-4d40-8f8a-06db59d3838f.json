@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P133FixedBandWindowTarget",
+  "module": "Submissions.J5P133FixedBandWindowTarget.Proof",
+  "decl": "Submissions.J5P133FixedBandWindowTarget.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0b4b428b-b0f6-4d40-8f8a-06db59d3838f."
+}
