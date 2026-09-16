@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P289TwoArmOrbit",
+  "module": "Submissions.J5P289TwoArmOrbit.Proof",
+  "decl": "Submissions.J5P289TwoArmOrbit.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 00448bc1-2e2d-44ff-8d7b-793b1d3e750c."
+}
