@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "MixedMinUPBAtMostTrivialPlusOne",
+  "module": "Submissions.MixedMinUPBAtMostTrivialPlusOne.Proof",
+  "decl": "Submissions.MixedMinUPBAtMostTrivialPlusOne.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 95b76766-dfde-41b2-8fb0-ec50021492fb."
+}
