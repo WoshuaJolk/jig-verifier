@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P2ConvexLatticeOccupancy",
+  "module": "Submissions.J5P2ConvexLatticeOccupancy.Proof",
+  "decl": "Submissions.J5P2ConvexLatticeOccupancy.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 98267aaa-1ce7-49d5-a9ad-a1d87c21a3a6. Settles nothing."
+}
