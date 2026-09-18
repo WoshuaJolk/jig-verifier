@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P184BertrandLower",
+  "module": "Submissions.J5P184BertrandLower.Proof",
+  "decl": "Submissions.J5P184BertrandLower.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f30e0599-0a72-4f07-808e-d22c2f316cd1."
+}
