@@ -166,7 +166,7 @@ end PlyLatticeConvex
 
 #print axioms PlyLatticeConvex.convex_lattice_bound
 
-/-- Direct alias of the preserved convex-lattice theorem; no new proof argument. -/
+/- Direct alias of the preserved convex-lattice theorem; no new proof argument. -/
 open Set Metric
 open PlyLatticeConvex
 
