@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P184BertrandLower",
+  "module": "Submissions.J5P184BertrandLower.Proof",
+  "decl": "Submissions.J5P184BertrandLower.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 99aad6e1-083b-46a5-bd1d-c3d29710f5d3. Settles nothing."
+}
