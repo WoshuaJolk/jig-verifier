@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P289ScalarReflectionBarrier",
+  "module": "Submissions.J5P289ScalarReflectionBarrier.Proof",
+  "decl": "Submissions.J5P289ScalarReflectionBarrier.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 29a7ca5b-0d62-4fc4-b9af-4c2700c3f884."
+}
