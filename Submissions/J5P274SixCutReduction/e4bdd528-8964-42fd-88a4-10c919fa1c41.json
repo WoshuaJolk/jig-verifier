@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P274SixCutReduction",
+  "module": "Submissions.J5P274SixCutReduction.Proof",
+  "decl": "Submissions.J5P274SixCutReduction.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check e4bdd528-8964-42fd-88a4-10c919fa1c41. Settles nothing."
+}
