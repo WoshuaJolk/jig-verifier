@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P122RichCircleFoundations",
+  "module": "Submissions.J5P122RichCircleFoundations.Proof",
+  "decl": "Submissions.J5P122RichCircleFoundations.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a1c19e40-2f65-4ac2-8a7a-28789b1d627e."
+}
