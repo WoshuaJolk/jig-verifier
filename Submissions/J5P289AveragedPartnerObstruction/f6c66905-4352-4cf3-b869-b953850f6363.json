@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P289AveragedPartnerObstruction",
+  "module": "Submissions.J5P289AveragedPartnerObstruction.Proof",
+  "decl": "Submissions.J5P289AveragedPartnerObstruction.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check f6c66905-4352-4cf3-b869-b953850f6363. Settles nothing."
+}
