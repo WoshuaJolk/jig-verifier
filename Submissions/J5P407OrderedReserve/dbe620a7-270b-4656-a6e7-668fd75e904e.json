@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P407OrderedReserve",
+  "module": "Submissions.J5P407OrderedReserve.Proof",
+  "decl": "Submissions.J5P407OrderedReserve.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dbe620a7-270b-4656-a6e7-668fd75e904e."
+}
