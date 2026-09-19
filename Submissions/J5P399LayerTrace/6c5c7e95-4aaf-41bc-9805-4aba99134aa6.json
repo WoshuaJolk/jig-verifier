@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P399LayerTrace",
+  "module": "Submissions.J5P399LayerTrace.LayerTrace286",
+  "decl": "Submissions.J5P399LayerTrace.LayerTrace286.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 6c5c7e95-4aaf-41bc-9805-4aba99134aa6. Settles nothing."
+}
