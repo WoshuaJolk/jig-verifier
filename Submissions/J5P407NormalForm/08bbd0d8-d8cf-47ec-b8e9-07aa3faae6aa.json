@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J5P407NormalForm",
+  "module": "Submissions.J5P407NormalForm.Proof",
+  "decl": "Submissions.J5P407NormalForm.Proof.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 08bbd0d8-d8cf-47ec-b8e9-07aa3faae6aa."
+}
