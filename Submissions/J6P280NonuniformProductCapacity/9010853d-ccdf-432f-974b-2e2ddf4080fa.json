@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J6P280NonuniformProductCapacity",
+  "module": "Submissions.J6P280NonuniformProductCapacity.Main",
+  "decl": "Submissions.J6P280NonuniformProductCapacity.Main.result",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 9010853d-ccdf-432f-974b-2e2ddf4080fa."
+}
