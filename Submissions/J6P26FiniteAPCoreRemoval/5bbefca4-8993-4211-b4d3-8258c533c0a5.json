@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J6P26FiniteAPCoreRemoval",
+  "module": "Submissions.J6P26FiniteAPCoreRemoval.Main",
+  "decl": "Submissions.J6P26FiniteAPCoreRemoval.Main.result",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 5bbefca4-8993-4211-b4d3-8258c533c0a5. Settles nothing."
+}
