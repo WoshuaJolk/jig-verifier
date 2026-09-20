@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "J6P280CommonProbeCapacity",
+  "module": "Submissions.J6P280CommonProbeCapacity.Main",
+  "decl": "Submissions.J6P280CommonProbeCapacity.Main.proof",
+  "author": "savcab",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact a22dfafc-63b6-40f6-b022-be246af0a07a."
+}
