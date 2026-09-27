@@ -19,6 +19,7 @@ theorem proof :
     unfold lcmInterval
     exact Finset.lcm_ne_zero_iff.mpr (by
       intro x hx
+      change x ≠ 0
       have := (Finset.mem_Ioc.mp hx).1
       omega)
   have hfact : a ≤ (lcmInterval n k).factorization p :=
@@ -26,10 +27,11 @@ theorem proof :
   have hsup := Finset.factorization_lcm (s := Finset.Ioc n (n + k))
     (f := id) (by
       intro x hx
+      change x ≠ 0
       have := (Finset.mem_Ioc.mp hx).1
       omega) p
-  unfold lcmInterval at hfact
-  rw [hsup] at hfact
+  have hfact' : a ≤ (Finset.Ioc n (n + k)).sup (fun x => x.factorization p) := by
+    simpa only [lcmInterval, hsup] using hfact
   have hall : ∀ x ∈ Finset.Ioc n (n + k), x.factorization p ≤ a - 1 := by
     intro x hx
     have hxpos : x ≠ 0 := by have := (Finset.mem_Ioc.mp hx).1; omega
