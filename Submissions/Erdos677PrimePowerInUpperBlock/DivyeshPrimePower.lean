@@ -31,7 +31,7 @@ theorem proof :
       have := (Finset.mem_Ioc.mp hx).1
       omega) p
   have hfact' : a ≤ (Finset.Ioc n (n + k)).sup (fun x => x.factorization p) := by
-    simpa only [lcmInterval, hsup] using hfact
+    simpa only [lcmInterval, hsup, id_eq] using hfact
   have hall : ∀ x ∈ Finset.Ioc n (n + k), x.factorization p ≤ a - 1 := by
     intro x hx
     have hxpos : x ≠ 0 := by have := (Finset.mem_Ioc.mp hx).1; omega
