@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos677PrimePowerInUpperBlock",
+  "module": "Submissions.Erdos677PrimePowerInUpperBlock.DivyeshPrimePower",
+  "decl": "Submissions.Erdos677PrimePowerInUpperBlock.DivyeshPrimePower.proof",
+  "author": "divyeshkk",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 7ce8f6b6-369f-41c6-b041-be665926acb2. Settles nothing."
+}
