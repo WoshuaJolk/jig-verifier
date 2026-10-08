@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoThreeCirclesAttain",
+  "module": "Submissions.DominoThreeCirclesAttain.ZeroRadiusProbe",
+  "decl": "Submissions.DominoThreeCirclesAttain.ZeroRadiusProbe.proof",
+  "author": "nnmrts",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a1003365-4ea2-4f1d-810d-bcf42f8748c5."
+}
