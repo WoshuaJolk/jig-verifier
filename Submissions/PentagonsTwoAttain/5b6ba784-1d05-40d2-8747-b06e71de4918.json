@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonsTwoAttain",
+  "module": "Submissions.PentagonsTwoAttain.Corners",
+  "decl": "Submissions.PentagonsTwoAttain.Corners.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5b6ba784-1d05-40d2-8747-b06e71de4918."
+}
