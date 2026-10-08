@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonsInSquareOneInTwo",
+  "module": "Submissions.PentagonsInSquareOneInTwo.WrongSide",
+  "decl": "Submissions.PentagonsInSquareOneInTwo.WrongSide.proof",
+  "author": "nnmrts",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 564af0e1-32e9-4cd0-9946-ad7d943a34d6."
+}
