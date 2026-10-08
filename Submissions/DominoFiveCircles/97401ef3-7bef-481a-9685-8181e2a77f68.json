@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoFiveCircles",
+  "module": "Submissions.DominoFiveCircles.Strips",
+  "decl": "Submissions.DominoFiveCircles.Strips.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 97401ef3-7bef-481a-9685-8181e2a77f68."
+}
