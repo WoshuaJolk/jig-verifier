@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1045SixPointAttain",
+  "module": "Submissions.Erdos1045SixPointAttain.ReuleauxSextuple",
+  "decl": "Submissions.Erdos1045SixPointAttain.ReuleauxSextuple.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 58ad323f-dfb8-4ecc-9a0d-eb631ccc7f60. Settles nothing."
+}
