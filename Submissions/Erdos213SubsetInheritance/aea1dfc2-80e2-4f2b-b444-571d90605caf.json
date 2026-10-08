@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos213SubsetInheritance",
+  "module": "Submissions.Erdos213SubsetInheritance.SubsetHereditary",
+  "decl": "Submissions.Erdos213SubsetInheritance.SubsetHereditary.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact aea1dfc2-80e2-4f2b-b444-571d90605caf."
+}
