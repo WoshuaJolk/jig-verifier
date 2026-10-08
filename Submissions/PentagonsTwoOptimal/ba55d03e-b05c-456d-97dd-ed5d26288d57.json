@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonsTwoOptimal",
+  "module": "Submissions.PentagonsTwoOptimal.Full",
+  "decl": "Submissions.PentagonsTwoOptimal.Full.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ba55d03e-b05c-456d-97dd-ed5d26288d57."
+}
