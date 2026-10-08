@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoThreeCircles",
+  "module": "Submissions.DominoThreeCircles.Pigeonhole",
+  "decl": "Submissions.DominoThreeCircles.Pigeonhole.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check d03bd3b8-742f-4489-9447-6db270a23e64. Settles nothing."
+}
