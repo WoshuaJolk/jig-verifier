@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonsThreeAttain",
+  "module": "Submissions.PentagonsThreeAttain.Pinwheel",
+  "decl": "Submissions.PentagonsThreeAttain.Pinwheel.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c0665e2f-eaec-4706-bb92-35b66510188b."
+}
