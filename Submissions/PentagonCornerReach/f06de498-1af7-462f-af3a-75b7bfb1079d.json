@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonCornerReach",
+  "module": "Submissions.PentagonCornerReach.Edges",
+  "decl": "Submissions.PentagonCornerReach.Edges.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f06de498-1af7-462f-af3a-75b7bfb1079d."
+}
