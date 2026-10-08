@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoFourCircles",
+  "module": "Submissions.DominoFourCircles.ThreeStrips",
+  "decl": "Submissions.DominoFourCircles.ThreeStrips.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 80f492ae-22c3-45ba-9f46-078c58802c52. Settles nothing."
+}
