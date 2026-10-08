@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoSixCircles",
+  "module": "Submissions.DominoSixCircles.EmptySetProbe",
+  "decl": "Submissions.DominoSixCircles.EmptySetProbe.proof",
+  "author": "nnmrts",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact a2a6c382-a616-40d6-b115-d7c1f0921ef0."
+}
