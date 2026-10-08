@@ -73,6 +73,7 @@ theorem strip_pigeon (m : ℕ) (hm : 0 < m) (x : Fin (m + 1) → ℝ) (lo L : �
   have hb : 0 ≤ w + (x i - x j) := by linarith
   nlinarith [mul_nonneg ha hb]
 
+set_option maxHeartbeats 4000000 in
 theorem proof : IsGreatest {r : ℝ | 0 < r ∧ ∃ c : Fin 6 → ℝ × ℝ,
     (∀ i, r ≤ (c i).1 ∧ (c i).1 ≤ 1 - r ∧ r ≤ (c i).2 ∧ (c i).2 ≤ 1 / 2 - r) ∧
     (∀ i j, i ≠ j → (2 * r) ^ 2 ≤ ((c i).1 - (c j).1) ^ 2 + ((c i).2 - (c j).2) ^ 2)}
