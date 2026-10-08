@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoThreeCirclesAttain",
+  "module": "Submissions.DominoThreeCirclesAttain.Witness",
+  "decl": "Submissions.DominoThreeCirclesAttain.Witness.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 507dc33f-8246-43c6-90ed-587d4ea7b65b."
+}
