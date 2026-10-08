@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonInSquareOptimal1",
+  "module": "Submissions.PentagonInSquareOptimal1.Diagonals",
+  "decl": "Submissions.PentagonInSquareOptimal1.Diagonals.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 95add903-2da2-4486-8eb5-5fd2ecc5e4ac."
+}
