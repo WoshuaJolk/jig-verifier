@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos213UpToSeven",
+  "module": "Submissions.Erdos213UpToSeven.KreiselKurz",
+  "decl": "Submissions.Erdos213UpToSeven.KreiselKurz.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b781e360-3429-4bcb-91f2-d0c8a39d508d."
+}
