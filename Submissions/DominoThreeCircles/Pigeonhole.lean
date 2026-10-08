@@ -1,4 +1,9 @@
 import Mathlib.Analysis.Real.Sqrt
+import Mathlib.Data.Fin.VecNotation
+import Mathlib.Tactic.FinCases
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.CasesM
 
 /-!
 Optimality of the Packomania packing of three equal circles in `[0,1] × [0,1/2]`.
@@ -68,8 +73,8 @@ theorem proof : IsGreatest {r : ℝ | 0 < r ∧ ∃ c : Fin 3 → ℝ × ℝ,
         | exact pair 0 2 (by decide) (Or.inr ⟨h0, h2⟩)
         | exact pair 1 2 (by decide) (Or.inl ⟨h1, h2⟩)
         | exact pair 1 2 (by decide) (Or.inr ⟨h1, h2⟩)
-    by_contra hcon
-    push_neg at hcon
+    by_contra hcon0
+    have hcon := not_le.mp hcon0
     have hA : 0 < r - (3 - Real.sqrt 7) / 2 := by linarith
     have hB : 0 < (3 + Real.sqrt 7) / 2 - r := by linarith
     nlinarith [mul_pos hA hB, h7]
