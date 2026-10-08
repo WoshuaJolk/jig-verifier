@@ -33,7 +33,7 @@ theorem proof :
     apply norm_le_two
     fin_cases i <;> fin_cases j <;> simp [pts] <;> nlinarith
   · simp only [Complex.sq_norm, Complex.normSq_apply]
-    simp [Fin.prod_univ_succ, Finset.prod_filter, pts, Fin.lt_def]
+    simp [Fin.prod_univ_six, Finset.prod_filter, pts]
     linear_combination (1024*s^24 - 30720*s^23 + 446464*s^22 - 4188160*s^21 + 28538880*s^20 - 150906880*s^19 + 646787072*s^18 - 2320496640*s^17 + 7135095808*s^16 - 19058143232*s^15 + 44335177728*s^14 - 89302077440*s^13 + 154224709632*s^12 - 226043154432*s^11 + 278601621504*s^10 - 286326157312*s^9 + 243212393472*s^8 - 168926959616*s^7 + 94556590080*s^6 - 41761572864*s^5 + 14082816000*s^4 - 3430877184*s^3 + 543191040*s^2 - 43063296*s + 259072) * hs
 
 end Submissions.Erdos1045SixPointAttain.ReuleauxSextuple
