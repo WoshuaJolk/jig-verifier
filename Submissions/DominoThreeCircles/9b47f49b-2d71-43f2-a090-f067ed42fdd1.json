@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoThreeCircles",
+  "module": "Submissions.DominoThreeCircles.SevenProbe",
+  "decl": "Submissions.DominoThreeCircles.SevenProbe.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 9b47f49b-2d71-43f2-a090-f067ed42fdd1. Settles nothing."
+}
