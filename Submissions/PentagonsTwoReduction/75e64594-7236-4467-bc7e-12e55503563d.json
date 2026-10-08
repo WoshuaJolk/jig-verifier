@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonsTwoReduction",
+  "module": "Submissions.PentagonsTwoReduction.Separation",
+  "decl": "Submissions.PentagonsTwoReduction.Separation.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 75e64594-7236-4467-bc7e-12e55503563d."
+}
