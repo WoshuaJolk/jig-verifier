@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1045SixPointAttain",
+  "module": "Submissions.Erdos1045SixPointAttain.ReuleauxSextuple",
+  "decl": "Submissions.Erdos1045SixPointAttain.ReuleauxSextuple.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f98edb01-ff12-43f0-8c15-cff6b30c393f."
+}
