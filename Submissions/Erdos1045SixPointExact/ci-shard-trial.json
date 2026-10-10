@@ -1,0 +1,15 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1045SixPointExact",
+  "module": "Erdos1045N6Final",
+  "decl": "Erdos1045N6.six_point_exact_maximum",
+  "external": {
+    "repo": "https://github.com/coleski/erdos1045-n6",
+    "commit": "59ede5a12403d62d00fa21b59597dbb6c01fb0a2",
+    "dir": "erdos1045-n6"
+  },
+  "author": "coleski",
+  "expect": "green",
+  "note": "Trial of the sharded pinned-package path. Carries no artifact id, so no verdict is delivered."
+}

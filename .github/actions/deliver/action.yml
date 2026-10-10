@@ -1,0 +1,148 @@
+name: Deliver verdicts
+description: Summarise the verdict, send it to the graph, and upload it.
+
+inputs:
+  artifact_id:
+    description: The artifact this run settles, when the dispatch named one
+    required: false
+    default: ""
+  api_url:
+    required: true
+  webhook_secret:
+    required: true
+  bypass:
+    required: false
+    default: ""
+  upload_name:
+    description: Name of the uploaded verdict artifact
+    required: false
+    default: conject-verdicts
+
+runs:
+  using: composite
+  steps:
+    - name: Verdict summary
+      if: always()
+      shell: bash
+      run: |
+        set -uo pipefail
+        {
+          echo "## Conject verdicts"
+          echo
+          echo "| verdict | reason | statement | submission | term hash |"
+          echo "| --- | --- | --- | --- | --- |"
+        } >> "$GITHUB_STEP_SUMMARY"
+        python3 - >> "$GITHUB_STEP_SUMMARY" <<'PY'
+        import glob, json
+        for f in sorted(glob.glob(".conject/verdicts/*.json")) + glob.glob("verdict.json"):
+            try:
+                v = json.load(open(f))
+            except Exception:
+                continue
+            h = (v.get("elaborated_term_hash") or "-")[:24]
+            print(f"| **{v.get('verdict')}** | `{v.get('reason')}` | "
+                  f"{v.get('statement_id')} | `{v.get('submission')}` | `{h}` |")
+        PY
+
+    # The verdict is worthless sitting in an artifact: it has to reach the
+    # graph or the submission stays `pending` forever and nothing auto-closes.
+    # Signed with the shared secret; the receiver compares in constant time
+    # and is idempotent, so a retry cannot double-settle.
+    # Not on a cancellation or job timeout: the driver never wrote its verdict, and
+    # whatever sits in the working tree may have been written by submission code.
+    - name: Deliver verdicts
+      if: always() && !cancelled()
+      shell: bash
+      env:
+        CONJECT_API_URL: ${{ inputs.api_url }}
+        CONJECT_WEBHOOK_SECRET: ${{ inputs.webhook_secret }}
+        CONJECT_BYPASS: ${{ inputs.bypass }}
+        ARTIFACT_ID: ${{ inputs.artifact_id }}
+      run: |
+        set -uo pipefail
+        if [ -z "${CONJECT_API_URL:-}" ] || [ -z "${CONJECT_WEBHOOK_SECRET:-}" ]; then
+          echo "::notice::CONJECT_API_URL / CONJECT_WEBHOOK_SECRET not set; verdicts not delivered."
+          exit 0
+        fi
+        export RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+        python3 - <<'PY'
+        import glob, hmac, hashlib, json, os, re, sys, urllib.error, urllib.request
+
+        base   = os.environ["CONJECT_API_URL"].rstrip("/")
+        secret = os.environ["CONJECT_WEBHOOK_SECRET"].encode()
+        bypass = os.environ.get("CONJECT_BYPASS") or ""
+        forced = (os.environ.get("ARTIFACT_ID") or "").strip()
+        UUID   = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
+
+        # A dispatched run settles one artifact, from the file the driver wrote last.
+        # Self-test verdicts are only delivered on runs that carry no artifact.
+        files = glob.glob("verdict.json") if forced else (
+            sorted(glob.glob(".conject/verdicts/*.json")) + glob.glob("verdict.json"))
+        if not files:
+            print("::warning::no verdict files to deliver")
+            sys.exit(0)
+
+        failed = 0
+        for f in files:
+            try:
+                v = json.load(open(f))
+            except Exception as e:
+                print(f"::warning::{f}: unreadable ({e})")
+                continue
+
+            # The API names submissions Submissions/<label>/<artifact-id>.json
+            # precisely so the id survives the round trip through CI.
+            aid = forced or next(iter(UUID.findall(str(v.get("submission") or ""))), None)
+            if not aid:
+                print(f"::warning::{f}: no artifact id in '{v.get('submission')}'; not delivered")
+                continue
+            v["artifact_id"] = aid
+            # Where this verdict came from. Without it the only way back to the
+            # run is to guess, and the uploaded TypeCheck.lean is unreachable.
+            v.setdefault("run_url", os.environ.get("RUN_URL"))
+
+            raw = json.dumps(v).encode()
+            sig = hmac.new(secret, raw, hashlib.sha256).hexdigest()
+            req = urllib.request.Request(
+                f"{base}/api/webhooks/verdict",
+                data=raw,
+                method="POST",
+                headers={
+                    "content-type": "application/json",
+                    "x-conject-signature": f"sha256={sig}",
+                    **({"x-vercel-protection-bypass": bypass} if bypass else {}),
+                },
+            )
+            try:
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    body = json.loads(r.read() or b"{}")
+                print(f"delivered {aid}: {v.get('verdict')} -> "
+                      f"settled={body.get('settled')} idempotent={body.get('idempotent')}")
+            except urllib.error.HTTPError as e:
+                detail = e.read().decode(errors="replace")[:300]
+                print(f"::error::{aid}: {e.code} {detail}")
+                failed += 1
+            except Exception as e:
+                print(f"::error::{aid}: {e}")
+                failed += 1
+
+        # Delivery failure must be loud. A silent drop leaves the graph wrong.
+        sys.exit(1 if failed else 0)
+        PY
+
+    # A pinned package's oleans must not reach the shared build cache saved below.
+    - name: Drop external build output
+      if: always()
+      shell: bash
+      run: python3 scripts/external_source.py --drop-build
+
+    - name: Upload verdicts
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.upload_name }}
+        path: |
+          verdict.json
+          .conject/verdicts/
+          .conject/work/**/*.lean
+        if-no-files-found: warn
