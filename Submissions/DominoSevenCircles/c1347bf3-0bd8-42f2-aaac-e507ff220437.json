@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "DominoSevenCircles",
+  "module": "Submissions.DominoSevenCircles.HeightChains",
+  "decl": "Submissions.DominoSevenCircles.HeightChains.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c1347bf3-0bd8-42f2-aaac-e507ff220437."
+}
