@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "PentagonsThirteenAttain",
+  "module": "Submissions.PentagonsThirteenAttain.LoydRecord",
+  "decl": "Submissions.PentagonsThirteenAttain.LoydRecord.proof",
+  "author": "nnmrts",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact d02d69e3-bfa6-407f-a9ef-6d1860a1268d."
+}
