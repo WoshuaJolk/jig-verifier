@@ -1,0 +1,22 @@
+{
+  "schema": "conject.certificate.v2",
+  "id": "AstroIntergalacticStar",
+  "title": "A star arriving from intergalactic space",
+  "statement": "Exhibit a Gaia DR3 star that is unbound from the Milky Way and falling inward: with its Gaia DR3 astrometry, a stated distance and a published radial velocity, at least 99.7% of error samples have Galactocentric speed above the escape speed of MWPotential2014 with the halo scaled by 1.5 (597 km/s at the Sun) and Galactocentric radial velocity below zero.",
+  "witness_format": "JSON object: source_id (Gaia DR3), ra_deg, dec_deg, pmra_mas_yr, pmra_error_mas_yr, pmdec_mas_yr, pmdec_error_mas_yr, rv_km_s, rv_error_km_s, rv_source, and either parallax_mas + parallax_error_mas (S/N >= 5) or distance_kpc + distance_error_kpc + distance_source",
+  "limits": { "wall_sec": 120, "cpu_sec": 100, "address_space_mb": 4096, "output_bytes": 262144 },
+  "requires": ["numpy", "scipy"],
+  "code": ["../_shared/astro_cert.py", "../_shared/galkin.py"],
+  "fixtures": [
+    { "name": "gaia.json", "live": "gaia_dr3_source", "key": "source_id" }
+  ],
+  "params": {
+    "halo_scale": 1.5,
+    "sun": { "R0_kpc": 8.122, "z_sun_kpc": 0.0208, "v_sun_kms": [12.9, 245.6, 7.78] },
+    "samples": 20000,
+    "confidence": 0.997,
+    "min_parallax_snr": 5.0,
+    "max_position_sep_arcsec": 2.0,
+    "catalog_tolerance_sigma": 3.0
+  }
+}

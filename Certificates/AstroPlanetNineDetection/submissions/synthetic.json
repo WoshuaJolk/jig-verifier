@@ -1,0 +1,9 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroPlanetNineDetection",
+  "witness": "synthetic.witness",
+  "author": "selftest",
+  "expect": "green",
+  "note": "Synthetic. An invented orbit observed from real stations, positions from the checker's own model plus noise (Certificates/_shared/synth.py, synthetic.cfg). Proves the pipeline goes green on an object that satisfies the predicate; says nothing about the sky."
+}

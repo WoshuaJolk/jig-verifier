@@ -1,0 +1,8 @@
+{
+  "source_id": 6513109241989477504,
+  "ra_deg": 343.7153533738027, "dec_deg": -51.195607570733266,
+  "pmra_mas_yr": 35.406075861113024, "pmra_error_mas_yr": 0.029201277,
+  "pmdec_mas_yr": 0.5347607520615087, "pmdec_error_mas_yr": 0.03823477,
+  "rv_km_s": 1017.0, "rv_error_km_s": 2.7, "rv_source": "Koposov et al. 2020, MNRAS 491, 2465 (S5-HVS1)",
+  "distance_kpc": 8.7, "distance_error_kpc": 0.4, "distance_source": "Koposov et al. 2020, A-type star spectrophotometric distance"
+}

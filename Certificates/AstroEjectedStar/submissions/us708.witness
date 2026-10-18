@@ -1,0 +1,8 @@
+{
+  "source_id": 815106177700219392,
+  "ra_deg": 143.33689612635976, "dec_deg": 44.28486773968608,
+  "pmra_mas_yr": -5.446663469782059, "pmra_error_mas_yr": 0.19277732,
+  "pmdec_mas_yr": 1.7763997849072597, "pmdec_error_mas_yr": 0.16421373,
+  "rv_km_s": 917.0, "rv_error_km_s": 7.0, "rv_source": "Geier et al. 2015, Science 347, 1126 (US 708)",
+  "distance_kpc": 8.5, "distance_error_kpc": 1.0, "distance_source": "Geier et al. 2015, hot subdwarf spectroscopic distance"
+}

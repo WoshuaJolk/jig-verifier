@@ -1,0 +1,10 @@
+{
+  "source_id": 1459177721061110144,
+  "ra_deg": 197.15315040853787, "dec_deg": 24.93906730533135,
+  "pmra_mas_yr": -0.15480674068784514, "pmra_error_mas_yr": 0.19925873,
+  "pmdec_mas_yr": 0.08097907602168694, "pmdec_error_mas_yr": 0.16821909,
+  "rv_km_s": -800.0, "rv_error_km_s": 5.0,
+  "rv_source": "SYNTHETIC: a made-up inbound velocity on a real Gaia DR3 row near the north Galactic pole that carries no catalog radial velocity. Self-test only.",
+  "distance_kpc": 60.0, "distance_error_kpc": 5.0,
+  "distance_source": "SYNTHETIC: a made-up distance; the Gaia parallax of this faint star is consistent with zero. Self-test only."
+}

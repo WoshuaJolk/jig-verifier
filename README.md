@@ -71,7 +71,7 @@ names only the first one that fired.
 `restatement`, `shadowed_statement`, `provenance`, `sorry`, `native_decide`,
 `disallowed_axiom`, `audit_failed`, `timeout`, `verifier_error`. Certificates add
 `missing_witness`, `sandbox_unavailable`, `checker_error`, `checker_protocol`,
-`invalid_witness`.
+`invalid_witness`, `fixture_unavailable`, `fixture_mismatch`, `missing_dependency`.
 
 ### `elaborated_term_hash`
 
@@ -229,6 +229,61 @@ downgraded — set `CONJECT_ALLOW_NO_NETNS=1` to override, locally only.
 The trust boundary: the **checker** is repo-owned and reviewed like a canonical
 statement; the **witness** is untrusted. The sandbox protects the runner from a checker
 bug being driven by a hostile witness, which is the realistic failure mode.
+
+### Fixtures, shared code and live lookups (`conject.certificate.v2`)
+
+A checker that decides a claim about the sky needs data from outside the repo: a
+planetary ephemeris, an observatory list, a catalog row. A v2 `spec.json` names each one
+and the driver materialises it **before the sandbox closes**, then records what it used:
+
+```json
+{
+  "requires": ["numpy", "scipy", "jplephem"],
+  "code": ["../_shared/astro_cert.py", "../_shared/skyfit.py"],
+  "fixtures": [
+    { "name": "de440s.bsp", "sha256": "c1c7…", "url": "https://naif.jpl.nasa.gov/…/de440s.bsp" },
+    { "name": "ObsCodes.html", "sha256": "5845…", "path": "_fixtures/ObsCodes-2026-10-18.html" },
+    { "name": "gaia.json", "live": "gaia_dr3_source", "key": "source_id" }
+  ],
+  "params": { "e_min": 1.02, "margin_sigma": 3.0 }
+}
+```
+
+* `requires` are Python packages, pinned in `Certificates/requirements.txt` and installed
+  by CI; the driver refuses to run if one does not import (`missing_dependency`).
+* `code` are shared modules under `Certificates/`, copied flat into the scratch dir.
+  `statement_hash` covers the checker, the spec and the code together, so a threshold
+  change is a different problem.
+* A fixture with a `url` is downloaded once into `.conject/fixtures/<sha256>` and
+  checked against its hash every run (`fixture_mismatch` if the upstream file changed);
+  one with a `path` is vendored under `Certificates/`; one with `live` is a catalog row
+  fetched by a key read out of the witness, with a fixed query. The verdict's `fixtures`
+  list says which route each took and, for a live lookup, when it was fetched.
+* `params` are the problem's thresholds. The checker reads `spec.json` from its cwd.
+
+A checker may also return `"measurement": {…}` on its `CONJECT_CERT:` line: fitted
+elements, residuals, probabilities. It is copied into the verdict whole, so a reader
+judges the green on the numbers rather than on the word.
+
+### The astronomical certificates
+
+Six checkers under `Certificates/Astro*` back the searches on jig.so/astro. Three fit an
+orbit to MPC astrometry under full planetary perturbations (`_shared/skyfit.py`: DE440s,
+DOP853, iterative outlier rejection, covariance-propagated element errors) and decide
+on the fitted barycentric elements: a fourth interstellar object (`AstroIso`), a new
+Sedna-like object (`AstroSednaLike`), a direct detection of Planet Nine
+(`AstroPlanetNineDetection`). Two take a Gaia DR3 star and decide bound or unbound
+under MWPotential2014 with a Monte Carlo over the quoted errors, checking the witness
+against a live catalog lookup (`_shared/galkin.py`): arriving from intergalactic space
+(`AstroIntergalacticStar`), thrown out of the disk by an explosion (`AstroEjectedStar`,
+which also integrates the orbit backward and refuses a Galactic-centre origin). One
+recomputes a clustering statistic on a pinned MPC snapshot
+(`AstroPlanetNineClustering`).
+
+Their self-test examples are real where a real object can be red for the right reason
+(2I/Borisov, Sedna, S5-HVS1) and green where one exists (US 708); where no real object
+satisfies a search yet, the green example is synthetic and says so in its manifest
+(`_shared/synth.py`). These checkers take minutes and are meant for the heavy lane.
 
 ---
 

@@ -1,0 +1,6 @@
+# Python packages the astronomical checkers import. Installed on the runner
+# before any certificate runs; each spec names which of these it needs under
+# `requires`, and the driver refuses to run a checker whose imports fail.
+numpy==2.3.4
+scipy==1.16.2
+jplephem==2.23

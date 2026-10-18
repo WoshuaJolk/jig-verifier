@@ -95,6 +95,24 @@ jobs:
           set -euo pipefail
           lake exe cache get
 
+      # The astronomical certificates: their checkers import numpy, scipy and
+      # jplephem, and pin a 32 MB planetary ephemeris by hash. The cache is keyed
+      # on the specs, so a re-pin fetches once.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: Certificates/requirements.txt
+
+      - name: Install certificate checker dependencies
+        run: python3 -m pip install -q -r Certificates/requirements.txt
+
+      - name: Cache pinned fixtures
+        uses: actions/cache@v4
+        with:
+          path: .conject/fixtures
+          key: fixtures-${{ hashFiles('Certificates/*/spec.json') }}
+
       # Deliberately not `lake build`. Statements/ and Submissions/ are written
       # by the Conject API on behalf of whoever posed or submitted them, so both
       # globs are untrusted: one file that does not compile would otherwise fail

@@ -113,10 +113,25 @@ NEXT_STEP = {
     ),
     "invalid_witness": "The checker rejected the witness. The detail carries its reason.",
     "checker_error": "The checker crashed. Infrastructure, not your certificate.",
+    "fixture_unavailable": (
+        "A pinned data file or a live catalog lookup the checker depends on could not be "
+        "fetched. Infrastructure, not your witness; resubmit later."
+    ),
+    "fixture_mismatch": (
+        "A pinned data file no longer matches its recorded hash: the upstream source "
+        "changed under the pin. Infrastructure; the problem owner has to re-pin."
+    ),
+    "missing_dependency": (
+        "A Python package the checker requires is not installed on the runner. "
+        "Infrastructure, not your witness."
+    ),
 }
 
 # Reasons that say nothing about the submission, so a resubmission is the right move.
-NOT_ACTIONABLE = {"verifier_error", "checker_error", "run_cancelled"}
+NOT_ACTIONABLE = {
+    "verifier_error", "checker_error", "run_cancelled",
+    "fixture_unavailable", "fixture_mismatch", "missing_dependency",
+}
 
 
 def advise(verdict: dict) -> dict:

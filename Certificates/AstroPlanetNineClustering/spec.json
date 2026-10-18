@@ -1,0 +1,21 @@
+{
+  "schema": "conject.certificate.v2",
+  "id": "AstroPlanetNineClustering",
+  "title": "Perihelion clustering of extreme trans-Neptunian objects",
+  "statement": "Report the Rayleigh test of the longitudes of perihelion of the extreme trans-Neptunian objects in the pinned MPC distant-object snapshot of 2026-10-18 under a stated selection in semi-major axis and perihelion distance. A witness states the selection, the objects it picks out, and the statistic; the checker recomputes all three from the snapshot and accepts the witness only if they agree.",
+  "witness_format": "JSON object: a_min_au, q_min_au, optional exclude (list of packed designations with a one-line reason each), designations (list of packed designations the selection yields), n, mean_resultant_length, p_rayleigh, mean_longitude_of_perihelion_deg",
+  "limits": { "wall_sec": 60, "cpu_sec": 30, "address_space_mb": 1024, "output_bytes": 262144 },
+  "requires": [],
+  "code": ["../_shared/astro_cert.py"],
+  "fixtures": [
+    { "name": "Distant.txt", "sha256": "bed98f1d270e709bee1271f65be91307e263784195422a6cc98d80b2b843eeba",
+      "path": "_fixtures/Distant-2026-10-18.txt" }
+  ],
+  "params": {
+    "snapshot": "MPC Distant.txt, fetched 2026-10-18",
+    "a_min_allowed": [100, 1000],
+    "q_min_allowed": [30, 80],
+    "max_excluded": 10,
+    "tolerance": { "R": 0.002, "p": 0.002, "mean_deg": 1.0 }
+  }
+}

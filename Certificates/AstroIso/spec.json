@@ -1,0 +1,37 @@
+{
+  "schema": "conject.certificate.v2",
+  "id": "AstroIso",
+  "title": "A fourth interstellar object",
+  "statement": "Exhibit an interstellar object other than 1I/'Oumuamua, 2I/Borisov and 3I/ATLAS: ground-based optical astrometry spanning at least 30 days from at least two stations, fitted under full planetary perturbations, whose barycentric osculating eccentricity exceeds 1.02 by at least three standard deviations.",
+  "witness_format": "JSON object: designation (string), orbit {q, e, i, node, peri, tp, epoch} (heliocentric ecliptic J2000, degrees, JD TDB), observations (list of MPC 80-column optical lines, ground-based only), optional sigma_arcsec (assumed per-observation error, default 1.0)",
+  "limits": { "wall_sec": 900, "cpu_sec": 800, "address_space_mb": 4096, "output_bytes": 1048576 },
+  "requires": ["numpy", "scipy", "jplephem"],
+  "code": ["../_shared/astro_cert.py", "../_shared/skyfit.py"],
+  "fixtures": [
+    { "name": "de440s.bsp", "sha256": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440s.bsp" },
+    { "name": "ObsCodes.html", "sha256": "58454e19015f622472a67928d517ca081abfa13c987a211dbf4533e293226fe4",
+      "path": "_fixtures/ObsCodes-2026-10-18.html" }
+  ],
+  "params": {
+    "frame": "barycentric",
+    "e_min": 1.02,
+    "margin_sigma": 3.0,
+    "min_observations": 20,
+    "min_arc_days": 30,
+    "min_stations": 2,
+    "max_rms_arcsec": 1.5,
+    "min_used_fraction": 0.9,
+    "default_sigma_arcsec": 1.0,
+    "reject_sigma": 3.0,
+    "max_observations": 3000,
+    "max_start_rms_arcsec": 600,
+    "max_epoch_offset_days": 2000,
+    "known": [
+      { "name": "1I/'Oumuamua", "q": 0.2559, "e": 1.2011, "i": 122.74 },
+      { "name": "2I/Borisov", "q": 2.0065, "e": 3.3565, "i": 44.05 },
+      { "name": "3I/ATLAS", "q": 1.3565, "e": 6.1414, "i": 175.12 }
+    ],
+    "known_tolerance": { "q_rel": 0.05, "e_rel": 0.05, "i_deg": 2.0 }
+  }
+}

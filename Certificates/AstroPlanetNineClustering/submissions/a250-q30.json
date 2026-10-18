@@ -1,0 +1,9 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroPlanetNineClustering",
+  "witness": "a250-q30.witness",
+  "author": "selftest",
+  "expect": "green",
+  "note": "The Rayleigh statistic of the longitudes of perihelion under the selection in the filename, computed from the pinned snapshot."
+}

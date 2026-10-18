@@ -1,0 +1,9 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroEjectedStar",
+  "witness": "us708.witness",
+  "author": "selftest",
+  "expect": "green",
+  "note": "US 708: the hypervelocity helium subdwarf Geier et al. 2015 trace to a thermonuclear supernova in a binary. Real Gaia DR3 astrometry, published distance and velocity. Expected unbound, outbound, and from the disk away from the centre."
+}
