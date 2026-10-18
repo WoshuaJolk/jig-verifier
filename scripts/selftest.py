@@ -10,6 +10,7 @@ independent green proofs of S001 hash differently, which is what makes
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import subprocess
 import sys
@@ -34,10 +35,15 @@ def main() -> int:
         rel = str(man.relative_to(ROOT))
         out = ROOT / ".conject/verdicts" / (rel.replace("/", "__"))
         print(f"\n=== {rel}  (expect {meta['expect']})", flush=True)
+        # A manifest may name the lane it needs: the orbit fits run minutes, which
+        # the default lane's 60-second wall refuses, and Jig submits them heavy.
+        env = dict(os.environ)
+        if meta.get("lane") in ("heavy", "long"):
+            env["CONJECT_LANE"] = meta["lane"]
         proc = subprocess.run(
             [str(ROOT / "scripts/verify.sh"), "--submission", rel,
              "--out", str(out), "--timeout", timeout],
-            cwd=ROOT, capture_output=True, text=True,
+            cwd=ROOT, capture_output=True, text=True, env=env,
         )
         sys.stdout.write(proc.stdout)
         sys.stderr.write(proc.stderr)

@@ -5,5 +5,6 @@
   "witness": "synthetic-iso.witness",
   "author": "selftest",
   "expect": "green",
-  "note": "Synthetic. An invented hyperbolic orbit observed from real stations over 70 nights, positions from the checker's own model plus 0.4 arcsec noise (Certificates/_shared/synth.py, synthetic.cfg). Proves the pipeline goes green on an object that satisfies the predicate; says nothing about the sky."
+  "note": "Synthetic. An invented hyperbolic orbit observed from real stations over 70 nights, positions from the checker's own model plus 0.4 arcsec noise (Certificates/_shared/synth.py, synthetic.cfg). Proves the pipeline goes green on an object that satisfies the predicate; says nothing about the sky.",
+  "lane": "heavy"
 }

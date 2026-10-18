@@ -6,5 +6,6 @@
   "author": "selftest",
   "expect": "red",
   "expect_reason": "invalid_witness",
-  "note": "S5-HVS1: unbound at ~1700 km/s and outbound, but its back-integrated orbit comes from Sgr A*. Refused as a Galactic-centre ejection. Guards the origin test."
+  "note": "S5-HVS1: unbound at ~1700 km/s and outbound, but its back-integrated orbit comes from Sgr A*. Refused as a Galactic-centre ejection. Guards the origin test.",
+  "lane": "heavy"
 }

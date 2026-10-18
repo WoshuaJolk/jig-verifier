@@ -6,5 +6,6 @@
   "author": "selftest",
   "expect": "red",
   "expect_reason": "invalid_witness",
-  "note": "2I/Borisov: 338 real MPC observations and the JPL orbit. Fits and is hyperbolic, and is refused because it is already known. Guards the known-object check and the fit itself."
+  "note": "2I/Borisov: 338 real MPC observations and the JPL orbit. Fits and is hyperbolic, and is refused because it is already known. Guards the known-object check and the fit itself.",
+  "lane": "heavy"
 }

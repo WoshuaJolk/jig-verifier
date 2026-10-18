@@ -5,5 +5,6 @@
   "witness": "synthetic-inbound.witness",
   "author": "selftest",
   "expect": "green",
-  "note": "Synthetic. A real faint Gaia DR3 star near the north Galactic pole, which carries no catalog radial velocity or usable parallax, given an invented distance and inbound velocity. Proves the pipeline goes green on a witness that satisfies the predicate; says nothing about the sky."
+  "note": "Synthetic. A real faint Gaia DR3 star near the north Galactic pole, which carries no catalog radial velocity or usable parallax, given an invented distance and inbound velocity. Proves the pipeline goes green on a witness that satisfies the predicate; says nothing about the sky.",
+  "lane": "heavy"
 }

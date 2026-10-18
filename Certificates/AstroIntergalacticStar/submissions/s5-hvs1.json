@@ -6,5 +6,6 @@
   "author": "selftest",
   "expect": "red",
   "expect_reason": "invalid_witness",
-  "note": "S5-HVS1: unbound, but leaving. Refused as outbound. Guards the sign of the radial velocity."
+  "note": "S5-HVS1: unbound, but leaving. Refused as outbound. Guards the sign of the radial velocity.",
+  "lane": "heavy"
 }

@@ -6,5 +6,6 @@
   "author": "selftest",
   "expect": "red",
   "expect_reason": "invalid_witness",
-  "note": "(90377) Sedna: real MPC observations 1990-2026 and the JPL orbit. Fits, and is refused because it is in the pinned snapshot. Guards the fit at 80 AU and the known-object check."
+  "note": "(90377) Sedna: real MPC observations 1990-2026 and the JPL orbit. Fits, and is refused because it is in the pinned snapshot. Guards the fit at 80 AU and the known-object check.",
+  "lane": "heavy"
 }
