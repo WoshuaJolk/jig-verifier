@@ -18,19 +18,23 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
-def manifests() -> list[pathlib.Path]:
+def manifests(only: str | None = None) -> list[pathlib.Path]:
     found = sorted(ROOT.glob("Submissions/**/*.json")) + sorted(
         ROOT.glob("Certificates/*/submissions/*.json")
     )
+    if only:
+        found = [p for p in found if str(p.relative_to(ROOT)).startswith(only)]
     return [p for p in found if "expect" in json.loads(p.read_text())]
 
 
 def main() -> int:
-    timeout = sys.argv[1] if len(sys.argv) > 1 else "1200"
+    args = [a for a in sys.argv[1:] if not a.startswith("--only=")]
+    only = next((a[len("--only="):] for a in sys.argv[1:] if a.startswith("--only=")), None)
+    timeout = args[0] if args else "1200"
     results = []
     failures = []
 
-    for man in manifests():
+    for man in manifests(only):
         meta = json.loads(man.read_text())
         rel = str(man.relative_to(ROOT))
         out = ROOT / ".conject/verdicts" / (rel.replace("/", "__"))
