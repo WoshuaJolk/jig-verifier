@@ -234,6 +234,24 @@ def read_star(doc: dict, spec: dict) -> dict:
     return out
 
 
+def matches_known(star: dict, source_id, known: list, sep_arcsec: float) -> str | None:
+    """The name of a listed star this one is: the same Gaia DR3 source id, or a
+    position within sep_arcsec of it. None when it is not on the list."""
+    try:
+        sid = int(source_id) if source_id is not None else None
+    except (TypeError, ValueError):
+        sid = None
+    ra1, dec1 = math.radians(star["ra"]), math.radians(star["dec"])
+    for k in known:
+        if sid is not None and int(k["source_id"]) == sid:
+            return k["name"]
+        ra2, dec2 = math.radians(float(k["ra_deg"])), math.radians(float(k["dec_deg"]))
+        h = math.sin((dec2 - dec1) / 2) ** 2 + math.cos(dec1) * math.cos(dec2) * math.sin((ra2 - ra1) / 2) ** 2
+        if 2 * math.asin(math.sqrt(min(1.0, h))) * 206264.806 <= sep_arcsec:
+            return k["name"]
+    return None
+
+
 def sample(star: dict, n: int, rng: np.random.Generator):
     pmra = rng.normal(star["pmra"], star["pmra_err"], n)
     pmdec = rng.normal(star["pmdec"], star["pmdec_err"], n)

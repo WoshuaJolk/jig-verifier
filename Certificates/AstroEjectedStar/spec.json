@@ -1,18 +1,41 @@
 {
   "schema": "conject.certificate.v2",
   "id": "AstroEjectedStar",
-  "title": "A star thrown out of the Galaxy by an explosion",
-  "statement": "Exhibit a Gaia DR3 star that is unbound from the Milky Way, moving outward, and launched from the disk rather than the Galactic centre: with its Gaia DR3 astrometry, a stated distance and a published radial velocity, at least 99.7% of error samples have Galactocentric speed above the escape speed of MWPotential2014 with the halo scaled by 1.5 and Galactocentric radial velocity above zero, and in at least 99.7% of back-integrated orbits over the last 150 Myr the path crossed the disk (|z| < 0.3 kpc, R < 30 kpc) and never came within 1 kpc of the Galactic centre.",
+  "title": "Another star thrown out by a supernova",
+  "statement": "Exhibit a Gaia DR3 star, not already reported as a supernova runaway (params.known), that is unbound from the Milky Way, moving outward, and launched from the disk rather than the Galactic centre: with its Gaia DR3 astrometry, a stated distance and a published radial velocity, at least 99.7% of error samples have Galactocentric speed above the escape speed of MWPotential2014 with the halo scaled by 1.5 and Galactocentric radial velocity above zero, and in at least 99.7% of back-integrated orbits over the last 150 Myr the path crossed the disk (|z| < 0.3 kpc, R < 30 kpc) and never came within 1 kpc of the Galactic centre.",
   "witness_format": "JSON object: source_id (Gaia DR3), ra_deg, dec_deg, pmra_mas_yr, pmra_error_mas_yr, pmdec_mas_yr, pmdec_error_mas_yr, rv_km_s, rv_error_km_s, rv_source, and either parallax_mas + parallax_error_mas (S/N >= 5) or distance_kpc + distance_error_kpc + distance_source",
-  "limits": { "wall_sec": 600, "cpu_sec": 500, "address_space_mb": 4096, "output_bytes": 262144 },
-  "requires": ["numpy", "scipy"],
-  "code": ["../_shared/astro_cert.py", "../_shared/galkin.py"],
+  "limits": {
+    "wall_sec": 600,
+    "cpu_sec": 500,
+    "address_space_mb": 4096,
+    "output_bytes": 262144
+  },
+  "requires": [
+    "numpy",
+    "scipy"
+  ],
+  "code": [
+    "../_shared/astro_cert.py",
+    "../_shared/galkin.py"
+  ],
   "fixtures": [
-    { "name": "gaia.json", "live": "gaia_dr3_source", "key": "source_id" }
+    {
+      "name": "gaia.json",
+      "live": "gaia_dr3_source",
+      "key": "source_id"
+    }
   ],
   "params": {
     "halo_scale": 1.5,
-    "sun": { "R0_kpc": 8.122, "z_sun_kpc": 0.0208, "v_sun_kms": [12.9, 245.6, 7.78] },
+    "sun": {
+      "R0_kpc": 8.122,
+      "z_sun_kpc": 0.0208,
+      "v_sun_kms": [
+        12.9,
+        245.6,
+        7.78
+      ]
+    },
     "samples": 20000,
     "orbits": 300,
     "confidence": 0.997,
@@ -22,6 +45,45 @@
     "gc_exclusion_kpc": 1.0,
     "min_parallax_snr": 5.0,
     "max_position_sep_arcsec": 2.0,
-    "catalog_tolerance_sigma": 3.0
+    "catalog_tolerance_sigma": 3.0,
+    "known": [
+      {
+        "name": "US 708 (Geier et al. 2015)",
+        "source_id": 815106177700219392,
+        "ra_deg": 143.33689612635976,
+        "dec_deg": 44.28486773968608
+      },
+      {
+        "name": "D6-1 (Shen et al. 2018)",
+        "source_id": 5805243926609660032,
+        "ra_deg": 249.38193386551507,
+        "dec_deg": -74.34352580748501
+      },
+      {
+        "name": "D6-2 (Shen et al. 2018)",
+        "source_id": 1798008584396457088,
+        "ra_deg": 324.61250361285255,
+        "dec_deg": 25.373744852238037
+      },
+      {
+        "name": "D6-3 (Shen et al. 2018)",
+        "source_id": 2156908318076164224,
+        "ra_deg": 283.0078568444674,
+        "dec_deg": 62.03619694012408
+      },
+      {
+        "name": "LP 40-365 (Vennes et al. 2017; Raddi et al. 2018)",
+        "source_id": 1711956376295435520,
+        "ra_deg": 211.6475676552,
+        "dec_deg": 74.31611490408
+      },
+      {
+        "name": "J1332-3541 (El-Badry et al. 2023)",
+        "source_id": 6164642052589392512,
+        "ra_deg": 203.24157171849097,
+        "dec_deg": -35.68629987429306
+      }
+    ],
+    "known_sep_arcsec": 5.0
   }
 }

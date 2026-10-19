@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroEjectedStar",
+  "witness": "synthetic-outbound.witness",
+  "author": "selftest",
+  "expect": "green",
+  "note": "Synthetic. The same real faint Gaia DR3 star as the intergalactic self-test, sent the other way: an invented distance and outbound velocity that put it above escape speed, leaving the disk near the Sun some 17 Myr ago, far from the Galactic centre. Proves the pipeline goes green; says nothing about the sky.",
+  "lane": "heavy"
+}

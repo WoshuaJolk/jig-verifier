@@ -281,9 +281,13 @@ recomputes a clustering statistic on a pinned MPC snapshot
 (`AstroPlanetNineClustering`).
 
 Their self-test examples are real where a real object can be red for the right reason
-(2I/Borisov, Sedna, S5-HVS1) and green where one exists (US 708); where no real object
-satisfies a search yet, the green example is synthetic and says so in its manifest
-(`_shared/synth.py`). These checkers take minutes and are meant for the heavy lane.
+(2I/Borisov, Sedna, S5-HVS1, US 708), and the green example is synthetic and says so in
+its manifest (`_shared/synth.py`): a real object that satisfies a search is, by
+construction, one the literature already has, and every checker refuses those by name
+(`params.known` on the stellar searches, the known interstellar objects by orbit, the
+pinned MPC snapshot for the distant ones). The list is a backstop; the prior-art search
+in the contributing guide is the check. These checkers take minutes and are meant for
+the heavy lane.
 
 ---
 

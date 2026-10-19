@@ -15,6 +15,11 @@ import galkin
 def decide(doc, spec):
     p = spec["params"]
     star = galkin.read_star(doc, spec)
+    name = galkin.matches_known(star, doc.get("source_id"), p.get("known", []), float(p.get("known_sep_arcsec", 5.0)))
+    if name:
+        return False, (f"this is {name}, already reported in the literature; the search is for a star it does not have. "
+                       "A reclassification of a known star is a separate statement, not this root"), \
+               f"AstroIntergalacticStar:gaia_dr3:{doc.get('source_id')}", {"known": name}
     cat = galkin.check_against_gaia(star, "gaia.json", spec)
     kin = galkin.kinematics(star, spec)
     m = {k: v for k, v in kin.items() if not k.startswith("_")}
