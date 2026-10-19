@@ -1,0 +1,14 @@
+{
+ "designation": "DML1002",
+ "observations": [
+  "     DML1002 3C2020 06 22.44948 19 14 19.956-20 42 07.70         26.5 rV     266",
+  "     DML1002 3C2020 06 22.52092 19 14 19.847-20 42 07.89         26.5 rV     266",
+  "     DML1002 3C2020 06 22.59118 19 14 19.741-20 42 08.08         26.5 rV     266"
+ ],
+ "sigma_arcsec": 0.3,
+ "prediction": {
+  "url": "https://claude.ai/artifact/6btwWUMYuVduRahLHVqZNJ",
+  "model": "2000 bound heliocentric orbits through the tracklet (distance uniform 137-173 au, rate perturbed by 0.1 arcsec/hr per axis, radial velocity uniform within the bound limit), propagated with two-body gravity to 2026-10-25, 2027-06-25, 2027-09-05, 2028-06-25, 2028-09-05; per date the file gives median position, 1-sigma and 95% extents (about 0.8 deg 1-sigma radius in 2026, growing 0.25 deg/yr), rates, and all samples. Planetary perturbations at 150 au are below 1 arcsec over the span. Download: dml1002_prediction_2026_2028.json on the linked page.",
+  "note": "Tracklet from the New Horizons Subaru TNO survey (Fraser et al. 2024, arXiv:2407.21142), code 266. Our re-reduction of the 2020-06-22 raw HSC frames shows the source at 6.3 sigma, 0.6 arcsec from the tracklet position. Four 2021 nights of the same field were searched for a second apparition with nothing found to r 26.4 on unmasked pixels; that search is filed on the problem's Null statement. We put the chance that the object is real at about 1 in 6."
+ }
+}
