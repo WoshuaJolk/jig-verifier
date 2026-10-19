@@ -288,7 +288,9 @@ point explains it instead, and whether a snapshot object is passing by
 (`AstroSednaLead` with a 60 AU floor, `AstroPlanetNineLead` with 200 AU and a brightness
 bar). One runs systematic ranging on a one-station arc of 10 to 60 days
 (`_shared/ranging.py`) and accepts it when no orbit with e at or below the root's bar
-fits (`AstroIsoLead`). Three take a null search in a fixed form (`_shared/archnull.py`):
+fits (`AstroIsoLead`). A lead may carry a `prediction`: an https link to a file of
+where the object should be in the coming seasons, echoed into the measurement so the
+next search starts from it. Three take a null search in a fixed form (`_shared/archnull.py`):
 region, epochs, band, an injection-recovery table from which the depth is recomputed,
 controls, and every candidate with its refutation (`AstroPlanetNineNull`,
 `AstroSednaNull`, `AstroIsoNull`); a green there is one dead route on the problem's

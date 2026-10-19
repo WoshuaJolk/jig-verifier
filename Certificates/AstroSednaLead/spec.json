@@ -3,7 +3,7 @@
   "id": "AstroSednaLead",
   "title": "A lead on a Sedna-like object: a tracklet only a distant orbit explains",
   "statement": "Exhibit a single-station optical tracklet of at least three observations spanning at least half an hour whose sky motion, taken with the observer's own motion, admits no bound heliocentric orbit closer than 60 AU (tangential speed above the local escape speed everywhere nearer, at the rate plus its one-sigma error), is reproduced by no inner solar system orbit between 1.8 and 6 AU at up to 1.25 times circular speed, and is not within 5 arcminutes of a snapshot object moving at the same rate. A lead for the root statement, which still needs a 300-day arc.",
-  "witness_format": "JSON object: designation (string), observations (list of MPC 80-column optical lines, one station, 3 to 60 lines, at most 5 days), optional sigma_arcsec (assumed per-observation error, default 0.3)",
+  "witness_format": "JSON object: designation (string), observations (list of MPC 80-column optical lines, one station, 3 to 60 lines, at most 5 days), optional sigma_arcsec (assumed per-observation error, default 0.3), optional prediction ({url: https link to a downloadable file of predicted positions and rates for the coming seasons, model: the propagation and its error model, note?})",
   "limits": { "wall_sec": 60, "cpu_sec": 30, "address_space_mb": 2048, "output_bytes": 262144 },
   "requires": ["numpy", "scipy", "jplephem"],
   "code": ["../_shared/astro_cert.py", "../_shared/skyfit.py", "../_shared/shortarc.py"],

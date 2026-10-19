@@ -93,6 +93,25 @@ def read_tracklet(doc: dict, spec: dict) -> tuple[str, list[Observation], float]
         raise WitnessError("sigma_arcsec must be between 0.02 and 5")
     return desig, obs, float(sigma)
 
+def read_prediction(doc: dict) -> dict | None:
+    """Optional: where the object should be next, as a file the next search can fetch.
+    Echoed into the measurement; the checker does not verify it."""
+    pred = doc.get("prediction")
+    if pred is None:
+        return None
+    if not isinstance(pred, dict):
+        raise WitnessError("prediction must be an object {url, model, note?}")
+    url = pred.get("url")
+    if not isinstance(url, str) or not url.startswith("https://") or len(url) > 300:
+        raise WitnessError("prediction.url must be an https URL to a downloadable position file")
+    model = pred.get("model")
+    if not isinstance(model, str) or not (3 <= len(model) <= 200):
+        raise WitnessError("prediction.model names the propagation and its error model")
+    note = pred.get("note", "")
+    if not isinstance(note, str) or len(note) > 300:
+        raise WitnessError("prediction.note is a string of at most 300 characters")
+    return {"url": url, "model": model, "note": note}
+
 
 # ----------------------------------------------------------------- motion
 
@@ -379,6 +398,7 @@ def decide_lead(doc: dict, spec: dict, label: str, extra=None):
     p = spec["params"]
     res = analyse(doc, spec)
     m = {k: v for k, v in res.items() if k != "canonical"}
+    m["prediction"] = read_prediction(doc)
     can = f"{label}:{res['canonical']}"
     mo = res["motion"]
     hit = next((k for k in res["known_nearby"] if k["rate_matches"]), None)

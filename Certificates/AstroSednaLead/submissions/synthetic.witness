@@ -16,5 +16,6 @@
   "     K26L15A  C2025 03 10.34000 11 00 19.39 +28 10 19.5          24.3 RSYNTH T09",
   "     K26L15A  C2025 03 10.37000 11 00 19.36 +28 10 19.6          24.3 RSYNTH T09"
  ],
- "sigma_arcsec": 0.1
+ "sigma_arcsec": 0.1,
+  "prediction": {"url": "https://example.org/synthetic-sedna-lead/prediction.csv", "model": "two-body over the far branch, 1 sigma in rate", "note": "self-test only"}
 }

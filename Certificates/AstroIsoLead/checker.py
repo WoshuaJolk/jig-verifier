@@ -13,6 +13,7 @@ import math
 
 import astro_cert
 import ranging
+import shortarc
 import skyfit
 
 
@@ -24,7 +25,7 @@ def decide(doc, spec):
     res = ranging.run(obs, eph, obscodes, p)
     stats = skyfit.arc_stats(obs)
     can = ranging.canonical_id("AstroIsoLead", obs)
-    m = {"designation": desig, "arc": stats, "ranging": res}
+    m = {"designation": desig, "arc": stats, "ranging": res, "prediction": shortarc.read_prediction(doc)}
     arc = ranging.Arc(obs, eph, obscodes)
     ra = math.radians(res["position_t0"]["ra_deg"])
     dec = math.radians(res["position_t0"]["dec_deg"])

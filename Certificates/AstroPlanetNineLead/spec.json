@@ -3,7 +3,7 @@
   "id": "AstroPlanetNineLead",
   "title": "A lead on Planet Nine: a tracklet only a distant, bright body explains",
   "statement": "Exhibit a single-station optical tracklet with magnitudes, at least three observations spanning at least half an hour, whose sky motion taken with the observer's own motion admits no bound heliocentric orbit closer than 200 AU (at the rate plus its one-sigma error), is reproduced by no inner solar system orbit between 1.8 and 6 AU at up to 1.25 times circular speed, is not within 5 arcminutes of a snapshot object moving at the same rate, and whose absolute magnitude at the far end of its allowed distances is at most 3. A lead for the root statement, which still needs a 180-day arc.",
-  "witness_format": "JSON object: designation (string), observations (list of MPC 80-column optical lines with magnitudes and bands, one station, 3 to 60 lines, at most 5 days), optional sigma_arcsec (default 0.3)",
+  "witness_format": "JSON object: designation (string), observations (list of MPC 80-column optical lines with magnitudes and bands, one station, 3 to 60 lines, at most 5 days), optional sigma_arcsec (default 0.3), optional prediction ({url: https link to a downloadable file of predicted positions and rates for the coming seasons, model: the propagation and its error model, note?})",
   "limits": { "wall_sec": 60, "cpu_sec": 30, "address_space_mb": 2048, "output_bytes": 262144 },
   "requires": ["numpy", "scipy", "jplephem"],
   "code": ["../_shared/astro_cert.py", "../_shared/skyfit.py", "../_shared/shortarc.py"],

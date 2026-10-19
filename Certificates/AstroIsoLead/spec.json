@@ -3,7 +3,7 @@
   "id": "AstroIsoLead",
   "title": "A lead on a fourth interstellar object: a short arc no bound orbit fits",
   "statement": "Exhibit ground-based optical astrometry of at least six observations on at least four nights spanning 10 to 60 days such that, under systematic ranging over topocentric distance (0.3 to 15 AU) and range rate (within 0.06 AU/day) at the central epoch with the sky position and rates fitted in each cell, every acceptable two-body orbit (chi-square within 9 of the best, the scale set by the best fit's own residuals with a 0.3 arcsecond floor) is hyperbolic with e above 1.02, the acceptable distances span less than a factor 4, the best fit is within 2 arcseconds rms, and the position is not that of 1I, 2I or 3I. A lead for the root statement, which still needs 30 days from two stations under full perturbations.",
-  "witness_format": "JSON object: designation (string), observations (list of MPC 80-column optical lines, ground-based, 6 to 400 lines on 4 or more nights spanning 10 to 60 days)",
+  "witness_format": "JSON object: designation (string), observations (list of MPC 80-column optical lines, ground-based, 6 to 400 lines on 4 or more nights spanning 10 to 60 days), optional prediction ({url: https link to a downloadable file of predicted positions and rates for the coming seasons, model: the propagation and its error model, note?})",
   "limits": {
     "wall_sec": 900,
     "cpu_sec": 800,
