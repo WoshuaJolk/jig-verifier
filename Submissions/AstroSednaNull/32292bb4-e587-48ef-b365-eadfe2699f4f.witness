@@ -1,0 +1,225 @@
+{
+ "search": "DML1002 corridor, HSC-r2 2021-09-05, chips 128 129 32 37 38 39 43 44 45 53 54 55",
+ "method": "pixel",
+ "source": {
+  "survey": "New Horizons Subaru TNO survey field (HSC, raw)",
+  "archive_url": "https://smoka.nao.ac.jp/",
+  "station": "T09"
+ },
+ "band": "r",
+ "region": {
+  "type": "corridor",
+  "cones": [
+   {
+    "jd_utc": 2459462.81,
+    "ra_deg": 288.19669,
+    "dec_deg": -20.80279,
+    "radius_deg": 0.2704
+   }
+  ]
+ },
+ "epochs": [
+  {
+   "start_jd_utc": 2459462.72897,
+   "end_jd_utc": 2459462.89834
+  }
+ ],
+ "rate_range_arcsec_hr": [
+  0.41,
+  0.62
+ ],
+ "injections": [
+  {
+   "mag": 25.5,
+   "injected": 72,
+   "recovered": 72
+  },
+  {
+   "mag": 26.0,
+   "injected": 72,
+   "recovered": 64
+  },
+  {
+   "mag": 26.5,
+   "injected": 72,
+   "recovered": 34
+  },
+  {
+   "mag": 27.0,
+   "injected": 72,
+   "recovered": 6
+  }
+ ],
+ "controls": [
+  {
+   "kind": "reversed_rate",
+   "trials": 72,
+   "false_positives": 0
+  }
+ ],
+ "candidates": [
+  {
+   "id": "2021-09-05 chip 129 (748,746) 5.1s",
+   "ra_deg": 287.961011,
+   "dec_deg": -20.944243,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.1 sigma, single night; 28 px from a 3627 e- star, thirds 4.9/2.3/3.1, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 37 (1060,3026) 6.1s",
+   "ra_deg": 287.971261,
+   "dec_deg": -20.85901,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.1 sigma, single night; 33 px from a 181257 e- star, thirds 6.1/2.6/5.7; 2 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 38 (921,2477) 5.5s",
+   "ra_deg": 288.219152,
+   "dec_deg": -20.865339,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.5 sigma, single night; 19 px from a 3761 e- star, thirds 5.1/2.9/2.0, rising through the night (pupil/seeing residual); 2 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 38 (199,2599) 5.4s",
+   "ra_deg": 288.212332,
+   "dec_deg": -20.899562,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.4 sigma, single night; 16 px from a 5334 e- star, thirds 4.7/7.2/3.4; 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 38 (97,3373) 5.0s",
+   "ra_deg": 288.174319,
+   "dec_deg": -20.903439,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.0 sigma, single night; 17 px from a 4201 e- star, thirds 4.1/3.6/3.3; 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 39 (270,1637) 5.6s",
+   "ra_deg": 288.480751,
+   "dec_deg": -20.899861,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.6 sigma, single night; 29 px from a 2284 e- star, thirds 6.4/5.5/4.6; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 39 (1629,2893) 6.3s",
+   "ra_deg": 288.42002,
+   "dec_deg": -20.833073,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.3 sigma, single night; 19 px from a 6088 e- star, thirds 5.7/4.5/2.9, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 43 (1760,3331) 8.1s",
+   "ra_deg": 287.957405,
+   "dec_deg": -20.730955,
+   "jd_utc": 2459462.81,
+   "refuted_by": "24 px from a 43432 e- star, thirds 6.0/5.5/7.5; 4 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 43 (1665,2443) 5.1s",
+   "ra_deg": 288.001055,
+   "dec_deg": -20.73462,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.1 sigma, single night; 49 px from a 8881 e- star, thirds 3.8/2.0/3.9; 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 44 (461,2297) 8.0s",
+   "ra_deg": 288.22867,
+   "dec_deg": -20.790333,
+   "jd_utc": 2459462.81,
+   "refuted_by": "22 px from a 24390 e- star, thirds 8.7/3.3/5.4, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 44 (942,2168) 6.4s",
+   "ra_deg": 288.234699,
+   "dec_deg": -20.767472,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.4 sigma, single night; 36 px from a 176951 e- star, thirds 4.7/2.4/5.8; 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 53 (609,1462) 7.3s",
+   "ra_deg": 288.052698,
+   "dec_deg": -20.692602,
+   "jd_utc": 2459462.81,
+   "refuted_by": "7.3 sigma, single night; 31 px from a 159392 e- star, thirds 5.1/5.4/6.0; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 53 (128,2057) 6.1s",
+   "ra_deg": 288.023731,
+   "dec_deg": -20.714417,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.1 sigma, single night; 30 px from a 53329 e- star, thirds 6.3/3.4/5.2; 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 53 (804,596) 5.8s",
+   "ra_deg": 288.094343,
+   "dec_deg": -20.682696,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.8 sigma, single night; 33 px from a 164065 e- star, thirds 5.9/5.4/4.7; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 53 (531,2578) 6.8s",
+   "ra_deg": 287.999071,
+   "dec_deg": -20.69736,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.8 sigma, single night; 20 px from a 5575 e- star, thirds 4.6/6.6/11.4, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 53 (592,2495) 6.1s",
+   "ra_deg": 288.003049,
+   "dec_deg": -20.69452,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.1 sigma, single night; 30 px from a 165717 e- star, thirds 2.8/7.6/6.8, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 53 (2006,2185) 5.9s",
+   "ra_deg": 288.017561,
+   "dec_deg": -20.629273,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.9 sigma, single night; 41 px from a 6015 e- star, thirds 6.5/4.0/5.2; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 54 (743,3569) 6.7s",
+   "ra_deg": 288.167457,
+   "dec_deg": -20.68367,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.7 sigma, single night; 29 px from a 173379 e- star, thirds 4.9/8.5/3.5; 2 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 54 (743,3570) 6.3s",
+   "ra_deg": 288.167408,
+   "dec_deg": -20.68367,
+   "jd_utc": 2459462.81,
+   "refuted_by": "6.3 sigma, single night; 29 px from a 173379 e- star, thirds 3.8/8.2/4.1; 2 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 54 (1133,3115) 5.7s",
+   "ra_deg": 288.189362,
+   "dec_deg": -20.664517,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.7 sigma, single night; 26 px from a 62198 e- star, thirds 4.9/5.3/2.9, rising through the night (pupil/seeing residual); 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 54 (530,3862) 5.3s",
+   "ra_deg": 288.153285,
+   "dec_deg": -20.694057,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.3 sigma, single night; 29 px from a 172041 e- star, thirds 3.4/7.6/3.3; 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-09-05 chip 55 (248,501) 7.0s",
+   "ra_deg": 288.536623,
+   "dec_deg": -20.707035,
+   "jd_utc": 2459462.81,
+   "refuted_by": "7.0 sigma, single night; 24 px from a 47194 e- star, thirds 7.6/3.6/5.2; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-09-05 chip 55 (1306,3109) 5.5s",
+   "ra_deg": 288.409427,
+   "dec_deg": -20.655192,
+   "jd_utc": 2459462.81,
+   "refuted_by": "5.5 sigma, single night; 39 px from a 177230 e- star, thirds 3.7/6.0/8.6, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  }
+ ],
+ "depth_50": 26.47,
+ "note": "Chip-wide Alard-Lupton difference stacks along the DML1002 bound-orbit rates (median +-1 sigma), 12 corridor chips covering 64% of the 2000-sample cloud; recovered = injected source S/N >= 5 at its position (the vetted-candidate threshold); injections placed on orbit-sample tracks in two half-chips per magnitude bin. Masks remove 30-40% of each chip; the depth applies to unmasked pixels. Full record, data recipe and artefact images: https://claude.ai/artifact/6btwWUMYuVduRahLHVqZNJ"
+}

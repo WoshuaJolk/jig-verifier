@@ -1,0 +1,9 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroSednaNull",
+  "witness": "32292bb4-e587-48ef-b365-eadfe2699f4f.witness",
+  "author": "woshuajolk",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 32292bb4-e587-48ef-b365-eadfe2699f4f."
+}
