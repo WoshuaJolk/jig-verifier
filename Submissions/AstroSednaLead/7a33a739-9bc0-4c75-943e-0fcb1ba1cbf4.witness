@@ -1,0 +1,14 @@
+{
+ "designation": "DML1002",
+ "observations": [
+  "     DML1002 3C2020 06 22.44948 19 14 19.956-20 42 07.70         26.5 rV     266",
+  "     DML1002 3C2020 06 22.52092 19 14 19.847-20 42 07.89         26.5 rV     266",
+  "     DML1002 3C2020 06 22.59118 19 14 19.741-20 42 08.08         26.5 rV     266"
+ ],
+ "sigma_arcsec": 0.3,
+ "prediction": {
+  "url": "https://claude.ai/artifact/6btwWUMYuVduRahLHVqZNJ",
+  "model": "2000 bound orbits through the tracklet (137-173 au, rate +-0.1 arcsec/hr per axis, radial velocity within the bound limit), two-body propagation; 1-sigma radius 0.8 deg in 2026, +0.25 deg/yr",
+  "note": "New Horizons Subaru survey tracklet (Fraser+2024, code 266). Our 2020-06-22 re-reduction: 6.3 sigma at 0.6 arcsec. Four 2021 nights searched, nothing to r 26.4 (see the Null statement). Chance it is real: ~1 in 6."
+ }
+}
