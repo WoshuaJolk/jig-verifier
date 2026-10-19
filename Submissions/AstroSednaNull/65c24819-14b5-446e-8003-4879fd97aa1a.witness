@@ -1,0 +1,155 @@
+{
+ "search": "DML1002 corridor, HSC-r2 2021-06-17, chips 0 1 124 128 32 33 34 39 40",
+ "method": "pixel",
+ "source": {
+  "survey": "New Horizons Subaru TNO survey field (HSC, raw)",
+  "archive_url": "https://smoka.nao.ac.jp/",
+  "station": "T09"
+ },
+ "band": "r",
+ "region": {
+  "type": "corridor",
+  "cones": [
+   {
+    "jd_utc": 2459383.0,
+    "ra_deg": 288.63292,
+    "dec_deg": -20.71215,
+    "radius_deg": 0.2462
+   }
+  ]
+ },
+ "epochs": [
+  {
+   "start_jd_utc": 2459382.93553,
+   "end_jd_utc": 2459383.08004
+  }
+ ],
+ "rate_range_arcsec_hr": [
+  0.7,
+  1.05
+ ],
+ "injections": [
+  {
+   "mag": 25.5,
+   "injected": 72,
+   "recovered": 72
+  },
+  {
+   "mag": 26.0,
+   "injected": 72,
+   "recovered": 68
+  },
+  {
+   "mag": 26.5,
+   "injected": 72,
+   "recovered": 43
+  },
+  {
+   "mag": 27.0,
+   "injected": 72,
+   "recovered": 8
+  }
+ ],
+ "controls": [
+  {
+   "kind": "reversed_rate",
+   "trials": 72,
+   "false_positives": 0
+  }
+ ],
+ "candidates": [
+  {
+   "id": "2021-06-17 chip 124 (1701,1967) 5.2s",
+   "ra_deg": 288.332349,
+   "dec_deg": -20.834426,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.2 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 34 px from a 38886 e- star, thirds 4.7/2.5/6.5; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 128 (1263,1406) 5.5s",
+   "ra_deg": 288.304971,
+   "dec_deg": -20.715649,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.5 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 28 px from a 13133 e- star, thirds 3.5/3.5/6.2, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 128 (1177,272) 5.1s",
+   "ra_deg": 288.248605,
+   "dec_deg": -20.71135,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.1 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 21 px from a 3432 e- star, thirds 4.0/4.1/1.6, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 128 (804,2963) 5.8s",
+   "ra_deg": 288.382278,
+   "dec_deg": -20.692431,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.8 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 43 px from a 3795 e- star, thirds 3.3/2.6/5.9, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 1 (907,1848) 5.3s",
+   "ra_deg": 288.78463,
+   "dec_deg": -20.810003,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.3 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 31 px from a 11167 e- star, thirds 4.6/5.7/2.5, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 1 (1724,3898) 5.8s",
+   "ra_deg": 288.683417,
+   "dec_deg": -20.770884,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.8 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 18 px from a 3485 e- star, thirds 4.8/5.5/4.7; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 1 (916,2804) 5.6s",
+   "ra_deg": 288.737492,
+   "dec_deg": -20.809225,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.6 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 28 px from a 169738 e- star, thirds 3.0/6.4/5.6, rising through the night (pupil/seeing residual); 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions be"
+  },
+  {
+   "id": "2021-06-17 chip 1 (612,3302) 5.3s",
+   "ra_deg": 288.712904,
+   "dec_deg": -20.823232,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.3 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 28 px from a 167263 e- star, thirds 4.2/5.6/5.9; 1 chance-level pairing(s) only (expected ~20 across the September pairings); joint orbit stack at the implied positions below the 2-night null"
+  },
+  {
+   "id": "2021-06-17 chip 1 (1717,3954) 5.1s",
+   "ra_deg": 288.680639,
+   "dec_deg": -20.771199,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.1 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 13 px from a 2107 e- star, thirds 3.0/6.1/4.8, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 32 (827,2960) 5.2s",
+   "ra_deg": 288.507174,
+   "dec_deg": -20.713815,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.2 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 28 px from a 33237 e- star, thirds 6.0/4.5/4.7; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 33 (1848,3280) 5.6s",
+   "ra_deg": 288.713691,
+   "dec_deg": -20.666905,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.6 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 33 px from a 177413 e- star, thirds 3.3/3.3/7.2, rising through the night (pupil/seeing residual); no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 34 (366,4034) 5.9s",
+   "ra_deg": 288.893684,
+   "dec_deg": -20.739718,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.9 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 28 px from a 162454 e- star, thirds 4.2/5.9/5.4; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  },
+  {
+   "id": "2021-06-17 chip 40 (1496,2261) 5.7s",
+   "ra_deg": 288.762912,
+   "dec_deg": -20.58578,
+   "jd_utc": 2459383.0,
+   "refuted_by": "5.7 sigma, below the 8 sigma a tracklet-brightness object gives on this night; 22 px from a 4300 e- star, thirds 5.0/3.8/6.8; no counterpart within the +-3 sigma orbit strip on the other three nights"
+  }
+ ],
+ "depth_50": 26.6,
+ "note": "Chip-wide Alard-Lupton difference stacks along the DML1002 bound-orbit rates (median +-1 sigma), 9 corridor chips covering 65% of the 2000-sample cloud; recovered = injected source S/N >= 5 at its position (the vetted-candidate threshold); injections placed on orbit-sample tracks in two half-chips per magnitude bin. Masks remove 30-40% of each chip; the depth applies to unmasked pixels. Full record, data recipe and artefact images: https://claude.ai/artifact/6btwWUMYuVduRahLHVqZNJ"
+}
