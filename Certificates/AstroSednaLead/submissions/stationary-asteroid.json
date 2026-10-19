@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroSednaLead",
+  "witness": "stationary-asteroid.witness",
+  "author": "selftest",
+  "expect": "red",
+  "expect_reason": "invalid_witness",
+  "note": "Synthetic main-belt asteroid (a 2.7 AU) observed on the night of its stationary point (stationary-asteroid.cfg, at_min_rate). Slow enough to pass for a distant body; refused because an inner orbit reproduces the motion. The Object C failure mode."
+}

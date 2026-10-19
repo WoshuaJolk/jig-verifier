@@ -1,0 +1,63 @@
+{
+ "search": "Example: ZTF orphan-alert triplets, three nights, 10 to 80 arcsec/hr",
+ "method": "catalog",
+ "source": {
+  "survey": "ZTF public alerts via ALeRCE",
+  "archive_url": "https://alerce.online/",
+  "station": "I41"
+ },
+ "band": "r",
+ "region": {
+  "type": "allsky"
+ },
+ "epochs": [
+  {
+   "start_jd_utc": 2460820.5,
+   "end_jd_utc": 2460827.5
+  }
+ ],
+ "rate_range_arcsec_hr": [
+  10.0,
+  80.0
+ ],
+ "injections": [
+  {
+   "mag": 18.0,
+   "injected": 500,
+   "recovered": 480
+  },
+  {
+   "mag": 19.0,
+   "injected": 500,
+   "recovered": 390
+  },
+  {
+   "mag": 20.0,
+   "injected": 500,
+   "recovered": 180
+  },
+  {
+   "mag": 20.5,
+   "injected": 500,
+   "recovered": 60
+  }
+ ],
+ "controls": [
+  {
+   "kind": "shifted_night",
+   "trials": 5569,
+   "false_positives": 1473
+  }
+ ],
+ "candidates": [
+  {
+   "id": "u02",
+   "ra_deg": 271.3,
+   "dec_deg": -18.7,
+   "jd_utc": 2460824.3,
+   "refuted_by": "ranging: bound cells fit (e 0.1 to 0.6), main-belt rate"
+  }
+ ],
+ "depth_50": 20.22,
+ "note": "Illustrative numbers for the self-test, not a search that was run."
+}

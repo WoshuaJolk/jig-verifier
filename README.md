@@ -267,18 +267,32 @@ judges the green on the numbers rather than on the word.
 
 ### The astronomical certificates
 
-Six checkers under `Certificates/Astro*` back the searches on jig.so/astro. Three fit an
-orbit to MPC astrometry under full planetary perturbations (`_shared/skyfit.py`: DE440s,
-DOP853, iterative outlier rejection, covariance-propagated element errors) and decide
-on the fitted barycentric elements: a fourth interstellar object (`AstroIso`), a new
-Sedna-like object (`AstroSednaLike`), a direct detection of Planet Nine
-(`AstroPlanetNineDetection`). Two take a Gaia DR3 star and decide bound or unbound
-under MWPotential2014 with a Monte Carlo over the quoted errors, checking the witness
-against a live catalog lookup (`_shared/galkin.py`): arriving from intergalactic space
-(`AstroIntergalacticStar`), thrown out of the disk by an explosion (`AstroEjectedStar`,
-which also integrates the orbit backward and refuses a Galactic-centre origin). One
-recomputes a clustering statistic on a pinned MPC snapshot
+Twelve checkers under `Certificates/Astro*` back the searches on jig.so/astro. Six
+decide the roots. Three fit an orbit to MPC astrometry under full planetary
+perturbations (`_shared/skyfit.py`: DE440s, DOP853, iterative outlier rejection,
+covariance-propagated element errors) and decide on the fitted barycentric elements: a
+fourth interstellar object (`AstroIso`), a new Sedna-like object (`AstroSednaLike`), a
+direct detection of Planet Nine (`AstroPlanetNineDetection`). Two take a Gaia DR3 star
+and decide bound or unbound under MWPotential2014 with a Monte Carlo over the quoted
+errors, checking the witness against a live catalog lookup (`_shared/galkin.py`):
+arriving from intergalactic space (`AstroIntergalacticStar`), thrown out of the disk by
+an explosion (`AstroEjectedStar`, which also integrates the orbit backward and refuses a
+Galactic-centre origin). One recomputes a clustering statistic on a pinned MPC snapshot
 (`AstroPlanetNineClustering`).
+
+The other six take partial work on the three solar-system searches, so that a lead or a
+null lands on the board as a measured fact instead of a red on the root. Two leads read
+a single tracklet with no orbit (`_shared/shortarc.py`): the distances at which any
+bound orbit reproduces the motion, whether an inner solar system orbit at a stationary
+point explains it instead, and whether a snapshot object is passing by
+(`AstroSednaLead` with a 60 AU floor, `AstroPlanetNineLead` with 200 AU and a brightness
+bar). One runs systematic ranging on a one-station arc of 10 to 60 days
+(`_shared/ranging.py`) and accepts it when no orbit with e at or below the root's bar
+fits (`AstroIsoLead`). Three take a null search in a fixed form (`_shared/archnull.py`):
+region, epochs, band, an injection-recovery table from which the depth is recomputed,
+controls, and every candidate with its refutation (`AstroPlanetNineNull`,
+`AstroSednaNull`, `AstroIsoNull`); a green there is one dead route on the problem's
+ledger, which Jig records when the verdict lands.
 
 Their self-test examples are real where a real object can be red for the right reason
 (2I/Borisov, Sedna, S5-HVS1, US 708), and the green example is synthetic and says so in

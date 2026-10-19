@@ -1,0 +1,95 @@
+{
+ "search": "Example: HSC-SSP Wide 12h strip, slow movers 0.3 to 3 arcsec/hr",
+ "method": "pixel",
+ "source": {
+  "survey": "HSC-SSP PDR3",
+  "archive_url": "https://hsc-release.mtk.nao.ac.jp/",
+  "station": "T09"
+ },
+ "band": "r",
+ "region": {
+  "type": "polygon",
+  "vertices": [
+   [
+    178.0,
+    -2.5
+   ],
+   [
+    182.0,
+    -2.5
+   ],
+   [
+    182.0,
+    2.5
+   ],
+   [
+    178.0,
+    2.5
+   ]
+  ]
+ },
+ "epochs": [
+  {
+   "start_jd_utc": 2457100.5,
+   "end_jd_utc": 2457110.5
+  },
+  {
+   "start_jd_utc": 2457450.5,
+   "end_jd_utc": 2457470.5
+  }
+ ],
+ "rate_range_arcsec_hr": [
+  0.3,
+  3.0
+ ],
+ "injections": [
+  {
+   "mag": 23.5,
+   "injected": 200,
+   "recovered": 199
+  },
+  {
+   "mag": 24.5,
+   "injected": 200,
+   "recovered": 192
+  },
+  {
+   "mag": 25.0,
+   "injected": 200,
+   "recovered": 160
+  },
+  {
+   "mag": 25.5,
+   "injected": 200,
+   "recovered": 92
+  },
+  {
+   "mag": 26.0,
+   "injected": 200,
+   "recovered": 21
+  }
+ ],
+ "controls": [
+  {
+   "kind": "reversed_rate",
+   "trials": 40,
+   "false_positives": 1
+  },
+  {
+   "kind": "scrambled",
+   "trials": 40,
+   "false_positives": 0
+  }
+ ],
+ "candidates": [
+  {
+   "id": "c1",
+   "ra_deg": 180.1,
+   "dec_deg": 0.2,
+   "jd_utc": 2457105.5,
+   "refuted_by": "static source in the other-epoch template at 12 sigma"
+  }
+ ],
+ "depth_50": 25.44,
+ "note": "Illustrative numbers for the self-test, not a search that was run."
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroIsoLead",
+  "witness": "synthetic-bound.witness",
+  "author": "selftest",
+  "expect": "red",
+  "expect_reason": "invalid_witness",
+  "note": "Synthetic Centaur (q 5.5 AU, e 0.3) on the same cadence as the green example (synthetic-bound.cfg). Every acceptable orbit is bound; refused. Guards the direction of the test.",
+  "lane": "heavy"
+}

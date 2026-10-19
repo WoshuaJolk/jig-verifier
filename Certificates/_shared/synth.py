@@ -55,15 +55,35 @@ def ymd_from_jd(jd: float) -> tuple[int, int, float]:
     return year, month, day
 
 
+def min_rate_start(orbit: dict, jd_start: float, days: int, eph_path: str) -> float:
+    """The day within `days` of `jd_start` on which the geocentric sky rate is
+    smallest: where a bound inner object mimics a distant one."""
+    eph = skyfit.Ephemeris(eph_path)
+    best, best_rate = jd_start, math.inf
+    for d in range(days):
+        t = jd_start + d + 0.25
+        rates = []
+        for tt in (t, t + 1 / 24):
+            st = skyfit.state_from_elements(orbit["q"], orbit["e"], orbit["i"], orbit["node"], orbit["peri"], orbit["tp"], tt)
+            rho = st[:3] - np.asarray(eph.earth_helio(tt)).reshape(3)
+            rates.append(rho / np.linalg.norm(rho))
+        rate = math.acos(max(-1.0, min(1.0, float(rates[0] @ rates[1]))))
+        if rate < best_rate:
+            best, best_rate = jd_start + d, rate
+    return best
+
+
 def make(orbit: dict, packed: str, jd_start: float, nights: int, per_night: int,
-         mag: float | None, noise_arcsec: float, seed: int, eph_path: str, obscodes_path: str) -> list[str]:
+         mag: float | None, noise_arcsec: float, seed: int, eph_path: str, obscodes_path: str,
+         span_days: float = 400.0, stations: list[str] | None = None) -> list[str]:
     rng = np.random.default_rng(seed)
     eph = skyfit.Ephemeris(eph_path)
     obscodes = skyfit.load_obscodes(obscodes_path)
+    stations = stations or STATIONS
     times, codes = [], []
     for k in range(nights):
-        night = jd_start + k * (400 / nights)
-        code = STATIONS[k % len(STATIONS)]
+        night = jd_start + k * (span_days / nights)
+        code = stations[k % len(stations)]
         for j in range(per_night):
             times.append(night + 0.25 + 0.03 * j)
             codes.append(code)
@@ -87,8 +107,13 @@ def make(orbit: dict, packed: str, jd_start: float, nights: int, per_night: int,
 
 if __name__ == "__main__":
     cfg = json.load(open(sys.argv[1]))
-    lines = make(cfg["orbit"], cfg["packed"], cfg["jd_start"], cfg["nights"], cfg["per_night"],
-                 cfg.get("mag"), cfg.get("noise_arcsec", 0.4), cfg.get("seed", 7), sys.argv[2], sys.argv[3])
+    jd_start = cfg["jd_start"]
+    if cfg.get("at_min_rate"):
+        jd_start = min_rate_start(cfg["orbit"], jd_start, int(cfg.get("search_days", 365)), sys.argv[2])
+        print("min-rate night", jd_start)
+    lines = make(cfg["orbit"], cfg["packed"], jd_start, cfg["nights"], cfg["per_night"],
+                 cfg.get("mag"), cfg.get("noise_arcsec", 0.4), cfg.get("seed", 7), sys.argv[2], sys.argv[3],
+                 cfg.get("span_days", 400.0), cfg.get("stations"))
     doc = {"designation": cfg["designation"], "orbit": cfg["orbit"], "observations": lines}
     if cfg.get("sigma_arcsec"):
         doc["sigma_arcsec"] = cfg["sigma_arcsec"]

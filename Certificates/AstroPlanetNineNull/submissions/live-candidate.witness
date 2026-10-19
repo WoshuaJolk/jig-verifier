@@ -1,0 +1,91 @@
+{
+ "search": "Example: DECam VR corridor along a predicted Planet Nine track",
+ "method": "pixel",
+ "source": {
+  "survey": "DECam (NOIRLab Astro Data Archive)",
+  "archive_url": "https://astroarchive.noirlab.edu/",
+  "station": "W84"
+ },
+ "band": "VR",
+ "region": {
+  "type": "corridor",
+  "cones": [
+   {
+    "jd_utc": 2457830.5,
+    "ra_deg": 60.0,
+    "dec_deg": -10.0,
+    "radius_deg": 0.5
+   },
+   {
+    "jd_utc": 2457860.5,
+    "ra_deg": 59.7,
+    "dec_deg": -10.1,
+    "radius_deg": 0.6
+   }
+  ]
+ },
+ "epochs": [
+  {
+   "start_jd_utc": 2457100.5,
+   "end_jd_utc": 2457110.5
+  },
+  {
+   "start_jd_utc": 2457450.5,
+   "end_jd_utc": 2457470.5
+  }
+ ],
+ "rate_range_arcsec_hr": [
+  0.3,
+  3.0
+ ],
+ "injections": [
+  {
+   "mag": 21.0,
+   "injected": 100,
+   "recovered": 100
+  },
+  {
+   "mag": 22.0,
+   "injected": 100,
+   "recovered": 97
+  },
+  {
+   "mag": 23.0,
+   "injected": 100,
+   "recovered": 78
+  },
+  {
+   "mag": 23.5,
+   "injected": 100,
+   "recovered": 41
+  },
+  {
+   "mag": 24.0,
+   "injected": 100,
+   "recovered": 9
+  }
+ ],
+ "controls": [
+  {
+   "kind": "reversed_rate",
+   "trials": 40,
+   "false_positives": 1
+  },
+  {
+   "kind": "scrambled",
+   "trials": 40,
+   "false_positives": 0
+  }
+ ],
+ "candidates": [
+  {
+   "id": "live",
+   "ra_deg": 59.9,
+   "dec_deg": -10.05,
+   "jd_utc": 2457845.5,
+   "refuted_by": ""
+  }
+ ],
+ "depth_50": 23.38,
+ "note": "Illustrative numbers for the self-test, not a search that was run."
+}

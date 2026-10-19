@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroIsoNull",
+  "witness": "live-candidate.witness",
+  "author": "selftest",
+  "expect": "red",
+  "expect_reason": "invalid_witness",
+  "note": "The example with one candidate left without a refutation. Refused: a search with a live candidate is not a null."
+}

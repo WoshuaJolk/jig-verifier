@@ -1,0 +1,24 @@
+{
+  "schema": "conject.certificate.v2",
+  "id": "AstroIsoNull",
+  "title": "A survey or archive searched for interstellar objects, with nothing found, to a measured depth",
+  "statement": "Report a search for interstellar objects that found nothing: a sky region (cone, polygon, corridor or all-sky), the epochs searched, the band, the survey and archive, the sky-rate range covered, an injection-recovery table of at least three bins of at least 50 sources each from which the checker recomputes the 50 and 90 percent completeness depths, at least one control run with its false-positive count, and every candidate raised with the reason it was refuted. Accepted when the depths reproduce, the curve is monotone, no candidate stands, and the 50 percent depth reaches at least 19th magnitude. Each accepted witness is one dead route on the problem's ledger.",
+  "witness_format": "JSON object: search, method (pixel|catalog), source {survey, archive_url, station?}, band, depth_unit (mag|mjy, default mag), region {type: cone|polygon|corridor|allsky, ...}, epochs [{start_jd_utc, end_jd_utc}], optional rate_range_arcsec_hr [lo, hi], injections [{mag|mjy, injected, recovered}], controls [{kind, trials, false_positives}], candidates [{id, ra_deg, dec_deg, jd_utc, refuted_by}], depth_50",
+  "limits": { "wall_sec": 60, "cpu_sec": 30, "address_space_mb": 1024, "output_bytes": 262144 },
+  "requires": [],
+  "code": ["../_shared/astro_cert.py", "../_shared/archnull.py"],
+  "fixtures": [],
+  "params": {
+    "target": "interstellar objects passing at a few AU (V 18 to 22)",
+    "min_depth_50_mag": 19.0,
+    "min_injection_bins": 3,
+    "min_injected_per_bin": 50,
+    "monotone_tolerance": 0.1,
+    "depth_tolerance": 0.1,
+    "min_control_trials": 10,
+    "max_region_deg2": 41252.97,
+    "max_candidates": 200,
+    "max_epochs": 2000,
+    "max_corridor_cones": 500
+  }
+}

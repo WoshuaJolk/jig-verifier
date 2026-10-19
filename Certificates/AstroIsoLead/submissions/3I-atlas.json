@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroIsoLead",
+  "witness": "3I-atlas.witness",
+  "author": "selftest",
+  "expect": "red",
+  "expect_reason": "invalid_witness",
+  "note": "Real: the 19 ZTF (I41) precovery lines of 3I/ATLAS from the MPC, 2025-05-15 to 06-30. Ranging recovers e 6.1, q 1.36 AU, i 175 deg to 0.5 arcsec rms, and the witness is refused because it is 3I. Guards both the engine and the known-object check.",
+  "lane": "heavy"
+}

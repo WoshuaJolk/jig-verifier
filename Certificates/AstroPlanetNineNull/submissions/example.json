@@ -1,0 +1,9 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroPlanetNineNull",
+  "witness": "example.witness",
+  "author": "selftest",
+  "expect": "green",
+  "note": "Illustrative null in the fixed form, with made-up injection and control numbers (the witness says so). The depth recomputes, the curve is monotone, every candidate is refuted. Guards the format and the arithmetic, not any real search."
+}

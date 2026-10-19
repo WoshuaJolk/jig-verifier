@@ -1,0 +1,9 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "certificate",
+  "statement_id": "AstroPlanetNineLead",
+  "witness": "synthetic.witness",
+  "author": "selftest",
+  "expect": "green",
+  "note": "Synthetic: five positions over 2.9 h of a made-up body at 295 AU, V 20.9, near opposition (synthetic.cfg). Bound orbits beyond 256 AU at the fast end of the rate error, H about -4. Guards the floor and the brightness test together."
+}
