@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "FiniteHypergraphCoreRemoval",
+  "module": "Submissions.FiniteHypergraphCoreRemoval.Peel",
+  "decl": "Submissions.FiniteHypergraphCoreRemoval.Peel.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 02c23278-1ad4-408f-8e58-b7263538205c."
+}
