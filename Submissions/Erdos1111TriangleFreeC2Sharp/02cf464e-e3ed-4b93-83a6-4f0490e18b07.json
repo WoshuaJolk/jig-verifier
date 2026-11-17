@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1111TriangleFreeC2Sharp",
+  "module": "Submissions.Erdos1111TriangleFreeC2Sharp.FiveCycle",
+  "decl": "Submissions.Erdos1111TriangleFreeC2Sharp.FiveCycle.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 02cf464e-e3ed-4b93-83a6-4f0490e18b07."
+}
