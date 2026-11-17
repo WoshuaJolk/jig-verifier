@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039UnityUpperBound",
+  "module": "Submissions.Erdos1039UnityUpperBound.UnityRays",
+  "decl": "Submissions.Erdos1039UnityUpperBound.UnityRays.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 41e33732-9291-4012-9566-85a210cf20b0."
+}
