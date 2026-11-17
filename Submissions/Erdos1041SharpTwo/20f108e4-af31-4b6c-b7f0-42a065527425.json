@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041SharpTwo",
+  "module": "Submissions.Erdos1041SharpTwo.RealProjection",
+  "decl": "Submissions.Erdos1041SharpTwo.RealProjection.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 20f108e4-af31-4b6c-b7f0-42a065527425."
+}
