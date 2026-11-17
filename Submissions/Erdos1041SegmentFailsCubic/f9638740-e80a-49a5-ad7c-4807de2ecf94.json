@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041SegmentFailsCubic",
+  "module": "Submissions.Erdos1041SegmentFailsCubic.Midpoint",
+  "decl": "Submissions.Erdos1041SegmentFailsCubic.Midpoint.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check f9638740-e80a-49a5-ad7c-4807de2ecf94. Settles nothing."
+}
