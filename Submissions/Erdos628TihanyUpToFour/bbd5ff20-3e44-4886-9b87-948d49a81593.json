@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos628TihanyUpToFour",
+  "module": "Submissions.Erdos628TihanyUpToFour.BrownJung",
+  "decl": "Submissions.Erdos628TihanyUpToFour.BrownJung.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact bbd5ff20-3e44-4886-9b87-948d49a81593."
+}
