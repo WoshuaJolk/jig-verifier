@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041ClosePair",
+  "module": "Submissions.Erdos1041ClosePair.SegmentBound",
+  "decl": "Submissions.Erdos1041ClosePair.SegmentBound.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check d2cc2ea9-eec8-4b8a-b3e8-40dcb174a8b2. Settles nothing."
+}
