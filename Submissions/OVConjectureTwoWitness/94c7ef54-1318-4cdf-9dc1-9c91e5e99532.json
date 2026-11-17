@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVConjectureTwoWitness",
+  "module": "Submissions.OVConjectureTwoWitness.Explicit",
+  "decl": "Submissions.OVConjectureTwoWitness.Explicit.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 94c7ef54-1318-4cdf-9dc1-9c91e5e99532. Settles nothing."
+}
