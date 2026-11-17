@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1111TriangleFreeC2",
+  "module": "Submissions.Erdos1111TriangleFreeC2.WagonTriangleFree",
+  "decl": "Submissions.Erdos1111TriangleFreeC2.WagonTriangleFree.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ea2d527d-d825-4ef6-b2c6-528d430dd82a."
+}
