@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041TwoLegCriterion",
+  "module": "Submissions.Erdos1041TwoLegCriterion.Polygonal",
+  "decl": "Submissions.Erdos1041TwoLegCriterion.Polygonal.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 64c68d29-27ee-4857-906d-85cd5ab39671. Settles nothing."
+}
