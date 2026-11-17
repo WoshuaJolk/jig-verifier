@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041PureBinomial",
+  "module": "Submissions.Erdos1041PureBinomial.ThroughCentre",
+  "decl": "Submissions.Erdos1041PureBinomial.ThroughCentre.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact caf1b6ac-08d4-47c7-8bf0-5b0df7f31ebb."
+}
