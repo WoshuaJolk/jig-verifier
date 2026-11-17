@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039UnitySharpConstant",
+  "module": "Submissions.Erdos1039UnitySharpConstant.ImagRays",
+  "decl": "Submissions.Erdos1039UnitySharpConstant.ImagRays.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact ebdc8901-c9b9-4218-adde-09910931b787."
+}
