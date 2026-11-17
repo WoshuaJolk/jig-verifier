@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041Clustered",
+  "module": "Submissions.Erdos1041Clustered.SegmentBound",
+  "decl": "Submissions.Erdos1041Clustered.SegmentBound.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check db8abfb7-0dad-49b6-bf82-057677b3d565. Settles nothing."
+}
