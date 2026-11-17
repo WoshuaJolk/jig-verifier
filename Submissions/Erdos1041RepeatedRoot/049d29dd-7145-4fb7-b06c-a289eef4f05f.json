@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041RepeatedRoot",
+  "module": "Submissions.Erdos1041RepeatedRoot.ConstantPath",
+  "decl": "Submissions.Erdos1041RepeatedRoot.ConstantPath.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 049d29dd-7145-4fb7-b06c-a289eef4f05f. Settles nothing."
+}

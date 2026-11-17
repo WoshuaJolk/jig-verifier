@@ -31,7 +31,7 @@ theorem proof :
     exact one_pos
   · rw [Path.refl_range]
     have hsing : NullSingletonClass (μH[1] : Measure ℂ) :=
-      nullSingletonClass_hausdorff ℂ one_pos
+      Measure.nullSingletonClass_hausdorff ℂ one_pos
     have hzero : μH[1] ({w} : Set ℂ) = 0 := hsing.measure_singleton w
     rw [hzero]
     norm_num
