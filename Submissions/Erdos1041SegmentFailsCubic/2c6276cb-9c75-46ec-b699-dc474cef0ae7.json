@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041SegmentFailsCubic",
+  "module": "Submissions.Erdos1041SegmentFailsCubic.Midpoint",
+  "decl": "Submissions.Erdos1041SegmentFailsCubic.Midpoint.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 2c6276cb-9c75-46ec-b699-dc474cef0ae7."
+}
