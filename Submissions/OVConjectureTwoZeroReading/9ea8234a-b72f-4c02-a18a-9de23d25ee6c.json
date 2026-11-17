@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVConjectureTwoZeroReading",
+  "module": "Submissions.OVConjectureTwoZeroReading.ViaTransversal",
+  "decl": "Submissions.OVConjectureTwoZeroReading.ViaTransversal.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 9ea8234a-b72f-4c02-a18a-9de23d25ee6c. Settles nothing."
+}
