@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1111OddCycleVsHighChromatic",
+  "module": "Submissions.Erdos1111OddCycleVsHighChromatic.Asymmetric",
+  "decl": "Submissions.Erdos1111OddCycleVsHighChromatic.Asymmetric.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 50c1ccb8-60a8-43a8-838e-5fc5eda895e9."
+}
