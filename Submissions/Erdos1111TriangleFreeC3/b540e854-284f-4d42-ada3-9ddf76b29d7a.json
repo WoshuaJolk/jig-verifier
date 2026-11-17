@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1111TriangleFreeC3",
+  "module": "Submissions.Erdos1111TriangleFreeC3.ShortestOddCycle",
+  "decl": "Submissions.Erdos1111TriangleFreeC3.ShortestOddCycle.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact b540e854-284f-4d42-ada3-9ddf76b29d7a."
+}
