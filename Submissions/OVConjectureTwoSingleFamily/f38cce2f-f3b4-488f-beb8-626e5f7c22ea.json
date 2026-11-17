@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVConjectureTwoSingleFamily",
+  "module": "Submissions.OVConjectureTwoSingleFamily.Specialise",
+  "decl": "Submissions.OVConjectureTwoSingleFamily.Specialise.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact f38cce2f-f3b4-488f-beb8-626e5f7c22ea."
+}
