@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041SegmentCriterion",
+  "module": "Submissions.Erdos1041SegmentCriterion.Straight",
+  "decl": "Submissions.Erdos1041SegmentCriterion.Straight.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check c6216d03-2242-45aa-b76a-3d5e161dd18f. Settles nothing."
+}
