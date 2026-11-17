@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1111WagonC2AllT",
+  "module": "Submissions.Erdos1111WagonC2AllT.WagonAllT",
+  "decl": "Submissions.Erdos1111WagonC2AllT.WagonAllT.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact c347c828-d98a-405d-86ac-6d75206029f3."
+}
