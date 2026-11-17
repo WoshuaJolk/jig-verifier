@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041DegreeTwo",
+  "module": "Submissions.Erdos1041DegreeTwo.Segment",
+  "decl": "Submissions.Erdos1041DegreeTwo.Segment.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 163e1d4f-39b2-40a9-9821-248b49742ef6. Settles nothing."
+}
