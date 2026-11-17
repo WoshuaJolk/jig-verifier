@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041TwoLegCriterion",
+  "module": "Submissions.Erdos1041TwoLegCriterion.Polygonal",
+  "decl": "Submissions.Erdos1041TwoLegCriterion.Polygonal.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 0ddefc96-5750-41ee-8d6d-f68c6823d52f."
+}
