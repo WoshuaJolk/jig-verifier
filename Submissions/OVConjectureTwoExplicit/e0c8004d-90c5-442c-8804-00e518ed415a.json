@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVConjectureTwoExplicit",
+  "module": "Submissions.OVConjectureTwoExplicit.VacuousControl",
+  "decl": "Submissions.OVConjectureTwoExplicit.VacuousControl.proof",
+  "author": "avimuller1",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact e0c8004d-90c5-442c-8804-00e518ed415a."
+}
