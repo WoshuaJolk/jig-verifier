@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041PureBinomial",
+  "module": "Submissions.Erdos1041PureBinomial.ThroughCentre",
+  "decl": "Submissions.Erdos1041PureBinomial.ThroughCentre.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 3cb63b7b-d3fc-460a-bd2e-566c6fd0d07c. Settles nothing."
+}
