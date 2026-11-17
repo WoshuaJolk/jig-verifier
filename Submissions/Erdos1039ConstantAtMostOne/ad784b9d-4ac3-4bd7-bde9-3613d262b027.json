@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039ConstantAtMostOne",
+  "module": "Submissions.Erdos1039ConstantAtMostOne.DegreeOne",
+  "decl": "Submissions.Erdos1039ConstantAtMostOne.DegreeOne.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check ad784b9d-4ac3-4bd7-bde9-3613d262b027. Settles nothing."
+}
