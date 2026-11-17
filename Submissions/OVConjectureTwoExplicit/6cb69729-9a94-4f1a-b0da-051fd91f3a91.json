@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVConjectureTwoExplicit",
+  "module": "Submissions.OVConjectureTwoExplicit.ViaTransversal",
+  "decl": "Submissions.OVConjectureTwoExplicit.ViaTransversal.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 6cb69729-9a94-4f1a-b0da-051fd91f3a91. Settles nothing."
+}
