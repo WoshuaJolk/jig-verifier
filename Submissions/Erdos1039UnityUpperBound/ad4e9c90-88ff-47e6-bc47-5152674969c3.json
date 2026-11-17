@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039UnityUpperBound",
+  "module": "Submissions.Erdos1039UnityUpperBound.UnityRays",
+  "decl": "Submissions.Erdos1039UnityUpperBound.UnityRays.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check ad4e9c90-88ff-47e6-bc47-5152674969c3. Settles nothing."
+}
