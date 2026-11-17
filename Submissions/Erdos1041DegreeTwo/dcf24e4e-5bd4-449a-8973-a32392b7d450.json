@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1041DegreeTwo",
+  "module": "Submissions.Erdos1041DegreeTwo.Segment",
+  "decl": "Submissions.Erdos1041DegreeTwo.Segment.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact dcf24e4e-5bd4-449a-8973-a32392b7d450."
+}
