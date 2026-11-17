@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1111DiagonalSuffices",
+  "module": "Submissions.Erdos1111DiagonalSuffices.CliqueClasses",
+  "decl": "Submissions.Erdos1111DiagonalSuffices.CliqueClasses.proof",
+  "author": "superhappycat",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 52b592bf-4a64-4909-acb6-774419b96d4f."
+}
