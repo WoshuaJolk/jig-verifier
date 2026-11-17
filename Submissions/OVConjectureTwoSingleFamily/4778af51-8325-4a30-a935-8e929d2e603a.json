@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "OVConjectureTwoSingleFamily",
+  "module": "Submissions.OVConjectureTwoSingleFamily.Specialise",
+  "decl": "Submissions.OVConjectureTwoSingleFamily.Specialise.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 4778af51-8325-4a30-a935-8e929d2e603a. Settles nothing."
+}
