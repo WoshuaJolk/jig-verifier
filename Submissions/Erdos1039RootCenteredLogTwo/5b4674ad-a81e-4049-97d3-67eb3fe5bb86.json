@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos1039RootCenteredLogTwo",
+  "module": "Submissions.Erdos1039RootCenteredLogTwo.KitamuraPort",
+  "decl": "Submissions.Erdos1039RootCenteredLogTwo.KitamuraPort.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Submitted through the Jig API as artifact 5b4674ad-a81e-4049-97d3-67eb3fe5bb86."
+}
