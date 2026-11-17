@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos273PrimeMinusOneCoverFromThree",
+  "module": "Submissions.Erdos273PrimeMinusOneCoverFromThree.Divisors360",
+  "decl": "Submissions.Erdos273PrimeMinusOneCoverFromThree.Divisors360.proof",
+  "author": "avimuller1",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check 97a1db58-a0d8-45a4-a58d-a066fa597a38. Settles nothing."
+}

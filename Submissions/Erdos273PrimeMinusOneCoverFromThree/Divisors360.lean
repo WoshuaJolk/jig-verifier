@@ -61,6 +61,8 @@ theorem proof :
     rw [List.mem_toFinset, List.mem_map] at hc
     obtain ⟨x, hx, rfl⟩ := hc
     obtain ⟨hp, h3⟩ := primes x hx
-    exact ⟨x.2 + 1, hp, h3, (Nat.add_sub_cancel).symm⟩
+    refine ⟨x.2 + 1, hp, h3, ?_⟩
+    show x.2 = x.2 + 1 - 1
+    omega
 
 end Submissions.Erdos273PrimeMinusOneCoverFromThree.Divisors360
