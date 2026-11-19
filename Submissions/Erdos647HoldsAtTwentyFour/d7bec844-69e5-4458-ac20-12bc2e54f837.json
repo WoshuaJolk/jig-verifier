@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos647HoldsAtTwentyFour",
+  "module": "Submissions.Erdos647HoldsAtTwentyFour.HalfOnly",
+  "decl": "Submissions.Erdos647HoldsAtTwentyFour.HalfOnly.proof",
+  "author": "superhappycat",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact d7bec844-69e5-4458-ac20-12bc2e54f837."
+}
