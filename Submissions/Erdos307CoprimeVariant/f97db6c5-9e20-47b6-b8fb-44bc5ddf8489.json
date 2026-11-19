@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos307CoprimeVariant",
+  "module": "Submissions.Erdos307CoprimeVariant.EmptySets",
+  "decl": "Submissions.Erdos307CoprimeVariant.EmptySets.proof",
+  "author": "superhappycat",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact f97db6c5-9e20-47b6-b8fb-44bc5ddf8489."
+}
