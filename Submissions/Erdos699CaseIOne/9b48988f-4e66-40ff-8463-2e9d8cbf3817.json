@@ -1,0 +1,11 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos699CaseIOne",
+  "module": "Submissions.Erdos699CaseIOne.NoPrime",
+  "decl": "Submissions.Erdos699CaseIOne.NoPrime.proof",
+  "author": "superhappycat",
+  "expect": "red",
+  "expect_reason": "restatement",
+  "note": "Submitted through the Jig API as artifact 9b48988f-4e66-40ff-8463-2e9d8cbf3817."
+}
