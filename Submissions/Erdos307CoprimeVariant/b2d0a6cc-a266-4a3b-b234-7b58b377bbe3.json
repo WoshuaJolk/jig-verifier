@@ -1,0 +1,10 @@
+{
+  "schema": "conject.submission.v1",
+  "kind": "lean",
+  "statement_id": "Erdos307CoprimeVariant",
+  "module": "Submissions.Erdos307CoprimeVariant.Cambie",
+  "decl": "Submissions.Erdos307CoprimeVariant.Cambie.proof",
+  "author": "~3d3ttu",
+  "expect": "green",
+  "note": "Dry run through the Jig API as check b2d0a6cc-a266-4a3b-b234-7b58b377bbe3. Settles nothing."
+}
